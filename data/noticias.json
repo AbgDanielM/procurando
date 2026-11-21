@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Elogio del papel en tiempos de incertidumbre digital",
+   "enlace": "https://www.diarioconstitucional.cl/opinion/elogio-del-papel-en-tiempos-de-incertidumbre-digital",
+   "fecha": "2026-11-21",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Felogio-del-papel-en-tiempos-de-incertidumbre-digital-lbEpuLlJfuTUjiYpDgZ7SYRRf42sYr.jpg"
+  },
+  {
+   "titulo": "Ley TEA y responsabilidad institucional: ¿Quién responde cuando la inclusión falla?",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/ley-tea-y-responsabilidad-institucional-quien-responde-cuando-la-inclusion-falla",
+   "fecha": "2026-11-21",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fley-tea-y-responsabilidad-institucional-quien-responde-cuando-la-inclusion-falla-v6ulrpKEjdhMNelHZPp1wIfRctpXLd.jpg"
+  },
+  {
    "titulo": "Corte Suprema valida rechazo de 15 licencias médicas de profesora y establece que no es obligatorio realizar nuevos peritajes",
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-valida-rechazo-de-15-licencias-medicas-de-profesora-y-establece-que-no-es-obligatorio",
    "fecha": "2026-11-21",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-espanola-admite-querella-contra-julio-iglesias-por-presuntos-delitos-sexuales-lesiones-y",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-espanola-admite-querella-contra-julio-iglesias-por-presuntos-delitos-sexuales-lesiones-y-mLJh91xlChqEqopAeoPv5vr5zZpAaq.jpg"
-  },
-  {
-   "titulo": "TC elimina obstáculo legal que impedía reclamar antiguos depósitos de ahorro al Fisco",
-   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-elimina-obstaculo-legal-que-impedia-reclamar-antiguos-depositos-de-ahorro-al-fisco",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-elimina-obstaculo-legal-que-impedia-reclamar-antiguos-depositos-de-ahorro-al-fisco-IGSMfLqiSWZn9ky9n7BmuVouR6aTKM.jpg"
-  },
-  {
-   "titulo": "Corte Suprema limita el pago de feriados adeudados a las dos últimas anualidades trabajadas",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-limita-el-pago-de-feriados-adeudados-a-las-dos-ultimas-anualidades-trabajadas",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-88faaa21-1795220110570-KDUOt9yRMWEOPIhUkCdGMQvQZN13NT.jpg"
   }
  ]
 }
