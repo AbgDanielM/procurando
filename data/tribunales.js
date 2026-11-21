@@ -34,9 +34,9 @@ const TRIBUNALES = [
     tipo: "Civil",
     comuna: "Iquique",
     direccion: "Sotomayor S/N, Iquique",
-    telefonos: ["+56572738974"],
+    telefonos: ["+56572738973"],
     correo: "jl3_iquique@pjud.cl",
-    verificado: false
+    verificado: true // teléfono confirmado por el usuario (21/11/2026)
   },
   {
     nombre: "Juzgado de Letras del Trabajo de Iquique",
