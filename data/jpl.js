@@ -1,6 +1,6 @@
 // Juzgados de Policía Local de Chile, por región (dependen de cada municipalidad; no forman parte del Poder Judicial).
 // Base: listado de Juzgados de Policía Local por región publicado por el SERNAC (revisado el 21/11/2026).
-// Teléfonos: se agregan a medida que se confirman (Alto Hospicio: aportados por el usuario el 21/11/2026).
+// Teléfonos: se agregan a medida que se confirman (Alto Hospicio y Pica: aportados por el usuario el 21/11/2026).
 const JPL = [
  {
   "region": "Arica y Parinacota",
@@ -73,7 +73,10 @@ const JPL = [
   "comuna": "Pica",
   "nombre": "Juzgado de Policía Local de Pica",
   "direccion": "Av. Juan Márquez, sitio 10, Pica",
-  "telefonos": []
+  "telefonos": [
+   "+56572741077"
+  ],
+  "correo": "juzgadopolicialocal@pica.cl"
  },
  {
   "region": "Tarapacá",

@@ -420,6 +420,7 @@
       <div class="etiquetas"><span class="etiqueta">${j.comuna}</span></div>
       <div class="fila"><span class="ico">&#9873;</span><span>${j.direccion}</span></div>
       <div class="fila"><span class="ico">&#9742;</span><span>${j.telefonos.length ? fonosHTML(j.telefonos) : "Teléfono no informado"}</span></div>
+      ${j.correo ? `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${j.correo}">${j.correo}</a></div>` : ""}
       <div class="acciones">
         ${j.telefonos.length ? `<a class="principal" href="tel:${j.telefonos[0]}">Llamar</a>` : ""}
         <a href="${mapa(j.nombre, j.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
