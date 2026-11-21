@@ -1,10 +1,13 @@
 // Notarías de la Región de Tarapacá.
 // Base: nómina oficial entregada por el Poder Judicial el 06/11/2026,
 // con datos de contacto verificados en noviembre de 2026.
+// "publico" es el nombre con que la notaría se identifica (por su notario titular).
+// Si el cargo está vacante, se deja sin "publico" y se muestra el número oficial.
 // "id" se usa para marcar las notarías de turno en data/turnos.js.
 const NOTARIAS = [
   {
     id: "iqq1",
+    publico: "Notaría Rodrigo González Barriga",
     nombre: "1ª Notaría de Iquique",
     notario: "Rodrigo Alejandro González Barriga",
     comuna: "Iquique",
@@ -15,6 +18,7 @@ const NOTARIAS = [
   },
   {
     id: "iqq2",
+    publico: "Notaría Heidi Cavieres Araya",
     nombre: "2ª Notaría de Iquique",
     notario: "Heidi Patricia Cavieres Araya",
     comuna: "Iquique",
@@ -35,6 +39,7 @@ const NOTARIAS = [
   },
   {
     id: "iqq4",
+    publico: "Notaría Álvaro Meniconi Asfura",
     nombre: "4ª Notaría de Iquique",
     notario: "Álvaro Tomás Meniconi Asfura",
     comuna: "Iquique",
@@ -45,6 +50,7 @@ const NOTARIAS = [
   },
   {
     id: "iqq5",
+    publico: "Notaría Darío Chacón Vicentelo",
     nombre: "5ª Notaría de Iquique",
     notario: "Darío Emigdio Chacón Vicentelo",
     comuna: "Iquique",
@@ -65,6 +71,7 @@ const NOTARIAS = [
   },
   {
     id: "ahosp",
+    publico: "Notaría Paulo César Cortés Olguín",
     nombre: "Notaría de Alto Hospicio (7ª de Iquique)",
     notario: "Paulo César Cortés Olguín",
     comuna: "Alto Hospicio",
@@ -75,6 +82,7 @@ const NOTARIAS = [
   },
   {
     id: "pozo",
+    publico: "Notaría Angiello Cordano Carrizo",
     nombre: "Notaría de Pozo Almonte",
     notario: "Angiello Paolo Cordano Carrizo",
     comuna: "Pozo Almonte",

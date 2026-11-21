@@ -75,6 +75,7 @@
     padding: 15px 16px; margin-bottom: 12px;
   }
   .tarjeta h3 { margin: 0 0 4px; font-size: 1.02rem; font-weight: 650; }
+  .subtitulo { color: var(--suave); font-size: .88rem; margin: -2px 0 8px; }
   .tarjeta.turno { border-color: #b9dcc6; background: var(--turno-fondo); }
   .tarjeta.turno h3 { color: var(--turno); }
   .bloque-titulo { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--suave); margin: 0 0 8px; }
@@ -236,7 +237,8 @@
     }
     const filas = turnoMes.notarias.map(id => NOTARIAS.find(n => n.id === id)).filter(Boolean).map(n => `
       <div style="margin-top:10px">
-        <h3>${n.nombre}</h3>
+        <h3>${n.publico || n.nombre}</h3>
+        ${n.publico ? `<div class="subtitulo">${n.nombre}</div>` : ""}
         <div class="fila"><span class="ico">&#9873;</span><span>${n.direccion}</span></div>
         ${n.telefonos.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(n.telefonos)}</span></div>` : ""}
       </div>`).join("");
@@ -305,26 +307,27 @@
   document.getElementById("notariasTurno").innerHTML = bloqueTurno();
   function tarjetaNot(n) {
     return `<article class="tarjeta">
-      <h3>${n.nombre}</h3>
+      <h3>${n.publico || n.nombre}</h3>
+      ${n.publico ? `<div class="subtitulo">${n.nombre}</div>` : ""}
       <div class="etiquetas">
         <span class="etiqueta">${n.comuna}</span>
         ${idsTurno.includes(n.id) ? '<span class="etiqueta de-turno">De turno este mes</span>' : ""}
       </div>
-      <div class="fila"><span class="ico">&#9878;</span><span>${n.notario}</span></div>
+      ${n.publico ? "" : `<div class="fila"><span class="ico">&#9878;</span><span>${n.notario}</span></div>`}
       <div class="fila"><span class="ico">&#9873;</span><span>${n.direccion}</span></div>
       ${n.telefonos.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(n.telefonos)}</span></div>`
                            : `<div class="fila"><span class="ico">&#9742;</span><span>Teléfono no informado</span></div>`}
       <div class="fila"><span class="ico">&#9200;</span><span>${n.horario}</span></div>
       <div class="acciones">
         ${n.telefonos.length ? `<a class="principal" href="tel:${n.telefonos[0]}">Llamar</a>` : ""}
-        <a href="${mapa(n.nombre, n.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
+        <a href="${mapa(n.publico || n.nombre, n.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
         ${n.web ? `<a href="${n.web}" target="_blank" rel="noopener">Sitio web</a>` : ""}
       </div></article>`;
   }
   function pintarNot() {
     const q = normalizar(document.getElementById("buscarNot").value.trim());
     const l = NOTARIAS.filter(n => (comunaNot === "Todas" || n.comuna === comunaNot) &&
-      (!q || normalizar(n.nombre + " " + n.notario + " " + n.comuna + " " + n.direccion).includes(q)));
+      (!q || normalizar(n.nombre + " " + (n.publico || "") + " " + n.notario + " " + n.comuna + " " + n.direccion).includes(q)));
     document.getElementById("listaNot").innerHTML = l.length ? l.map(tarjetaNot).join("") : '<p class="vacio">No se encontraron notarías.</p>';
     document.getElementById("contadorNot").textContent = l.length === 1 ? "1 notaría" : l.length + " notarías";
   }
