@@ -1,0 +1,18 @@
+name: Actualizar noticias
+on:
+  schedule:
+    - cron: "17 */4 * * *"   # cada 4 horas (autorizado por el dueño del repositorio, 21/11/2026)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/noticias.py
+      - run: |
+          git config user.name "procurando-bot"
+          git config user.email "procurando-bot@users.noreply.github.com"
+          git add data/noticias.json
+          git diff --cached --quiet || (git commit -m "Actualiza noticias" && git push)

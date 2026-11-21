@@ -89,6 +89,9 @@
   .esp span { font-size:.8rem; padding:3px 8px; border-radius:6px; background: var(--acento-claro); color: var(--acento); }
   .btn-mas { width:100%; padding:12px; border-radius:10px; border:1px solid var(--acento); background:#fff;
     color: var(--acento); font-size: .95rem; cursor:pointer; margin-bottom: 12px; }
+  .noticia { padding: 8px 0; border-top: 1px solid var(--linea); }
+  .noticia:first-of-type { border-top: 0; padding-top: 2px; }
+  .noticia a { color: var(--acento); text-decoration: none; font-weight: 600; line-height: 1.35; }
   .horario-turno { font-size: .88rem; color: var(--turno); margin: -4px 0 6px; }
   .item-turno { border-top: 1px solid #c9e3d2; padding-top: 10px; margin-top: 10px; }
   .item-turno:first-of-type { border-top: 0; }
@@ -158,6 +161,7 @@
     <h2 class="titulo">Avisos del día</h2>
     <div class="fecha-hoy" id="fechaHoy"></div>
     <div id="inicioTurno"></div>
+    <div id="inicioNoticias"></div>
     <div id="inicioFeriado"></div>
     <div id="inicioAvisos"></div>
   </section>
@@ -397,6 +401,17 @@
         <div class="tarjeta"><div class="aviso-fecha">${fechaCL(a.fecha)}</div>
         <h3>${a.titulo}</h3><p>${a.texto}</p></div>`).join("")
     : `<p class="vacio">No hay avisos para hoy.</p>`;
+
+  /* ---------- NOTICIAS (Diario Constitucional) ---------- */
+  fetch("data/noticias.json", { cache: "no-store" }).then(r => r.json()).then(d => {
+    if (!d.noticias || !d.noticias.length) return;
+    document.getElementById("inicioNoticias").innerHTML = `
+      <div class="tarjeta"><div class="bloque-titulo">Noticias jurídicas · ${d.fuente}</div>
+      ${d.noticias.map(n => `<div class="noticia">
+        <div class="aviso-fecha">${fechaCL(n.fecha)}</div>
+        <a href="${n.enlace}" target="_blank" rel="noopener">${n.titulo}</a></div>`).join("")}
+      <p class="nota" style="margin-top:8px">Toca el titular para leer la noticia completa en diarioconstitucional.cl.</p></div>`;
+  }).catch(() => {});
 
   /* ---------- TRIBUNALES ---------- */
   let comunaTrib = "Todas";
