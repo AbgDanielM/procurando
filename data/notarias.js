@@ -200,7 +200,8 @@ const NOTARIAS = [
     "telefonos": [
       "+56552267672",
       "+56552228105",
-      "+56954222551"
+      "+56954222551",
+      "+56552425083"
     ],
     "horario": "Lunes a viernes 08:30-14:00 y 15:00-18:00; turno marzo y septiembre: sábado 09:30-13:30",
     "web": "",
