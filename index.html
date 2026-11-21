@@ -82,6 +82,13 @@
     border: 1px solid var(--linea); border-radius: 10px; background: #fff; color: var(--texto);
   }
   select#regionTurno { margin-bottom: 12px; }
+  select.sel { width: 100%; padding: 11px 12px; font-size: 1rem; margin-bottom: 12px;
+    border: 1px solid var(--linea); border-radius: 10px; background: #fff; color: var(--texto); }
+  #buscarP { margin-bottom: 6px; }
+  .esp { display:flex; flex-wrap:wrap; gap:6px; margin: 4px 0 8px; }
+  .esp span { font-size:.8rem; padding:3px 8px; border-radius:6px; background: var(--acento-claro); color: var(--acento); }
+  .btn-mas { width:100%; padding:12px; border-radius:10px; border:1px solid var(--acento); background:#fff;
+    color: var(--acento); font-size: .95rem; cursor:pointer; margin-bottom: 12px; }
   .horario-turno { font-size: .88rem; color: var(--turno); margin: -4px 0 6px; }
   .item-turno { border-top: 1px solid #c9e3d2; padding-top: 10px; margin-top: 10px; }
   .item-turno:first-of-type { border-top: 0; }
@@ -140,6 +147,7 @@
   <a href="#inicio" data-seccion="inicio">Inicio · Avisos del día</a>
   <a href="#tribunales" data-seccion="tribunales">Guía de tribunales</a>
   <a href="#notarias" data-seccion="notarias">Guía de notarías</a>
+  <a href="#peritos" data-seccion="peritos">Guía de peritos</a>
 </nav>
 
 <main>
@@ -181,6 +189,19 @@
     <div id="listaNot"></div>
     <p class="nota">Directorio basado en la nómina oficial de notarías del Poder Judicial (06/11/2026), con datos de contacto verificados en noviembre de 2026. Los horarios pueden variar; confírmalos antes de ir.</p>
   </section>
+  <!-- PERITOS -->
+  <section id="peritos">
+    <h2 class="titulo">Guía de peritos</h2>
+    <label class="etiqueta-select" for="corteP">Corte de Apelaciones</label>
+    <select id="corteP" class="sel"></select>
+    <label class="etiqueta-select" for="areaP">Área</label>
+    <select id="areaP" class="sel"></select>
+    <input type="search" id="buscarP" placeholder="Buscar por nombre, profesión, especialidad o ciudad" aria-label="Buscar perito">
+    <div class="contador" id="contadorP"></div>
+    <div id="listaP"></div>
+    <button id="masP" class="btn-mas" style="display:none">Ver más peritos</button>
+    <p class="nota" id="fuenteP"></p>
+  </section>
 </main>
 
 <footer>
@@ -192,6 +213,7 @@
 <script src="data/notarias.js"></script>
 <script src="data/turnos.js"></script>
 <script src="data/avisos.js"></script>
+<script src="data/peritos_meta.js"></script>
 <script>
   /* ---------- utilidades ---------- */
   const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
@@ -218,7 +240,7 @@
 
   function mostrarSeccion() {
     const id = (location.hash || "#inicio").slice(1);
-    const valida = ["inicio","tribunales","notarias"].includes(id) ? id : "inicio";
+    const valida = ["inicio","tribunales","notarias","peritos"].includes(id) ? id : "inicio";
     document.querySelectorAll("main section").forEach(s => s.classList.toggle("visible", s.id === valida));
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("activo", a.dataset.seccion === valida));
     cerrar();
@@ -425,6 +447,93 @@
     armarComunas();
     pintarNot();
   });
+
+  /* ---------- PERITOS ---------- */
+  const CORTE_INICIAL = "Iquique", POR_PAGINA = 40;
+  const cacheP = {};
+  let peritos = [], filtradosP = [], mostradosP = 0;
+  const selCorte = document.getElementById("corteP"), selArea = document.getElementById("areaP");
+  const nombreArea = Object.fromEntries(PERITOS_META.areas.map(a => [a.id, a.nombre]));
+  PERITOS_META.cortes.forEach(c => {
+    const o = document.createElement("option");
+    o.value = c.corte; o.textContent = "Corte de Apelaciones de " + c.corte;
+    if (c.corte === CORTE_INICIAL) o.selected = true;
+    selCorte.appendChild(o);
+  });
+  function fonoP(d) {
+    if (d.length === 9 && d[0] === "9") return { tel: "+56" + d, txt: "+56 9 " + d.slice(1, 5) + " " + d.slice(5) };
+    if (d.length === 9) return { tel: "+56" + d, txt: "+56 " + d.slice(0, 2) + " " + d.slice(2, 5) + " " + d.slice(5) };
+    return { tel: d, txt: d };
+  }
+  function tarjetaP(p) {
+    const f = p.f ? fonoP(p.f) : null;
+    return `<article class="tarjeta">
+      <h3>${p.n}</h3>
+      ${p.t ? `<div class="subtitulo">${p.t}</div>` : ""}
+      <div class="esp">${p.e.map(e => `<span>${e}</span>`).join("")}</div>
+      ${p.d ? `<div class="fila"><span class="ico">&#9873;</span><span>${p.d}</span></div>` : ""}
+      ${f ? `<div class="fila"><span class="ico">&#9742;</span><a href="tel:${f.tel}">${f.txt}</a></div>` : ""}
+      ${p.m ? `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${p.m}">${p.m}</a></div>` : ""}
+      <div class="acciones">
+        ${f ? `<a class="principal" href="tel:${f.tel}">Llamar</a>` : ""}
+        ${p.m ? `<a href="mailto:${p.m}">Escribir correo</a>` : ""}
+      </div></article>`;
+  }
+  function pintarMasP() {
+    const lote = filtradosP.slice(mostradosP, mostradosP + POR_PAGINA);
+    document.getElementById("listaP").insertAdjacentHTML("beforeend", lote.map(tarjetaP).join(""));
+    mostradosP += lote.length;
+    document.getElementById("masP").style.display = mostradosP < filtradosP.length ? "block" : "none";
+  }
+  function filtrarP() {
+    const area = selArea.value;
+    const q = normalizar(document.getElementById("buscarP").value.trim());
+    const palabras = q.split(/\s+/).filter(Boolean);
+    filtradosP = peritos.filter(p => (area === "todas" || p.a.includes(area)) &&
+      (!palabras.length || palabras.every(w => p._txt.includes(w))));
+    mostradosP = 0;
+    document.getElementById("listaP").innerHTML = filtradosP.length ? "" : '<p class="vacio">No se encontraron peritos.</p>';
+    document.getElementById("contadorP").textContent = filtradosP.length === 1 ? "1 perito" : filtradosP.length.toLocaleString("es-CL") + " peritos";
+    pintarMasP();
+  }
+  function armarAreas() {
+    const cuenta = {};
+    peritos.forEach(p => p.a.forEach(a => cuenta[a] = (cuenta[a] || 0) + 1));
+    const previo = selArea.value || "todas";
+    selArea.innerHTML = `<option value="todas">Todas las áreas (${peritos.length.toLocaleString("es-CL")})</option>` +
+      PERITOS_META.areas.filter(a => cuenta[a.id]).map(a => `<option value="${a.id}">${a.nombre} (${cuenta[a.id].toLocaleString("es-CL")})</option>`).join("");
+    selArea.value = cuenta[previo] ? previo : "todas";
+  }
+  async function cargarCorte() {
+    const c = PERITOS_META.cortes.find(x => x.corte === selCorte.value);
+    document.getElementById("contadorP").textContent = "Cargando peritos...";
+    document.getElementById("listaP").innerHTML = "";
+    document.getElementById("masP").style.display = "none";
+    try {
+      if (!cacheP[c.archivo]) {
+        const r = await fetch("data/peritos/" + c.archivo + ".json");
+        const datos = await r.json();
+        datos.forEach(p => p._txt = normalizar([p.n, p.t, p.e.join(" "), p.d, p.a.map(a => nombreArea[a]).join(" ")].join(" ")));
+        cacheP[c.archivo] = datos;
+      }
+      peritos = cacheP[c.archivo];
+      document.getElementById("fuenteP").textContent =
+        "Fuente: " + c.fuente + ", Corte de Apelaciones de " + c.corte + " (Poder Judicial). Confirma la vigencia del nombramiento antes de proponer a un perito.";
+      armarAreas();
+      filtrarP();
+    } catch (e) {
+      document.getElementById("contadorP").textContent = "No se pudo cargar el listado. Revisa tu conexión e inténtalo de nuevo.";
+    }
+  }
+  selCorte.addEventListener("change", cargarCorte);
+  selArea.addEventListener("change", filtrarP);
+  let esperaP;
+  document.getElementById("buscarP").addEventListener("input", () => { clearTimeout(esperaP); esperaP = setTimeout(filtrarP, 200); });
+  document.getElementById("masP").addEventListener("click", pintarMasP);
+  let peritosIniciados = false;
+  function iniciarPeritos() { if (!peritosIniciados) { peritosIniciados = true; cargarCorte(); } }
+  window.addEventListener("hashchange", () => { if (location.hash === "#peritos") iniciarPeritos(); });
+  if (location.hash === "#peritos") iniciarPeritos();
 
   mostrarSeccion();
 </script>
