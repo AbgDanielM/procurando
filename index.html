@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Procurando · Guía del litigante</title>
 <meta name="description" content="Guía práctica para abogados litigantes de la Región de Tarapacá: avisos, tribunales y notarías.">
+<link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icono-180.png">
+<meta name="theme-color" content="#1f4e79">
 <style>
   :root {
     --fondo: #f4f1ec;
@@ -19,6 +22,17 @@
     --turno: #1d6b45;
     --turno-fondo: #e5f3ea;
   }
+  #splash { position: fixed; inset: 0; z-index: 1000; background: linear-gradient(160deg, #1f4e79, #163a5c);
+    color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    transition: opacity .5s ease, visibility .5s ease; }
+  #splash.fuera { opacity: 0; visibility: hidden; }
+  #splash img { width: 120px; height: 120px; border-radius: 26px; border: 2px solid rgba(255,255,255,.35); box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+  #splash h1 { font-size: 2.2rem; margin: 22px 0 4px; letter-spacing: .02em; }
+  #splash .lema { margin: 0; opacity: .85; font-size: 1rem; }
+  #splash .carga { width: 200px; height: 6px; margin-top: 34px; background: rgba(255,255,255,.2); border-radius: 3px; overflow: hidden; }
+  #splash .carga span { display: block; height: 100%; width: 0; background: #e8b84a; border-radius: 3px; animation: cargar 4s linear forwards; }
+  #splash .autor { position: absolute; bottom: 28px; font-size: .85rem; opacity: .8; letter-spacing: .03em; }
+  @keyframes cargar { to { width: 100%; } }
   * { box-sizing: border-box; }
   body {
     margin: 0;
@@ -144,6 +158,15 @@
 </style>
 </head>
 <body>
+
+<div id="splash" role="status" aria-label="Cargando Procurando">
+  <img src="icono.svg" alt="Logo de Procurando">
+  <h1>Procurando</h1>
+  <p class="lema">Guía del litigante</p>
+  <div class="carga"><span></span></div>
+  <div class="autor">Desarrollado por AymaraDan</div>
+</div>
+<script>setTimeout(() => { const s = document.getElementById("splash"); s.classList.add("fuera"); setTimeout(() => s.remove(), 600); }, 4000);</script>
 
 <header>
   <button class="btn-menu" id="btnMenu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
