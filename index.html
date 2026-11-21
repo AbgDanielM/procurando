@@ -146,6 +146,7 @@
   <div class="cabeza"><strong>Procurando</strong><div>Región de Tarapacá</div></div>
   <a href="#inicio" data-seccion="inicio">Inicio · Avisos del día</a>
   <a href="#tribunales" data-seccion="tribunales">Guía de tribunales</a>
+  <a href="#jpl" data-seccion="jpl">Juzgados de Policía Local</a>
   <a href="#notarias" data-seccion="notarias">Guía de notarías</a>
   <a href="#peritos" data-seccion="peritos">Guía de peritos</a>
 </nav>
@@ -170,6 +171,18 @@
     <div class="contador" id="contadorTrib"></div>
     <div id="listaTrib"></div>
     <p class="nota">Los datos marcados "Por confirmar" provienen de fuentes no oficiales y aún no se han verificado en un documento del Poder Judicial.</p>
+  </section>
+
+  <!-- JUZGADOS DE POLICÍA LOCAL -->
+  <section id="jpl">
+    <h2 class="titulo">Juzgados de Policía Local</h2>
+    <div class="controles">
+      <input type="search" id="buscarJpl" placeholder="Buscar por comuna o juzgado" aria-label="Buscar juzgado de policía local">
+      <div class="filtros" id="filtrosJpl"></div>
+    </div>
+    <div class="contador" id="contadorJpl"></div>
+    <div id="listaJpl"></div>
+    <p class="nota">Los Juzgados de Policía Local dependen de cada municipalidad y no forman parte del Poder Judicial. Direcciones según el listado del SERNAC; confírmalas antes de ir.</p>
   </section>
 
   <!-- NOTARÍAS -->
@@ -211,6 +224,7 @@
 
 <script src="data/tribunales.js"></script>
 <script src="data/notarias.js"></script>
+<script src="data/jpl.js"></script>
 <script src="data/turnos.js"></script>
 <script src="data/avisos.js"></script>
 <script src="data/peritos_meta.js"></script>
@@ -240,7 +254,7 @@
 
   function mostrarSeccion() {
     const id = (location.hash || "#inicio").slice(1);
-    const valida = ["inicio","tribunales","notarias","peritos"].includes(id) ? id : "inicio";
+    const valida = ["inicio","tribunales","jpl","notarias","peritos"].includes(id) ? id : "inicio";
     document.querySelectorAll("main section").forEach(s => s.classList.toggle("visible", s.id === valida));
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("activo", a.dataset.seccion === valida));
     cerrar();
@@ -395,6 +409,30 @@
   armarFiltros("filtrosTrib", TRIBUNALES, c => { comunaTrib = c; pintarTrib(); });
   document.getElementById("buscarTrib").addEventListener("input", pintarTrib);
   pintarTrib();
+
+  /* ---------- JUZGADOS DE POLICÍA LOCAL ---------- */
+  let comunaJpl = "Todas";
+  function tarjetaJpl(j) {
+    return `<article class="tarjeta">
+      <h3>${j.nombre}</h3>
+      <div class="etiquetas"><span class="etiqueta">${j.comuna}</span></div>
+      <div class="fila"><span class="ico">&#9873;</span><span>${j.direccion}</span></div>
+      <div class="fila"><span class="ico">&#9742;</span><span>${j.telefonos.length ? fonosHTML(j.telefonos) : "Teléfono no informado"}</span></div>
+      <div class="acciones">
+        ${j.telefonos.length ? `<a class="principal" href="tel:${j.telefonos[0]}">Llamar</a>` : ""}
+        <a href="${mapa(j.nombre, j.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
+      </div></article>`;
+  }
+  function pintarJpl() {
+    const q = normalizar(document.getElementById("buscarJpl").value.trim());
+    const l = JPL.filter(j => (comunaJpl === "Todas" || j.comuna === comunaJpl) &&
+      (!q || normalizar(j.nombre + " " + j.comuna + " " + j.direccion).includes(q)));
+    document.getElementById("listaJpl").innerHTML = l.length ? l.map(tarjetaJpl).join("") : '<p class="vacio">No se encontraron juzgados.</p>';
+    document.getElementById("contadorJpl").textContent = l.length === 1 ? "1 juzgado" : l.length + " juzgados";
+  }
+  armarFiltros("filtrosJpl", JPL, c => { comunaJpl = c; pintarJpl(); });
+  document.getElementById("buscarJpl").addEventListener("input", pintarJpl);
+  pintarJpl();
 
   /* ---------- NOTARÍAS ---------- */
   let regionNot = REGION_INICIAL, comunaNot = "Todas";
