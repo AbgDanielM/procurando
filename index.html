@@ -155,6 +155,7 @@
   <a href="#tribunales" data-seccion="tribunales">Guía de tribunales</a>
   <a href="#jpl" data-seccion="jpl">Juzgados de Policía Local</a>
   <a href="#notarias" data-seccion="notarias">Guía de notarías</a>
+  <a href="#receptores" data-seccion="receptores">Guía de receptores</a>
   <a href="#peritos" data-seccion="peritos">Guía de peritos</a>
   <a href="#mediadores" data-seccion="mediadores">Guía de mediadores</a>
 </nav>
@@ -213,6 +214,19 @@
     <div id="listaNot"></div>
     <p class="nota">Directorio basado en la nómina oficial de notarías del Poder Judicial (06/11/2026), con datos de contacto verificados en noviembre de 2026. Los horarios pueden variar; confírmalos antes de ir.</p>
   </section>
+  <!-- RECEPTORES -->
+  <section id="receptores">
+    <h2 class="titulo">Guía de receptores judiciales</h2>
+    <label class="etiqueta-select" for="corteR">Corte de Apelaciones</label>
+    <select id="corteR" class="sel"></select>
+    <label class="etiqueta-select" for="tribR">Tribunal de asiento</label>
+    <select id="tribR" class="sel"></select>
+    <input type="search" id="buscarR" placeholder="Buscar por nombre o tribunal" aria-label="Buscar receptor">
+    <div class="contador" id="contadorR"></div>
+    <div id="listaR"></div>
+    <p class="nota">Fuente: nómina de receptores judiciales del Poder Judicial (Portal de Transparencia). Los nombres aparecen con los apellidos primero, como en la nómina oficial.</p>
+  </section>
+
   <!-- PERITOS -->
   <section id="peritos">
     <h2 class="titulo">Guía de peritos</h2>
@@ -249,6 +263,7 @@
 <script src="data/tribunales.js"></script>
 <script src="data/notarias.js"></script>
 <script src="data/jpl.js"></script>
+<script src="data/receptores.js"></script>
 <script src="data/turnos.js"></script>
 <script src="data/avisos.js"></script>
 <script src="data/peritos_meta.js"></script>
@@ -279,7 +294,7 @@
 
   function mostrarSeccion() {
     const id = (location.hash || "#inicio").slice(1);
-    const valida = ["inicio","tribunales","jpl","notarias","peritos","mediadores"].includes(id) ? id : "inicio";
+    const valida = ["inicio","tribunales","jpl","notarias","receptores","peritos","mediadores"].includes(id) ? id : "inicio";
     document.querySelectorAll("main section").forEach(s => s.classList.toggle("visible", s.id === valida));
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("activo", a.dataset.seccion === valida));
     cerrar();
@@ -547,6 +562,40 @@
     pintarNot();
   });
 
+  /* ---------- RECEPTORES ---------- */
+  const CORTES_R = ["Arica","Iquique","Antofagasta","Copiapó","La Serena","Valparaíso","Santiago","San Miguel","Rancagua","Talca",
+    "Chillán","Concepción","Temuco","Valdivia","Puerto Montt","Coyhaique","Punta Arenas"];
+  const selCorteR = document.getElementById("corteR"), selTribR = document.getElementById("tribR");
+  selCorteR.innerHTML = CORTES_R.map(c => `<option value="${c}"${c === "Iquique" ? " selected" : ""}>Corte de Apelaciones de ${c} (${RECEPTORES.filter(r => r.c === c).length})</option>`).join("");
+  RECEPTORES.forEach(r => r._txt = normalizar(r.n + " " + r.t + " " + r.m.join(" ")));
+  function tarjetaR(r) {
+    const f = r.f.map(x => fonoP(x.slice(3)));
+    return `<article class="tarjeta">
+      <h3>${r.n}</h3>
+      <div class="esp"><span>${r.t}</span></div>
+      ${f.length ? f.map(x => `<div class="fila"><span class="ico">&#9742;</span><a href="tel:${x.tel}">${x.txt}</a></div>`).join("")
+                 : `<div class="fila"><span class="ico">&#9742;</span><span>Teléfono no informado</span></div>`}
+      ${r.m.map(m => `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${m}">${m}</a></div>`).join("")}
+      <div class="acciones">
+        ${f.length ? `<a class="principal" href="tel:${f[0].tel}">Llamar</a>` : ""}
+        ${r.m.length ? `<a href="mailto:${r.m[0]}">Escribir correo</a>` : ""}
+      </div></article>`;
+  }
+  function armarTribR() {
+    const cuenta = {}; RECEPTORES.filter(r => r.c === selCorteR.value).forEach(r => cuenta[r.t] = (cuenta[r.t] || 0) + 1);
+    selTribR.innerHTML = `<option value="todos">Todos los tribunales</option>` +
+      Object.keys(cuenta).sort((a, b) => a.localeCompare(b, "es")).map(t => `<option value="${t}">${t} (${cuenta[t]})</option>`).join("");
+  }
+  function pintarR() {
+    const palabras = normalizar(document.getElementById("buscarR").value.trim()).split(/\s+/).filter(Boolean);
+    const l = RECEPTORES.filter(r => r.c === selCorteR.value && (selTribR.value === "todos" || r.t === selTribR.value) && palabras.every(w => r._txt.includes(w)));
+    document.getElementById("listaR").innerHTML = l.length ? l.map(tarjetaR).join("") : '<p class="vacio">No se encontraron receptores.</p>';
+    document.getElementById("contadorR").textContent = l.length === 1 ? "1 receptor/a" : l.length + " receptores/as";
+  }
+  selCorteR.addEventListener("change", () => { document.getElementById("buscarR").value = ""; armarTribR(); pintarR(); });
+  selTribR.addEventListener("change", pintarR);
+  document.getElementById("buscarR").addEventListener("input", pintarR);
+
   /* ---------- PERITOS ---------- */
   const CORTE_INICIAL = "Iquique", POR_PAGINA = 40;
   const cacheP = {};
@@ -703,6 +752,7 @@
   window.addEventListener("hashchange", () => { if (location.hash === "#mediadores") iniciarMediadores(); });
   if (location.hash === "#mediadores") iniciarMediadores();
 
+  armarTribR(); pintarR();
   mostrarSeccion();
 </script>
 </body>
