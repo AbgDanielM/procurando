@@ -30,7 +30,7 @@
   #splash h1 { font-size: 2.2rem; margin: 22px 0 4px; letter-spacing: .02em; }
   #splash .lema { margin: 0; opacity: .85; font-size: 1rem; }
   #splash .carga { width: 200px; height: 6px; margin-top: 34px; background: rgba(255,255,255,.2); border-radius: 3px; overflow: hidden; }
-  #splash .carga span { display: block; height: 100%; width: 0; background: #e8b84a; border-radius: 3px; animation: cargar 3s linear forwards; }
+  #splash .carga span { display: block; height: 100%; width: 0; background: #e8b84a; border-radius: 3px; animation: cargar 2s linear forwards; }
   #splash .autor { position: absolute; bottom: 28px; font-size: .85rem; opacity: .8; letter-spacing: .03em; }
   @keyframes cargar { to { width: 100%; } }
   * { box-sizing: border-box; }
@@ -166,7 +166,7 @@
   <div class="carga"><span></span></div>
   <div class="autor">Desarrollado por AymaraDan</div>
 </div>
-<script>setTimeout(() => { const s = document.getElementById("splash"); s.classList.add("fuera"); setTimeout(() => s.remove(), 600); }, 3000);</script>
+<script>setTimeout(() => { const s = document.getElementById("splash"); s.classList.add("fuera"); setTimeout(() => s.remove(), 600); }, 2000);</script>
 
 <header>
   <button class="btn-menu" id="btnMenu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
