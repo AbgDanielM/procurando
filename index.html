@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Procurando · Guía del litigante</title>
+<meta name="description" content="Dirección y teléfono de los tribunales de la Región de Tarapacá.">
+<style>
+  :root {
+    --fondo: #f4f1ec;
+    --tarjeta: #ffffff;
+    --texto: #1f2328;
+    --suave: #5f6670;
+    --linea: #e3ddd3;
+    --acento: #1f4e79;
+    --acento-claro: #e6eef6;
+    --aviso: #8a5a00;
+    --aviso-fondo: #fff4dc;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.45;
+  }
+  header {
+    background: var(--acento);
+    color: #fff;
+    padding: 22px 18px 18px;
+  }
+  header h1 { margin: 0; font-size: 1.35rem; font-weight: 650; }
+  header p { margin: 4px 0 0; opacity: .85; font-size: .92rem; }
+  main { max-width: 760px; margin: 0 auto; padding: 16px; }
+  .controles { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+  input[type="search"] {
+    width: 100%; padding: 12px 14px; font-size: 1rem;
+    border: 1px solid var(--linea); border-radius: 10px; background: #fff;
+  }
+  .filtros { display: flex; flex-wrap: wrap; gap: 8px; }
+  .filtros button {
+    border: 1px solid var(--linea); background: #fff; color: var(--texto);
+    padding: 7px 13px; border-radius: 999px; font-size: .9rem; cursor: pointer;
+  }
+  .filtros button.activo { background: var(--acento); border-color: var(--acento); color: #fff; }
+  .contador { color: var(--suave); font-size: .88rem; margin: 4px 2px 10px; }
+  .tarjeta {
+    background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 12px;
+    padding: 15px 16px; margin-bottom: 12px;
+  }
+  .tarjeta h2 { margin: 0 0 4px; font-size: 1.04rem; font-weight: 650; }
+  .etiquetas { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .etiqueta {
+    font-size: .76rem; padding: 2px 8px; border-radius: 6px;
+    background: var(--acento-claro); color: var(--acento);
+  }
+  .etiqueta.revisar { background: var(--aviso-fondo); color: var(--aviso); }
+  .fila { display: flex; gap: 8px; align-items: flex-start; margin: 6px 0; font-size: .95rem; }
+  .fila .ico { width: 20px; flex: none; text-align: center; color: var(--suave); }
+  .fila a { color: var(--acento); text-decoration: none; }
+  .fila a:hover { text-decoration: underline; }
+  .acciones { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .acciones a {
+    flex: 1 1 auto; text-align: center; padding: 9px 10px; border-radius: 9px;
+    font-size: .9rem; text-decoration: none; border: 1px solid var(--acento); color: var(--acento);
+  }
+  .acciones a.principal { background: var(--acento); color: #fff; }
+  .vacio { text-align: center; color: var(--suave); padding: 30px 0; }
+  footer { max-width: 760px; margin: 10px auto 30px; padding: 0 16px; color: var(--suave); font-size: .82rem; }
+  footer p { margin: 6px 0; text-align: justify; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Procurando</h1>
+  <p>Guía del litigante · Región de Tarapacá</p>
+</header>
+
+<main>
+  <div class="controles">
+    <input type="search" id="buscar" placeholder="Buscar tribunal (ej.: garantía, familia, Pozo Almonte)" aria-label="Buscar tribunal">
+    <div class="filtros" id="filtros"></div>
+  </div>
+  <div class="contador" id="contador"></div>
+  <div id="lista"></div>
+</main>
+
+<footer>
+  <p>Información referencial, reunida desde documentos y sitios del Poder Judicial. Antes de acudir o enviar documentos, confirma los datos en pjud.cl.</p>
+  <p>Los datos marcados "por confirmar" provienen de fuentes no oficiales y aún no se han verificado en un documento del Poder Judicial.</p>
+  <p>Elaborado por Daniel Mamani Quispe.</p>
+</footer>
+
+<script src="data/tribunales.js"></script>
+<script>
+  const comunas = ["Todas", ...new Set(TRIBUNALES.map(t => t.comuna))];
+  let comunaActiva = "Todas";
+
+  function formatearFono(f) {
+    // +56572738300 -> +56 57 273 8300 ; +56961628128 -> +56 9 6162 8128
+    const n = f.replace("+56", "");
+    if (n.startsWith("9")) return "+56 9 " + n.slice(1, 5) + " " + n.slice(5);
+    return "+56 " + n.slice(0, 2) + " " + n.slice(2, 5) + " " + n.slice(5);
+  }
+
+  function normalizar(s) {
+    return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  }
+
+  function tarjeta(t) {
+    const fonos = t.telefonos.map(f => `<a href="tel:${f}">${formatearFono(f)}</a>`).join(" · ");
+    const mapa = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(t.nombre + ", " + t.direccion);
+    return `
+      <article class="tarjeta">
+        <h2>${t.nombre}</h2>
+        <div class="etiquetas">
+          <span class="etiqueta">${t.comuna}</span>
+          <span class="etiqueta">${t.tipo}</span>
+          ${t.verificado ? "" : '<span class="etiqueta revisar">Por confirmar</span>'}
+        </div>
+        <div class="fila"><span class="ico">&#9873;</span><span>${t.direccion}</span></div>
+        <div class="fila"><span class="ico">&#9742;</span><span>${fonos}</span></div>
+        ${t.turno ? `<div class="fila"><span class="ico">&#9200;</span><span>Turno: <a href="tel:${t.turno}">${formatearFono(t.turno)}</a></span></div>` : ""}
+        ${t.correo ? `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${t.correo}">${t.correo}</a></div>` : ""}
+        <div class="acciones">
+          <a class="principal" href="tel:${t.telefonos[0]}">Llamar</a>
+          <a href="${mapa}" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </article>`;
+  }
+
+  function mostrar() {
+    const q = normalizar(document.getElementById("buscar").value.trim());
+    const lista = TRIBUNALES.filter(t =>
+      (comunaActiva === "Todas" || t.comuna === comunaActiva) &&
+      (!q || normalizar(t.nombre + " " + t.comuna + " " + t.tipo + " " + t.direccion).includes(q))
+    );
+    document.getElementById("lista").innerHTML =
+      lista.length ? lista.map(tarjeta).join("") : '<p class="vacio">No se encontraron tribunales.</p>';
+    document.getElementById("contador").textContent =
+      lista.length === 1 ? "1 tribunal" : lista.length + " tribunales";
+  }
+
+  const cont = document.getElementById("filtros");
+  comunas.forEach(c => {
+    const b = document.createElement("button");
+    b.textContent = c;
+    if (c === comunaActiva) b.classList.add("activo");
+    b.onclick = () => {
+      comunaActiva = c;
+      cont.querySelectorAll("button").forEach(x => x.classList.toggle("activo", x === b));
+      mostrar();
+    };
+    cont.appendChild(b);
+  });
+  document.getElementById("buscar").addEventListener("input", mostrar);
+  mostrar();
+</script>
+</body>
+</html>
