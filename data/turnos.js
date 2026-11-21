@@ -64,7 +64,7 @@ const TURNOS = {
           { nombre: "29ª Notaría de Santiago", notario: "Evaldo Rehbein U.", direccion: "Mac Iver N° 225, oficina 302, Santiago Centro" },
           { nombre: "25ª Notaría de Santiago", notario: "Zaida Sepúlveda R. (interina)", direccion: "Amunátegui N° 361, local 6, Edificio YMCA, Santiago Centro" },
           { nombre: "1ª Notaría de Las Condes", notario: "Lilia Sierra Mejía", direccion: "Av. Apoquindo N° 4943, Las Condes" },
-          { nombre: "1ª Notaría de Ñuñoa", notario: "Eduardo Rocco C.", direccion: "Irarrázaval N° 1745, Ñuñoa" },
+          { id: "1-notaria-de-santiago-con-asiento-en-nunoa", nombre: "1ª Notaría de Ñuñoa", notario: "Eduardo Rocco C.", direccion: "Irarrázaval N° 1745, Ñuñoa" },
           { nombre: "1ª Notaría de Quinta Normal", notario: "Luis Cartagena (interino)", direccion: "Av. Tobalaba N° 1469, Providencia" },
           { nombre: "2ª Notaría de Peñalolén", notario: "Guillermo Solar P.", direccion: "Av. Quilín N° 5283, Peñalolén" }
         ], extraTitulo: "Autorizadas por la Corte de Apelaciones de Santiago para abrir los sábados, además de las de turno", extra: [

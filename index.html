@@ -77,10 +77,11 @@
   .tarjeta h3 { margin: 0 0 4px; font-size: 1.02rem; font-weight: 650; }
   .subtitulo { color: var(--suave); font-size: .88rem; margin: -2px 0 8px; }
   .etiqueta-select { display:block; font-size:.85rem; color: var(--suave); margin: 0 2px 4px; }
-  select#regionTurno {
-    width: 100%; padding: 11px 12px; font-size: 1rem; margin-bottom: 12px;
+  select#regionTurno, select#comunaNot {
+    width: 100%; padding: 11px 12px; font-size: 1rem;
     border: 1px solid var(--linea); border-radius: 10px; background: #fff; color: var(--texto);
   }
+  select#regionTurno { margin-bottom: 12px; }
   .horario-turno { font-size: .88rem; color: var(--turno); margin: -4px 0 6px; }
   .item-turno { border-top: 1px solid #c9e3d2; padding-top: 10px; margin-top: 10px; }
   .item-turno:first-of-type { border-top: 0; }
@@ -171,14 +172,14 @@
     <select id="regionTurno"></select>
     <div id="notariasTurno"></div>
     <p class="nota" style="margin:-4px 2px 18px">Los turnos son los sábados. Fuente: listado mensual de la Asociación de Notarios, Conservadores y Archiveros Judiciales de Chile.</p>
-    <h2 class="titulo" style="margin-top:22px">Directorio de notarías · Tarapacá</h2>
+    <h2 class="titulo" style="margin-top:22px">Directorio de notarías · <span id="regionDir"></span></h2>
     <div class="controles">
       <input type="search" id="buscarNot" placeholder="Buscar notaría o notario" aria-label="Buscar notaría">
-      <div class="filtros" id="filtrosNot"></div>
+      <select id="comunaNot" aria-label="Comuna"></select>
     </div>
     <div class="contador" id="contadorNot"></div>
     <div id="listaNot"></div>
-    <p class="nota">Listado basado en la nómina oficial de notarías del Poder Judicial (06/11/2026). Los horarios pueden variar; confírmalos antes de ir.</p>
+    <p class="nota">Directorio basado en la nómina oficial de notarías del Poder Judicial (06/11/2026), con datos de contacto verificados en noviembre de 2026. Los horarios pueden variar; confírmalos antes de ir.</p>
   </section>
 </main>
 
@@ -249,8 +250,24 @@
   const sabado = new Date(hoy); sabado.setDate(hoy.getDate() + ((6 - hoy.getDay() + 7) % 7));
   const sabadoISO = iso(sabado);
 
-  function filaNotariaTurno(n) {
-    const local = n.id ? NOTARIAS.find(x => x.id === n.id) : null;
+  const REGIONES = ["Arica y Parinacota","Tarapacá","Antofagasta","Atacama","Coquimbo","Valparaíso","Metropolitana",
+    "O'Higgins","Maule","Ñuble","Biobío","La Araucanía","Los Ríos","Los Lagos","Aysén","Magallanes"];
+  const VACIAS = new Set(["interino","interina","notaria","notario","santiago","miguel","con","asiento","de","del","la","las","los"]);
+  // Busca en el directorio la notaría que corresponde a una entrada del turno (por id o por apellidos del notario)
+  function enlazar(n, region) {
+    if (n.id) return NOTARIAS.find(x => x.id === n.id) || null;
+    const palabras = normalizar(n.notario).replace(/[().,]/g, " ").split(/\s+/).filter(w => w.length > 3 && !VACIAS.has(w));
+    let mejor = null, puntos = 0;
+    NOTARIAS.filter(x => x.region === region).forEach(x => {
+      const nx = normalizar(x.notario);
+      const p = palabras.filter(w => nx.includes(w)).length;
+      if (p > puntos) { puntos = p; mejor = x; }
+    });
+    return puntos >= Math.min(2, palabras.length) ? mejor : null;
+  }
+
+  function filaNotariaTurno(n, region) {
+    const local = enlazar(n, region);
     const titulo = local && local.publico ? local.publico : n.nombre;
     const sub = local && local.publico ? local.nombre : n.notario;
     const fonos = local && local.telefonos.length ? local.telefonos : [];
@@ -276,26 +293,28 @@
   function bloqueRegion(nombreRegion) {
     if (!turnoMes) return `<div class="tarjeta"><p>El turno de ${nombreMes} aún no se ha cargado.</p></div>`;
     const r = turnoMes.regiones.find(x => x.region === nombreRegion);
-    if (!r) return `<div class="tarjeta"><p>No hay notarías de turno informadas para esta región en ${nombreMes}.</p></div>`;
+    if (!r) return `<div class="tarjeta"><p>No hay notarías de turno informadas para la región de ${nombreRegion} en ${nombreMes}.</p></div>`;
     return r.ciudades.map(c => `
       <div class="tarjeta turno">
         <div class="bloque-titulo">${c.ciudad}</div>
         <div class="horario-turno">Horario del turno: ${c.horario}</div>
-        ${c.notarias.map(filaNotariaTurno).join("")}
-        ${c.extra ? `<div class="bloque-titulo" style="margin-top:14px">${c.extraTitulo}</div>${c.extra.map(filaNotariaTurno).join("")}` : ""}
+        ${c.notarias.map(n => filaNotariaTurno(n, nombreRegion)).join("")}
+        ${c.extra ? `<div class="bloque-titulo" style="margin-top:14px">${c.extraTitulo}</div>${c.extra.map(n => filaNotariaTurno(n, nombreRegion)).join("")}` : ""}
       </div>`).join("");
   }
 
-  function armarSelectorRegion() {
+  function armarSelectorRegion(alCambiar) {
     const sel = document.getElementById("regionTurno");
-    if (!turnoMes) { sel.style.display = "none"; return; }
-    turnoMes.regiones.forEach(r => {
+    REGIONES.forEach(r => {
       const o = document.createElement("option");
-      o.value = r.region; o.textContent = r.region;
-      if (r.region === REGION_INICIAL) o.selected = true;
+      o.value = r; o.textContent = r;
+      if (r === REGION_INICIAL) o.selected = true;
       sel.appendChild(o);
     });
-    const pintar = () => document.getElementById("notariasTurno").innerHTML = bloqueRegion(sel.value);
+    const pintar = () => {
+      document.getElementById("notariasTurno").innerHTML = bloqueRegion(sel.value);
+      alCambiar(sel.value);
+    };
     sel.addEventListener("change", pintar);
     pintar();
   }
@@ -356,39 +375,56 @@
   pintarTrib();
 
   /* ---------- NOTARÍAS ---------- */
-  let comunaNot = "Todas";
-  const idsTurno = turnoMes ? turnoMes.regiones.flatMap(r => r.ciudades.flatMap(c => c.notarias.map(n => n.id))).filter(Boolean) : [];
+  let regionNot = REGION_INICIAL, comunaNot = "Todas";
+  const idsTurno = new Set(turnoMes ? turnoMes.regiones.flatMap(r => r.ciudades.flatMap(c =>
+    [...c.notarias, ...(c.extra || [])].map(n => enlazar(n, r.region)))).filter(Boolean).map(x => x.id) : []);
+  // notarías que están de turno (no las "extra" que solo abren los sábados)
+  const idsTurnoTitular = new Set(turnoMes ? turnoMes.regiones.flatMap(r => r.ciudades.flatMap(c =>
+    c.notarias.map(n => enlazar(n, r.region)))).filter(Boolean).map(x => x.id) : []);
   document.getElementById("mesTurno").textContent = nombreMes;
-  armarSelectorRegion();
+
   function tarjetaNot(n) {
+    const titulo = n.publico || n.nombre;
     return `<article class="tarjeta">
-      <h3>${n.publico || n.nombre}</h3>
+      <h3>${titulo}</h3>
       ${n.publico ? `<div class="subtitulo">${n.nombre}</div>` : ""}
       <div class="etiquetas">
         <span class="etiqueta">${n.comuna}</span>
-        ${idsTurno.includes(n.id) ? '<span class="etiqueta de-turno">De turno este mes</span>' : ""}
+        ${idsTurnoTitular.has(n.id) ? '<span class="etiqueta de-turno">De turno este mes</span>' : ""}
       </div>
       ${n.publico ? "" : `<div class="fila"><span class="ico">&#9878;</span><span>${n.notario}</span></div>`}
-      <div class="fila"><span class="ico">&#9873;</span><span>${n.direccion}</span></div>
-      ${n.telefonos.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(n.telefonos)}</span></div>`
-                           : `<div class="fila"><span class="ico">&#9742;</span><span>Teléfono no informado</span></div>`}
-      <div class="fila"><span class="ico">&#9200;</span><span>${n.horario}</span></div>
+      <div class="fila"><span class="ico">&#9873;</span><span>${n.direccion || "Dirección no informada"}</span></div>
+      <div class="fila"><span class="ico">&#9742;</span><span>${n.telefonos.length ? fonosHTML(n.telefonos) : "Teléfono no informado"}</span></div>
+      ${n.horario ? `<div class="fila"><span class="ico">&#9719;</span><span>${n.horario}</span></div>` : ""}
       <div class="acciones">
         ${n.telefonos.length ? `<a class="principal" href="tel:${n.telefonos[0]}">Llamar</a>` : ""}
-        <a href="${mapa(n.publico || n.nombre, n.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
+        ${n.direccion ? `<a href="${mapa(titulo, n.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>` : ""}
         ${n.web ? `<a href="${n.web}" target="_blank" rel="noopener">Sitio web</a>` : ""}
       </div></article>`;
   }
   function pintarNot() {
     const q = normalizar(document.getElementById("buscarNot").value.trim());
-    const l = NOTARIAS.filter(n => (comunaNot === "Todas" || n.comuna === comunaNot) &&
+    const l = NOTARIAS.filter(n => n.region === regionNot && (comunaNot === "Todas" || n.comuna === comunaNot) &&
       (!q || normalizar(n.nombre + " " + (n.publico || "") + " " + n.notario + " " + n.comuna + " " + n.direccion).includes(q)));
     document.getElementById("listaNot").innerHTML = l.length ? l.map(tarjetaNot).join("") : '<p class="vacio">No se encontraron notarías.</p>';
     document.getElementById("contadorNot").textContent = l.length === 1 ? "1 notaría" : l.length + " notarías";
   }
-  armarFiltros("filtrosNot", NOTARIAS, c => { comunaNot = c; pintarNot(); });
+  function armarComunas() {
+    const sel = document.getElementById("comunaNot");
+    const comunas = [...new Set(NOTARIAS.filter(n => n.region === regionNot).map(n => n.comuna))]
+      .sort((a, b) => a.localeCompare(b, "es"));
+    sel.innerHTML = `<option value="Todas">Todas las comunas</option>` + comunas.map(c => `<option>${c}</option>`).join("");
+    comunaNot = "Todas";
+  }
+  document.getElementById("comunaNot").addEventListener("change", e => { comunaNot = e.target.value; pintarNot(); });
   document.getElementById("buscarNot").addEventListener("input", pintarNot);
-  pintarNot();
+  armarSelectorRegion(region => {
+    regionNot = region;
+    document.getElementById("regionDir").textContent = region;
+    document.getElementById("buscarNot").value = "";
+    armarComunas();
+    pintarNot();
+  });
 
   mostrarSeccion();
 </script>
