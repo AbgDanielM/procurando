@@ -89,11 +89,13 @@
   .esp span { font-size:.8rem; padding:3px 8px; border-radius:6px; background: var(--acento-claro); color: var(--acento); }
   .btn-mas { width:100%; padding:12px; border-radius:10px; border:1px solid var(--acento); background:#fff;
     color: var(--acento); font-size: .95rem; cursor:pointer; margin-bottom: 12px; }
-  .noticia { padding: 8px 0; border-top: 1px solid var(--linea); }
+  .noticia { display:flex; gap:12px; align-items:flex-start; padding: 10px 0; border-top: 1px solid var(--linea); text-decoration:none; }
   .noticia:first-of-type { border-top: 0; padding-top: 2px; }
+  .noticia img { width: 96px; height: 72px; object-fit: cover; border-radius: 8px; flex: none; background: var(--acento-claro); }
+  .noticia .aviso-fecha { display:block; }
+  .noticia .titular { display:block; color: var(--acento); font-weight: 600; line-height: 1.35; }
   .pie-noticias { display:flex; justify-content:space-between; align-items:center; margin-top:8px; }
   .btn-link { background:none; border:0; color: var(--acento); font-size:.88rem; font-weight:600; cursor:pointer; padding:4px 0; }
-  .noticia a { color: var(--acento); text-decoration: none; font-weight: 600; line-height: 1.35; }
   .horario-turno { font-size: .88rem; color: var(--turno); margin: -4px 0 6px; }
   .item-turno { border-top: 1px solid #c9e3d2; padding-top: 10px; margin-top: 10px; }
   .item-turno:first-of-type { border-top: 0; }
@@ -162,8 +164,8 @@
   <section id="inicio">
     <h2 class="titulo">Avisos del día</h2>
     <div class="fecha-hoy" id="fechaHoy"></div>
-    <div id="inicioTurno"></div>
     <div id="inicioNoticias"></div>
+    <div id="inicioTurno"></div>
     <div id="inicioFeriado"></div>
     <div id="inicioAvisos"></div>
   </section>
@@ -412,8 +414,9 @@
     const par = noticias.slice(parNoticias * 2, parNoticias * 2 + 2);
     document.getElementById("inicioNoticias").innerHTML = `
       <div class="tarjeta"><div class="bloque-titulo">Noticias jurídicas · Diario Constitucional</div>
-      ${par.map(n => `<div class="noticia"><div class="aviso-fecha">${fechaCL(n.fecha)}</div>
-        <a href="${n.enlace}" target="_blank" rel="noopener">${n.titulo}</a></div>`).join("")}
+      ${par.map(n => `<a class="noticia" href="${n.enlace}" target="_blank" rel="noopener">
+        ${n.imagen ? `<img src="${n.imagen}" alt="" loading="lazy" onerror="this.remove()">` : ""}
+        <span><span class="aviso-fecha">${fechaCL(n.fecha)}</span><span class="titular">${n.titulo}</span></span></a>`).join("")}
       <div class="pie-noticias">
         <span class="nota">${parNoticias * 2 + 1}-${parNoticias * 2 + par.length} de ${noticias.length}</span>
         ${total > 1 ? '<button id="otrasNoticias" class="btn-link">Ver otras noticias</button>' : ""}
