@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Proyecto de ley busca endurecer las penas por robo de ganado cometido en sectores rurales",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-endurecer-las-penas-por-robo-de-ganado-cometido-en-sectores-rurales-2",
+   "fecha": "2026-11-21",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-endurecer-las-penas-por-robo-de-ganado-cometido-en-sectores-rurales-2-uFzEXvHUlgZRNBoEMUBHLwcFxBkUjz.jpg"
+  },
+  {
+   "titulo": "Corte de Chillán ordena a SUSESO reevaluar licencias médicas por 53 días de reposo psiquiátrico",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-chillan-ordena-a-suseso-reevaluar-licencias-medicas-por-53-dias-de-reposo-psiquiatrico",
+   "fecha": "2026-11-21",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-chillan-ordena-a-suseso-reevaluar-licencias-medicas-por-53-dias-de-reposo-psiquiatrico-eZJ0LgVlOrTxDZuOmm6eWSRQTXFKES.jpg"
+  },
+  {
+   "titulo": "Marco Antonio Medina Ramírez: ¿Cuándo una deuda impaga deja de ser un problema civil y se convierte en un delito?",
+   "enlace": "https://www.diarioconstitucional.cl/entrevistas/marco-antonio-medina-ramirez-cuando-una-deuda-impaga-deja-de-ser-un-problema-civil-y-se-convierte-en",
+   "fecha": "2026-11-21",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fmarco-antonio-medina-ramirez-cuando-una-deuda-impaga-deja-de-ser-un-problema-civil-y-se-convierte-en-ESu4Ccnrs3PH1XA3gcJrDkY0XZgtrE.jpg"
+  },
+  {
    "titulo": "Elogio del papel en tiempos de incertidumbre digital",
    "enlace": "https://www.diarioconstitucional.cl/opinion/elogio-del-papel-en-tiempos-de-incertidumbre-digital",
    "fecha": "2026-11-21",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/restitucion-anticipada-de-inmuebles-por-usurpacion-no-vulnera-presuncion-de-inocencia-resuelve",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4e146157-1795209178102-lwCzPek3H64kcPkc6CmbQxXa2Eyumk.jpg"
-  },
-  {
-   "titulo": "Corte Suprema ordena traslado inmediato de imputado con esquizofrenia que permanece recluido en Santiago Uno",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-ordena-traslado-inmediato-de-imputado-con-esquizofrenia-que-permanece-recluido-en",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-ordena-traslado-inmediato-de-imputado-con-esquizofrenia-que-permanece-recluido-en-Sp4nL2Ya13ofEAqDb4yPN1pdi1xeuM.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago mantiene multa a Municipalidad por no acreditar medidas de seguridad en Liceo Barros Borgoño",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-mantiene-multa-a-municipalidad-por-no-acreditar-medidas-de-seguridad-en-liceo",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-santiago-mantiene-multa-a-municipalidad-por-no-acreditar-medidas-de-seguridad-en-liceo-E2uJ92NORbI4jVz469IQhI5x0jlEaW.jpg"
-  },
-  {
-   "titulo": "Justicia española admite querella contra Julio Iglesias por presuntos delitos sexuales, lesiones y trato degradante",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-espanola-admite-querella-contra-julio-iglesias-por-presuntos-delitos-sexuales-lesiones-y",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-espanola-admite-querella-contra-julio-iglesias-por-presuntos-delitos-sexuales-lesiones-y-mLJh91xlChqEqopAeoPv5vr5zZpAaq.jpg"
   }
  ]
 }
