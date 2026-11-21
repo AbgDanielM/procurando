@@ -1,4099 +1,1504 @@
 // Tribunales de primera instancia de todo el país, por Corte de Apelaciones.
 // Fuente: pjud.cl, Tribunales de primera instancia (extraído el 21/11/2026).
 // La Corte de Iquique usa data/tribunales.js (datos revisados a mano).
-const TRIBUNALES_PAIS = {
-"Arica": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Arica",
-"tipo": "Penal",
-"comuna": "Arica",
-"direccion": "General Pedro Lagos Marchant N° 766, 4to Piso, Arica",
-"telefonos": [],
-"correo": "toparica@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de Arica",
-"tipo": "Civil",
-"comuna": "Arica",
-"direccion": "Blanco Encalada 945, Arica",
-"telefonos": [
-"+56582208906"
-],
-"correo": "jl1_arica@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Arica",
-"tipo": "Civil",
-"comuna": "Arica",
-"direccion": "Blanco Encalada N° 945, Arica",
-"telefonos": [],
-"correo": "jl2_arica@pjud.cl"
-},
-{
-"nombre": "3° Juzgado de Letras de Arica",
-"tipo": "Civil",
-"comuna": "Arica",
-"direccion": "Blanco Encalada N° 945, Arica",
-"telefonos": [
-"+56582208940"
-],
-"correo": "jl3_arica@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Arica",
-"tipo": "Familia",
-"comuna": "Arica",
-"direccion": "Calle Juan Noe Crevani N° 711, Arica",
-"telefonos": [],
-"correo": "jfarica@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Arica",
-"tipo": "Trabajo",
-"comuna": "Arica",
-"direccion": "Blanco Encalada N° 945, Arica",
-"telefonos": [],
-"correo": "jlabarica@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Arica",
-"tipo": "Penal",
-"comuna": "Arica",
-"direccion": "General Pedro Lagos Marchant N° 766, Arica",
-"telefonos": [
-"+56582209200"
-],
-"correo": "jgarica@pjud.cl"
-}
-],
-"Iquique": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Iquique",
-"tipo": "Penal",
-"comuna": "Iquique",
-"direccion": "Patricio Lynch N° 60, Iquique",
-"telefonos": [
-"+56996792620"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Iquique",
-"tipo": "Civil",
-"comuna": "Iquique",
-"direccion": "Sotomayor S/N, Iquique",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Iquique",
-"tipo": "Civil",
-"comuna": "Iquique",
-"direccion": "Sotomayor S/N, Iquique",
-"telefonos": [
-"+56572738971"
-],
-"correo": "jl2_iquique@pjud.cl"
-},
-{
-"nombre": "3° Juzgado de Letras de Iquique",
-"tipo": "Civil",
-"comuna": "Iquique",
-"direccion": "Sotomayor S/N, Iquique",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Iquique",
-"tipo": "Familia",
-"comuna": "Iquique",
-"direccion": "Patricio Lynch N° 60, Iquique",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Iquique",
-"tipo": "Trabajo",
-"comuna": "Iquique",
-"direccion": "Freddy Taberna S/N Esqu. Aspirante Izaza, Iquique",
-"telefonos": [
-"+56572738400"
-],
-"correo": "jlabiquique@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Iquique",
-"tipo": "Penal",
-"comuna": "Iquique",
-"direccion": "Patricio Lynch N° 60, Iquique",
-"telefonos": [
-"+56572738000"
-],
-"correo": "jgiquique@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Pozo Almonte",
-"tipo": "Mixto",
-"comuna": "Pozo Almonte",
-"direccion": "Libertad N° 678, Pozo Almonte",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Familia-garantia y Trabajo de Alto Hospicio",
-"tipo": "Mixto",
-"comuna": "Alto Hospicio",
-"direccion": "Salitrera Iris N° 1045, Alto Hospicio",
-"telefonos": [
-"+56572587400"
-],
-"correo": "jl_altohospicio@pjud.cl"
-}
-],
-"Antofagasta": [
-{
-"nombre": "Juzgado de Letras de Tocopilla",
-"tipo": "Civil",
-"comuna": "Tocopilla",
-"direccion": "Manuel Rodriguez N° 1280 D , Esquina 21 de Mayo, Tocopilla",
-"telefonos": [
-"+56552813208"
-],
-"correo": "jl_tocopilla@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Tocopilla",
-"tipo": "Penal",
-"comuna": "Tocopilla",
-"direccion": "21 de Mayo N° 1692, Tocopilla",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de María Elena",
-"tipo": "Mixto",
-"comuna": "María Elena",
-"direccion": "Prat Esquina B. O'Higgins, María Elena",
-"telefonos": [
-"+56552639135"
-],
-"correo": "jlmariaelena@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Calama",
-"tipo": "Penal",
-"comuna": "Calama",
-"direccion": "Av. Grecia N° 1179, Tercer Piso, Calama",
-"telefonos": [
-"+56552344357"
-],
-"correo": "topcalama@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de Calama",
-"tipo": "Civil",
-"comuna": "Calama",
-"direccion": "Granaderos N° 2345, 2° Piso, Calama",
-"telefonos": [
-"+56552516700"
-],
-"correo": "jl1_calama@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Calama",
-"tipo": "Civil",
-"comuna": "Calama",
-"direccion": "Granaderos N° 2345, 3° Piso, Calama",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado de Letras de Calama",
-"tipo": "Civil",
-"comuna": "Calama",
-"direccion": "Granaderos N° 2345, 1° Piso, Calama",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Calama",
-"tipo": "Familia",
-"comuna": "Calama",
-"direccion": "Avenida Grecia N° 1179, Calama",
-"telefonos": [
-"+56552314707"
-],
-"correo": "jfcalama@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Calama",
-"tipo": "Trabajo",
-"comuna": "Calama",
-"direccion": "Avenida Grecia N° 1179, Cuarto Piso, Calama",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Calama",
-"tipo": "Penal",
-"comuna": "Calama",
-"direccion": "Av. Granaderos N° 2406, Calama",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Antofagasta",
-"tipo": "Penal",
-"comuna": "Antofagasta",
-"direccion": "San Martin 2836, Pisos 3° y 4°, Antofagasta",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Antofagasta",
-"tipo": "Civil",
-"comuna": "Antofagasta",
-"direccion": "San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Antofagasta",
-"tipo": "Civil",
-"comuna": "Antofagasta",
-"direccion": "San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta",
-"telefonos": [
-"+56552516125"
-],
-"correo": "jl2_antofagasta@pjud.cl"
-},
-{
-"nombre": "3° Juzgado Civil de Antofagasta",
-"tipo": "Civil",
-"comuna": "Antofagasta",
-"direccion": "San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta",
-"telefonos": [
-"+56552516160"
-],
-"correo": "jl3_antofagasta@pjud.cl"
-},
-{
-"nombre": "4° Juzgado Civil de Antofagasta",
-"tipo": "Civil",
-"comuna": "Antofagasta",
-"direccion": "San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta",
-"telefonos": [
-"+56552516175"
-],
-"correo": "jl4_antofagasta@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Antofagasta",
-"tipo": "Familia",
-"comuna": "Antofagasta",
-"direccion": "San Martin N° 2984, Centro de Justicia de Antofagasta",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Antofagasta",
-"tipo": "Trabajo",
-"comuna": "Antofagasta",
-"direccion": "San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta",
-"telefonos": [
-"+56552638500"
-],
-"correo": "jlabantofagasta@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Antofagasta",
-"tipo": "Penal",
-"comuna": "Antofagasta",
-"direccion": "San Martin 2836, Pisos 1° y 2°, Antofagasta",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Mejillones",
-"tipo": "Civil",
-"comuna": "Mejillones",
-"direccion": "Borgoño N° 200, Mejillones",
-"telefonos": [
-"+56552622738"
-],
-"correo": "jl_mejillones@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Taltal",
-"tipo": "Mixto",
-"comuna": "Taltal",
-"direccion": "Serrano N° 480, Taltal",
-"telefonos": [],
-"correo": ""
-}
-],
-"Copiapó": [
-{
-"nombre": "Juzgado de Letras y Garantía de Chañaral",
-"tipo": "Mixto",
-"comuna": "Chañaral",
-"direccion": "Av. La Paz S/N, Chañaral",
-"telefonos": [
-"+56522480138"
-],
-"correo": "jlyg_chanaral@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Diego de Almagro",
-"tipo": "Civil",
-"comuna": "Diego de Almagro",
-"direccion": "Juan Martinez N° 700, Diego de Almagro",
-"telefonos": [
-"+56522441234"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Diego de Almagro",
-"tipo": "Penal",
-"comuna": "Diego de Almagro",
-"direccion": "Avda. Juan Martinez N° 602, Diego de Almagro",
-"telefonos": [
-"+56522449680"
-],
-"correo": "jgdiegodealmagro@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Copiapó",
-"tipo": "Penal",
-"comuna": "Copiapó",
-"direccion": "Chañarcillo N° 1091, Copiapo, Copiapó",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Copiapó",
-"tipo": "Civil",
-"comuna": "Copiapó",
-"direccion": "Sofia Bermedo N° 191, Primer Piso, Copiapó",
-"telefonos": [
-"+56522212484"
-],
-"correo": "jl1_copiapo@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Copiapó",
-"tipo": "Civil",
-"comuna": "Copiapó",
-"direccion": "Sofía Bermedo N° 191, 2° Piso, Copiapó",
-"telefonos": [
-"+56522239220"
-],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado de Letras de Copiapó",
-"tipo": "Civil",
-"comuna": "Copiapó",
-"direccion": "Av. Copayapu N° 1134, 2° Piso, Copiapo, Copiapó",
-"telefonos": [
-"+56522249210"
-],
-"correo": "jl3_copiapo@pjud.cl"
-},
-{
-"nombre": "4° Juzgado de Letras de Copiapó",
-"tipo": "Civil",
-"comuna": "Copiapó",
-"direccion": "Copayapu N° 1134, 3° Piso, Copiapo, Copiapó",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Copiapó",
-"tipo": "Familia",
-"comuna": "Copiapó",
-"direccion": "Avda. Circunvalacion N° 125, Copiapo, Copiapó",
-"telefonos": [
-"+56522211700"
-],
-"correo": "jfcopiapo@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Copiapó",
-"tipo": "Trabajo",
-"comuna": "Copiapó",
-"direccion": "Avda. Copayapu N° 1134, 1° Piso, Copiapo, Copiapó",
-"telefonos": [
-"+56522239227"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Copiapó",
-"tipo": "Penal",
-"comuna": "Copiapó",
-"direccion": "Av. Chañarcillo N° 1091, Copiapo, Copiapó",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Caldera",
-"tipo": "Mixto",
-"comuna": "Caldera",
-"direccion": "Tocornal N° 317 Esq. Gallo, Caldera",
-"telefonos": [
-"+56522319996"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Vallenar",
-"tipo": "Civil",
-"comuna": "Vallenar",
-"direccion": "Av. 14 de Julio S/N, Vallenar",
-"telefonos": [
-"+56512613938"
-],
-"correo": "jl1_vallenar@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Vallenar",
-"tipo": "Civil",
-"comuna": "Vallenar",
-"direccion": "14 de Julio S/N, Vallenar",
-"telefonos": [
-"+56512614088"
-],
-"correo": "creinoso@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Vallenar",
-"tipo": "Familia",
-"comuna": "Vallenar",
-"direccion": "Avda. Matta N° 302, Vallenar",
-"telefonos": [
-"+56512349581"
-],
-"correo": "jfvallenar@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Vallenar",
-"tipo": "Penal",
-"comuna": "Vallenar",
-"direccion": "Ochandia N° 688, Vallenar",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Freirina",
-"tipo": "Mixto",
-"comuna": "Freirina",
-"direccion": "Arturo Prat N° 527, Freirina",
-"telefonos": [],
-"correo": ""
-}
-],
-"La Serena": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de La Serena",
-"tipo": "Penal",
-"comuna": "La Serena",
-"direccion": "Avda. El Santo N° 1069, La Serena",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de La Serena",
-"tipo": "Civil",
-"comuna": "La Serena",
-"direccion": "Rengifo 240, La Serena",
-"telefonos": [
-"+56512338300"
-],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de La Serena",
-"tipo": "Civil",
-"comuna": "La Serena",
-"direccion": "Rengifo N° 240, La Serena",
-"telefonos": [
-"+56512338333"
-],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado de Letras de La Serena",
-"tipo": "Civil",
-"comuna": "La Serena",
-"direccion": "Rengifo 240, La Serena",
-"telefonos": [
-"+56512338365"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de La Serena",
-"tipo": "Familia",
-"comuna": "La Serena",
-"direccion": "Rengifo N° 240, La Serena",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de La Serena",
-"tipo": "Trabajo",
-"comuna": "La Serena",
-"direccion": "Rengifo N° 240, La Serena",
-"telefonos": [
-"+56512338500"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de La Serena",
-"tipo": "Penal",
-"comuna": "La Serena",
-"direccion": "Av. El Santo N° 1069, La Serena",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Coquimbo",
-"tipo": "Civil",
-"comuna": "Coquimbo",
-"direccion": "Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo",
-"telefonos": [],
-"correo": "jlcoquimbo1@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Coquimbo",
-"tipo": "Civil",
-"comuna": "Coquimbo",
-"direccion": "Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo",
-"telefonos": [
-"+56512321584"
-],
-"correo": "jlcoquimbo2@pjud.cl"
-},
-{
-"nombre": "3° Juzgado de Letras de Coquimbo",
-"tipo": "Civil",
-"comuna": "Coquimbo",
-"direccion": "Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo",
-"telefonos": [
-"+56512320483"
-],
-"correo": "jlcoquimbo3@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Coquimbo",
-"tipo": "Familia",
-"comuna": "Coquimbo",
-"direccion": "Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Coquimbo",
-"tipo": "Penal",
-"comuna": "Coquimbo",
-"direccion": "Melgarejo N° 942, Coquimbo",
-"telefonos": [
-"+56512325385"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Andacollo",
-"tipo": "Mixto",
-"comuna": "Andacollo",
-"direccion": "Urmeneta N° 743, Andacollo",
-"telefonos": [
-"+56979783048"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Vicuña",
-"tipo": "Civil",
-"comuna": "Vicuña",
-"direccion": "Chacabuco S/N, Vicuña",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Vicuña",
-"tipo": "Penal",
-"comuna": "Vicuña",
-"direccion": "O'Higgins N° 745, Vicuña",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Ovalle",
-"tipo": "Penal",
-"comuna": "Ovalle",
-"direccion": "Vicuña Mackenna N° 575, Ovalle",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Ovalle",
-"tipo": "Civil",
-"comuna": "Ovalle",
-"direccion": "Antonio Tirado N° 140, Ovalle",
-"telefonos": [
-"+56532620259"
-],
-"correo": "jlovalle1@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Ovalle",
-"tipo": "Civil",
-"comuna": "Ovalle",
-"direccion": "Antonio Tirado N° 140, Ovalle",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado de Letras de Ovalle",
-"tipo": "Civil",
-"comuna": "Ovalle",
-"direccion": "Gabriela Mistral N° 95, Ovalle",
-"telefonos": [
-"+56532620082"
-],
-"correo": "jlovalle3@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Ovalle",
-"tipo": "Familia",
-"comuna": "Ovalle",
-"direccion": "Libertad N° 652, Ovalle",
-"telefonos": [
-"+56532634717"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Ovalle",
-"tipo": "Penal",
-"comuna": "Ovalle",
-"direccion": "Vicuña Mackenna N° 575, Ovalle",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Combarbalá",
-"tipo": "Mixto",
-"comuna": "Combarbalá",
-"direccion": "Plaza de Armas S/N, Combarbalá",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Illapel",
-"tipo": "Civil",
-"comuna": "Illapel",
-"direccion": "Jose del Solar N° 350, Illapel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Illapel",
-"tipo": "Penal",
-"comuna": "Illapel",
-"direccion": "Independencia N° 0362, Illapel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Los Vilos",
-"tipo": "Mixto",
-"comuna": "Los Vilos",
-"direccion": "Lautaro N° 330, Los Vilos",
-"telefonos": [],
-"correo": ""
-}
-],
-"Valparaíso": [
-{
-"nombre": "Juzgado de Letras de La Ligua",
-"tipo": "Civil",
-"comuna": "La Ligua",
-"direccion": "Esmeralda N° 650, La Ligua",
-"telefonos": [
-"+56332711113"
-],
-"correo": "jlablaligua@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de La Ligua",
-"tipo": "Familia",
-"comuna": "La Ligua",
-"direccion": "Vicuña Mackenna 268, La Ligua",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de La Ligua",
-"tipo": "Penal",
-"comuna": "La Ligua",
-"direccion": "Uribe N° 010, La Ligua",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Petorca",
-"tipo": "Mixto",
-"comuna": "Petorca",
-"direccion": "Silva N° 100, Petorca",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Los Andes",
-"tipo": "Penal",
-"comuna": "Los Andes",
-"direccion": "Av. Carlos Díaz N° 10, Los Andes",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Los Andes",
-"tipo": "Civil",
-"comuna": "Los Andes",
-"direccion": "Avenida Carlos Díaz N° 46, Los Andes",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Los Andes",
-"tipo": "Civil",
-"comuna": "Los Andes",
-"direccion": "Avda. Independencia N° 36, Los Andes",
-"telefonos": [
-"+56342421931"
-],
-"correo": "jl2_losandes@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Los Andes",
-"tipo": "Familia",
-"comuna": "Los Andes",
-"direccion": "Avenida Santa Teresa N° 241, Los Andes",
-"telefonos": [
-"+56342463735"
-],
-"correo": "jflosandes@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Los Andes",
-"tipo": "Penal",
-"comuna": "Los Andes",
-"direccion": "Avda. Carlos Diaz N° 10, Los Andes",
-"telefonos": [
-"+56342408111"
-],
-"correo": "jglosandes@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de San Felipe",
-"tipo": "Penal",
-"comuna": "San Felipe",
-"direccion": "Santa María Eufrasia N° 1333 (ex Calle San Martin) Piso 3, San Felipe",
-"telefonos": [
-"+56342513570"
-],
-"correo": "topsanfelipe@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de San Felipe",
-"tipo": "Civil",
-"comuna": "San Felipe",
-"direccion": "Pedro Molina N° 2, San Felipe",
-"telefonos": [
-"+56342510258"
-],
-"correo": "jl1_sanfelipe@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de San Felipe",
-"tipo": "Familia",
-"comuna": "San Felipe",
-"direccion": "Arturo Prat N° 532, San Felipe",
-"telefonos": [
-"+56342595689"
-],
-"correo": "jfsanfelipe@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de San Felipe",
-"tipo": "Trabajo",
-"comuna": "San Felipe",
-"direccion": "Avda. Riquelme N° 54, San Felipe",
-"telefonos": [
-"+56342517070"
-],
-"correo": "jlabsanfelipe@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de San Felipe",
-"tipo": "Penal",
-"comuna": "San Felipe",
-"direccion": "Santa Maria Eufrasia N° 1333, San Felipe",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Putaendo",
-"tipo": "Mixto",
-"comuna": "Putaendo",
-"direccion": "San Martín N° 788, Putaendo",
-"telefonos": [
-"+56342501021"
-],
-"correo": "jlyg_putaendo@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Quillota",
-"tipo": "Penal",
-"comuna": "Quillota",
-"direccion": "Chacabuco 425, Quillota",
-"telefonos": [
-"+56332316386"
-],
-"correo": "topquillota@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de Quillota",
-"tipo": "Civil",
-"comuna": "Quillota",
-"direccion": "Freire N° 337, Quillota",
-"telefonos": [
-"+56332310070"
-],
-"correo": "jl1_quillota@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Quillota",
-"tipo": "Civil",
-"comuna": "Quillota",
-"direccion": "Freire N° 555, Quillota",
-"telefonos": [
-"+56332266151"
-],
-"correo": "jl2_quillota@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Quillota",
-"tipo": "Familia",
-"comuna": "Quillota",
-"direccion": "Freire N° 190, Quillota",
-"telefonos": [
-"+56332260918"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Quillota",
-"tipo": "Penal",
-"comuna": "Quillota",
-"direccion": "Calle Chacabuco 425, Quillota",
-"telefonos": [
-"+56332312264"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Calera",
-"tipo": "Civil",
-"comuna": "Calera",
-"direccion": "Carrera N° 1088, Calera",
-"telefonos": [
-"+56332221028"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Calera",
-"tipo": "Penal",
-"comuna": "Calera",
-"direccion": "Avda. Gonzalo Lizasoain N° 203, Calera",
-"telefonos": [
-"+56332226808"
-],
-"correo": "jglacalera@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Limache",
-"tipo": "Civil",
-"comuna": "Limache",
-"direccion": "Echaurren N° 560, 3° Piso, Limache",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Limache",
-"tipo": "Familia",
-"comuna": "Limache",
-"direccion": "Echaurren N° 560, Limache",
-"telefonos": [],
-"correo": "jflimache@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Limache",
-"tipo": "Penal",
-"comuna": "Limache",
-"direccion": "Republica N° 1023, Limache",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Valparaíso",
-"tipo": "Penal",
-"comuna": "Valparaíso",
-"direccion": "Victoria N° 3022, Valparaiso",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Valparaíso",
-"tipo": "Civil",
-"comuna": "Valparaíso",
-"direccion": "Calle Prat 779, Valparaíso",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Valparaíso",
-"tipo": "Civil",
-"comuna": "Valparaíso",
-"direccion": "Prat 779, Valparaíso",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado Civil de Valparaíso",
-"tipo": "Civil",
-"comuna": "Valparaíso",
-"direccion": "Prat N° 779, 6° Piso, Valparaiso",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "4° Juzgado Civil de Valparaíso",
-"tipo": "Civil",
-"comuna": "Valparaíso",
-"direccion": "Calle Prat N° 779, 7° Piso, Valparaiso",
-"telefonos": [
-"+56322137535"
-],
-"correo": "jc4_valparaiso@pjud.cl"
-},
-{
-"nombre": "5° Juzgado Civil de Valparaíso",
-"tipo": "Civil",
-"comuna": "Valparaíso",
-"direccion": "Prat N° 779, 8° Piso, Valparaiso",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Valparaíso",
-"tipo": "Familia",
-"comuna": "Valparaíso",
-"direccion": "Tomas Ramos 98, Valparaíso",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Cobranza Laboral y Previsional de Valparaíso",
-"tipo": "Cobranza",
-"comuna": "Valparaíso",
-"direccion": "Yungay N° 2434, Valparaiso",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Valparaíso",
-"tipo": "Trabajo",
-"comuna": "Valparaíso",
-"direccion": "Yungay 2434, Valparaiso",
-"telefonos": [
-"+56322232574"
-],
-"correo": "jlabvalparaiso@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Valparaíso",
-"tipo": "Penal",
-"comuna": "Valparaíso",
-"direccion": "Victoria N° 3022, Valparaiso",
-"telefonos": [
-"+56322320900"
-],
-"correo": ""
-},
-{
-"nombre": "Tribunal Juicio Oral en lo Penal de Viña del Mar",
-"tipo": "Penal",
-"comuna": "Viña del Mar",
-"direccion": "Alvarez N° 1330, Viña del Mar",
-"telefonos": [
-"+56322795200"
-],
-"correo": "notifica_top_vinadelmar@pjud.cl"
-},
-{
-"nombre": "1° Juzgado Civil de Viña del Mar",
-"tipo": "Civil",
-"comuna": "Viña del Mar",
-"direccion": "Arlegui 346, Viña del Mar",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Viña del Mar",
-"tipo": "Civil",
-"comuna": "Viña del Mar",
-"direccion": "Calle Arlegui N° 346 Piso N° 4, Centro de Justicia de Viña del Mar",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado Civil de Viña del Mar",
-"tipo": "Civil",
-"comuna": "Viña del Mar",
-"direccion": "Calle Arlegui N° 346 Piso N° 5, Centro de Justicia de Viña del Mar",
-"telefonos": [
-"+56322976760"
-],
-"correo": "jc3_vinadelmar@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Viña del Mar",
-"tipo": "Familia",
-"comuna": "Viña del Mar",
-"direccion": "Calle Traslaviña N° 145, Pisos 1,2,4 y 5, Centro de Justicia de Viña del Mar",
-"telefonos": [
-"+56322326926"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Viña del Mar",
-"tipo": "Penal",
-"comuna": "Viña del Mar",
-"direccion": "Alvarez 1330, Viña del Mar",
-"telefonos": [
-"+56322327800"
-],
-"correo": "notifica_jg_vinadelmar@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Quintero",
-"tipo": "Mixto",
-"comuna": "Quintero",
-"direccion": "Arturo Prat N° 2027, Quintero",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Quilpué",
-"tipo": "Civil",
-"comuna": "Quilpué",
-"direccion": "Freire N° 989, Quilpue, Quilpué",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Quilpué",
-"tipo": "Civil",
-"comuna": "Quilpué",
-"direccion": "Freire 989, Quilpué",
-"telefonos": [],
-"correo": "jl2_quilpue@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Quilpué",
-"tipo": "Familia",
-"comuna": "Quilpué",
-"direccion": "Esmeralda N° 440, Quilpué",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Quilpué",
-"tipo": "Penal",
-"comuna": "Quilpué",
-"direccion": "Calle Covadonga N° 910, Quilpue, Quilpué",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Villa Alemana",
-"tipo": "Civil",
-"comuna": "Villa Alemana",
-"direccion": "Santiago N° 653, Villa Alemana",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Villa Alemana",
-"tipo": "Familia",
-"comuna": "Villa Alemana",
-"direccion": "Avenida Quinta N° 091, Villa Alemana",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Villa Alemana",
-"tipo": "Penal",
-"comuna": "Villa Alemana",
-"direccion": "Baquedano N° 0250, Villa Alemana",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Casablanca",
-"tipo": "Civil",
-"comuna": "Casablanca",
-"direccion": "Avenida Diego Portales N° 542 Tercer Piso, Casablanca",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Casablanca",
-"tipo": "Familia",
-"comuna": "Casablanca",
-"direccion": "Av. Portales N° 542, Casablanca",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Casablanca",
-"tipo": "Penal",
-"comuna": "Casablanca",
-"direccion": "Juan Leiva Amor 147 Casablanca",
-"telefonos": [
-"+56322741463"
-],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de San Antonio",
-"tipo": "Penal",
-"comuna": "San Antonio",
-"direccion": "Luis Alberto Araya N° 2220, Piso 5°, Ala Sur, Barrancas, San Antonio",
-"telefonos": [
-"+56998202515"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de San Antonio",
-"tipo": "Civil",
-"comuna": "San Antonio",
-"direccion": "Luis Alberto Araya N° 2220, San Antonio",
-"telefonos": [
-"+56352211822"
-],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de San Antonio",
-"tipo": "Civil",
-"comuna": "San Antonio",
-"direccion": "Luis Alberto Araya 2220, San Antonio",
-"telefonos": [],
-"correo": "jl2_sanantonio@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de San Antonio",
-"tipo": "Familia",
-"comuna": "San Antonio",
-"direccion": "Luis Alberto Araya, N° 2220 Sector Barrancas, San Antonio",
-"telefonos": [
-"+56352212173"
-],
-"correo": "jfsanantonio@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de San Antonio",
-"tipo": "Penal",
-"comuna": "San Antonio",
-"direccion": "Luis Alberto Araya N° 2220, Barrancas, San Antonio",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Isla de Pascua",
-"tipo": "Mixto",
-"comuna": "Isla de Pascua",
-"direccion": "Avenida Pont S/N, Isla de Pascua",
-"telefonos": [
-"+56322100233"
-],
-"correo": "jlyg_ipa@pjud.cl"
-}
-],
-"Santiago": [
-{
-"nombre": "1° Tribunal de Juicio Oral en lo Penal de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1606, Edificio D, 4° Piso, Santiago",
-"telefonos": [],
-"correo": "escritosdeplazostop1@pjud.cl"
-},
-{
-"nombre": "2° Tribunal de Juicio Oral en lo Penal de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Av. Pedro Montt N° 1606, Edificio D, 2° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Tribunal de Juicio Oral en lo Penal de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Av. Pedro Montt 1606, Edificio C, 2° Piso, Santiago",
-"telefonos": [
-"+56229758500"
-],
-"correo": "escritosdeplazostop3@pjud.cl"
-},
-{
-"nombre": "4° Tribunal de Juicio Oral en lo Penal de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt 1606, 8° Piso, Edif. D, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "5° Tribunal de Juicio Oral en lo Penal de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Av. Pedro Montt N° 1606, Edif. D, 6° Piso, Santiago",
-"telefonos": [
-"+56229758758"
-],
-"correo": "escritosdeplazostop5@pjud.cl"
-},
-{
-"nombre": "7° Tribunal de Juicio Oral en lo Penal de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Av. Pedro Montt #1606, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos 1409, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 16° Piso, Santiago",
-"telefonos": [
-"+56226746213"
-],
-"correo": "pasalazar@pjud.cl"
-},
-{
-"nombre": "3° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 8° Piso, Santiago",
-"telefonos": [
-"+56226746222"
-],
-"correo": "jcsantiago3@pjud.cl"
-},
-{
-"nombre": "4° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 2° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "5° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 2° Piso, Santiago",
-"telefonos": [
-"+56226746245"
-],
-"correo": "jcsantiago5@pjud.cl"
-},
-{
-"nombre": "6° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 2° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "7° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 2° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "8° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 3° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "9° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 3° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "10° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huerfanos N° 1409, 3° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "11° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 3° Piso, Santiago",
-"telefonos": [
-"+56226746305"
-],
-"correo": "jcsantiago11@pjud.cl"
-},
-{
-"nombre": "12° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 4° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "13° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 4° Piso, Santiago",
-"telefonos": [
-"+56226746323"
-],
-"correo": "jcsantiago13@pjud.cl"
-},
-{
-"nombre": "14° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 4° Piso, Santiago",
-"telefonos": [
-"+56226746335"
-],
-"correo": "jcsantiago14@pjud.cl"
-},
-{
-"nombre": "15° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 4° Piso, Santiago",
-"telefonos": [
-"+56226746345"
-],
-"correo": "jcsantiago15@pjud.cl"
-},
-{
-"nombre": "16° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 4° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "17° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 5° Piso, santiago",
-"telefonos": [
-"+56226746363"
-],
-"correo": "jcsantiago17@pjud.cl"
-},
-{
-"nombre": "18° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huerfanos N° 1409, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "19° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 5° Piso, Santiago",
-"telefonos": [],
-"correo": "jcsantiago19@pjud.cl"
-},
-{
-"nombre": "20° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "21° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 5° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "22° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 6° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "23° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 9° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "24° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huerfanos 1409, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "25° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 11° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "26° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huerfanos 1409 Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "27° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 13° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "28° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos 1409, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "29° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 18° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "30° Juzgado Civil de Santiago",
-"tipo": "Civil",
-"comuna": "Santiago",
-"direccion": "Huérfanos N° 1409, 19° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "4° Juzgado del Crimen de Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "Avda. España N° 503, Piso 2°, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "10° Juzgado del Crimen de Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "14° Juzgado del Crimen de Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "Avda. España N° 503, Piso 7°, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "22° Juzgado del Crimen de Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "32° Juzgado del Crimen de Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "34° Juzgado del Crimen de Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1853, Piso 2, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Centro Medidas Cautelares Jdos. Familia Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "General Mackenna N° 1477, Piso N° 1 y 2, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Unidad Especializada de Responsabilidad Penal Adolescente",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "",
-"telefonos": [
-"+56229759751"
-],
-"correo": "escritosdeplazojgstgo8_rpa@pjud.cl"
-},
-{
-"nombre": "5° Juzgado de Menores de Santiago",
-"tipo": "Otro",
-"comuna": "Santiago",
-"direccion": "",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Familia de Santiago",
-"tipo": "Familia",
-"comuna": "Santiago",
-"direccion": "General Mackenna N° 1477, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Familia de Santiago",
-"tipo": "Familia",
-"comuna": "Santiago",
-"direccion": "General Mackenna N° 1477, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado de Familia de Santiago",
-"tipo": "Familia",
-"comuna": "Santiago",
-"direccion": "General Mackenna N° 1477, Piso N° 5, Santiago",
-"telefonos": [
-"+56224977300"
-],
-"correo": "jfsantiago3@pjud.cl"
-},
-{
-"nombre": "4° Juzgado de Familia de Santiago",
-"tipo": "Familia",
-"comuna": "Santiago",
-"direccion": "General Mackenna 1477, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Cobranza Laboral y Previsional de Santiago",
-"tipo": "Cobranza",
-"comuna": "Santiago",
-"direccion": "San Martin N° 950, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras del Trabajo de Santiago",
-"tipo": "Trabajo",
-"comuna": "Santiago",
-"direccion": "San Martin N° 950, Pisos 1° a 5°, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras del Trabajo de Santiago",
-"tipo": "Trabajo",
-"comuna": "Santiago",
-"direccion": "Merced N° 360, Pisos 1° a 6°, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1606, Edificio e, 2° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1606, 4° Piso, Acceso B, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Pedro Montt N° 1606, Torre F, Piso 9, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "4° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1606, Piso 9, Edificio B, Centro de Justicia de Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "5° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Pedro Montt N° 1606, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "6° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Pedro Montt N° 1606, Torre F, Piso 7, Santiago",
-"telefonos": [
-"+56229757523"
-],
-"correo": "jgsantiago6@pjud.cl"
-},
-{
-"nombre": "7° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1606 Edificio a Piso 3, Centro de Justicia de Santiago",
-"telefonos": [
-"+56229757550"
-],
-"correo": "escritosdeplazosjg7@pjud.cl"
-},
-{
-"nombre": "8° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1606, Edificio a, 4° Piso, Santiago",
-"telefonos": [
-"+56229757600"
-],
-"correo": ""
-},
-{
-"nombre": "9° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda. Pedro Montt N° 1606, 9° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "13° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Pedro Montt N° 1606, Torre F, Piso 6, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "14° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Pedro Montt N° 1606, Torre e, Piso 9, Santiago",
-"telefonos": [
-"+56229758138"
-],
-"correo": "jgsantiago14@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Pudahuel",
-"tipo": "Familia",
-"comuna": "Pudahuel",
-"direccion": "San Pablo 4455, Quinta Normal, Pudahuel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Colina",
-"tipo": "Penal",
-"comuna": "Colina",
-"direccion": "Carretera Gral. San Martin 521, 3° Piso, Colina",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Colina",
-"tipo": "Civil",
-"comuna": "Colina",
-"direccion": "Calle Interprovincial N° 130, Esquina Av. San Martin, Colina",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Colina",
-"tipo": "Familia",
-"comuna": "Colina",
-"direccion": "Chacabuco N° 195, Colina",
-"telefonos": [
-"+56225123900"
-],
-"correo": "jfcolina@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Colina",
-"tipo": "Penal",
-"comuna": "Colina",
-"direccion": "Carretera General San Martin N° 521, Colina",
-"telefonos": [],
-"correo": ""
-}
-],
-"San Miguel": [
-{
-"nombre": "6° Tribunal de Juicio Oral en lo Penal de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Av. Pedro Montt N° 1606, Torre C, 8° Piso, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "10° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avda Pedro Montt 1606 Edificio B Piso 1, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "11° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Centro de Justicia, Avenida Pedro Montt 1606, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "12° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Centro de Justicia, Torre B, Piso 6, Pedro Montt, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "15° Juzgado de Garantía de Santiago",
-"tipo": "Penal",
-"comuna": "Santiago",
-"direccion": "Avenida Pedro Montt 1606, Santiago",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de San Miguel",
-"tipo": "Civil",
-"comuna": "San Miguel",
-"direccion": "Ureta Cox N° 855, Piso 3°, San Miguel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de San Miguel",
-"tipo": "Civil",
-"comuna": "San Miguel",
-"direccion": "Salesianos N° 1180, 2° Piso, San Miguel",
-"telefonos": [
-"+56225241493"
-],
-"correo": "jc2_sanmiguel@pjud.cl"
-},
-{
-"nombre": "3° Juzgado Civil de San Miguel",
-"tipo": "Civil",
-"comuna": "San Miguel",
-"direccion": "Gran Avda. J.m. Carrera N° 5811, San Miguel",
-"telefonos": [
-"+56225212799"
-],
-"correo": "jc3_sanmiguel@pjud.cl"
-},
-{
-"nombre": "4° Juzgado Civil de San Miguel",
-"tipo": "Civil",
-"comuna": "San Miguel",
-"direccion": "Salvador Allende N° 1180, San Miguel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Familia de San Miguel",
-"tipo": "Familia",
-"comuna": "San Miguel",
-"direccion": "Álvarez de Toledo N° 1020, San Miguel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Familia de San Miguel",
-"tipo": "Familia",
-"comuna": "San Miguel",
-"direccion": "Álvarez de Toledo N° 1020, San Miguel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Cobranza Laboral y Previsional de San Miguel",
-"tipo": "Cobranza",
-"comuna": "San Miguel",
-"direccion": "Ureta Cox N° 855, Piso 3°, San Miguel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de San Miguel",
-"tipo": "Trabajo",
-"comuna": "San Miguel",
-"direccion": "Ureta Cox N° 855, San Miguel",
-"telefonos": [
-"+56225563210"
-],
-"correo": "jlabsanmiguel@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Puente Alto",
-"tipo": "Penal",
-"comuna": "Puente Alto",
-"direccion": "Avda. Concha y Toro N° 1723, Puente Alto",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Puente Alto",
-"tipo": "Civil",
-"comuna": "Puente Alto",
-"direccion": "Domingo Tocornal N° 143, Puente Alto",
-"telefonos": [
-"+56233038200"
-],
-"correo": "jc1_puentealto@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Puente Alto",
-"tipo": "Familia",
-"comuna": "Puente Alto",
-"direccion": "Domingo Tocornal N° 143, Puente Alto",
-"telefonos": [
-"+56233038000"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Puente Alto",
-"tipo": "Trabajo",
-"comuna": "Puente Alto",
-"direccion": "Domingo Tocornal 143, Puente Alto",
-"telefonos": [
-"+56233038100"
-],
-"correo": "jlabpuentealto@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Puente Alto",
-"tipo": "Penal",
-"comuna": "Puente Alto",
-"direccion": "Avda. Concha y Toro N° 1723, Puente Alto",
-"telefonos": [
-"+56225696900"
-],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de San Bernardo",
-"tipo": "Penal",
-"comuna": "San Bernardo",
-"direccion": "Urmeneta N° 330, San Bernardo",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de San Bernardo",
-"tipo": "Civil",
-"comuna": "San Bernardo",
-"direccion": "Urmeneta N° 467, San Bernardo",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de San Bernardo",
-"tipo": "Civil",
-"comuna": "San Bernardo",
-"direccion": "Urmeneta N° 467, San Bernardo",
-"telefonos": [
-"+56228593446"
-],
-"correo": "jl2_sanbernardo@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de San Bernardo",
-"tipo": "Familia",
-"comuna": "San Bernardo",
-"direccion": "San Jose N° 545, San Bernardo",
-"telefonos": [
-"+56228563833"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de San Bernardo",
-"tipo": "Trabajo",
-"comuna": "San Bernardo",
-"direccion": "Urmeneta N° 467, San Bernardo",
-"telefonos": [
-"+56228790320"
-],
-"correo": "jlabsanbernardo@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de San Bernardo",
-"tipo": "Penal",
-"comuna": "San Bernardo",
-"direccion": "Urmeneta N° 330, San Bernardo",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Buin",
-"tipo": "Civil",
-"comuna": "Buin",
-"direccion": "Calle Arturo Prat N° 573, Buin",
-"telefonos": [
-"+56228213328"
-],
-"correo": "jl1_buin@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Buin",
-"tipo": "Civil",
-"comuna": "Buin",
-"direccion": "Arturo Prat N° 573, Buin",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Buin",
-"tipo": "Familia",
-"comuna": "Buin",
-"direccion": "Manuel Montt N° 376, Buin",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Melipilla",
-"tipo": "Penal",
-"comuna": "Melipilla",
-"direccion": "Ortuzar N° 538, Melipilla",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Melipilla",
-"tipo": "Civil",
-"comuna": "Melipilla",
-"direccion": "Correa N° 490, Segundo Piso, Melipilla",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Melipilla",
-"tipo": "Familia",
-"comuna": "Melipilla",
-"direccion": "Correa N° 490, 1° Piso, Melipilla",
-"telefonos": [
-"+56228321130"
-],
-"correo": "jfmelipilla@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Melipilla",
-"tipo": "Penal",
-"comuna": "Melipilla",
-"direccion": "Ortuzar 851-853 Esq. Barrales, Melipilla",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Curacaví",
-"tipo": "Penal",
-"comuna": "Curacaví",
-"direccion": "Presbitero Moraga Sur N° 122, Curacavi",
-"telefonos": [
-"+56982884315"
-],
-"correo": "jgcuracavi@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Talagante",
-"tipo": "Penal",
-"comuna": "Talagante",
-"direccion": "Av. Bernardo O'Higgins N° 2160 Esq. San Fco, Talagante",
-"telefonos": [
-"+56229166650"
-],
-"correo": "toptalagante@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de Talagante",
-"tipo": "Civil",
-"comuna": "Talagante",
-"direccion": "21 de Mayo N° 1245 Primer Piso, Talagante",
-"telefonos": [
-"+56228151426"
-],
-"correo": "jl1_talagante@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Talagante",
-"tipo": "Civil",
-"comuna": "Talagante",
-"direccion": "21 de Mayo N° 1245, Talagante",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Talagante",
-"tipo": "Familia",
-"comuna": "Talagante",
-"direccion": "Jose Leyan N° 654, Talagante",
-"telefonos": [],
-"correo": "jftalagante@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Talagante",
-"tipo": "Penal",
-"comuna": "Talagante",
-"direccion": "Avda. Bernardo O'Higgins N° 2160 Esq. San Fco, Talagante",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Peñaflor",
-"tipo": "Civil",
-"comuna": "Peñaflor",
-"direccion": "María Ester Garay 135, Peñaflor",
-"telefonos": [
-"+56228129097"
-],
-"correo": "jl_penaflor@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Peñaflor",
-"tipo": "Familia",
-"comuna": "Peñaflor",
-"direccion": "Avda. 18 de Septiembre N° 172, Peñaflor",
-"telefonos": [],
-"correo": "jfpenaflor@pjud.cl"
-}
-],
-"Rancagua": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Rancagua",
-"tipo": "Penal",
-"comuna": "Rancagua",
-"direccion": "Avda. Libertador Bernardo O'Higgins N° 720, Rancagua",
-"telefonos": [
-"+56722207750"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Rancagua",
-"tipo": "Civil",
-"comuna": "Rancagua",
-"direccion": "Centro de Justicia, Lastarria N° 410, Piso 5, Rancagua",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Rancagua",
-"tipo": "Civil",
-"comuna": "Rancagua",
-"direccion": "Lastarria N° 410, Piso 6, Centro de Justicia, Rancagua",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Rancagua",
-"tipo": "Familia",
-"comuna": "Rancagua",
-"direccion": "José Victorino Lastarria N° 410, Rancagua",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Rancagua",
-"tipo": "Trabajo",
-"comuna": "Rancagua",
-"direccion": "José Victorino Lastarria N° 410, Piso 4, Rancagua",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Rancagua",
-"tipo": "Penal",
-"comuna": "Rancagua",
-"direccion": "Avda. Libertador Bernardo O'Higgins N° 720, Rancagua",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Graneros",
-"tipo": "Penal",
-"comuna": "Graneros",
-"direccion": "Antonio Varas N° 137, Graneros",
-"telefonos": [
-"+56982995818"
-],
-"correo": "jggraneros@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de Rengo",
-"tipo": "Civil",
-"comuna": "Rengo",
-"direccion": "Ernesto Riquelme N° 56, Rengo",
-"telefonos": [
-"+56722511193"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Rengo",
-"tipo": "Familia",
-"comuna": "Rengo",
-"direccion": "Diego Portales N° 258, Rengo",
-"telefonos": [
-"+56722513787"
-],
-"correo": "jfrengo@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Rengo",
-"tipo": "Penal",
-"comuna": "Rengo",
-"direccion": "Pedro Segundo Estrada N° 36, Rengo",
-"telefonos": [
-"+56722512844"
-],
-"correo": "jgrengo@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de San Vicente",
-"tipo": "Civil",
-"comuna": "San Vicente",
-"direccion": "Av. Bernardo O'Higgins 385, San Vicente de T.t",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de San Vicente",
-"tipo": "Penal",
-"comuna": "San Vicente",
-"direccion": "Av. Bernardo O'Higgins N° 385, San Vicente de T.t",
-"telefonos": [
-"+56722573189"
-],
-"correo": "jgsanvicentedett@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Peumo",
-"tipo": "Mixto",
-"comuna": "Peumo",
-"direccion": "León Xiii N° 091, Peumo",
-"telefonos": [
-"+56722561699"
-],
-"correo": ""
-},
-{
-"nombre": "Tribunal Juicio Oral en lo Penal de San Fernando",
-"tipo": "Penal",
-"comuna": "San Fernando",
-"direccion": "Juan Jimenez N° 1525, San Fernando",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de San Fernando",
-"tipo": "Civil",
-"comuna": "San Fernando",
-"direccion": "Luis Amesti N° 1550, Primer Piso, San Fernando",
-"telefonos": [
-"+56722711121"
-],
-"correo": "jl1_sanfernando@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de San Fernando",
-"tipo": "Civil",
-"comuna": "San Fernando",
-"direccion": "Luis Amesti N° 1550, 2° Piso, San Fernando",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de San Fernando",
-"tipo": "Familia",
-"comuna": "San Fernando",
-"direccion": "Nincunlauta N° 1800, San Fernando",
-"telefonos": [],
-"correo": "jfsanfernando@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de San Fernando",
-"tipo": "Penal",
-"comuna": "San Fernando",
-"direccion": "Juan Jimenez N° 1525, San Fernando",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Santa Cruz",
-"tipo": "Penal",
-"comuna": "Santa Cruz",
-"direccion": "Nicolas Palacios N° 355, 2 Piso, Santa Cruz",
-"telefonos": [
-"+56722443820"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Santa Cruz",
-"tipo": "Civil",
-"comuna": "Santa Cruz",
-"direccion": "Diego Portales N° 546, Santa Cruz",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Santa Cruz",
-"tipo": "Familia",
-"comuna": "Santa Cruz",
-"direccion": "Diego Portales N° 546, Santa Cruz",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Santa Cruz",
-"tipo": "Penal",
-"comuna": "Santa Cruz",
-"direccion": "Nicolas Palacios N° 355, Santa Cruz",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Peralillo",
-"tipo": "Mixto",
-"comuna": "Peralillo",
-"direccion": "O'Higgins S/N Esq. 11 Septiembre, Peralillo",
-"telefonos": [
-"+56722861160"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Pichilemu",
-"tipo": "Mixto",
-"comuna": "Pichilemu",
-"direccion": "Dionisio Acevedo N° 490, Pichilemu",
-"telefonos": [
-"+56722841085"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Litueche",
-"tipo": "Mixto",
-"comuna": "Litueche",
-"direccion": "Obispo Larrain N° 745, Litueche",
-"telefonos": [],
-"correo": ""
-}
-],
-"Talca": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Curicó",
-"tipo": "Penal",
-"comuna": "Curicó",
-"direccion": "Camilo Henriquez N° 033, 3° Piso, Curico, Curicó",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Curicó",
-"tipo": "Civil",
-"comuna": "Curicó",
-"direccion": "Av.camilo Henríquez S/N, Curico, Curicó",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Curicó",
-"tipo": "Civil",
-"comuna": "Curicó",
-"direccion": "Manso de Velasco 484, Curicó",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Curicó",
-"tipo": "Familia",
-"comuna": "Curicó",
-"direccion": "Estado N° 661, Curicó",
-"telefonos": [
-"+56752310580"
-],
-"correo": "jfcurico@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Curicó",
-"tipo": "Trabajo",
-"comuna": "Curicó",
-"direccion": "Manso de Velasco N° 474, Curico, Curicó",
-"telefonos": [
-"+56752317476"
-],
-"correo": "jlabtcurico@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Curicó",
-"tipo": "Penal",
-"comuna": "Curicó",
-"direccion": "Camilo Henriquez N° 033, 1° Piso, Curico, Curicó",
-"telefonos": [
-"+56752315354"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Molina",
-"tipo": "Civil",
-"comuna": "Molina",
-"direccion": "Avda. Poniente N° 1985, Esq. Libertad, 2° Piso, Molina",
-"telefonos": [
-"+56752491209"
-],
-"correo": "jl_molina@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Molina",
-"tipo": "Penal",
-"comuna": "Molina",
-"direccion": "Avda. Poniente N° 1985, Molina",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Licantén",
-"tipo": "Mixto",
-"comuna": "Licantén",
-"direccion": "Ciro Boetto N° 273, Licanten, Licantén",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Talca",
-"tipo": "Penal",
-"comuna": "Talca",
-"direccion": "4 Norte 541, Talca",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Talca",
-"tipo": "Civil",
-"comuna": "Talca",
-"direccion": "4 Norte N° 615, Talca",
-"telefonos": [
-"+56712416477"
-],
-"correo": "jl1_talca@pjud.cl"
-},
-{
-"nombre": "2° Juzgado de Letras de Talca",
-"tipo": "Civil",
-"comuna": "Talca",
-"direccion": "4 Norte N° 615, Talca",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado de Letras de Talca",
-"tipo": "Civil",
-"comuna": "Talca",
-"direccion": "4 Norte N° 615, Talca",
-"telefonos": [
-"+56712416432"
-],
-"correo": "jl3_talca@pjud.cl"
-},
-{
-"nombre": "4° Juzgado de Letras de Talca",
-"tipo": "Civil",
-"comuna": "Talca",
-"direccion": "4 Norte N° 615, Talca",
-"telefonos": [
-"+56712416475"
-],
-"correo": "jl4_talca@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Talca",
-"tipo": "Familia",
-"comuna": "Talca",
-"direccion": "5 Oriente 3 Norte N° 1361, Talca",
-"telefonos": [
-"+56712633600"
-],
-"correo": "jftalca@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Talca",
-"tipo": "Trabajo",
-"comuna": "Talca",
-"direccion": "4 Norte 615 2° Piso Talca",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Talca",
-"tipo": "Penal",
-"comuna": "Talca",
-"direccion": "4 Norte N° 541, Talca",
-"telefonos": [
-"+56712210400"
-],
-"correo": "jgtalca@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Constitución",
-"tipo": "Civil",
-"comuna": "Constitución",
-"direccion": "Blanco N° 390, Constitucion, Constitución",
-"telefonos": [
-"+56712675007"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Constitución",
-"tipo": "Familia",
-"comuna": "Constitución",
-"direccion": "Blanco N° 390, Constitución",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Constitución",
-"tipo": "Penal",
-"comuna": "Constitución",
-"direccion": "Bulnes N° 90, Constitucion, Constitución",
-"telefonos": [
-"+56994891464"
-],
-"correo": "jgconstitucion@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Curepto",
-"tipo": "Mixto",
-"comuna": "Curepto",
-"direccion": "Manuel Rodríguez N° 10, Curepto",
-"telefonos": [
-"+56994891101"
-],
-"correo": "jlyg_curepto@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Linares",
-"tipo": "Penal",
-"comuna": "Linares",
-"direccion": "Avda. León Bustos 0817, Linares",
-"telefonos": [
-"+56732222145"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Linares",
-"tipo": "Civil",
-"comuna": "Linares",
-"direccion": "Sotomayor 461, Linares",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Linares",
-"tipo": "Civil",
-"comuna": "Linares",
-"direccion": "Sotomayor N° 461, 2° Piso, Linares",
-"telefonos": [
-"+56732219792"
-],
-"correo": "jl2_linares@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Linares",
-"tipo": "Familia",
-"comuna": "Linares",
-"direccion": "Avenida Leon Bustos N° 0817 Linares",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Linares",
-"tipo": "Penal",
-"comuna": "Linares",
-"direccion": "Avenida Aníbal León Bustos N° 0817, Linares",
-"telefonos": [
-"+56732224120"
-],
-"correo": "jglinares@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Parral",
-"tipo": "Civil",
-"comuna": "Parral",
-"direccion": "Delicias S/N, Parral",
-"telefonos": [
-"+56732462412"
-],
-"correo": "jl_parral@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Parral",
-"tipo": "Familia",
-"comuna": "Parral",
-"direccion": "Calle Buin N° 665-A, Parral",
-"telefonos": [
-"+56732464735"
-],
-"correo": "jfparral@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Parral",
-"tipo": "Penal",
-"comuna": "Parral",
-"direccion": "Carrera Pinto N° 551, Parral",
-"telefonos": [
-"+56732465027"
-],
-"correo": "jgparral@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de San Javier",
-"tipo": "Civil",
-"comuna": "San Javier",
-"direccion": "Sargento Aldea N° 2690, 2° Piso, San Javier",
-"telefonos": [
-"+56732322527"
-],
-"correo": "jl_sanjavier@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de San Javier",
-"tipo": "Penal",
-"comuna": "San Javier",
-"direccion": "Sargento Aldea N° 2690, 1° Piso, San Javier",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Cauquenes",
-"tipo": "Penal",
-"comuna": "Cauquenes",
-"direccion": "Maipú N° 890, Cauquenes",
-"telefonos": [
-"+56732514777"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Cauquenes",
-"tipo": "Civil",
-"comuna": "Cauquenes",
-"direccion": "Maipú S/N, Cauquenes",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Cauquenes",
-"tipo": "Penal",
-"comuna": "Cauquenes",
-"direccion": "Maipu N° 890, Cauquenes",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Chanco",
-"tipo": "Mixto",
-"comuna": "Chanco",
-"direccion": "Errázuriz S/N, Chanco",
-"telefonos": [
-"+56732551002"
-],
-"correo": "jlyg_chanco@pjud.cl"
-}
-],
-"Chillán": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Chillán",
-"tipo": "Penal",
-"comuna": "Chillán",
-"direccion": "Ecuador N° 1167, Chillan, Chillán",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Chillán",
-"tipo": "Civil",
-"comuna": "Chillán",
-"direccion": "Vega de Saldias 1044, Chillán",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Chillán",
-"tipo": "Civil",
-"comuna": "Chillán",
-"direccion": "Vegas de Saldias N° 1044, Chillan, Chillán",
-"telefonos": [
-"+56422221842"
-],
-"correo": "jc2_chillan@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Chillán",
-"tipo": "Familia",
-"comuna": "Chillán",
-"direccion": "Vega de Saldias N° 1044 (esquina Yerbas Buenas), Chillan, Chillán",
-"telefonos": [
-"+56422209800"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Chillán",
-"tipo": "Trabajo",
-"comuna": "Chillán",
-"direccion": "Isabel Riquelme N° 280, Chillan, Chillán",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Chillán",
-"tipo": "Penal",
-"comuna": "Chillán",
-"direccion": "Ecuador N° 1167, Chillan, Chillán",
-"telefonos": [
-"+56422249459"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de San Carlos",
-"tipo": "Civil",
-"comuna": "San Carlos",
-"direccion": "Vicuña Mackenna N° 556, San Carlos",
-"telefonos": [
-"+56422411168"
-],
-"correo": "juzletrassancarlos@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de San Carlos",
-"tipo": "Penal",
-"comuna": "San Carlos",
-"direccion": "Roble N° 650, San Carlos",
-"telefonos": [
-"+56422416728"
-],
-"correo": "jgsancarlos@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Yungay",
-"tipo": "Civil",
-"comuna": "Yungay",
-"direccion": "Chorrillos N° 61, Yungay",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Yungay",
-"tipo": "Penal",
-"comuna": "Yungay",
-"direccion": "Esmeralda N° 716, Yungay",
-"telefonos": [
-"+56422680400"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Bulnes",
-"tipo": "Mixto",
-"comuna": "Bulnes",
-"direccion": "Ignacio Serrano N° 300, Bulnes",
-"telefonos": [
-"+56422631023"
-],
-"correo": "jlyg_bulnes@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Coelemu",
-"tipo": "Mixto",
-"comuna": "Coelemu",
-"direccion": "Calle Anibal Pinto N° 30, Coelemu",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Quirihue",
-"tipo": "Mixto",
-"comuna": "Quirihue",
-"direccion": "Agustin Moulet N° 212, Quirihue",
-"telefonos": [
-"+56422531803"
-],
-"correo": "jlyg_quirihue@pjud.cl"
-}
-],
-"Concepción": [
-{
-"nombre": "Juzgado de Garantía de San Pedro de La Paz",
-"tipo": "Penal",
-"comuna": "San Pedro de La Paz",
-"direccion": "Los Mañios N° 1585, San Pedro de La Paz",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Los Ángeles",
-"tipo": "Penal",
-"comuna": "Los Ángeles",
-"direccion": "O'Higgins 751, Los Ángeles",
-"telefonos": [
-"+56432317941"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Los Ángeles",
-"tipo": "Civil",
-"comuna": "Los Ángeles",
-"direccion": "Valdivia N° 123, Los Angeles, Los Ángeles",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Los Ángeles",
-"tipo": "Civil",
-"comuna": "Los Ángeles",
-"direccion": "Valdivia N° 123, Los Angeles, Los Ángeles",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Los Ángeles",
-"tipo": "Familia",
-"comuna": "Los Ángeles",
-"direccion": "Vicuña Mackenna N° 687, Los Angeles, Los Ángeles",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Los Ángeles",
-"tipo": "Trabajo",
-"comuna": "Los Ángeles",
-"direccion": "Vicuña Mackenna N° 687, Los Angeles, Los Ángeles",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Los Ángeles",
-"tipo": "Penal",
-"comuna": "Los Ángeles",
-"direccion": "O'Higgins 751, Los Ángeles",
-"telefonos": [
-"+56432317898"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Cabrero",
-"tipo": "Mixto",
-"comuna": "Cabrero",
-"direccion": "Las Delicias N° 55, Cabrero",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Santa Bárbara",
-"tipo": "Mixto",
-"comuna": "Santa Bárbara",
-"direccion": "Salamanca N° 141, Santa Barbara, Santa Bárbara",
-"telefonos": [
-"+56432581232"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Mulchén",
-"tipo": "Mixto",
-"comuna": "Mulchén",
-"direccion": "Villagra 047, Mulchen, Mulchén",
-"telefonos": [
-"+56432561353"
-],
-"correo": "jlyg_mulchen@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Nacimiento",
-"tipo": "Mixto",
-"comuna": "Nacimiento",
-"direccion": "Prieto N° 401, Nacimiento",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Laja",
-"tipo": "Mixto",
-"comuna": "Laja",
-"direccion": "O'Higgins N° 194, Laja",
-"telefonos": [
-"+56999781767"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Yumbel",
-"tipo": "Mixto",
-"comuna": "Yumbel",
-"direccion": "General Cruz N° 550, Yumbel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Yumbel",
-"tipo": "Familia",
-"comuna": "Yumbel",
-"direccion": "General Cruz N° 860, Yumbel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Chiguayante",
-"tipo": "Penal",
-"comuna": "Chiguayante",
-"direccion": "Avenida 8 Oriente N° 2372, Chiguayante",
-"telefonos": [
-"+56412335432"
-],
-"correo": "jgchiguayante@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Concepción",
-"tipo": "Penal",
-"comuna": "Concepción",
-"direccion": "Avda. San Juan Bosco N° 2010, Concepcion, Concepción",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Concepción",
-"tipo": "Civil",
-"comuna": "Concepción",
-"direccion": "Barros Arana N° 1098, 11° Piso, Edificio Torre del Centro, Concepción",
-"telefonos": [
-"+56412460051"
-],
-"correo": "jc1_concepcion@pjud.cl"
-},
-{
-"nombre": "2° Juzgado Civil de Concepción",
-"tipo": "Civil",
-"comuna": "Concepción",
-"direccion": "Castellon N° 432, 2° Piso, Concepcion, Concepción",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado Civil de Concepción",
-"tipo": "Civil",
-"comuna": "Concepción",
-"direccion": "Barros Arana N° 1098, 10° Piso, Oficina 1006, Edificio Torre del Centro, Concepción",
-"telefonos": [
-"+56412225120"
-],
-"correo": "jc3_concepcion@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Concepción",
-"tipo": "Familia",
-"comuna": "Concepción",
-"direccion": "Castellon N° 432, Concepción",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Cobranza Laboral y Previsional de Concepción",
-"tipo": "Cobranza",
-"comuna": "Concepción",
-"direccion": "Av. Libertado Bernardo O'Higgins N° 241, Piso 11, Oficina 1122, Concepción",
-"telefonos": [
-"+56412697624"
-],
-"correo": "jcobconcepcion@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Concepción",
-"tipo": "Trabajo",
-"comuna": "Concepción",
-"direccion": "Castellón 432, Concepción",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Concepción",
-"tipo": "Penal",
-"comuna": "Concepción",
-"direccion": "Avda. San Juan Bosco 2010, Concepción",
-"telefonos": [],
-"correo": "jgconcepcion@pjud.cl"
-},
-{
-"nombre": "1° Juzgado Civil de Talcahuano",
-"tipo": "Civil",
-"comuna": "Talcahuano",
-"direccion": "Calle Colón 1115, Talcahuano",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Talcahuano",
-"tipo": "Civil",
-"comuna": "Talcahuano",
-"direccion": "Avda. Colón N° 1115, Talcahuano",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Talcahuano",
-"tipo": "Familia",
-"comuna": "Talcahuano",
-"direccion": "Avda. Colon N° 1115, Talcahuano",
-"telefonos": [
-"+56412542802"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Talcahuano",
-"tipo": "Penal",
-"comuna": "Talcahuano",
-"direccion": "Avda. Colon N° 1115, Talcahuano",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Tomé",
-"tipo": "Civil",
-"comuna": "Tomé",
-"direccion": "Maipu N° 1080, Tomé",
-"telefonos": [
-"+56412650254"
-],
-"correo": "jl_tome@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Tomé",
-"tipo": "Familia",
-"comuna": "Tomé",
-"direccion": "Maipú 1080 Interior, Tome, Tomé",
-"telefonos": [
-"+56412658975"
-],
-"correo": "jftome@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Tomé",
-"tipo": "Penal",
-"comuna": "Tomé",
-"direccion": "Maipu N° 1038, Tome, Tomé",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Florida",
-"tipo": "Mixto",
-"comuna": "Florida",
-"direccion": "Ignacio Serrano N° 500-D, Florida",
-"telefonos": [
-"+56412645625"
-],
-"correo": "jlyg_florida@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Santa Juana",
-"tipo": "Mixto",
-"comuna": "Santa Juana",
-"direccion": "Yungay N° 241, Santa Juana",
-"telefonos": [
-"+56998835421"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Lota",
-"tipo": "Mixto",
-"comuna": "Lota",
-"direccion": "Galvarino S/N, Lota",
-"telefonos": [
-"+56984498647"
-],
-"correo": "jlyg_lota@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de Coronel",
-"tipo": "Civil",
-"comuna": "Coronel",
-"direccion": "Manuel Montt N° 935, 1° Piso, Coronel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Coronel",
-"tipo": "Civil",
-"comuna": "Coronel",
-"direccion": "Manuel Montt N° 935, 2° Piso, Coronel",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Coronel",
-"tipo": "Familia",
-"comuna": "Coronel",
-"direccion": "Carvallo N° 831, Coronel",
-"telefonos": [
-"+56412712464"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Coronel",
-"tipo": "Penal",
-"comuna": "Coronel",
-"direccion": "Bilbao N° 100, Coronel",
-"telefonos": [
-"+56412711838"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Lebu",
-"tipo": "Mixto",
-"comuna": "Lebu",
-"direccion": "Pérez N° 721, Lebu",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Arauco",
-"tipo": "Civil",
-"comuna": "Arauco",
-"direccion": "Los Carreras S/N, Arauco",
-"telefonos": [
-"+56412552972"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Arauco",
-"tipo": "Penal",
-"comuna": "Arauco",
-"direccion": "Covadonga N° 115, Arauco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Curanilahue",
-"tipo": "Mixto",
-"comuna": "Curanilahue",
-"direccion": "Almirante Latorre 77, Curanilahue",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Cañete",
-"tipo": "Penal",
-"comuna": "Cañete",
-"direccion": "Villagrán 193 Cañete",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Cañete",
-"tipo": "Civil",
-"comuna": "Cañete",
-"direccion": "Lautaro N° 90, Cañete",
-"telefonos": [
-"+56412611024"
-],
-"correo": "jl_canete@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Cañete",
-"tipo": "Penal",
-"comuna": "Cañete",
-"direccion": "Villagran N° 193, Cañete",
-"telefonos": [
-"+56412612164"
-],
-"correo": ""
-}
-],
-"Temuco": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Angol",
-"tipo": "Penal",
-"comuna": "Angol",
-"direccion": "18 Septiembre N° 425, Angol",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Angol",
-"tipo": "Civil",
-"comuna": "Angol",
-"direccion": "Dieciocho N° 529, Angol",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Angol",
-"tipo": "Familia",
-"comuna": "Angol",
-"direccion": "Colipi N° 148, Angol",
-"telefonos": [
-"+56452719239"
-],
-"correo": "jfangol@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Angol",
-"tipo": "Penal",
-"comuna": "Angol",
-"direccion": "Calle Dieciocho N° 425, Piso 1, Angol",
-"telefonos": [
-"+56996796491"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Collipulli",
-"tipo": "Mixto",
-"comuna": "Collipulli",
-"direccion": "O'Higgins N° 318, Collipulli",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Curacautín",
-"tipo": "Mixto",
-"comuna": "Curacautín",
-"direccion": "Yungay N° 201, Esq. O'Higgins, Curacautin",
-"telefonos": [
-"+56452881286"
-],
-"correo": "jlcuracautin_archivo@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Victoria",
-"tipo": "Civil",
-"comuna": "Victoria",
-"direccion": "Condell N° 801, Victoria",
-"telefonos": [
-"+56452841285"
-],
-"correo": "jl_victoria@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Victoria",
-"tipo": "Penal",
-"comuna": "Victoria",
-"direccion": "Calama N° 1049, Victoria",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Traiguén",
-"tipo": "Mixto",
-"comuna": "Traiguén",
-"direccion": "Basilio Urrutia N° 880, Traiguén",
-"telefonos": [
-"+56452869558"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Purén",
-"tipo": "Mixto",
-"comuna": "Purén",
-"direccion": "Imperial N° 890, Puren, Purén",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Temuco",
-"tipo": "Penal",
-"comuna": "Temuco",
-"direccion": "Manuel Bulnes N° 0465, Pisos 3º,4º,5º, Temuco",
-"telefonos": [
-"+56452554100"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Temuco",
-"tipo": "Civil",
-"comuna": "Temuco",
-"direccion": "Balmaceda N° 490, 1° Piso, Temuco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Temuco",
-"tipo": "Civil",
-"comuna": "Temuco",
-"direccion": "Balmaceda N° 490, 2° Piso, Temuco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "3° Juzgado Civil de Temuco",
-"tipo": "Civil",
-"comuna": "Temuco",
-"direccion": "Balmaceda N° 490, 3° Piso, Temuco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Temuco",
-"tipo": "Familia",
-"comuna": "Temuco",
-"direccion": "San Martin N° 524, Temuco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Temuco",
-"tipo": "Trabajo",
-"comuna": "Temuco",
-"direccion": "General Mackenna N° 763, Temuco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Temuco",
-"tipo": "Penal",
-"comuna": "Temuco",
-"direccion": "Bulnes N° 0465, 1, 2 Piso, Temuco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Lautaro",
-"tipo": "Civil",
-"comuna": "Lautaro",
-"direccion": "Vicuña Mackenna N° 505, Lautaro",
-"telefonos": [],
-"correo": "jl_lautaro@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Lautaro",
-"tipo": "Penal",
-"comuna": "Lautaro",
-"direccion": "Bilbao N° 352, Lautaro",
-"telefonos": [
-"+56452534015"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Pucón",
-"tipo": "Mixto",
-"comuna": "Pucón",
-"direccion": "Arauco N° 371, Pucon, Pucón",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Villarrica",
-"tipo": "Penal",
-"comuna": "Villarrica",
-"direccion": "Pedro de Valdivia 0285, Villarrica",
-"telefonos": [],
-"correo": "topvillarrica_archivo@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Villarrica",
-"tipo": "Civil",
-"comuna": "Villarrica",
-"direccion": "Pedro de Valdivia N° 0305, Villarrica",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Villarrica",
-"tipo": "Penal",
-"comuna": "Villarrica",
-"direccion": "Pedro de Valdivia N° 285, Villarrica",
-"telefonos": [
-"+56452410633"
-],
-"correo": "jgvillarrica@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Pitrufquén",
-"tipo": "Civil",
-"comuna": "Pitrufquén",
-"direccion": "Francisco Bilbao N° 398, Pitrufquen, Pitrufquén",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Pitrufquén",
-"tipo": "Penal",
-"comuna": "Pitrufquén",
-"direccion": "Balmaceda N° 435, Pitrufquen, Pitrufquén",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Loncoche",
-"tipo": "Civil",
-"comuna": "Loncoche",
-"direccion": "Balmaceda N° 441, Loncoche",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Loncoche",
-"tipo": "Penal",
-"comuna": "Loncoche",
-"direccion": "Balmaceda N° 264, Loncoche",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Toltén",
-"tipo": "Mixto",
-"comuna": "Toltén",
-"direccion": "Pedro Aguirre Cerda N° 520, N. Toltén",
-"telefonos": [],
-"correo": "jlyg_tolten@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Carahue",
-"tipo": "Mixto",
-"comuna": "Carahue",
-"direccion": "Villagrán N° 447, Carahue",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Nueva Imperial",
-"tipo": "Civil",
-"comuna": "Nueva Imperial",
-"direccion": "Pedro Lagos N° 454, Nueva Imperial",
-"telefonos": [
-"+56452611069"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Nueva Imperial",
-"tipo": "Penal",
-"comuna": "Nueva Imperial",
-"direccion": "General Urrutia N° 546, Nueva Imperial",
-"telefonos": [
-"+56452613349"
-],
-"correo": ""
-}
-],
-"Valdivia": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Valdivia",
-"tipo": "Penal",
-"comuna": "Valdivia",
-"direccion": "Avda. Francia N° 2688 (3° Piso), Valdivia",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Valdivia",
-"tipo": "Civil",
-"comuna": "Valdivia",
-"direccion": "Caupolican N° 330, Valdivia",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado Civil de Valdivia",
-"tipo": "Civil",
-"comuna": "Valdivia",
-"direccion": "Caupolican N° 330, Valdivia",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Valdivia",
-"tipo": "Familia",
-"comuna": "Valdivia",
-"direccion": "Aníbal Pinto 1925, Valdivia",
-"telefonos": [
-"+56632252175"
-],
-"correo": "jfvaldivia@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Valdivia",
-"tipo": "Trabajo",
-"comuna": "Valdivia",
-"direccion": "Anibal Pinto N° 1925, Piso 4°, Valdivia",
-"telefonos": [
-"+56632346275"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Valdivia",
-"tipo": "Penal",
-"comuna": "Valdivia",
-"direccion": "Avenida Francia N° 2688, Valdivia",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Mariquina",
-"tipo": "Civil",
-"comuna": "Mariquina",
-"direccion": "Padre Plácido N° 1000, 2° y 3° Piso, Comuna de Mariquina",
-"telefonos": [],
-"correo": "jl_mariquina@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Mariquina",
-"tipo": "Penal",
-"comuna": "Mariquina",
-"direccion": "Padre Placido N° 1000, San Jose de La Mariquina",
-"telefonos": [
-"+56632451413"
-],
-"correo": "jgmariquina@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Los Lagos",
-"tipo": "Civil",
-"comuna": "Los Lagos",
-"direccion": "San Martin N° 280, Los Lagos",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Los Lagos",
-"tipo": "Penal",
-"comuna": "Los Lagos",
-"direccion": "San Martin N° 280 Esquina Tarapacá, Los Lagos",
-"telefonos": [
-"+56632460261"
-],
-"correo": "jgloslagos@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Panguipulli",
-"tipo": "Mixto",
-"comuna": "Panguipulli",
-"direccion": "Juan Bautista Etchegaray N° 823, Panguipulli",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de La Unión",
-"tipo": "Mixto",
-"comuna": "La Unión",
-"direccion": "Phillippi N° 720, La Union, La Unión",
-"telefonos": [
-"+56642325417"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Paillaco",
-"tipo": "Mixto",
-"comuna": "Paillaco",
-"direccion": "Libertador Bernardo O'Higgins N° 516, Paillaco",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Río Bueno",
-"tipo": "Mixto",
-"comuna": "Río Bueno",
-"direccion": "Ejercito Libertador S/N, Rio Bueno",
-"telefonos": [
-"+56642341213"
-],
-"correo": "jl_riobueno@pjud.cl"
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Osorno",
-"tipo": "Penal",
-"comuna": "Osorno",
-"direccion": "Los Carrera N° 1400, Osorno",
-"telefonos": [
-"+56642316003"
-],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Osorno",
-"tipo": "Civil",
-"comuna": "Osorno",
-"direccion": "Amthauer N° 1373, Osorno",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Osorno",
-"tipo": "Civil",
-"comuna": "Osorno",
-"direccion": "Amthauer N° 1373, Osorno",
-"telefonos": [
-"+56642232112"
-],
-"correo": "jl2_osorno@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Osorno",
-"tipo": "Familia",
-"comuna": "Osorno",
-"direccion": "Los Carrera N° 1350, Osorno",
-"telefonos": [
-"+56642311511"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Osorno",
-"tipo": "Trabajo",
-"comuna": "Osorno",
-"direccion": "Los Carrera N° 1400, Osorno",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Osorno",
-"tipo": "Penal",
-"comuna": "Osorno",
-"direccion": "Los Carrera N° 1400, Osorno",
-"telefonos": [],
-"correo": "jgosorno@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Río Negro",
-"tipo": "Civil",
-"comuna": "Río Negro",
-"direccion": "Pedro Aguirre Cerda S/N, Rio Negro",
-"telefonos": [
-"+56642361213"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Río Negro",
-"tipo": "Penal",
-"comuna": "Río Negro",
-"direccion": "Pedro Aguirre Cerda 243, Río Negro",
-"telefonos": [
-"+56642361094"
-],
-"correo": "jgrionegro@pjud.cl"
-}
-],
-"Puerto Montt": [
-{
-"nombre": "Tribunal Juicio Oral en lo Penal de Puerto Montt",
-"tipo": "Penal",
-"comuna": "Puerto Montt",
-"direccion": "Avenida Mariano Egaña 1141-B, 3° Piso, Puerto Montt",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado Civil de Puerto Montt",
-"tipo": "Civil",
-"comuna": "Puerto Montt",
-"direccion": "Egaña 1141-A, 4° Piso, Puerto Montt",
-"telefonos": [
-"+56652252829"
-],
-"correo": "jc1_puertomontt@pjud.cl"
-},
-{
-"nombre": "2° Juzgado Civil de Puerto Montt",
-"tipo": "Civil",
-"comuna": "Puerto Montt",
-"direccion": "Egaña N° 1141-A 4° Piso, Puerto Montt",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Puerto Montt",
-"tipo": "Familia",
-"comuna": "Puerto Montt",
-"direccion": "Egaña 1141-A, Puerto Montt",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Puerto Montt",
-"tipo": "Trabajo",
-"comuna": "Puerto Montt",
-"direccion": "Egaña N° 1141-A Tercer Piso, Puerto Montt",
-"telefonos": [],
-"correo": "jlabpuertomontt@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Puerto Montt",
-"tipo": "Penal",
-"comuna": "Puerto Montt",
-"direccion": "Mariano Egaña N° 1141-B, 1° Piso, Puerto Montt",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Puerto Varas",
-"tipo": "Civil",
-"comuna": "Puerto Varas",
-"direccion": "San José N° 2, 3° Piso, Puerto Varas",
-"telefonos": [
-"+56652235001"
-],
-"correo": "jl_puertovaras@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Puerto Varas",
-"tipo": "Familia",
-"comuna": "Puerto Varas",
-"direccion": "Estacion N° 120, Puerto Varas",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Puerto Varas",
-"tipo": "Penal",
-"comuna": "Puerto Varas",
-"direccion": "Estacion N° 200, Puerto Varas",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Calbuco",
-"tipo": "Mixto",
-"comuna": "Calbuco",
-"direccion": "Antonio Varas N° 106, Calbuco",
-"telefonos": [
-"+56989900729"
-],
-"correo": "jlyg_calbuco@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Maullín",
-"tipo": "Mixto",
-"comuna": "Maullín",
-"direccion": "Almeyda S/N, Maullin",
-"telefonos": [
-"+56999993120"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Los Muermos",
-"tipo": "Mixto",
-"comuna": "Los Muermos",
-"direccion": "Calle San Martin Esq Antonio Varas, Los Muermos",
-"telefonos": [
-"+56979693489"
-],
-"correo": ""
-},
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Castro",
-"tipo": "Penal",
-"comuna": "Castro",
-"direccion": "Galvarino Riveros N° 832, Castro",
-"telefonos": [
-"+56652634563"
-],
-"correo": "topcastro@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Castro",
-"tipo": "Civil",
-"comuna": "Castro",
-"direccion": "Pasaje Monjitas N° 731, Castro",
-"telefonos": [
-"+56652635124"
-],
-"correo": "jl_castro@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Castro",
-"tipo": "Familia",
-"comuna": "Castro",
-"direccion": "Sargento Aldea N° 463, Castro",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Castro",
-"tipo": "Trabajo",
-"comuna": "Castro",
-"direccion": "Pasaje Monjitas N° 731, Castro",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Castro",
-"tipo": "Penal",
-"comuna": "Castro",
-"direccion": "Galvarino Riveros N° 832 Castro",
-"telefonos": [
-"+56991383173"
-],
-"correo": "juzgarcastro@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras de Ancud",
-"tipo": "Civil",
-"comuna": "Ancud",
-"direccion": "Almirante Latorre S/N, Ancud",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Familia de Ancud",
-"tipo": "Familia",
-"comuna": "Ancud",
-"direccion": "Pudeto N° 201, Ancud",
-"telefonos": [
-"+56652626424"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Garantía de Ancud",
-"tipo": "Penal",
-"comuna": "Ancud",
-"direccion": "Almirante Latorre N° 964, Ancud",
-"telefonos": [
-"+56652622236"
-],
-"correo": "jgancud@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Quinchao",
-"tipo": "Mixto",
-"comuna": "Quinchao",
-"direccion": "Calle Las Delicias N° 100, Achao, Quinchao",
-"telefonos": [],
-"correo": "jlyg_quinchao@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Quellón",
-"tipo": "Mixto",
-"comuna": "Quellón",
-"direccion": "Juan Ladrillero N° 372, Quellon, Quellón",
-"telefonos": [],
-"correo": "jlyg_quellon@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Chaitén",
-"tipo": "Mixto",
-"comuna": "Chaitén",
-"direccion": "Lib. B. O'Higgins N° 206, Chaiten, Chaitén",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Hualaihué",
-"tipo": "Mixto",
-"comuna": "Hualaihué",
-"direccion": "Bernardo O'higgins 355, Hornopiren, Hualaihué",
-"telefonos": [
-"+56652217202"
-],
-"correo": "jlyg_hualaihue@pjud.cl"
-}
-],
-"Coyhaique": [
-{
-"nombre": "Tribunal de Juicio Oral en lo Penal de Coyhaique",
-"tipo": "Penal",
-"comuna": "Coyhaique",
-"direccion": "Baquedano N° 2008, Coyhaique",
-"telefonos": [
-"+56672256210"
-],
-"correo": "notifica_top_coyhaique@pjud.cl"
-},
-{
-"nombre": "1° Juzgado de Letras de Coyhaique",
-"tipo": "Civil",
-"comuna": "Coyhaique",
-"direccion": "Bilbao N° 777 a, Coyhaique",
-"telefonos": [],
-"correo": "jl1_coyhaique@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Coyhaique",
-"tipo": "Familia",
-"comuna": "Coyhaique",
-"direccion": "Calle Moraleda N° 448, Coyhaique",
-"telefonos": [
-"+56672214370"
-],
-"correo": "jfcoyhaique@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Coyhaique",
-"tipo": "Trabajo",
-"comuna": "Coyhaique",
-"direccion": "Freire N° 293 Coyhaique",
-"telefonos": [
-"+56672250325"
-],
-"correo": "jlabcoihaique@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Coyhaique",
-"tipo": "Penal",
-"comuna": "Coyhaique",
-"direccion": "Avda. Baquedano N° 2008, Coyhaique",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Aysén",
-"tipo": "Mixto",
-"comuna": "Aysén",
-"direccion": "Circunvalación S/N, Aisen, Aysén",
-"telefonos": [
-"+56672336800"
-],
-"correo": "jlyg_puertoaysen@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Cisnes",
-"tipo": "Mixto",
-"comuna": "Cisnes",
-"direccion": "Condell N° 381, Cisnes",
-"telefonos": [
-"+56672346991"
-],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Chile Chico",
-"tipo": "Mixto",
-"comuna": "Chile Chico",
-"direccion": "Manuel Rodriguez N° 101, Chile Chico",
-"telefonos": [
-"+56968503612"
-],
-"correo": "jlyg_chilechico@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Cochrane",
-"tipo": "Mixto",
-"comuna": "Cochrane",
-"direccion": "Av. Bernardo O'Higgins N° 324, Cochrane",
-"telefonos": [],
-"correo": ""
-}
-],
-"Punta Arenas": [
-{
-"nombre": "Juzgado de Letras y Garantía de Natales",
-"tipo": "Mixto",
-"comuna": "Natales",
-"direccion": "Ladrilleros N° 110, Puerto Natales",
-"telefonos": [
-"+56612411422"
-],
-"correo": "jlyg_ptonatales@pjud.cl"
-},
-{
-"nombre": "Tribunal Juicio Oral en lo Penal de Punta Arenas",
-"tipo": "Penal",
-"comuna": "Punta Arenas",
-"direccion": "Jose Miguel Carrera 450, 3° Piso, Edificio a, Punta Arenas",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "1° Juzgado de Letras de Punta Arenas",
-"tipo": "Civil",
-"comuna": "Punta Arenas",
-"direccion": "Independencia N° 617, Primer Piso, Punta Arenas",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "2° Juzgado de Letras de Punta Arenas",
-"tipo": "Civil",
-"comuna": "Punta Arenas",
-"direccion": "Independencia N° 617, Segundo Piso, Punta Arenas",
-"telefonos": [
-"+56612242851"
-],
-"correo": "jl2_puntaarenas@pjud.cl"
-},
-{
-"nombre": "3° Juzgado de Letras de Punta Arenas",
-"tipo": "Civil",
-"comuna": "Punta Arenas",
-"direccion": "Independencia N° 617, Tercer Piso, Punta Arenas",
-"telefonos": [
-"+56612241094"
-],
-"correo": "jl3_puntaarenas@pjud.cl"
-},
-{
-"nombre": "Juzgado de Familia de Punta Arenas",
-"tipo": "Familia",
-"comuna": "Punta Arenas",
-"direccion": "Jose Miguel Carrera 450, 1° Piso, Edificio B, Punta Arenas",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras del Trabajo de Punta Arenas",
-"tipo": "Trabajo",
-"comuna": "Punta Arenas",
-"direccion": "Jose Miguel Carrera 450, 5° Piso, Edificio B, Punta Arenas",
-"telefonos": [
-"+56612222419"
-],
-"correo": "jlabpuntaarenas@pjud.cl"
-},
-{
-"nombre": "Juzgado de Garantía de Punta Arenas",
-"tipo": "Penal",
-"comuna": "Punta Arenas",
-"direccion": "Jose Miguel Carrera 450, 1° Piso, Edificio a, Punta Arenas",
-"telefonos": [
-"+56612225354"
-],
-"correo": "notifica_jg_ptarenas@pjud.cl"
-},
-{
-"nombre": "Juzgado de Letras y Garantía de Porvenir",
-"tipo": "Mixto",
-"comuna": "Porvenir",
-"direccion": "Bernardo Phillips N° 362, Porvenir",
-"telefonos": [],
-"correo": ""
-},
-{
-"nombre": "Juzgado de Letras de Cabo de Hornos",
-"tipo": "Civil",
-"comuna": "Cabo de Hornos",
-"direccion": "O'Higgins N° 201, Puerto Williams, Cabo de Hornos",
-"telefonos": [
-"+56963959140"
-],
-"correo": "jl_cabodehornos@pjud.cl"
-}
-]
-};
+const TRIBUNALES_PAIS = {"Arica":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Arica","tipo":"Penal","comuna":"Arica","direccion":"General Pedro Lagos Marchant N° 766, 4to Piso, Arica","telefonos":[],"correo":"toparica@pjud.cl","rut":"61960600-0","cta":"1000118873"},
+{"nombre":"1° Juzgado de Letras de Arica","tipo":"Civil","comuna":"Arica","direccion":"Blanco Encalada 945, Arica","telefonos":["+56582208906"],"correo":"jl1_arica@pjud.cl","rut":"60302001-4","cta":"1000060468","tit":[{"c":"Juez","p":["Gonzalo Rodrigo Brignardello Cruz"]},
+{"c":"Secretario","p":["Patricio Javier Ponce Correa"]},
+{"c":"Oficial 1°","p":["Manuel Víctor Álvarez Ossandón"]}]},
+{"nombre":"2° Juzgado de Letras de Arica","tipo":"Civil","comuna":"Arica","direccion":"Blanco Encalada N° 945, Arica","telefonos":[],"correo":"jl2_arica@pjud.cl","rut":"60302002-2","cta":"1000060743","tit":[{"c":"Juez","p":["Gonzalo Roberto Quiroz Espinoza"]},
+{"c":"Secretario","p":["Julio Javier Caceres Nikolay"]}],"adi":[{"c":"Oficial 1°","p":["Claudia Eliana Lepillán Aguirre"]}]},
+{"nombre":"3° Juzgado de Letras de Arica","tipo":"Civil","comuna":"Arica","direccion":"Blanco Encalada N° 945, Arica","telefonos":["+56582208940"],"correo":"jl3_arica@pjud.cl","rut":"60302003-0","cta":"01000061928","tit":[{"c":"Juez","p":["Julio Boris Ulises Aguilar Bustamante"]},
+{"c":"Secretario","p":["Ana Paula Sepúlveda Burgos"]},
+{"c":"Oficial 1°","p":["Llamil Alexander Mickle Gómez"]}]},
+{"nombre":"Juzgado de Familia de Arica","tipo":"Familia","comuna":"Arica","direccion":"Calle Juan Noe Crevani N° 711, Arica","telefonos":[],"correo":"jfarica@pjud.cl","rut":"61977870-7","tit":[{"c":"Juez","p":["Lucía Angélica Nelly Valenzuela Videla","David Arturo Soto Pineda","Juan Enrique Robles Vargas","Oscar Esteban Agurto Díaz","Luis Héctor Jorquera Pinto","Carolina Gregoria Valenzuela Elías","Renee Michel Portilla Maluenda","Rodrigo Alfonso Retamal Zapata"]},
+{"c":"Administrador","p":["María Soledad Witting Guerra"]},
+{"c":"Jefe de unidad","p":["Angelina Marta Sepúlveda Núñez","Sunie Rosario Matienzo Tordoya","Roxana Pilar Morales Farias"]},
+{"c":"Administrativo jefe","p":["Yashin Alberto Torrico Vargas","Sergio Baudilio Vargas Yelorm","Rafael Aníbal Guerra Ahumada"]}],"adi":[{"c":"Jefe de unidad","p":["Rafael Aníbal Guerra Ahumada"]},
+{"c":"Administrativo jefe","p":["Hayling Eliana Canales Hinojosa"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Arica","tipo":"Trabajo","comuna":"Arica","direccion":"Blanco Encalada N° 945, Arica","telefonos":[],"correo":"jlabarica@pjud.cl","rut":"61979660-8","cta":"1000040726","tit":[{"c":"Juez","p":["Fernando Alonso Gonzalez Morales","Hernán Eduardo Valdevenito Carrasco"]},
+{"c":"Administrador","p":["José Abel Grant Díaz"]},
+{"c":"Jefe de unidad","p":["Paola Andrea Poblete Astorga"]},
+{"c":"Administrativo jefe","p":["Maríapaz Obregón Gajardo","Claudia Estela Nuñez Classing"]}]},
+{"nombre":"Juzgado de Garantía de Arica","tipo":"Penal","comuna":"Arica","direccion":"General Pedro Lagos Marchant N° 766, Arica","telefonos":["+56582209200"],"correo":"jgarica@pjud.cl","rut":"61960800-3","cta":"1000118890"}],"Iquique":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Iquique","tipo":"Penal","comuna":"Iquique","direccion":"Patricio Lynch N° 60, Iquique","telefonos":["+56996792620"],"correo":"","rut":"61960700-7","cta":"1300149878"},
+{"nombre":"1° Juzgado de Letras de Iquique","tipo":"Civil","comuna":"Iquique","direccion":"Sotomayor S/N, Iquique","telefonos":[],"correo":"","rut":"60302006-5","cta":"1300088984","tit":[{"c":"Juez","p":["Héctor Andrés Kompatzki Delarze"]},
+{"c":"Oficial 1°","p":["Viviana Gemma de Lourdes Sánchez González"]}]},
+{"nombre":"2° Juzgado de Letras de Iquique","tipo":"Civil","comuna":"Iquique","direccion":"Sotomayor S/N, Iquique","telefonos":["+56572738971"],"correo":"jl2_iquique@pjud.cl","rut":"60302010-3","cta":"01300089212","tit":[{"c":"Juez","p":["Patricia Alejandra Shand Scholz"]},
+{"c":"Oficial 1°","p":["Armando Genaro Vilches Cayo"]}]},
+{"nombre":"3° Juzgado de Letras de Iquique","tipo":"Civil","comuna":"Iquique","direccion":"Sotomayor S/N, Iquique","telefonos":[],"correo":"","rut":"60302007-3","cta":"1300102766","tit":[{"c":"Secretario","p":["Álvaro Iván Arriagada Fernández"]},
+{"c":"Oficial 1°","p":["Ana Maria Rivera Aracena"]}],"adi":[{"c":"Juez","p":["Horacio Manuel Andrade Aguilante"]}]},
+{"nombre":"Juzgado de Familia de Iquique","tipo":"Familia","comuna":"Iquique","direccion":"Patricio Lynch N° 60, Iquique","telefonos":[],"correo":"","rut":"61978200-3","cta":"1300177049","tit":[{"c":"Juez","p":["Francisco Javier Berríos Veloso","Patricia Aida Araya Ponce","Francisco Damián Palacios Henríquez","Patricia Alejandra Seguel Muñoz","Daniela Criss Gutiérrez Albornoz","Rafael Hernán González Otárola","Loreto Constanza Guarachi Bravo"]},
+{"c":"Administrador","p":["Tatiana Elena Aceituno Flores"]},
+{"c":"Jefe de unidad","p":["Sandra Gordillo Guerra","Soledad Jacqueline Contreras Videla","Carmen Gloria Pérez Castillo"]},
+{"c":"Administrativo jefe","p":["Benilde del Carmen Apablaza López","Jacqueline Inés Varas Castillo","Carol Yohana Maldonado Maya"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Iquique","tipo":"Trabajo","comuna":"Iquique","direccion":"Freddy Taberna S/N Esqu. Aspirante Izaza, Iquique","telefonos":["+56572738400"],"correo":"jlabiquique@pjud.cl","rut":"61979230-0","cta":"1300022053","tit":[{"c":"Juez","p":["Francisco Javier Vargas Vera","Marcela Mabel Díaz Méndez","David Orlando Sepúlveda Cid"]},
+{"c":"Administrador","p":["Guido Guillermo Tapia Funes"]},
+{"c":"Jefe de unidad","p":["Armando Francisco López Villalobos","Sandra de Lourdes Fraga Ayca","Luis Flavio Rodríguez Yala"]},
+{"c":"Administrativo jefe","p":["Alejandro Andres Cruz Hidalgo","Benita del Carmen Cespedes Fuentes"]}],"adi":[{"c":"Juez","p":["Leticia María Quezada Núñez"]},
+{"c":"Jefe de unidad","p":["Constanza Carolina Aravena Picarte"]}]},
+{"nombre":"Juzgado de Garantía de Iquique","tipo":"Penal","comuna":"Iquique","direccion":"Patricio Lynch N° 60, Iquique","telefonos":["+56572738000"],"correo":"jgiquique@pjud.cl","rut":"56076960-1","cta":"01300149916","tit":[{"c":"Juez","p":["Frederick Arturo Roco Alvarado","Ricardo Marcelo Leyton Pavez","Vicente Antonio Muratori Quezada","Mauricio Antonio Chia Pizarro","Verónica del Pilar Opazo Miranda","Diego Eduardo Reyes López","Tamara Rocío Muñoz Sáez"]},
+{"c":"Administrador","p":["Víctor Eduardo Argandoña Illanes"]},
+{"c":"Jefe de unidad","p":["Carla Andrea Vilca Vilca","Patricia Viviana Monserrat Lucía del Castillo Zamudio"]}],"adi":[{"c":"Administrador","p":["Patricia Viviana Monserrat Lucía del Castillo Zamudio"]},
+{"c":"Jefe de unidad","p":["Claudio Andrés Hervas Ramos","Camilo Ignacio Escudero Chiesa","Katterine Denis Plaza Gallardo"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Pozo Almonte","tipo":"Mixto","comuna":"Pozo Almonte","direccion":"Libertad N° 678, Pozo Almonte","telefonos":[],"correo":"","rut":"61979310-2","cta":"1300098696","tit":[{"c":"Juez","p":["Horacio Manuel Andrade Aguilante"]},
+{"c":"Administrador","p":["Luis Claudio Bugueño Etcheverry"]},
+{"c":"Jefe de unidad","p":["Damaris Noemí Flores Torres"]},
+{"c":"Administrativo jefe","p":["Leonel Alonso Molina Jiménez","Gonzalo Eduardo Jara Espinoza"]}],"adi":[{"c":"Juez","p":["Giannina Andrea Cortez Martí"]}]},
+{"nombre":"Juzgado de Letras de Familia-garantia y Trabajo de Alto Hospicio","tipo":"Mixto","comuna":"Alto Hospicio","direccion":"Salitrera Iris N° 1045, Alto Hospicio","telefonos":["+56572587400"],"correo":"jl_altohospicio@pjud.cl","rut":"61980760-K","cta":"1800031318","tit":[{"c":"Juez","p":["Camila Fernanda Suazo Cobos","Sergio Enrique Almonacid Muñoz","Eva Ivonne Salgado Díaz"]},
+{"c":"Administrador","p":["Natalia Carolina Campos Castro"]},
+{"c":"Jefe de unidad","p":["Patricia del Carmen Oliva Perea"]},
+{"c":"Administrativo jefe","p":["Maria Viviana del Carmen Vélez Hormazábal","Katterine Denis Plaza Gallardo","Hellen Priscila Alfaro Alvear"]}],"adi":[{"c":"Juez","p":["Luis Flavio Rodríguez Yala"]},
+{"c":"Jefe de unidad","p":["Maria Viviana del Carmen Vélez Hormazábal","Patricia del Carmen Oliva Perea"]},
+{"c":"Administrativo jefe","p":["Diego Esteban Martínez Campos","Lucy Norma Sanchez Sazo","Andrés Benjamín Soto Mellado"]}]}],"Antofagasta":[{"nombre":"Juzgado de Letras de Tocopilla","tipo":"Civil","comuna":"Tocopilla","direccion":"Manuel Rodriguez N° 1280 D , Esquina 21 de Mayo, Tocopilla","telefonos":["+56552813208"],"correo":"jl_tocopilla@pjud.cl","rut":"61928500-K","cta":"1500029532","tit":[{"c":"Administrador","p":["Mario Ramón Romero Obreque"]},
+{"c":"Jefe de unidad","p":["Christian Paul Berríos del Pino"]},
+{"c":"Administrativo jefe","p":["Dinka Patricia González Honores","Marcela Alicia Rivera Flores"]}],"adi":[{"c":"Juez","p":["Nadhia Sofía Álvarez Muñoz","Nathalie Andrea Castillo Barraza"]}]},
+{"nombre":"Juzgado de Garantía de Tocopilla","tipo":"Penal","comuna":"Tocopilla","direccion":"21 de Mayo N° 1692, Tocopilla","telefonos":[],"correo":"","rut":"61944300-4","cta":"1500046127","tit":[{"c":"Administrador","p":["Octavio Manuel Villarroel Ibacache"]}],"adi":[{"c":"Juez","p":["Maria Isabel Lopez Garay"]}]},
+{"nombre":"Juzgado de Letras y Garantía de María Elena","tipo":"Mixto","comuna":"María Elena","direccion":"Prat Esquina B. O'Higgins, María Elena","telefonos":["+56552639135"],"correo":"jlmariaelena@pjud.cl","rut":"60303013-3","cta":"2300006224","tit":[{"c":"Juez","p":["Héctor Alfredo Espinoza Reyes"]},
+{"c":"Oficial 1°","p":["Patricio Fernando Brito Alvarez"]}],"adi":[{"c":"Oficial 1°","p":["Luis Andrés Pozo Urrutia"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Calama","tipo":"Penal","comuna":"Calama","direccion":"Av. Grecia N° 1179, Tercer Piso, Calama","telefonos":["+56552344357"],"correo":"topcalama@pjud.cl","rut":"61944100-1","cta":"2100047236","tit":[{"c":"Juez","p":["Rodrigo Vladimir Cartes Fierro","Luisa Andrea Antipan Meliqueo","Álvaro José Lezama Orellana","Constanza Fernanda González Urrutia","Julio Ernesto Ramírez Zolezzi","Araceli Alejandra Pérez González"]},
+{"c":"Administrador","p":["María Ignacia Doren González"]},
+{"c":"Jefe de unidad","p":["Jorge Luis Rojas Vega","Ingrid Karina Bahamonde Bahamonde","Claudia Guadalupe Catelicán Guzmán","Marjorie Estefania Ramos Arriagada"]}],"adi":[{"c":"Juez","p":["Fabián Enrique Valdés Muñoz","Gonzalo Antonio Godoy González","Francisco Javier Galaz García"]},
+{"c":"Jefe de unidad","p":["Cristian Daniel Borja Fuentes Alfaro"]}]},
+{"nombre":"1° Juzgado de Letras de Calama","tipo":"Civil","comuna":"Calama","direccion":"Granaderos N° 2345, 2° Piso, Calama","telefonos":["+56552516700"],"correo":"jl1_calama@pjud.cl","rut":"60303003-6","cta":"2100019968","tit":[{"c":"Juez","p":["Manuel Antonio Pedreros Oñate"]},
+{"c":"Secretario","p":["Johanna Carola Pizarro Véliz"]},
+{"c":"Oficial 1°","p":["María Soledad Ogalde Olivares"]}]},
+{"nombre":"2° Juzgado de Letras de Calama","tipo":"Civil","comuna":"Calama","direccion":"Granaderos N° 2345, 3° Piso, Calama","telefonos":[],"correo":"","rut":"60303002-8","cta":"21000","tit":[{"c":"Juez","p":["Juan Diego Francisco Letelier Tofalos"]},
+{"c":"Secretario","p":["Marjorie Andrea Galleguillos Ayala"]},
+{"c":"Oficial 1°","p":["Javier Ernesto Fuentes Urbina"]}],"adi":[{"c":"Oficial 1°","p":["Camila Fernanda Pérez González"]}]},
+{"nombre":"3° Juzgado de Letras de Calama","tipo":"Civil","comuna":"Calama","direccion":"Granaderos N° 2345, 1° Piso, Calama","telefonos":[],"correo":"","rut":"61945900-8","cta":"2100038083","tit":[{"c":"Juez","p":["Sergio Alejandro Vargas Palma"]},
+{"c":"Secretario","p":["Maureen Debla González García"]},
+{"c":"Oficial 1°","p":["Maria Paulina Ahumada Manchot"]}],"adi":[{"c":"Juez","p":["Maureen Debla González García"]}]},
+{"nombre":"Juzgado de Familia de Calama","tipo":"Familia","comuna":"Calama","direccion":"Avenida Grecia N° 1179, Calama","telefonos":["+56552314707"],"correo":"jfcalama@pjud.cl","rut":"61977850-2","cta":"2100070823","tit":[{"c":"Juez","p":["Silvia Elide Portilla Bugueño","María Jesús Arellano Torres","Armando Fredy Puelles Rojas","Macarena Ester Muñoz Valenzuela"]},
+{"c":"Administrador","p":["Roberto Fernando Strahsburger Figueroa"]},
+{"c":"Jefe de unidad","p":["Mayling Ivette Rodríguez López"]},
+{"c":"Administrativo jefe","p":["Ana del Rosario Jiménez Espinoza","Karem Daniella Linsambarth Moore"]}],"adi":[{"c":"Juez","p":["Cristian Andres Nuñez Orrego"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Calama","tipo":"Trabajo","comuna":"Calama","direccion":"Avenida Grecia N° 1179, Cuarto Piso, Calama","telefonos":[],"correo":"","rut":"53310958-6","cta":"2100021784","tit":[{"c":"Juez","p":["Ilse Viviana Vargas Anziani"]},
+{"c":"Administrador","p":["Freddy Yammil Matus Aravena"]},
+{"c":"Jefe de unidad","p":["Juan Pablo Espinoza Ayala"]},
+{"c":"Administrativo jefe","p":["Ricardo Ignacio Zepeda Trigo","Emmily de los Angeles Rodriguez Carrillo"]}],"adi":[{"c":"Juez","p":["Johanna Carola Pizarro Véliz"]},
+{"c":"Administrador","p":["Juan Pablo Espinoza Ayala"]}]},
+{"nombre":"Juzgado de Garantía de Calama","tipo":"Penal","comuna":"Calama","direccion":"Av. Granaderos N° 2406, Calama","telefonos":[],"correo":"","rut":"61944200-8","cta":"2100047201","tit":[{"c":"Juez","p":["Maria Jose Amengual Tapia","Mariana Mileng Chiang Muñoz","Eva Carolina Curia Castro"]},
+{"c":"Administrador","p":["Alex Marcelo Ponce Villalobos"]},
+{"c":"Jefe de unidad","p":["Ana Alejandra González Rojo","Jorge Alejandro Rojo Fritis","Jorge Luis Cortes Pasten"]}],"adi":[{"c":"Juez","p":["Sergio Hiram Rojas Bustos","Juan Pablo Gomez Heredia"]},
+{"c":"Jefe de unidad","p":["Hugo Alejandro Cuevas Pallauta"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Antofagasta","tipo":"Penal","comuna":"Antofagasta","direccion":"San Martin 2836, Pisos 3° y 4°, Antofagasta","telefonos":[],"correo":"","rut":"61945200-3","cta":"2500172544","tit":[{"c":"Juez","p":["María Isabel Laura Rojas Medar","Claudia Solange Lewin Arroyo","Patricia Leonor Alvarado Padilla","Luz Adrina Oliva Chavez","Llilian del Carmen Durán Barrera","Paula Lorena Ortiz Saavedra","Marcela Alejandra Mesias Toro","Marcelo Eduardo Echeverría Muñoz","Israel Antonio Fuentes Gutiérrez","Francisco Javier Lanas Jopia","José Luis Ayala Leguas","Cristian Alfonso Fuentealba Pincheira","Evelyn Carolina Ibarbe Vicencio"]},
+{"c":"Administrador","p":["Olga Inés Aguirre Rivera"]},
+{"c":"Jefe de unidad","p":["María del Pilar Hernández Urrutia","Marcelo David Chepilla Olivares","Luis Milko Martínez Aguilar","Eddie Edwin Villalobos Angel","Claudia Patricia Diaz Ramirez"]}],"adi":[{"c":"Juez","p":["Alejandro Salvador González Escobar"]}]},
+{"nombre":"1° Juzgado Civil de Antofagasta","tipo":"Civil","comuna":"Antofagasta","direccion":"San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta","telefonos":[],"correo":"","rut":"60303011-7","tit":[{"c":"Juez","p":["Arturo Andrés Iribarren Pérez"]},
+{"c":"Secretario","p":["Carolina Waleska Martínez Navarrete"]},
+{"c":"Oficial 1°","p":["John Freddy Araya Olivares"]}]},
+{"nombre":"2° Juzgado Civil de Antofagasta","tipo":"Civil","comuna":"Antofagasta","direccion":"San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta","telefonos":["+56552516125"],"correo":"jl2_antofagasta@pjud.cl","rut":"60303008-7","cta":"2500125350","tit":[{"c":"Juez","p":["Elizabeth Verónica Araya Julio"]},
+{"c":"Secretario","p":["Andrea Ingeburg Przybyszewski Jopia"]},
+{"c":"Oficial 1°","p":["Cristian Javier Duran Aros"]}],"adi":[{"c":"Juez","p":["Andrea Ingeburg Przybyszewski Jopia"]},
+{"c":"Secretario","p":["David Hernán Bravo Villarroel"]}]},
+{"nombre":"3° Juzgado Civil de Antofagasta","tipo":"Civil","comuna":"Antofagasta","direccion":"San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta","telefonos":["+56552516160"],"correo":"jl3_antofagasta@pjud.cl","rut":"60303007-9","cta":"2500129193","tit":[{"c":"Juez","p":["Jordán Rodrigo Campillay Fernández"]},
+{"c":"Secretario","p":["Carlos Andrés Salazar Valenzuela"]},
+{"c":"Oficial 1°","p":["Esteban Alejandro Barraza Bórquez"]}]},
+{"nombre":"4° Juzgado Civil de Antofagasta","tipo":"Civil","comuna":"Antofagasta","direccion":"San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta","telefonos":["+56552516175"],"correo":"jl4_antofagasta@pjud.cl","rut":"60303012-5","cta":"2500125384","tit":[{"c":"Juez","p":["Susana Pamela Tobar Bravo"]},
+{"c":"Secretario","p":["Piero Steven Soto San Martin"]},
+{"c":"Oficial 1°","p":["Rosario del Carmen Pohl Pohl"]}],"adi":[{"c":"Oficial 1°","p":["Olaya Yanira Pol Araya"]}]},
+{"nombre":"Juzgado de Familia de Antofagasta","tipo":"Familia","comuna":"Antofagasta","direccion":"San Martin N° 2984, Centro de Justicia de Antofagasta","telefonos":[],"correo":"","rut":"61977840-5","cta":"2500196133","tit":[{"c":"Juez","p":["Andrea Francisca Cuello Hidalgo","Mariela Solange Rojas Saa","Daniela Julia Montrone","Evelyn Alejandra Montenegro Urrutia","Leslie Cecilia del Pilar Figueroa Jaque","Mae Paola Soledad Valdebenito Fuentes","Francisca Catalina Parra Urrutia","Jorge Iván Saavedra Bentjerodt","Paul Andrés Contreras Saavedra","Edy María Pérez Argandoña"]},
+{"c":"Administrador","p":["Ricardo Enrique Bravo Díaz"]},
+{"c":"Jefe de unidad","p":["Hernán Segundo Lira Villagrán","Silvia Esther Carvajal Estay","Ximena Aracelly Villalobos Veas","Marion Patricia Yáñez Rojas"]},
+{"c":"Administrativo jefe","p":["Julio Patricio Carreño Olivares","Rebeca Angela Alejandra Godoy Callejas","Karen Andrea Gajardo Castro","Paola Andrea Rade Araya"]}],"adi":[{"c":"Juez","p":["María José Salas Campos","Paulina Alejandra Gómez Salazar","Paulina Andrea Digmann Cuadra"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Antofagasta","tipo":"Trabajo","comuna":"Antofagasta","direccion":"San Martin N° 2984, Antofagasta / Centro de Justicia de Antofagasta","telefonos":["+56552638500"],"correo":"jlabantofagasta@pjud.cl","rut":"61979400-1","cta":"2500040010","tit":[{"c":"Juez","p":["Sol María López Pérez","Yohana María Chávez Castillo","Carlos Eduardo Campillay Robledo","Elena del Pilar Pérez Castro","Abigail Tapia Alarcón"]},
+{"c":"Administrador","p":["Marco Antonio Ávalos Valverde"]},
+{"c":"Jefe de unidad","p":["Pamela Andrea Castillo Varas","Sandra Paola Lucila Monsalve Sanchez","Miguel Enrique Chiappa Tay"]},
+{"c":"Administrativo jefe","p":["Maria Luisa Navarro Heredia","Eric Omar Castillo Guardia"]}],"adi":[{"c":"Juez","p":["Carolina Andrea Sánchez Medina","Eduardo Manuel Machuca Cereceda"]},
+{"c":"Jefe de unidad","p":["Alejandra Mabel Tejeda Herrera","Daniela Paola Daza Sepúlveda"]}]},
+{"nombre":"Juzgado de Garantía de Antofagasta","tipo":"Penal","comuna":"Antofagasta","direccion":"San Martin 2836, Pisos 1° y 2°, Antofagasta","telefonos":[],"correo":"","rut":"61949800-3","cta":"2500172536","tit":[{"c":"Juez","p":["Claudia Loreto Campusano Reinike","Marco Antonio Rojas Reyes","María José Saavedra Cárdenas","Sissi Ivonne Bertoglio-Talap Cortés","Andrés Antonio Santelices Jorquera","Marco Antonio Escobar Martínez","Hans Eladio Durán Vásquez","Juan Pablo Torres Molina","Marisol Estrella Elvira Melgarejo Altura"]},
+{"c":"Administrador","p":["César Enrique Verdugo Escobar"]},
+{"c":"Jefe de unidad","p":["Daniela Beatriz Cardenas de la Vega","Jacqueline Paola Castillo Gutiérrez","Ximena de Lourdes Picon Picon","Pamela Alejandra Fernandez Iturra"]}],"adi":[{"c":"Administrador","p":["Pamela Andrea Castillo Varas"]},
+{"c":"Jefe de unidad","p":["Marie France Carrizo Carvajal"]}]},
+{"nombre":"Juzgado de Letras de Mejillones","tipo":"Civil","comuna":"Mejillones","direccion":"Borgoño N° 200, Mejillones","telefonos":["+56552622738"],"correo":"jl_mejillones@pjud.cl","rut":"61980800-2","cta":"03500000073","tit":[{"c":"Juez","p":["Lissete Yair Caimanque Salas"]},
+{"c":"Administrador","p":["Patricio Raimundo Lugaro Collado"]},
+{"c":"Jefe de unidad","p":["Margorie Andrea Araya Labarca"]},
+{"c":"Administrativo jefe","p":["Jorge Antonio Olmedo Martinez","Juan Pablo Gomez Heredia"]}],"adi":[{"c":"Juez","p":["María José Valladares Araya"]},
+{"c":"Administrativo jefe","p":["Ronald Alexis Navarro Collao"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Taltal","tipo":"Mixto","comuna":"Taltal","direccion":"Serrano N° 480, Taltal","telefonos":[],"correo":"","rut":"61927800-3","cta":"2700023004","tit":[{"c":"Juez","p":["Karen Andrea Herrera Iriarte"]},
+{"c":"Administrador","p":["Julio Gonzalo Quidel Becerra"]},
+{"c":"Jefe de unidad","p":["Gregorio Nelson Garday Allende"]},
+{"c":"Administrativo jefe","p":["Sandra Ximena Quintana Munizaga","Sergio Wladimir Orellana Rojas"]}],"adi":[{"c":"Juez","p":["Katherine Yanina Vega Pizarro"]}]}],"Copiapó":[{"nombre":"Juzgado de Letras y Garantía de Chañaral","tipo":"Mixto","comuna":"Chañaral","direccion":"Av. La Paz S/N, Chañaral","telefonos":["+56522480138"],"correo":"jlyg_chanaral@pjud.cl","rut":"60304012-0","cta":"11500018561","tit":[{"c":"Juez","p":["Roberto Javier Gahona Rojas","Ingrid Alejandra Andrea Muñoz Quevedo"]},
+{"c":"Jefe de unidad","p":["Mayra Pia Godoy Booth"]},
+{"c":"Administrativo jefe","p":["Juana Haylen Godoy Robles","Cristian Hernan Muñoz Navarro"]}]},
+{"nombre":"Juzgado de Letras de Diego de Almagro","tipo":"Civil","comuna":"Diego de Almagro","direccion":"Juan Martinez N° 700, Diego de Almagro","telefonos":["+56522441234"],"correo":"","rut":"60304011-2","cta":"11700028617","tit":[{"c":"Secretario","p":["Viviana Elizabeth Molina Chandia"]},
+{"c":"Oficial 1°","p":["Sebastián Nicolás Astudillo Astorga"]}],"adi":[{"c":"Oficial 1°","p":["Doris Andrea Herrera Orellana"]}]},
+{"nombre":"Juzgado de Garantía de Diego de Almagro","tipo":"Penal","comuna":"Diego de Almagro","direccion":"Avda. Juan Martinez N° 602, Diego de Almagro","telefonos":["+56522449680"],"correo":"jgdiegodealmagro@pjud.cl","rut":"65051460-2","cta":"11700025251","tit":[{"c":"Juez","p":["Marcela Vittoria Hofflinger Parra"]},
+{"c":"Administrador","p":["Carolina Patricia Sayago Barros"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Copiapó","tipo":"Penal","comuna":"Copiapó","direccion":"Chañarcillo N° 1091, Copiapo, Copiapó","telefonos":[],"correo":"","rut":"61949600-0","cta":"12100086709"},
+{"nombre":"1° Juzgado de Letras de Copiapó","tipo":"Civil","comuna":"Copiapó","direccion":"Sofia Bermedo N° 191, Primer Piso, Copiapó","telefonos":["+56522212484"],"correo":"jl1_copiapo@pjud.cl","rut":"60315002-3","cta":"12100052715","tit":[{"c":"Juez","p":["Gabriel Patricio Aguilera Sazo"]},
+{"c":"Secretario","p":["Sara Marsella Nayte Lagues"]},
+{"c":"Oficial 1°","p":["Cristian Alejandro Jofre Gutierrez"]}]},
+{"nombre":"2° Juzgado de Letras de Copiapó","tipo":"Civil","comuna":"Copiapó","direccion":"Sofía Bermedo N° 191, 2° Piso, Copiapó","telefonos":["+56522239220"],"correo":"","rut":"60304002-3","cta":"12100052758","tit":[{"c":"Juez","p":["Cristian Rodrigo Marchant Lillo"]},
+{"c":"Oficial 1°","p":["Ruth Elcira Araya Contreras"]}]},
+{"nombre":"3° Juzgado de Letras de Copiapó","tipo":"Civil","comuna":"Copiapó","direccion":"Av. Copayapu N° 1134, 2° Piso, Copiapo, Copiapó","telefonos":["+56522249210"],"correo":"jl3_copiapo@pjud.cl","rut":"60304017-1","cta":"12100052367","tit":[{"c":"Juez","p":["Alejandra Jimena Orellana Negrez"]},
+{"c":"Secretario","p":["Nathalie Andrea Fuentes Flores"]},
+{"c":"Oficial 1°","p":["Celinda Margarita Milla Rodriguez"]}]},
+{"nombre":"4° Juzgado de Letras de Copiapó","tipo":"Civil","comuna":"Copiapó","direccion":"Copayapu N° 1134, 3° Piso, Copiapo, Copiapó","telefonos":[],"correo":"","rut":"61951900-0","cta":"12100078226","tit":[{"c":"Juez","p":["Patricio Eduardo Vergara Mora"]},
+{"c":"Secretario","p":["Miriam Norma Pérez González"]},
+{"c":"Oficial 1°","p":["Rosa Paulina Muranda Araya"]}]},
+{"nombre":"Juzgado de Familia de Copiapó","tipo":"Familia","comuna":"Copiapó","direccion":"Avda. Circunvalacion N° 125, Copiapo, Copiapó","telefonos":["+56522211700"],"correo":"jfcopiapo@pjud.cl","rut":"61978080-9","cta":"12100097018","tit":[{"c":"Juez","p":["Andrés Fernando Ramos Parra","Pamela Edith de la Peña Salazar","Edith Patricia Herrera Moya","Gabriela Isis Julieta Varela Ledermann","Isabel Alejandra Peña Cifuentes","Walter Erik Piñats Aliaga"]},
+{"c":"Administrador","p":["Rodrigo Ariel Chávez Gómez"]},
+{"c":"Jefe de unidad","p":["Julio Alejandro Galaz Caballero"]},
+{"c":"Administrativo jefe","p":["Claudia Andrea Caballero Henríquez","Silvia Jessica Bow Peralta"]}],"adi":[{"c":"Juez","p":["Carolina Soledad Villena González"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Copiapó","tipo":"Trabajo","comuna":"Copiapó","direccion":"Avda. Copayapu N° 1134, 1° Piso, Copiapo, Copiapó","telefonos":["+56522239227"],"correo":"","rut":"61979140-1","cta":"12100012705","tit":[{"c":"Juez","p":["Jose Marcelo Alvarez Rivera","Alejandro Alberto Clunes Muñoz"]},
+{"c":"Administrador","p":["Berta Marianela Cid Campillay"]},
+{"c":"Jefe de unidad","p":["Paula Andrea Labra Henríquez"]},
+{"c":"Administrativo jefe","p":["Marco Antonio Aguirre Carrasco","Oscar Manuel Campillay Orellana"]}],"adi":[{"c":"Administrativo jefe","p":["Meiling Rina Rodriguez Peralta"]}]},
+{"nombre":"Juzgado de Garantía de Copiapó","tipo":"Penal","comuna":"Copiapó","direccion":"Av. Chañarcillo N° 1091, Copiapo, Copiapó","telefonos":[],"correo":"","rut":"61949700-7","tit":[{"c":"Juez","p":["Víctor Manuel Santana Escobar","Paulo Franco Muñoz Pedemonte","Ubaldo Andrés Basoa Oviedo","Cristian Enrique Medina Kirsten","Claudio Eduardo Alvarado Aguirre"]},
+{"c":"Administrador","p":["Mario Gutemberg Pincheira Arriagada"]},
+{"c":"Jefe de unidad","p":["Ricardo Javier Martínez Aguirre","Alexy Andrés Gordillo Vallejos","Andrés Lorenzo Pantoja Espinoza"]}],"adi":[{"c":"Juez","p":["Daniel Antonio Encina Mansilla"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Caldera","tipo":"Mixto","comuna":"Caldera","direccion":"Tocornal N° 317 Esq. Gallo, Caldera","telefonos":["+56522319996"],"correo":"","rut":"61931200-7","cta":"12000002796","tit":[{"c":"Juez","p":["Macarena Karina Muñoz Toro","Rodrigo Javier Barraza Ríos"]},
+{"c":"Administrador","p":["Mauricio Andrés Díaz Aguirre"]},
+{"c":"Jefe de unidad","p":["Carolina Andrea Jiménez Bugueño"]},
+{"c":"Administrativo jefe","p":["Pabla Andrea Díaz Naredo","Francisca Álvarez Lam"]}]},
+{"nombre":"1° Juzgado de Letras de Vallenar","tipo":"Civil","comuna":"Vallenar","direccion":"Av. 14 de Julio S/N, Vallenar","telefonos":["+56512613938"],"correo":"jl1_vallenar@pjud.cl","rut":"60304013-9","cta":"12300032786","tit":[{"c":"Juez","p":["María Catalina López Werner"]},
+{"c":"Secretario","p":["Sandra Orellana Araya"]},
+{"c":"Oficial 1°","p":["Criss Belén Rozas Tapia"]}],"adi":[{"c":"Oficial 1°","p":["Johnny Huanchicay Cortes"]}]},
+{"nombre":"2° Juzgado de Letras de Vallenar","tipo":"Civil","comuna":"Vallenar","direccion":"14 de Julio S/N, Vallenar","telefonos":["+56512614088"],"correo":"creinoso@pjud.cl","rut":"60304022-8","cta":"12300040096","tit":[{"c":"Juez","p":["Ricardo Andrés Alveal Venegas"]},
+{"c":"Secretario","p":["Wilfredo Ricardo Cárdenas García"]},
+{"c":"Oficial 1°","p":["Cristian Fernando Reinoso Ceriche"]}]},
+{"nombre":"Juzgado de Familia de Vallenar","tipo":"Familia","comuna":"Vallenar","direccion":"Avda. Matta N° 302, Vallenar","telefonos":["+56512349581"],"correo":"jfvallenar@pjud.cl","rut":"61977930-4","cta":"12300055212","tit":[{"c":"Juez","p":["María Cecilia Órdenes Lettura","Karina Andrea Mendieta Cortés"]},
+{"c":"Administrador","p":["Felipe Ignacio Navarro Barria"]},
+{"c":"Jefe de unidad","p":["Priscilla Fernanda Pereira Ramírez"]},
+{"c":"Administrativo jefe","p":["Natalia Andrea Aguero Molina","Fanny Andrea Garate Torres"]}],"adi":[{"c":"Administrativo jefe","p":["Marco Antonio Pavez de la Vega"]}]},
+{"nombre":"Juzgado de Garantía de Vallenar","tipo":"Penal","comuna":"Vallenar","direccion":"Ochandia N° 688, Vallenar","telefonos":[],"correo":"","rut":"61949400-8","tit":[{"c":"Juez","p":["Virgilio Ricardo Pérez Carrizo","Daniel Eduardo Roke Herrera Marín"]},
+{"c":"Administrador","p":["Claudio Javier Mérida Mieres"]},
+{"c":"Jefe de unidad","p":["Ricardo Alberto Silva Bonilla"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Freirina","tipo":"Mixto","comuna":"Freirina","direccion":"Arturo Prat N° 527, Freirina","telefonos":[],"correo":"","rut":"60304014-7","cta":"12300032891","tit":[{"c":"Juez","p":["Pablo Matías Rodríguez Bustos"]},
+{"c":"Secretario","p":["Franco Andrés Madrid Palma"]},
+{"c":"Oficial 1°","p":["Luis Andrés Acosta Marcoleta"]}],"adi":[{"c":"Juez","p":["Franco Andrés Madrid Palma"]}]}],"La Serena":[{"nombre":"Tribunal de Juicio Oral en lo Penal de La Serena","tipo":"Penal","comuna":"La Serena","direccion":"Avda. El Santo N° 1069, La Serena","telefonos":[],"correo":"","rut":"61939100-4","cta":"12501153824","tit":[{"c":"Juez","p":["Jimena Soledad Pérez Pinto","María Inés Devoto Torres","Paola Grecia Cortés Tapia","Carol Angélica Sepúlveda Carvajal","Carlos Andrés Manque Tapia","Eugenia Elvira Gorichon Gómez","Eugenia Victoria Gallardo Labraña","Ana Marcela Alfaro Cortés","Loreto Alejandra Figueroa Tolosa"]},
+{"c":"Administrador","p":["Edye Antonio Obregón Obregón"]},
+{"c":"Jefe de unidad","p":["Enrique Antonio Dorado Salazar","Edmundo Ricardo Romero Campaña","Miriam Ruth Véliz Cortés","Claudio Andrés Torres Norambuena"]}],"adi":[{"c":"Juez","p":["Francisca Isidora Muñoz Bruna","Claudia Cecilia Molina Contador"]},
+{"c":"Jefe de unidad","p":["Ingrid Karina Bahamonde Bahamonde"]}]},
+{"nombre":"1° Juzgado de Letras de La Serena","tipo":"Civil","comuna":"La Serena","direccion":"Rengifo 240, La Serena","telefonos":["+56512338300"],"correo":"","rut":"60304003-1","cta":"12500088409","tit":[{"c":"Juez","p":["Karla Daniella Malebrán Torres"]},
+{"c":"Secretario","p":["Ingrid Marlene Ebner Rojas"]},
+{"c":"Oficial 1°","p":["Natalia Inés Tapia Araya"]}]},
+{"nombre":"2° Juzgado de Letras de La Serena","tipo":"Civil","comuna":"La Serena","direccion":"Rengifo N° 240, La Serena","telefonos":["+56512338333"],"correo":"","rut":"61937500-9","cta":"12500088531","tit":[{"c":"Juez","p":["Ghislaine Louisette Landerretche Sotomayor"]},
+{"c":"Secretario","p":["Gianni Paolo Pozzi Anilio"]},
+{"c":"Oficial 1°","p":["Isabel del Carmen Cortés Ramos"]}]},
+{"nombre":"3° Juzgado de Letras de La Serena","tipo":"Civil","comuna":"La Serena","direccion":"Rengifo 240, La Serena","telefonos":["+56512338365"],"correo":"","rut":"60304006-6","tit":[{"c":"Juez","p":["Nora Cecilia Rojas Nogerol"]},
+{"c":"Secretario","p":["Patricia Fernanda Consuelo Díaz Torres"]},
+{"c":"Oficial 1°","p":["Erick Enrique Barrios Riquelme"]}]},
+{"nombre":"Juzgado de Familia de La Serena","tipo":"Familia","comuna":"La Serena","direccion":"Rengifo N° 240, La Serena","telefonos":[],"correo":"","rut":"65549930-K","cta":"12501187974","tit":[{"c":"Juez","p":["Pamela Cristina Pérez Jiménez","Macarena del Pilar Navarrete González","Ana Verónica Naranjo Bischof","Juan Pablo Torrijo Rojas"]},
+{"c":"Administrador","p":["Jose Luis Labarca Varela"]},
+{"c":"Jefe de unidad","p":["Carol Lina Campos Salas"]},
+{"c":"Administrativo jefe","p":["Alfonso Andrés Moya Pacheco","Juan Andrés González Navarro"]}],"adi":[{"c":"Juez","p":["Samantha Ingrid Blanco Guzmán","Javier Eduardo Cancino Lagos","Alejandra Carina Vera Barahona","Paulina Andrea Eyzaguirre Araneda"]},
+{"c":"Jefe de unidad","p":["Alfonso Andrés Moya Pacheco"]},
+{"c":"Administrativo jefe","p":["Patricia Loreto Bórquez Rivera"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de La Serena","tipo":"Trabajo","comuna":"La Serena","direccion":"Rengifo N° 240, La Serena","telefonos":["+56512338500"],"correo":"","rut":"61979200-9","cta":"12500027922","tit":[{"c":"Juez","p":["Cristian Rodrigo Álvarez Mercado","Rodrigo Patricio Díaz Figueroa","Valeria Paulina Mulet Martínez","Karen Andrea Alfaro López"]},
+{"c":"Administrador","p":["Mariella Edelmira del Carmen Vergara Canales"]},
+{"c":"Jefe de unidad","p":["Enzo Alejandro Gurani Cordero","Marcelo Omar Echeverría Castro","Paola Roxana Zambra Ymio"]},
+{"c":"Administrativo jefe","p":["Rommy Gabriela García López"]}]},
+{"nombre":"Juzgado de Garantía de La Serena","tipo":"Penal","comuna":"La Serena","direccion":"Av. El Santo N° 1069, La Serena","telefonos":[],"correo":"","rut":"61939000-8","cta":"12501153832","tit":[{"c":"Juez","p":["Alain Alejandro Maldonado Liberona","Pedro Álvaro Rojas Castro","Claudio Marcelo Ayala Oyanedel"]},
+{"c":"Administrador","p":["Osvaldo Daniel Pozo Cabello"]},
+{"c":"Jefe de unidad","p":["Máximo Pedro Andrés Adriasola Rodríguez","Yenny Ester Donoso Cortés"]}]},
+{"nombre":"1° Juzgado de Letras de Coquimbo","tipo":"Civil","comuna":"Coquimbo","direccion":"Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo","telefonos":[],"correo":"jlcoquimbo1@pjud.cl","rut":"60304009-0","cta":"12700038538","tit":[{"c":"Juez","p":["Jorge Luis Vera Garvizo"]},
+{"c":"Secretario","p":["Edgardo Arturo Pinto Solís"]},
+{"c":"Oficial 1°","p":["Rocío Elena Tabilo Barahona"]}],"adi":[{"c":"Oficial 1°","p":["Moisés Alejandro Parra González"]}]},
+{"nombre":"2° Juzgado de Letras de Coquimbo","tipo":"Civil","comuna":"Coquimbo","direccion":"Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo","telefonos":["+56512321584"],"correo":"jlcoquimbo2@pjud.cl","rut":"60304008-2","cta":"12700040141","tit":[{"c":"Juez","p":["Ismael Alejandro Fuentes Navarrete"]},
+{"c":"Oficial 1°","p":["Estela Beatriz Astudillo Jorquera"]}]},
+{"nombre":"3° Juzgado de Letras de Coquimbo","tipo":"Civil","comuna":"Coquimbo","direccion":"Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo","telefonos":["+56512320483"],"correo":"jlcoquimbo3@pjud.cl","rut":"61930300-8","cta":"12700050732","tit":[{"c":"Juez","p":["Vesna Ljubica Sore Galleguillos"]},
+{"c":"Secretario","p":["Diana Gumercinda Marín Castañeda"]},
+{"c":"Oficial 1°","p":["Mónica Beatriz López Velic"]}]},
+{"nombre":"Juzgado de Familia de Coquimbo","tipo":"Familia","comuna":"Coquimbo","direccion":"Calle Santiago Trigo N° 511, Centro de Justicia de Coquimbo","telefonos":[],"correo":"","rut":"61977950-9","cta":"12700069956","tit":[{"c":"Juez","p":["Amaya Alejandra Karla Morras Rathgeber","Marcela Aída Villegas Macuada","María Antonieta Santibáñez Rodríguez","Isabel Elena Velásquez Rojas"]},
+{"c":"Administrador","p":["Ricardo Alejandro Acevedo Aguilera"]},
+{"c":"Jefe de unidad","p":["Ingrid Katharina Williamson Briceño"]},
+{"c":"Administrativo jefe","p":["Rose Marie Solange Pizarro Contreras","Karina Andrea Esquivel Bonilla"]}],"adi":[{"c":"Juez","p":["Felipe Gonzalo Pizarro Ávalos","Daniella Andrea Pinto Cortés","Magdalena Sofía Pizarro Veglia"]}]},
+{"nombre":"Juzgado de Garantía de Coquimbo","tipo":"Penal","comuna":"Coquimbo","direccion":"Melgarejo N° 942, Coquimbo","telefonos":["+56512325385"],"correo":"","rut":"75971600-0","cta":"12700057133","tit":[{"c":"Juez","p":["Carolina Andrea Baroncini Gálvez","Arturo Orlando Briceño Rivera","Lilian Elizabeth del Rosario Tapia Carvajal"]},
+{"c":"Administrador","p":["Cecilia Lucrecia Aguirre Donders"]},
+{"c":"Jefe de unidad","p":["Ethel Katherine Henríquez Opazo","Eliseo Hernán Sierra Araya"]}],"adi":[{"c":"Juez","p":["María Paz Marín Ojeda","Darío Arturo Díaz Peña Y Lillo"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Andacollo","tipo":"Mixto","comuna":"Andacollo","direccion":"Urmeneta N° 743, Andacollo","telefonos":["+56979783048"],"correo":"","rut":"60304001-5","cta":"13100002510","tit":[{"c":"Juez","p":["Pía Alejandra Droghetti Fuentes"]},
+{"c":"Secretario","p":["Soledad Margarita Sepúlveda Fonck"]},
+{"c":"Oficial 1°","p":["Francisco Javier Vergara López"]}],"adi":[{"c":"Juez","p":["Alberto Javier Jaraquemada Carrasco"]}]},
+{"nombre":"Juzgado de Letras de Vicuña","tipo":"Civil","comuna":"Vicuña","direccion":"Chacabuco S/N, Vicuña","telefonos":[],"correo":"","rut":"61916000-2","cta":"12900016954","tit":[{"c":"Juez","p":["Alonso Ernesto Escares Sepúlveda"]},
+{"c":"Administrador","p":["Raquel del Carmen Fuenzalida Díaz"]},
+{"c":"Jefe de unidad","p":["Romina Lucía Rojas Amante"]},
+{"c":"Administrativo jefe","p":["Juan Carlos Contreras Araya","Aaron Kallikrates Pastén Trujillo"]}]},
+{"nombre":"Juzgado de Garantía de Vicuña","tipo":"Penal","comuna":"Vicuña","direccion":"O'Higgins N° 745, Vicuña","telefonos":[],"correo":"","rut":"61938900-K","cta":"12900029690","tit":[{"c":"Juez","p":["Felipe Patricio Ravanal Kalergis"]},
+{"c":"Administrador","p":["Carla Elizabeth Williamson Briceño"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Ovalle","tipo":"Penal","comuna":"Ovalle","direccion":"Vicuña Mackenna N° 575, Ovalle","telefonos":[],"correo":"","rut":"75970090-2","cta":"13300084588","tit":[{"c":"Juez","p":["Ana Karina Hernández Muñoz","Claudio Andrés Weishaupt Milner","Rubén José Bustos Ortiz","Zoila Anyelina Terán Arévalo","Claudia Cecilia Molina Contador","Marjorie Graciela Montero Ardiles"]},
+{"c":"Administrador","p":["Juan Antonio Castro Tapia"]},
+{"c":"Jefe de unidad","p":["Luis Félix Castillo Araya","Alicia Antonia Retamales Venegas","Francisco Manuel Acuña Órdenes","Romina Alejandra Olivares Herrera"]}],"adi":[{"c":"Juez","p":["Valeria Carolina Valiente Vila","Pía Alejandra Droghetti Fuentes"]}]},
+{"nombre":"1° Juzgado de Letras de Ovalle","tipo":"Civil","comuna":"Ovalle","direccion":"Antonio Tirado N° 140, Ovalle","telefonos":["+56532620259"],"correo":"jlovalle1@pjud.cl","rut":"60304015-5","cta":"13300058480","tit":[{"c":"Juez","p":["María Alejandra Ríos Teillier"]},
+{"c":"Secretario","p":["Marcelo Andrés Cortés Moreno"]},
+{"c":"Oficial 1°","p":["Juan Rodrigo Varas Adaros"]}]},
+{"nombre":"2° Juzgado de Letras de Ovalle","tipo":"Civil","comuna":"Ovalle","direccion":"Antonio Tirado N° 140, Ovalle","telefonos":[],"correo":"","rut":"60304016-3","cta":"13300058501","tit":[{"c":"Juez","p":["Carolina Andrea Prat Alarcón"]},
+{"c":"Secretario","p":["Doris del Carmen Molina Palma"]},
+{"c":"Oficial 1°","p":["Mauricio Alejandro Aguilera Tapia"]}]},
+{"nombre":"3° Juzgado de Letras de Ovalle","tipo":"Civil","comuna":"Ovalle","direccion":"Gabriela Mistral N° 95, Ovalle","telefonos":["+56532620082"],"correo":"jlovalle3@pjud.cl","rut":"60304023-6","cta":"13300058692","tit":[{"c":"Juez","p":["Pedro Héctor Hiche Ireland"]},
+{"c":"Oficial 1°","p":["Pedro Pablo Mondaca Contreras"]}]},
+{"nombre":"Juzgado de Familia de Ovalle","tipo":"Familia","comuna":"Ovalle","direccion":"Libertad N° 652, Ovalle","telefonos":["+56532634717"],"correo":"","rut":"61977860-K","cta":"13300101334","tit":[{"c":"Juez","p":["Kerima Schichaschwili Carvajal","Andrés Berardo Mauricio Elgueta Muñoz"]},
+{"c":"Administrador","p":["Carlos Nicolás Pizarro Chinga"]},
+{"c":"Jefe de unidad","p":["Claudia Alejandra Pérez Flores"]},
+{"c":"Administrativo jefe","p":["Fernando Raimundo García Olivares","Constanza Alejandra Jerez Mundaca"]}],"adi":[{"c":"Juez","p":["Carol Lina Campos Salas","Andrés Eduardo Pereira Lobos"]}]},
+{"nombre":"Juzgado de Garantía de Ovalle","tipo":"Penal","comuna":"Ovalle","direccion":"Vicuña Mackenna N° 575, Ovalle","telefonos":[],"correo":"","rut":"75970110-0","cta":"13300084901","tit":[{"c":"Juez","p":["Luis Alberto Muñoz Caamaño"]},
+{"c":"Administrador","p":["Víctor Hugo Barrios Aros"]},
+{"c":"Jefe de unidad","p":["Marco Antonio Contador Ortiz"]}],"adi":[{"c":"Juez","p":["Patricia Fernanda Consuelo Díaz Torres"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Combarbalá","tipo":"Mixto","comuna":"Combarbalá","direccion":"Plaza de Armas S/N, Combarbalá","telefonos":[],"correo":"","rut":"61979940-2","cta":"13500005577","tit":[{"c":"Juez","p":["Maykol Andrés Maldonado López"]},
+{"c":"Secretario","p":["Carlos Humberto Olguín Cartagena"]},
+{"c":"Oficial 1°","p":["Rosa Alejandra Martínez Cerda"]}]},
+{"nombre":"Juzgado de Letras de Illapel","tipo":"Civil","comuna":"Illapel","direccion":"Jose del Solar N° 350, Illapel","telefonos":[],"correo":"","rut":"60304021-K","cta":"13700023561","tit":[{"c":"Juez","p":["Pablo Alberto Flores Prieto","Vladimir Hernando Jofré Hidalgo"]},
+{"c":"Administrador","p":["Enrique Alfonso Ahumada Canabes"]},
+{"c":"Jefe de unidad","p":["Ricardo Ignacio Sebastián Rojas Cortés"]},
+{"c":"Administrativo jefe","p":["Jorge Antonio Rubio Catalán","Antonio Alfredo Mesa Lery"]}]},
+{"nombre":"Juzgado de Garantía de Illapel","tipo":"Penal","comuna":"Illapel","direccion":"Independencia N° 0362, Illapel","telefonos":[],"correo":"","rut":"61938600-0","cta":"13700041250","tit":[{"c":"Juez","p":["Andrea Alejandra Rojas Cortés"]},
+{"c":"Administrador","p":["Oscar Arturo Muñoz Cruces"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Los Vilos","tipo":"Mixto","comuna":"Los Vilos","direccion":"Lautaro N° 330, Los Vilos","telefonos":[],"correo":"","rut":"60304026-0","cta":"14100012112","tit":[{"c":"Juez","p":["Gonzalo Alberto Martínez Merino"]},
+{"c":"Administrador","p":["Hugo Andrés Escuti Cottier"]},
+{"c":"Jefe de unidad","p":["Daniela Febes Olivares González"]},
+{"c":"Administrativo jefe","p":["Estela Ester Cortes Villalobos","Mical Alejandra Rojas Moyano"]}],"adi":[{"c":"Juez","p":["Carlos Alberto Rojas Astorga"]}]}],"Valparaíso":[{"nombre":"Juzgado de Letras de La Ligua","tipo":"Civil","comuna":"La Ligua","direccion":"Esmeralda N° 650, La Ligua","telefonos":["+56332711113"],"correo":"jlablaligua@pjud.cl","rut":"60305030-4","cta":"21900026550","tit":[{"c":"Juez","p":["Jeannette Alejandra Roco Ramírez","Paulina Marcela Astete Luna"]},
+{"c":"Administrador","p":["Leonel Alejandro Campos Aliaga"]},
+{"c":"Jefe de unidad","p":["Hector Andres de Jes Paez Galaz"]},
+{"c":"Administrativo jefe","p":["Liliana Mabel Luna Cortes","Jose Luis Aravena Seco"]}]},
+{"nombre":"Juzgado de Familia de La Ligua","tipo":"Familia","comuna":"La Ligua","direccion":"Vicuña Mackenna 268, La Ligua","telefonos":[],"correo":"","rut":"61978100-7","tit":[{"c":"Juez","p":["Sebastián Andrés Herrmann Lunecke","Matías Fontecilla Millán"]},
+{"c":"Administrador","p":["Héctor Manuel Yáñez Bobadilla"]},
+{"c":"Jefe de unidad","p":["Olga Antonia Cáceres Calderón"]},
+{"c":"Administrativo jefe","p":["Juana del Carmen Ávila Palacios","Marta Carola Troncoso Soto"]}],"adi":[{"c":"Administrador","p":["Olga Antonia Cáceres Calderón"]},
+{"c":"Jefe de unidad","p":["Carolina Elizabeth Mercado Ramírez"]}]},
+{"nombre":"Juzgado de Garantía de La Ligua","tipo":"Penal","comuna":"La Ligua","direccion":"Uribe N° 010, La Ligua","telefonos":[],"correo":"","rut":"61966500-7","cta":"21900054812","tit":[{"c":"Juez","p":["Margarita del Carmen Riquelme Clavería","Nelson Alejandro Fernández González"]},
+{"c":"Administrador","p":["Jorge Rodrigo Pizarro Garay"]},
+{"c":"Jefe de unidad","p":["Ximena Florisa Ibáñez Barría"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Petorca","tipo":"Mixto","comuna":"Petorca","direccion":"Silva N° 100, Petorca","telefonos":[],"correo":"","rut":"60305017-7","cta":"21800000375","tit":[{"c":"Juez","p":["Ivonne Francisca Cortés Mora"]},
+{"c":"Secretario","p":["Jocelyn Ivette Peñailillo López"]},
+{"c":"Oficial 1°","p":["Marta Salome Alvarez Arancibia"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Los Andes","tipo":"Penal","comuna":"Los Andes","direccion":"Av. Carlos Díaz N° 10, Los Andes","telefonos":[],"correo":"","rut":"61975300-3","cta":"22500081736","tit":[{"c":"Juez","p":["Alessandra Tubino Tassara","Carlos Raúl Muñoz Iturriaga","Cristian Manuel Caceres Castro","Maria Fernanda Cornejo Sandoval"]},
+{"c":"Administrador","p":["Andrés Antonio Aránguiz Pinto"]},
+{"c":"Jefe de unidad","p":["Felipe Alberto Godoy Gonzalez"]}]},
+{"nombre":"1° Juzgado de Letras de Los Andes","tipo":"Civil","comuna":"Los Andes","direccion":"Avenida Carlos Díaz N° 46, Los Andes","telefonos":[],"correo":"","rut":"61918000-3","cta":"22500051829","tit":[{"c":"Juez","p":["Fernando Marcos Alvarado Peña"]},
+{"c":"Secretario","p":["Marta Andrea Fuentes Villanueva"]},
+{"c":"Oficial 1°","p":["Leonardo Andrés Ferreira Porras"]}]},
+{"nombre":"2° Juzgado de Letras de Los Andes","tipo":"Civil","comuna":"Los Andes","direccion":"Avda. Independencia N° 36, Los Andes","telefonos":["+56342421931"],"correo":"jl2_losandes@pjud.cl","rut":"60305014-2","cta":"22500056405","tit":[{"c":"Juez","p":["Silvia Ivonne Sanhueza Zapata"]},
+{"c":"Secretario","p":["Arturo Leonardo Fernández Vargas"]},
+{"c":"Oficial 1°","p":["Carlos Eduardo Tapia Gamboa"]}]},
+{"nombre":"Juzgado de Familia de Los Andes","tipo":"Familia","comuna":"Los Andes","direccion":"Avenida Santa Teresa N° 241, Los Andes","telefonos":["+56342463735"],"correo":"jflosandes@pjud.cl","rut":"61978110-4","cta":"22500085511","tit":[{"c":"Juez","p":["Renato Daniel Segura Hidalgo","José Francisco Vergara Ruiz"]},
+{"c":"Administrador","p":["Juan Carlos Salgado Carvajal"]},
+{"c":"Jefe de unidad","p":["Cristina del Carmen Lagos Cañete"]},
+{"c":"Administrativo jefe","p":["Claudia Veronica Saez Mievilles","Maria Alejandra Athenas Gonzalez"]}],"adi":[{"c":"Juez","p":["Marta Andrea Fuentes Villanueva","Hector Alejandro Latorre Carrasco"]}]},
+{"nombre":"Juzgado de Garantía de Los Andes","tipo":"Penal","comuna":"Los Andes","direccion":"Avda. Carlos Diaz N° 10, Los Andes","telefonos":["+56342408111"],"correo":"jglosandes@pjud.cl","rut":"61966800-6","cta":"22500079545","tit":[{"c":"Juez","p":["Valeria Marcela Crosa Chiappe","Daniel Alfredo Chaucón Ojeda","Raúl Ignacio Valenzuela Rodríguez"]},
+{"c":"Administrador","p":["Daniel de la Cruz González Sandoval"]},
+{"c":"Jefe de unidad","p":["Alex Rodrigo López Hernández","Paola Jeannette Pizarro Parra"]}],"adi":[{"c":"Jefe de unidad","p":["Jorge Anibal Palma Fernandez"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de San Felipe","tipo":"Penal","comuna":"San Felipe","direccion":"Santa María Eufrasia N° 1333 (ex Calle San Martin) Piso 3, San Felipe","telefonos":["+56342513570"],"correo":"topsanfelipe@pjud.cl","rut":"61978410-3","tit":[{"c":"Juez","p":["Paola Antonieta Hidalgo Benavente","Constanza Andrea Olsen Tapia","Alejandra Isis Araya Fuentes","Rodrigo Antonio Cortes Gutierrez"]},
+{"c":"Administrador","p":["César Antonio Ahumada Vargas"]},
+{"c":"Jefe de unidad","p":["José Antonio Oliveros San Martín"]}]},
+{"nombre":"1° Juzgado de Letras de San Felipe","tipo":"Civil","comuna":"San Felipe","direccion":"Pedro Molina N° 2, San Felipe","telefonos":["+56342510258"],"correo":"jl1_sanfelipe@pjud.cl","rut":"60305018-5","cta":"22300045743","tit":[{"c":"Juez","p":["Omar Antonio Cifuentes Mena"]},
+{"c":"Secretario","p":["Claudio Marcelo Osorio Llanos"]},
+{"c":"Oficial 1°","p":["Danisa María Órdenes González"]}]},
+{"nombre":"Juzgado de Familia de San Felipe","tipo":"Familia","comuna":"San Felipe","direccion":"Arturo Prat N° 532, San Felipe","telefonos":["+56342595689"],"correo":"jfsanfelipe@pjud.cl","rut":"61978120-1","cta":"22300085346","tit":[{"c":"Juez","p":["Luz Eliana Ramírez Herrera","Pedro Gabriel Carvacho Vargas","Muriele Cristina Luarte Aravena","María Francisca Aceituno Subiabre"]},
+{"c":"Jefe de unidad","p":["José Antonio González Guerrero"]},
+{"c":"Administrativo jefe","p":["Roman Alfonso Naranjo Carmona","Enrique Manuel González Concha"]}],"adi":[{"c":"Administrador","p":["José Antonio González Guerrero"]},
+{"c":"Jefe de unidad","p":["Enrique Manuel González Concha"]},
+{"c":"Administrativo jefe","p":["Michel Andres Escobar Montoya"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de San Felipe","tipo":"Trabajo","comuna":"San Felipe","direccion":"Avda. Riquelme N° 54, San Felipe","telefonos":["+56342517070"],"correo":"jlabsanfelipe@pjud.cl","rut":"61979280-7","cta":"22300011300","tit":[{"c":"Juez","p":["Arturo Eduardo Ull Yáñez"]},
+{"c":"Administrador","p":["Eduardo Enrique Ibaceta Figari"]},
+{"c":"Jefe de unidad","p":["Patricio Andres Carvajal Mejias"]},
+{"c":"Administrativo jefe","p":["Fernanda Isabel Tapia Mancilla","Cristian Adrian Henriquez Aranda"]}],"adi":[{"c":"Juez","p":["Claudio Marcelo Osorio Llanos"]}]},
+{"nombre":"Juzgado de Garantía de San Felipe","tipo":"Penal","comuna":"San Felipe","direccion":"Santa Maria Eufrasia N° 1333, San Felipe","telefonos":[],"correo":"","rut":"61965900-7","tit":[{"c":"Juez","p":["Leopoldo Marcelo Soto Gutierrez","Bernardo Marcelo Bustamante Velozo","Carla Inés Rigotti Alcayaga"]},
+{"c":"Administrador","p":["Henry Godoy Badilla"]},
+{"c":"Jefe de unidad","p":["Rodolfo Samuel Morales Rivera","Felipe Andrés Caniguante Caniguante"]}],"adi":[{"c":"Jefe de unidad","p":["Daniela Andrea Hurtado Quiroz"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Putaendo","tipo":"Mixto","comuna":"Putaendo","direccion":"San Martín N° 788, Putaendo","telefonos":["+56342501021"],"correo":"jlyg_putaendo@pjud.cl","rut":"60305043-6","cta":"22100000559","tit":[{"c":"Juez","p":["Daniela Isabel Torres Flores"]},
+{"c":"Oficial 1°","p":["Erika Beatriz Ascenc Reyes Eyzaguirre"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Quillota","tipo":"Penal","comuna":"Quillota","direccion":"Chacabuco 425, Quillota","telefonos":["+56332316386"],"correo":"topquillota@pjud.cl","rut":"61975500-6","cta":"23300110916","tit":[{"c":"Juez","p":["Carolina Teresa Encalada Passalacqua","Leticia Isabel Morales Polloni","María Luisa Ríos Latham","Mónica Andrea Oliva Rybertt","Genoveva Constanza Matteucci Vega","Lino Jorge Manuel Godoy Ordenes"]},
+{"c":"Administrador","p":["Juan Pablo Agurto Mora"]},
+{"c":"Jefe de unidad","p":["Marcelo Felipe Castro Rosales","Jaime Natalio Vilches Diaz","Jazmin Ivette Rubilar Silva","Christian Rodrigo Rojas Pino"]}],"adi":[{"c":"Juez","p":["Andrea Macarena Santander Guerra"]}]},
+{"nombre":"1° Juzgado de Letras de Quillota","tipo":"Civil","comuna":"Quillota","direccion":"Freire N° 337, Quillota","telefonos":["+56332310070"],"correo":"jl1_quillota@pjud.cl","rut":"60305010-K","cta":"23300071074","tit":[{"c":"Juez","p":["Rolando Andrés Alvear Valenzuela"]},
+{"c":"Oficial 1°","p":["Pamela Isabel Pacheco Figueroa"]}]},
+{"nombre":"2° Juzgado de Letras de Quillota","tipo":"Civil","comuna":"Quillota","direccion":"Freire N° 555, Quillota","telefonos":["+56332266151"],"correo":"jl2_quillota@pjud.cl","rut":"60305009-6","cta":"23300071198","tit":[{"c":"Juez","p":["Patricia Zavala Astudillo"]},
+{"c":"Secretario","p":["Simón Guillermo Saavedra Treuer"]},
+{"c":"Oficial 1°","p":["David Haroldo Villegas Figueroa"]}]},
+{"nombre":"Juzgado de Familia de Quillota","tipo":"Familia","comuna":"Quillota","direccion":"Freire N° 190, Quillota","telefonos":["+56332260918"],"correo":"","rut":"65552570-K","cta":"23300113061","tit":[{"c":"Juez","p":["Alejandra Ximena Cabrera Mena","Víctor Manuel Abdala Vargas","Paz Veronica Diaz de Alda Cataldo"]},
+{"c":"Administrador","p":["Antonieta Alejandra Taha Flores"]},
+{"c":"Jefe de unidad","p":["Andrés Franco Mantelli Luck"]},
+{"c":"Administrativo jefe","p":["Andrea Maria Georgin Detaille Romero","Carolina Soledad Valenzuela Fariña"]}],"adi":[{"c":"Juez","p":["Colomba Sofía Trujillo Peña","Astrid Veninga Fergadiott","Paz Veronica Diaz de Alda Cataldo"]},
+{"c":"Administrativo jefe","p":["Rodrigo Andrés Díaz Villafaña"]}]},
+{"nombre":"Juzgado de Garantía de Quillota","tipo":"Penal","comuna":"Quillota","direccion":"Calle Chacabuco 425, Quillota","telefonos":["+56332312264"],"correo":"","rut":"61966300-4","cta":"23300106048","tit":[{"c":"Juez","p":["Nancy Amalia Riffo Zúñiga"]},
+{"c":"Administrador","p":["Pamela del Carmen Olguin Lepe"]},
+{"c":"Jefe de unidad","p":["Katherine Ninoska Sepulveda Acosta"]}],"adi":[{"c":"Juez","p":["Guillermo Alejandro Améstica Zavala"]}]},
+{"nombre":"Juzgado de Letras de Calera","tipo":"Civil","comuna":"Calera","direccion":"Carrera N° 1088, Calera","telefonos":["+56332221028"],"correo":"","rut":"65002021-9","cta":"22700035828","tit":[{"c":"Juez","p":["Andrea Francisca Pizarro Peralta"]},
+{"c":"Jefe de unidad","p":["Mariela Cecilia Hurtado Aspe"]},
+{"c":"Administrativo jefe","p":["María Soledad Biscar Rodríguez","Gonzalo Esteban Villarroel Hurtado"]}],"adi":[{"c":"Juez","p":["Andrea Cecilia Muñoz Saavedra","Naya Antonia Faúndez Rojas"]},
+{"c":"Administrativo jefe","p":["Victor Marcelo Jimenez Valencia"]}]},
+{"nombre":"Juzgado de Garantía de Calera","tipo":"Penal","comuna":"Calera","direccion":"Avda. Gonzalo Lizasoain N° 203, Calera","telefonos":["+56332226808"],"correo":"jglacalera@pjud.cl","rut":"61966000-5","cta":"22700060695","tit":[{"c":"Juez","p":["Roberto Pablo Lizana Mora","Celeste Jesús Serrano Lagos"]},
+{"c":"Administrador","p":["Angela Paola Cristi Jarufe"]},
+{"c":"Jefe de unidad","p":["Patricio Nelson Henriquez Bustos"]}],"adi":[{"c":"Jefe de unidad","p":["Paola Romanette Morales Fernández"]}]},
+{"nombre":"Juzgado de Letras de Limache","tipo":"Civil","comuna":"Limache","direccion":"Echaurren N° 560, 3° Piso, Limache","telefonos":[],"correo":"","rut":"60305039-8","cta":"23700037258","tit":[{"c":"Juez","p":["Katherine Andrea Marilaf Valencia"]},
+{"c":"Secretario","p":["Daniel Alfonso Bravo Zamora"]},
+{"c":"Oficial 1°","p":["Catherine Paulina Yáñez Cornejo"]}]},
+{"nombre":"Juzgado de Familia de Limache","tipo":"Familia","comuna":"Limache","direccion":"Echaurren N° 560, Limache","telefonos":[],"correo":"jflimache@pjud.cl","rut":"61977630-5","cta":"23700064549","tit":[{"c":"Juez","p":["Catalina Goñi Price","Gabriela María Aliste Sunkel"]},
+{"c":"Jefe de unidad","p":["Alfredo Andrés Ramírez Arriagada"]},
+{"c":"Administrativo jefe","p":["Luis Javier Humberto Araya Quero","María Constanza Bernal Torrejón"]}],"adi":[{"c":"Jefe de unidad","p":["Andrea Carolina Loaiza Triviño"]}]},
+{"nombre":"Juzgado de Garantía de Limache","tipo":"Penal","comuna":"Limache","direccion":"Republica N° 1023, Limache","telefonos":[],"correo":"","rut":"65248540-5","cta":"23700061001","tit":[{"c":"Juez","p":["Paulina Alejandra Martínez Meller","Sergio Antonio Brustavo Martínez"]},
+{"c":"Jefe de unidad","p":["Alejandro Andrés Lossier Garrido"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Valparaíso","tipo":"Penal","comuna":"Valparaíso","direccion":"Victoria N° 3022, Valparaiso","telefonos":[],"correo":"","rut":"61971800-3","cta":"24700106175","tit":[{"c":"Juez","p":["Francisco Antonio Hermosilla Iriarte","Juan Carlos Maggiolo Caro","Leonardo Iván Alberto Aravena Reyes","Valeria Elena Echeverria Vega","Germán Manuel Núñez Romero","Angela Maria Carrasco Palma","Maureen Patricia Darrouy Palacios","Jany Malena Silva Dawson","Paula Andrea Ramos Vergara","Matías Urrejola Santa María","Claudio Patricio Martínez Milet","Wilson Antonio González Díaz","Marcela de Lourdes Osorio Páez","Danko Tanis Koscina Villegas","Williams Alexis Vilches Flores","Ada María Díaz Espinosa","José Antonio Cifuentes Gil","Sergio Antonio Pizarro Aguilera","Pamela Beatriz Peralta Farrugia"]},
+{"c":"Administrador","p":["Fabiola Alejandra Parra Gonzalez"]},
+{"c":"Jefe de unidad","p":["Héctor Antonio Cartagena Villagra","Freddy Ricardo Romo Varas","Jorge Cristian Hinostroza Chaparro","Gonzalo Andrés Fara Lasa","Irene Beatriz Cofre San Martin"]}],"adi":[{"c":"Juez","p":["Diego Alberto Muñoz Pacheco"]}]},
+{"nombre":"1° Juzgado Civil de Valparaíso","tipo":"Civil","comuna":"Valparaíso","direccion":"Calle Prat 779, Valparaíso","telefonos":[],"correo":"","rut":"60305007-K","cta":"23900212658","tit":[{"c":"Juez","p":["Patricia Maria Montenegro Vasquez"]},
+{"c":"Secretario","p":["Claudia Verónica Reveco Iglesias"]},
+{"c":"Oficial 1°","p":["Maria Ana Soledad Franichevic Pedrals"]}]},
+{"nombre":"2° Juzgado Civil de Valparaíso","tipo":"Civil","comuna":"Valparaíso","direccion":"Prat 779, Valparaíso","telefonos":[],"correo":"","rut":"60305015-0","cta":"23900213662","tit":[{"c":"Juez","p":["Luis Fernando García Díaz"]},
+{"c":"Secretario","p":["Cristian Gonzalo Ramirez Barahona"]},
+{"c":"Oficial 1°","p":["Benjamin Gonzalo Ahumada Ruz"]}]},
+{"nombre":"3° Juzgado Civil de Valparaíso","tipo":"Civil","comuna":"Valparaíso","direccion":"Prat N° 779, 6° Piso, Valparaiso","telefonos":[],"correo":"","rut":"60305033-9","cta":"23900213727","tit":[{"c":"Juez","p":["María José Naranjo Collao"]},
+{"c":"Secretario","p":["Guillermo Alejandro Améstica Zavala"]},
+{"c":"Oficial 1°","p":["Maria Angelica Velasco Tilleria"]}]},
+{"nombre":"4° Juzgado Civil de Valparaíso","tipo":"Civil","comuna":"Valparaíso","direccion":"Calle Prat N° 779, 7° Piso, Valparaiso","telefonos":["+56322137535"],"correo":"jc4_valparaiso@pjud.cl","rut":"60305002-9","cta":"23900213638","tit":[{"c":"Juez","p":["Carmen Gloria Vargas Morales"]},
+{"c":"Oficial 1°","p":["Ximena María González Cisternas"]}],"adi":[{"c":"Secretario","p":["Gabriela Jesus Ali Arriaza"]}]},
+{"nombre":"5° Juzgado Civil de Valparaíso","tipo":"Civil","comuna":"Valparaíso","direccion":"Prat N° 779, 8° Piso, Valparaiso","telefonos":[],"correo":"","rut":"60305005-3","cta":"23900213654","tit":[{"c":"Juez","p":["Silvia Alejandra Veloso Bustos"]},
+{"c":"Secretario","p":["Analia Rojas Zamora"]},
+{"c":"Oficial 1°","p":["Karina del Pilar Cea Cea"]}],"adi":[{"c":"Oficial 1°","p":["Gipsy del Carmen Arellano Ramírez"]}]},
+{"nombre":"Juzgado de Familia de Valparaíso","tipo":"Familia","comuna":"Valparaíso","direccion":"Tomas Ramos 98, Valparaíso","telefonos":[],"correo":"","rut":"65552400-2","cta":"23900323671","tit":[{"c":"Juez","p":["Ruth Angélica Alvarado Villarroel","Lucía Aurora Gatica Illanes","Francesco Ildemaro Carretta Muñoz","Marcia Lorena Quintanilla Ponce","Marcela Paz Valenzuela Rodríguez","Cecilia Grecia del Carmen González Winroth","Andrea Lía Cordero Valdés","Sergio Alejandro Madrid Nilo","Cecilia Carolina Ruiz Arancibia"]},
+{"c":"Administrador","p":["María Cristina Cosma Inojosa"]},
+{"c":"Jefe de unidad","p":["Isaac Patricio Hernández Zambrano","Samuel Clovis Paschuan Adaros","Paula Loreto Millan Echeverria"]},
+{"c":"Administrativo jefe","p":["Jorge Luis Olivares Valenzuela","Cristian Ricardo González Coke","Juan Agustin Solis Rojas"]}],"adi":[{"c":"Juez","p":["Andrea Maribel Saravia Arriagada","Adriana Julia Hernández Gromelle"]}]},
+{"nombre":"Juzgado de Cobranza Laboral y Previsional de Valparaíso","tipo":"Cobranza","comuna":"Valparaíso","direccion":"Yungay N° 2434, Valparaiso","telefonos":[],"correo":"","rut":"53299694-5","cta":"24700111136","tit":[{"c":"Juez","p":["Fresia Esther Ainol Moncada","Julio Andrés Fuentes Calderón"]},
+{"c":"Administrador","p":["Miguel Angel Quiroz Torres"]},
+{"c":"Jefe de unidad","p":["Gustavo Nain Deick Yáñez"]},
+{"c":"Administrativo jefe","p":["Karen Andrea Zambrano Cartagena"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Valparaíso","tipo":"Trabajo","comuna":"Valparaíso","direccion":"Yungay 2434, Valparaiso","telefonos":["+56322232574"],"correo":"jlabvalparaiso@pjud.cl","rut":"61979260-2","cta":"24700007207","tit":[{"c":"Juez","p":["Pamela Alejandra Ponce Valenzuela","Eduardo Alfonso Saldivia Saa","Juan Andrés Marcelo Tudela Jiménez","Javier Alejandro Mora Méndez","María Verónica Torres Reyes","María Paz Bartolucci Konga"]},
+{"c":"Administrador","p":["Jorge Patricio Pacheco Kroff"]},
+{"c":"Jefe de unidad","p":["Jose Eduardo Nuñez Salazar","Pamela Andrea Cardenas Quinteros"]},
+{"c":"Administrativo jefe","p":["Jorge Andrés Jiménez Ripetti","Miguel Hardy Barra Saldivia","Gonzalo Javier Pirard Moreno","Sergio Ricardo Mayer Campos"]}],"adi":[{"c":"Juez","p":["María Aracely Muñoz Pastrán","Sebastián Alfonso Baez Hernández"]}]},
+{"nombre":"Juzgado de Garantía de Valparaíso","tipo":"Penal","comuna":"Valparaíso","direccion":"Victoria N° 3022, Valparaiso","telefonos":["+56322320900"],"correo":"","rut":"61965800-0","cta":"24700105993","tit":[{"c":"Juez","p":["Mirtza Marisol González Vera","Fernando Enrique Vergara Racape","Ingrid Jeannette Alvial Figueroa","Sylvia Guillermina Quintana Ojeda","Jeanette Mireya Oliva Canales","Gigliola Devoto Squadritto","Verónica Alejandra Rivera González","Camilo Alberto Obrador Castro","Miguel Enrique Sáez Navarrete"]},
+{"c":"Administrador","p":["Alejandra Victoria Perez Rojas"]},
+{"c":"Jefe de unidad","p":["Alejandro Antonio Eherenfeld Valenzuela","Danko Antonio Stjepovic González","Elizabeth Angelique Inostroza Fajardin"]}],"adi":[{"c":"Juez","p":["Lucas Ignacio Ponce Carreño"]},
+{"c":"Administrador","p":["Alejandro Antonio Eherenfeld Valenzuela"]}]},
+{"nombre":"Tribunal Juicio Oral en lo Penal de Viña del Mar","tipo":"Penal","comuna":"Viña del Mar","direccion":"Alvarez N° 1330, Viña del Mar","telefonos":["+56322795200"],"correo":"notifica_top_vinadelmar@pjud.cl","rut":"61973400-9","cta":"23800006309","tit":[{"c":"Juez","p":["Felipe Rodrigo Ortiz de Zárate Fernández","Marcela Francis Nash Álvarez","Alejandro Patricio Palma Cid","Roxana Matilde Valenzuela Reyes","Mónica del Rosario López Castillo","Claudio Alberto Correa Zacarias","Maria Viviana Poblete Vera","Manuel Alejandro Muñoz Chamorro","Angélica Andrea Jiménez Lagos","Cristóbal Andrés Lira Orphanopoulos","Claudio Andrés Espinoza Asenjo","Fernán Luis Pío Rioseco Pinochet","Rocio del Pilar Oscariz Collarte","Claudia Andrea Ortiz Leiva","Alejandra Paulina Heller Fuenzalida"]},
+{"c":"Administrador","p":["César Domingo Di Marco Zamora"]},
+{"c":"Jefe de unidad","p":["Claudia Marcela Medina Vera","Marcelo Andrés Rodríguez Abrigo","Carolina Tatiana Salinas Fuentes","Daniel Antonio Castro Flores","Víctor Hugo Soto Gómez"]}],"adi":[{"c":"Jefe de unidad","p":["Mauricio Alejandro Arévalo Sánchez"]}]},
+{"nombre":"1° Juzgado Civil de Viña del Mar","tipo":"Civil","comuna":"Viña del Mar","direccion":"Arlegui 346, Viña del Mar","telefonos":[],"correo":"","rut":"60305020-7","tit":[{"c":"Juez","p":["Gabriela María Guajardo Aguilera"]},
+{"c":"Secretario","p":["Carolina Andrea Mella Toledo"]},
+{"c":"Oficial 1°","p":["Jaime Alfonso Iturrieta Leiva"]}]},
+{"nombre":"2° Juzgado Civil de Viña del Mar","tipo":"Civil","comuna":"Viña del Mar","direccion":"Calle Arlegui N° 346 Piso N° 4, Centro de Justicia de Viña del Mar","telefonos":[],"correo":"","rut":"60305021-5","cta":"23500121831","tit":[{"c":"Secretario","p":["Ximena Patricia Torres Valenzuela"]},
+{"c":"Oficial 1°","p":["Javier Humberto Armando Fernandez"]}],"adi":[{"c":"Juez","p":["Marjorie del Carmen Zuleta Amador"]}]},
+{"nombre":"3° Juzgado Civil de Viña del Mar","tipo":"Civil","comuna":"Viña del Mar","direccion":"Calle Arlegui N° 346 Piso N° 5, Centro de Justicia de Viña del Mar","telefonos":["+56322976760"],"correo":"jc3_vinadelmar@pjud.cl","rut":"60305011-8","cta":"23500115190","tit":[{"c":"Juez","p":["Esteban Andrés Gómez Barahona"]},
+{"c":"Secretario","p":["Laura Ruby González González"]},
+{"c":"Oficial 1°","p":["Miriam del Carmen Armijo Indellicati"]}],"adi":[{"c":"Oficial 1°","p":["Claudio Sebastian Palma Barrios"]}]},
+{"nombre":"Juzgado de Familia de Viña del Mar","tipo":"Familia","comuna":"Viña del Mar","direccion":"Calle Traslaviña N° 145, Pisos 1,2,4 y 5, Centro de Justicia de Viña del Mar","telefonos":["+56322326926"],"correo":"","rut":"65552790-7","cta":"23500161850","tit":[{"c":"Juez","p":["Sara Marcela Covarrubias Naser","Paula Pilar Navarro Arteaga","Sandra Verónica Ibáñez Chesta","Daniela Beatriz González Bockus","Macarena Claudia Alicia Osorio Contreras","Jaime Eduardo Pérez Cabrera","Alejandra Elina Saldías Vásquez","Claudia Fabiola Tapia Rojas"]},
+{"c":"Administrador","p":["Paulina Ximena Arroyo Aparicio"]},
+{"c":"Jefe de unidad","p":["Dora Smirnoff Schapira","Vanessa Giovanna Dutra Nieves","Norma Elena Godoy Claro"]},
+{"c":"Administrativo jefe","p":["Cecilia del Carmen Muñoz Rojas","Priscila Alejandra Campos Ahumada","Juan Carlos Hidalgo Zepeda"]}],"adi":[{"c":"Juez","p":["Silvia Viviana Araya Ibarra","Jose Octavio Vizcarra Suarez","Osvaldo Antonio Valenzuela Contreras"]},
+{"c":"Jefe de unidad","p":["Priscila Alejandra Campos Ahumada"]}]},
+{"nombre":"Juzgado de Garantía de Viña del Mar","tipo":"Penal","comuna":"Viña del Mar","direccion":"Alvarez 1330, Viña del Mar","telefonos":["+56322327800"],"correo":"notifica_jg_vinadelmar@pjud.cl","rut":"61967500-2","cta":"23800005019","tit":[{"c":"Juez","p":["Roberto Ariel Pinto Gutiérrez","Eliana Isabel Uribe Molina","María del Pilar Labarca Rocco","Erik Gonzalo Espinoza Cerda","Loreto Andrea León Pinochet","Aida Cecilia Torres Salgado","Gonzalo Francisco Cespedes Proto","María Alejandra Radic Soffia"]},
+{"c":"Administrador","p":["Luis Antonio Figueroa Navarrete"]},
+{"c":"Jefe de unidad","p":["Daniel Izzat Vera Kemm","Julio Andrés Pérez Galleguillos","Cristhian Eleazar Olguín Marzi"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Quintero","tipo":"Mixto","comuna":"Quintero","direccion":"Arturo Prat N° 2027, Quintero","telefonos":[],"correo":"","rut":"61967800-1","cta":"22900028834","tit":[{"c":"Juez","p":["Patricio Osvaldo Toro Díaz","Pablo Emanuel Pizarro Arredondo","Francisco Ignacio Cabezas Vergara"]},
+{"c":"Administrador","p":["Hector Alejandro Andrade Garcia"]},
+{"c":"Jefe de unidad","p":["Felipe Rubén Vincensini Cruz"]},
+{"c":"Oficial 1°","p":["Verónica de las Mercedes Correa Meneses"]},
+{"c":"Administrativo jefe","p":["Sayonara Maribel Salgado Santis"]}],"adi":[{"c":"Oficial 1°","p":["Lissett Fernandez Salcedo"]}]},
+{"nombre":"1° Juzgado de Letras de Quilpué","tipo":"Civil","comuna":"Quilpué","direccion":"Freire N° 989, Quilpue, Quilpué","telefonos":[],"correo":"","rut":"60305006-1","cta":"25300034236","tit":[{"c":"Juez","p":["Cristian Marcelo Urzua Chacon"]},
+{"c":"Secretario","p":["Sonnia Elena Navarro Morales"]},
+{"c":"Oficial 1°","p":["Adela Molleda Arce"]}]},
+{"nombre":"2° Juzgado de Letras de Quilpué","tipo":"Civil","comuna":"Quilpué","direccion":"Freire 989, Quilpué","telefonos":[],"correo":"jl2_quilpue@pjud.cl","rut":"61925200-4","cta":"25300049683","tit":[{"c":"Juez","p":["Néstor Hernán Valdés Sepúlveda"]},
+{"c":"Secretario","p":["Paola del Carmen López Carvajal"]},
+{"c":"Oficial 1°","p":["Alonso Alberto Aliaga Reinoso"]}]},
+{"nombre":"Juzgado de Familia de Quilpué","tipo":"Familia","comuna":"Quilpué","direccion":"Esmeralda N° 440, Quilpué","telefonos":[],"correo":"","rut":"65552550-5","cta":"25300069536","tit":[{"c":"Juez","p":["Antonella Tubino Tassara","Pamela Cristina Cid Campos","Milenka María Paz Moreno Vilchez","María José Constanzo Bernardino"]},
+{"c":"Administrador","p":["Oscar Enrique Ruiz Aedo"]},
+{"c":"Jefe de unidad","p":["Veronica Ester Jofre Olivares"]},
+{"c":"Administrativo jefe","p":["Francisco Javier Martínez Garrido","Ignacio Andres Ibacache Contreras"]}],"adi":[{"c":"Juez","p":["Jaime Andrés Díaz Astorga"]},
+{"c":"Jefe de unidad","p":["Ignacio Andres Ibacache Contreras"]},
+{"c":"Administrativo jefe","p":["Luis Patricio Cáceres Reyes"]}]},
+{"nombre":"Juzgado de Garantía de Quilpué","tipo":"Penal","comuna":"Quilpué","direccion":"Calle Covadonga N° 910, Quilpue, Quilpué","telefonos":[],"correo":"","rut":"61966200-8","cta":"25300065107","tit":[{"c":"Juez","p":["Luis Miguel Araya Ávila","Paula Beatriz Millon Lorens","Daniela Alejandra Naney Rodríguez Niño"]},
+{"c":"Administrador","p":["Eric Alexander Benitt Pereira"]},
+{"c":"Jefe de unidad","p":["Cristian Alberto Soto Figueroa"]}]},
+{"nombre":"Juzgado de Letras de Villa Alemana","tipo":"Civil","comuna":"Villa Alemana","direccion":"Santiago N° 653, Villa Alemana","telefonos":[],"correo":"","rut":"60305001-0","cta":"25100025046","tit":[{"c":"Juez","p":["Javiera Opazo Vaccaro","Gabriel Gustavo Mateo Ferrer Correa"]},
+{"c":"Administrador","p":["Alex Eduardo Mora Cartagena"]},
+{"c":"Jefe de unidad","p":["Natalia Belén Marchant Valencia"]},
+{"c":"Administrativo jefe","p":["Luis Carlos Eladio Campos Villarroel","Gonzalo Antonio Castagnet Mardones"]}]},
+{"nombre":"Juzgado de Familia de Villa Alemana","tipo":"Familia","comuna":"Villa Alemana","direccion":"Avenida Quinta N° 091, Villa Alemana","telefonos":[],"correo":"","rut":"65552540-8","cta":"25100060658","tit":[{"c":"Juez","p":["Jessica Bronfman Vargas"]},
+{"c":"Administrador","p":["Ingrid Balbina del C Aravena Venegas"]},
+{"c":"Jefe de unidad","p":["Claudia Andrea Rojas Villarroel"]},
+{"c":"Administrativo jefe","p":["Astrid Yolanda Gorigoytia Concha","Ana María Cayumán Vásquez"]}],"adi":[{"c":"Juez","p":["Veronica Ester Jofre Olivares"]}]},
+{"nombre":"Juzgado de Garantía de Villa Alemana","tipo":"Penal","comuna":"Villa Alemana","direccion":"Baquedano N° 0250, Villa Alemana","telefonos":[],"correo":"","rut":"61967300-K","cta":"25100054283","tit":[{"c":"Juez","p":["Ignacio Andrés Adana Juri"]},
+{"c":"Administrador","p":["Rodrigo Alonso Céspedes Sirandoni"]},
+{"c":"Jefe de unidad","p":["Carlos Leandro Chávez Pérez"]}]},
+{"nombre":"Juzgado de Letras de Casablanca","tipo":"Civil","comuna":"Casablanca","direccion":"Avenida Diego Portales N° 542 Tercer Piso, Casablanca","telefonos":[],"correo":"","rut":"60305004-5","cta":"25500015163","tit":[{"c":"Juez","p":["Alexandra Sofía Yáñez Jara"]},
+{"c":"Secretario","p":["Deisy Yohana Machuca Cabrera"]},
+{"c":"Oficial 1°","p":["Fabiola Soledad Palma Villarroel"]}]},
+{"nombre":"Juzgado de Familia de Casablanca","tipo":"Familia","comuna":"Casablanca","direccion":"Av. Portales N° 542, Casablanca","telefonos":[],"correo":"","rut":"65552560-2","cta":"25500035792","tit":[{"c":"Juez","p":["Rodrigo Matus de la Fuente","Paola Jeannette Niedmann de la Barra"]},
+{"c":"Administrador","p":["Juana del Carmen Sanzana Ponce"]},
+{"c":"Jefe de unidad","p":["Cristian Marcelo Godoy Monsalve"]},
+{"c":"Administrativo jefe","p":["Fabiola Viviana Costa Avendaño","Beatriz Solange Muñoz Correa"]}],"adi":[{"c":"Juez","p":["Daniel Omar Zúñiga Rivas"]}]},
+{"nombre":"Juzgado de Garantía de Casablanca","tipo":"Penal","comuna":"Casablanca","direccion":"Juan Leiva Amor 147 Casablanca","telefonos":["+56322741463"],"correo":"","rut":"61967200-3","cta":"25500034184","tit":[{"c":"Juez","p":["Manuel Mauricio Baeza Pizarro"]},
+{"c":"Administrador","p":["Mauricio Marcelo Aranda Lira"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de San Antonio","tipo":"Penal","comuna":"San Antonio","direccion":"Luis Alberto Araya N° 2220, Piso 5°, Ala Sur, Barrancas, San Antonio","telefonos":["+56998202515"],"correo":"","rut":"61973700-8","cta":"36500091945","tit":[{"c":"Juez","p":["Sergio Ariel Ortiz Huechapán","Edgardo Andrés Castro Fuentes","Rosa Antonieta Caballero Burgos","Daniela del Pilar Herrera Faúndez","Diego Alberto Muñoz Pacheco"]},
+{"c":"Administrador","p":["Pablo Rodrigo Guzmán Inostroza"]},
+{"c":"Jefe de unidad","p":["Mario Sergio Soto Sepúlveda","Fernando José Rodríguez Urria","Valeria Carolina Valiente Vila","Loreto Beatriz Vera Gonzalez"]}],"adi":[{"c":"Juez","p":["Alejandro Mauricio Lobos Véliz","María Angélica Martínez Gómez","Catalina Alicia Lagos Gómez","Luis Guillermo Sebastián Contreras Vera"]},
+{"c":"Jefe de unidad","p":["Manuel Enrique San Martín Urquiola"]}]},
+{"nombre":"1° Juzgado de Letras de San Antonio","tipo":"Civil","comuna":"San Antonio","direccion":"Luis Alberto Araya N° 2220, San Antonio","telefonos":["+56352211822"],"correo":"","rut":"60306044-K","cta":"36500053024","tit":[{"c":"Juez","p":["Paloma Fernandez Fernandez"]},
+{"c":"Oficial 1°","p":["Daniela Valeria Garrido Cea"]}]},
+{"nombre":"2° Juzgado de Letras de San Antonio","tipo":"Civil","comuna":"San Antonio","direccion":"Luis Alberto Araya 2220, San Antonio","telefonos":[],"correo":"jl2_sanantonio@pjud.cl","rut":"60306044-K","cta":"3650005856","tit":[{"c":"Juez","p":["José Luis Mayorga Simpson"]},
+{"c":"Secretario","p":["Catalina Andrea Donoso Rosas"]},
+{"c":"Oficial 1°","p":["Teresa de Jesús Nilo Carvajal"]}]},
+{"nombre":"Juzgado de Familia de San Antonio","tipo":"Familia","comuna":"San Antonio","direccion":"Luis Alberto Araya, N° 2220 Sector Barrancas, San Antonio","telefonos":["+56352212173"],"correo":"jfsanantonio@pjud.cl","rut":"61978140-6","cta":"36500096424","tit":[{"c":"Juez","p":["Yasmina Edith Arenas Escudero","Danilo Alberto Andueza Quezada","Rodrigo Alexis Palma Muñoz"]},
+{"c":"Administrador","p":["Mauricio Christian Guerrero Durán"]},
+{"c":"Jefe de unidad","p":["Tamara Marichen Nicolas Ríos"]},
+{"c":"Administrativo jefe","p":["Carlos Eduardo Osorio Sanchez","Paola Alejandra García Menares"]}],"adi":[{"c":"Juez","p":["Mitzy Loren Peters Allende"]},
+{"c":"Administrativo jefe","p":["Jose Luis Piña Tapia"]}]},
+{"nombre":"Juzgado de Garantía de San Antonio","tipo":"Penal","comuna":"San Antonio","direccion":"Luis Alberto Araya N° 2220, Barrancas, San Antonio","telefonos":[],"correo":"","rut":"61966900-2","cta":"36500089941","tit":[{"c":"Juez","p":["Daniel Holzmann-Weizmann Venegas","Cristian Omar Zubieta Rojas","Felipe Eduardo Contreras Bianchi"]},
+{"c":"Administrador","p":["Denis Enrique Ceriche Flores"]},
+{"c":"Jefe de unidad","p":["Magaly Isabel Retamales Venegas","Cecilia Paulina Flores Figueroa","Sebastián Arturo Herbert Bastías Mesina"]}],"adi":[{"c":"Juez","p":["Javier Ignacio Arenas Delgado"]},
+{"c":"Jefe de unidad","p":["Marcela Carolina Cartagena Chau"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Isla de Pascua","tipo":"Mixto","comuna":"Isla de Pascua","direccion":"Avenida Pont S/N, Isla de Pascua","telefonos":["+56322100233"],"correo":"jlyg_ipa@pjud.cl","rut":"60305041-K","cta":"24100001515","tit":[{"c":"Juez","p":["Alex Mauricio Guzmán Manríquez"]},
+{"c":"Secretario","p":["Héctor Flavio Galleguillos Carmona"]},
+{"c":"Oficial 1°","p":["Eugenia de las Mercedes Rodriguez Corvalan"]}],"adi":[{"c":"Juez","p":["Simón Guillermo Saavedra Treuer"]}]}],"Santiago":[{"nombre":"1° Tribunal de Juicio Oral en lo Penal de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1606, Edificio D, 4° Piso, Santiago","telefonos":[],"correo":"escritosdeplazostop1@pjud.cl","rut":"61977610-0","cta":"6368344","tit":[{"c":"Juez","p":["María Isabel Pantoja Merino","Irma Andrea Tapia Valdés","Marcela Paz Urrutia Cornejo","Claudia Danae Camus Hidalgo","Tatiana Isabel Escobar Meza","Carmen Patricia Riquelme Gonzalez","Claudio Alejandro Henríquez Alarcón","Claudia Marcela Galan Villegas","Paulina Soledad Andrés Miranda","Mónica Beatriz Amanda Urra Zúñiga","Francisco Javier Vela González"]},
+{"c":"Administrador","p":["Claudia Alejandra Faure Álvarez"]},
+{"c":"Jefe de unidad","p":["Patricia Marcela Campos Pizarro","Eduardo Javier Cortes Ruhl","Elsa Viviana Aguilera Torres","Alejandra Elena Luengo Belmar","Andrés Antonio Marambio Parada"]}],"adi":[{"c":"Juez","p":["Ricardo Andrés Farías Quitral","Joelly Andrea Cares Gonzalez"]}]},
+{"nombre":"2° Tribunal de Juicio Oral en lo Penal de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Av. Pedro Montt N° 1606, Edificio D, 2° Piso, Santiago","telefonos":[],"correo":"","rut":"61978360-3","cta":"6369995","tit":[{"c":"Juez","p":["Marianne Barrios Socias","Eduardo Abel Gallardo Frías","Nora Angela Rosati Jerez","Marcela de la Paz Nilo Leyton","Pamela del Carmen Quiroga Lorca","María Carolina Herrera Cortés-Monroy","Mauricio Alfredo Rettig Espinoza","Nelson Andrés González Valenzuela","Valeria Alejandra Alliende Leiva","Jorge Antonio Israel Candia Burgos","Marcelo Andrés Rojas Arenas","Anaclaudia Gatica Collinet","Marlene Denise Lobos Vargas","Raúl Alejandro Díaz Manosalva","Denisse Sara Ehrenfeld Ebbinghaus","Gloria Isabel Canales Abarca","Ana Carolina Larredonda Muñoz","Alejandra Pia Rodriguez Oro","María Carolina Hernández Muñoz"]},
+{"c":"Administrador","p":["Rodrigo Javier Rojas Lobos"]},
+{"c":"Jefe de unidad","p":["Rita Ivonne Torres Estay","Boris Andrés Correa Pérez","Jose Fco. Parra Gangas","Jacqueline Amelia del Carmen Saldías Hernández","Abraham Enrique Palma Santander"]}],"adi":[{"c":"Juez","p":["Ana Karina Reyes Alvarado"]}]},
+{"nombre":"3° Tribunal de Juicio Oral en lo Penal de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Av. Pedro Montt 1606, Edificio C, 2° Piso, Santiago","telefonos":["+56229758500"],"correo":"escritosdeplazostop3@pjud.cl","rut":"61978310-7","cta":"6369979","tit":[{"c":"Juez","p":["Doris Adriana Ocampo Méndez","Carlos Alberto Cosma Inojosa","Carlos Eduardo Escobar Salazar","Rossana Alejandra Costa Barraza","Mariela Cristina Jorquera Torres","Claudia Andrea Santos Silva","Katrina Cecilia Chahin Ananía","Andrea Alejandra Iligaray Llanos","María Inés González Moraga","Alfredo Andrés Lindenberg Bustos","Claudia Fabiola Bugueño Juarez","Maria Teresa Marabolí Barrientos","Carola Alejandra Herrera Brummer","Patricia del Pilar Cabrera Godoy","Paulina Andrea Rosales González","Carolina Andrea Paredes Arizaga","Ruby Vanessa Sáez Landaur","María Paz López Benavides","Camilo Jesús Hidd Vidal"]},
+{"c":"Administrador","p":["Oscar Gonzalo Frez López"]},
+{"c":"Jefe de unidad","p":["Marcelo Andrés Fredes Fernández","Gabriel Antonio Solís Arredondo","María Eugenia Becerra Fuenzalida","Rodrigo Osvaldo Hernández Vera","Camilo Felipe Cornejo Castillo"]}],"adi":[{"c":"Juez","p":["Angelica del Pilar Cortes Godoy"]}]},
+{"nombre":"4° Tribunal de Juicio Oral en lo Penal de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt 1606, 8° Piso, Edif. D, Santiago","telefonos":[],"correo":"","rut":"61978380-8","cta":"6370012","tit":[{"c":"Juez","p":["Juan Carlos Urrutia Padilla","María Elisa Tapia Araya","Geni Margarita de los Carmelos Morales Espinoza","Pedro Humberto Suárez Nieto","Paulina Alejandra Sariego Egnem","Cristina del Rosario Cabello Muñoz","María Alejandra Cuadra Galarce","Cristian Alexis Soto Galdames","María José García Ramírez","Adriana Carolina Herrera Sabando","Patricia Inés Brundl Riumalló","Isabel Paulina Espinoza Morales","Claudia Patricia Morgado Moscoso","Carolina Paz Escandón Cox","Cecilia Andrea Toncio Donoso","Erick Humberto Aravena Ibarra","Pedro Cristian Andrés Aravena Bouyer","Cristian Andrés Fuentealba Zamora","René Antonio Bonnemaison Medel","Cheryl Francisca Fernández Albornoz"]},
+{"c":"Administrador","p":["Luis Federico Werner Medina"]},
+{"c":"Jefe de unidad","p":["Teresa de Lourdes Zurita Toro","Amelia Carmen Muñoz Molina","Eduardo Mauricio Fredes Tapia","Nancy Elizabeth Bocaz Mora","Jerson Eduardo Valdebenito Cerda"]}],"adi":[{"c":"Juez","p":["Andrea Cecilia Acevedo Muñoz","Verónica Patricia Herrera Ocares","Ana Cristina Campora Guajardo"]},
+{"c":"Jefe de unidad","p":["Giselle Karina Valenzuela Uribe"]}]},
+{"nombre":"5° Tribunal de Juicio Oral en lo Penal de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Av. Pedro Montt N° 1606, Edif. D, 6° Piso, Santiago","telefonos":["+56229758758"],"correo":"escritosdeplazostop5@pjud.cl","rut":"61978340-9","cta":"6370080","tit":[{"c":"Juez","p":["Christian Humberto Carvajal Silva","Angel Fernando Valenzuela González","Bernardo Ramos Pavlov","Jessica Alejandra Beltrand Montenegro","David Eduardo Gómez Palma","Rocío Laura Morales Hernández","Pablo Andrés Urrutia Sulantay","Andrea Teresa Coppa Hermosilla","Carolina Esther Cerna Carrasco"]},
+{"c":"Administrador","p":["Alfredo Enrique Román Benavente"]},
+{"c":"Jefe de unidad","p":["Corynthia Carolin Arce Rosales","Karla Marietta Roman Zamorano","Carlos Patricio Garrido Carrasco"]}],"adi":[{"c":"Juez","p":["Francisco Esteban Guerrero Retamales"]},
+{"c":"Jefe de unidad","p":["Miguel Enrique Chiappa Tay"]}]},
+{"nombre":"7° Tribunal de Juicio Oral en lo Penal de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Av. Pedro Montt #1606, Santiago","telefonos":[],"correo":"","rut":"61978350-6","cta":"6369952","tit":[{"c":"Juez","p":["José María Alejandro Toledo Canales","José Santos Pérez Anker","Luis Francisco Avilés Mellado","Bernardita de Lourdes González Figari","Héctor Alejandro Plaza Vásquez","Gladys Alejandra García Bocaz","Alejandra Andrea Hume Contreras","Patricia Marcela Erazo Rivera","Maritza Verónica Donoso Ortiz","Francisco Javier Angel Armando Jopia Rodríguez","Natalia Catalina Escárate Andrade","Grace Daniela Díaz Salvo"]},
+{"c":"Administrador","p":["Eduardo Gastón Rojas Poblete"]},
+{"c":"Jefe de unidad","p":["Fernando Salinas Aguilar","Juan Alberto Cuevas Bustamante","Jessica de Lourdes Yevenes Navarrete","Paula Andrea Valenzuela Correa","Felipe Ernesto Barrera Painemal"]}],"adi":[{"c":"Juez","p":["Ingrid del Pilar Droguett Torres","Manuel Patricio Guerrero González"]}]},
+{"nombre":"1° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos 1409, Santiago","telefonos":[],"correo":"","rut":"60306001-6","cta":"9733","tit":[{"c":"Juez","p":["Isabel Margarita Zúñiga Alvayay"]},
+{"c":"Oficial 1°","p":["Lia Rossana Sepulveda Vasquez"]}]},
+{"nombre":"2° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 16° Piso, Santiago","telefonos":["+56226746213"],"correo":"pasalazar@pjud.cl","rut":"60306002-4","cta":"9741","tit":[{"c":"Juez","p":["Manuel Jesús Figueroa Salas"]},
+{"c":"Secretario","p":["Pablo Camilo Burchard Maureira"]},
+{"c":"Oficial 1°","p":["Francisco Javier Becerra Marchant"]}],"adi":[{"c":"Juez","p":["Pablo Camilo Burchard Maureira"]}]},
+{"nombre":"3° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 8° Piso, Santiago","telefonos":["+56226746222"],"correo":"jcsantiago3@pjud.cl","rut":"60306003-2","cta":"9725","tit":[{"c":"Juez","p":["Maria Soledad Araneda Undurraga"]},
+{"c":"Secretario","p":["María Soledad Oyanedel Rodríguez"]},
+{"c":"Oficial 1°","p":["Ximena del Pilar Andrade Hormazabal"]}],"adi":[{"c":"Juez","p":["María Soledad Oyanedel Rodríguez"]}]},
+{"nombre":"4° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 2° Piso, Santiago","telefonos":[],"correo":"","rut":"60306004-0","cta":"163","tit":[{"c":"Juez","p":["Luis Eduardo Quezada Fonseca"]},
+{"c":"Secretario","p":["Gustavo David Cerón Seguel"]},
+{"c":"Oficial 1°","p":["Juan Jose Lazcano Ruiz"]}],"adi":[{"c":"Juez","p":["Gustavo David Cerón Seguel"]}]},
+{"nombre":"5° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 2° Piso, Santiago","telefonos":["+56226746245"],"correo":"jcsantiago5@pjud.cl","rut":"60306005-9","cta":"9717","tit":[{"c":"Juez","p":["María Soledad Jorquera Binner"]},
+{"c":"Secretario","p":["Giselle Arlette Sorhaburu Carvajal"]},
+{"c":"Oficial 1°","p":["Maria Cristina Ramos Jara"]}],"adi":[{"c":"Juez","p":["Giselle Arlette Sorhaburu Carvajal"]}]},
+{"nombre":"6° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 2° Piso, Santiago","telefonos":[],"correo":"","rut":"60306006-7","cta":"163163","tit":[{"c":"Juez","p":["Rommy Natalia Muller Ugarte"]},
+{"c":"Secretario","p":["Rodrigo Antonio Cartes Pino"]},
+{"c":"Oficial 1°","p":["María Elena Moya Gumera"]}],"adi":[{"c":"Juez","p":["Nicolás Andrés Martínez Basso"]},
+{"c":"Secretario","p":["Nicolás Andrés Martínez Basso"]}]},
+{"nombre":"7° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 2° Piso, Santiago","telefonos":[],"correo":"","rut":"60306007-5","cta":"163171","tit":[{"c":"Juez","p":["Carolina Andrea Ramírez Reyes"]},
+{"c":"Secretario","p":["Daniela de los Angeles González Martínez"]},
+{"c":"Oficial 1°","p":["Claudio Roberto González Contreras"]}],"adi":[{"c":"Juez","p":["Daniela de los Angeles González Martínez","Felipe Guillermo Agurto Martinez","Diego Andrés Portilla Silva"]}]},
+{"nombre":"8° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 3° Piso, Santiago","telefonos":[],"correo":"","rut":"60306008-3","cta":"9687","tit":[{"c":"Juez","p":["Isabel Melissa Eyzaguirre Flores"]},
+{"c":"Secretario","p":["Santiago Pablo Quevedo Rios"]},
+{"c":"Oficial 1°","p":["Cristian Andrés Badilla Aguirre"]}],"adi":[{"c":"Juez","p":["Santiago Pablo Quevedo Rios"]}]},
+{"nombre":"9° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 3° Piso, Santiago","telefonos":[],"correo":"","rut":"60309014-4","cta":"9679","tit":[{"c":"Juez","p":["Milena Verushka Sukno Toro"]},
+{"c":"Secretario","p":["Cecilia Eugenia Castro Hartard"]},
+{"c":"Oficial 1°","p":["Laura Cecilia Gemita Argandoña Morales"]}],"adi":[{"c":"Juez","p":["Cecilia Eugenia Castro Hartard"]}]},
+{"nombre":"10° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huerfanos N° 1409, 3° Piso, Santiago","telefonos":[],"correo":"","rut":"60306010-5","cta":"9709","tit":[{"c":"Juez","p":["Gastón René Villagra Santander"]},
+{"c":"Secretario","p":["Karina Andrea Portugal Cuevas"]},
+{"c":"Oficial 1°","p":["Mauricio Eduardo Rossel Zuñiga"]}],"adi":[{"c":"Juez","p":["Karina Andrea Portugal Cuevas"]}]},
+{"nombre":"11° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 3° Piso, Santiago","telefonos":["+56226746305"],"correo":"jcsantiago11@pjud.cl","rut":"60306011-3","cta":"9695","tit":[{"c":"Juez","p":["Patricio Ernesto Hernández Jara"]},
+{"c":"Secretario","p":["Ximena Pilar Sumonte Contreras"]},
+{"c":"Oficial 1°","p":["Alejandra Patricia Herrera Corvalan"]}],"adi":[{"c":"Juez","p":["Ximena Pilar Sumonte Contreras"]}]},
+{"nombre":"12° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 4° Piso, Santiago","telefonos":[],"correo":"","rut":"60306012-1","cta":"163112","tit":[{"c":"Juez","p":["María Sofía Gutiérrez Bermedo"]},
+{"c":"Secretario","p":["Alejandra Carolina Pizarro Riquelme"]},
+{"c":"Oficial 1°","p":["María José Contreras Morales"]}],"adi":[{"c":"Juez","p":["Alejandra Carolina Pizarro Riquelme"]}]},
+{"nombre":"13° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 4° Piso, Santiago","telefonos":["+56226746323"],"correo":"jcsantiago13@pjud.cl","rut":"60306013-K","cta":"163104","tit":[{"c":"Juez","p":["María Eugenia Silva Pacheco"]},
+{"c":"Secretario","p":["Daniel Ignacio Platt Astorga"]},
+{"c":"Oficial 1°","p":["Álvaro Ignacio Leiva Labbé"]}],"adi":[{"c":"Juez","p":["Daniel Ignacio Platt Astorga"]}]},
+{"nombre":"14° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 4° Piso, Santiago","telefonos":["+56226746335"],"correo":"jcsantiago14@pjud.cl","rut":"60306014-8","cta":"163121","tit":[{"c":"Juez","p":["Karla Ignacia Ortega Muñoz"]},
+{"c":"Secretario","p":["Marcelo Exequiel Reyes Pozo"]},
+{"c":"Oficial 1°","p":["Fabiola del Carmen Paredes Aravena"]}],"adi":[{"c":"Juez","p":["Marcelo Exequiel Reyes Pozo"]},
+{"c":"Oficial 1°","p":["Amira Judith Voitmann Maldonado"]}]},
+{"nombre":"15° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 4° Piso, Santiago","telefonos":["+56226746345"],"correo":"jcsantiago15@pjud.cl","rut":"60306062-8","cta":"163465","tit":[{"c":"Juez","p":["Carolina Taeko Montecinos Fabio"]},
+{"c":"Secretario","p":["Paulina Alejandra Sánchez Campos"]},
+{"c":"Oficial 1°","p":["Janet Marlene Herman Cornejo"]}],"adi":[{"c":"Juez","p":["Paulina Alejandra Sánchez Campos"]}]},
+{"nombre":"16° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 4° Piso, Santiago","telefonos":[],"correo":"","rut":"60306064-4","cta":"163449","tit":[{"c":"Juez","p":["Susana Isabel Ortiz Valenzuela"]},
+{"c":"Secretario","p":["Luis Enrique Parra Aravena"]},
+{"c":"Oficial 1°","p":["María Luisa Martínez Reyes"]}],"adi":[{"c":"Juez","p":["Luis Enrique Parra Aravena"]}]},
+{"nombre":"17° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 5° Piso, santiago","telefonos":["+56226746363"],"correo":"jcsantiago17@pjud.cl","rut":"60306066-0","cta":"163473","tit":[{"c":"Juez","p":["Rocío del Pilar Pérez Gamboa"]},
+{"c":"Secretario","p":["María Isabel Reyes Kokisch"]},
+{"c":"Oficial 1°","p":["Mariella Angela Risopatron Cerna"]}],"adi":[{"c":"Juez","p":["María Isabel Reyes Kokisch"]}]},
+{"nombre":"18° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huerfanos N° 1409, Santiago","telefonos":[],"correo":"","rut":"60306056-3","cta":"163422","tit":[{"c":"Juez","p":["Claudia Andrea Donoso Niemeyer"]},
+{"c":"Secretario","p":["Lidia María Ferrada Valdebenito"]},
+{"c":"Oficial 1°","p":["Erwin Emir Cardenas Jofre"]}],"adi":[{"c":"Juez","p":["Lidia María Ferrada Valdebenito"]}]},
+{"nombre":"19° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 5° Piso, Santiago","telefonos":[],"correo":"jcsantiago19@pjud.cl","rut":"60306076-8","cta":"163490","tit":[{"c":"Juez","p":["Jacqueline Ivette Benquis Monares"]},
+{"c":"Secretario","p":["Álvaro Rodrigo Cayuqueo Pichicón"]},
+{"c":"Oficial 1°","p":["Patricia Hurtado Guzman"]}],"adi":[{"c":"Juez","p":["Álvaro Rodrigo Cayuqueo Pichicón"]}]},
+{"nombre":"20° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, Santiago","telefonos":[],"correo":"","rut":"61962700-8","cta":"163554","tit":[{"c":"Juez","p":["Gabriela Silvia Silva Herrera"]},
+{"c":"Secretario","p":["Fernanda Catalina Díaz de Valdés Bravo"]},
+{"c":"Oficial 1°","p":["Katia Andrea Rodríguez Urra"]}],"adi":[{"c":"Juez","p":["Fernanda Catalina Díaz de Valdés Bravo"]}]},
+{"nombre":"21° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 5° Piso, Santiago","telefonos":[],"correo":"","rut":"60306065-2","tit":[{"c":"Juez","p":["Marcelo Alejandro Rojas Sepúlveda"]},
+{"c":"Secretario","p":["Roberto Emilio Soto Bustamante"]},
+{"c":"Oficial 1°","p":["Giorgio Carlo Zunino Cofre"]}],"adi":[{"c":"Juez","p":["Roberto Emilio Soto Bustamante"]}]},
+{"nombre":"22° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 6° Piso, Santiago","telefonos":[],"correo":"","rut":"60306057-1","cta":"163520","tit":[{"c":"Juez","p":["Gabriel Alejandro Ibáñez Lastra"]},
+{"c":"Secretario","p":["Arturo Esteban Chadwick Solari"]},
+{"c":"Oficial 1°","p":["Salvador Humberto Moya González"]}],"adi":[{"c":"Juez","p":["Valeria Vaitiare Osorio Zamora"]},
+{"c":"Secretario","p":["Valeria Vaitiare Osorio Zamora"]}]},
+{"nombre":"23° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 9° Piso, Santiago","telefonos":[],"correo":"","rut":"60306058-K","cta":"163571","tit":[{"c":"Juez","p":["Katherine Grace Campbell Espinosa"]},
+{"c":"Secretario","p":["Manuel Jesús Vergara Esparta"]},
+{"c":"Oficial 1°","p":["Margarita Isabel Bravo Narváez"]}],"adi":[{"c":"Juez","p":["Carlos Jones Fernandez"]},
+{"c":"Secretario","p":["Carlos Jones Fernandez"]}]},
+{"nombre":"24° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huerfanos 1409, Santiago","telefonos":[],"correo":"","rut":"61933300-4","cta":"163431","tit":[{"c":"Juez","p":["Patricia Andrea Ortiz Von Nordenflycht"]},
+{"c":"Secretario","p":["Cecilia Irene Pasten Perez"]},
+{"c":"Oficial 1°","p":["Sara de las Mercedes Riera Navarro"]}],"adi":[{"c":"Juez","p":["Cecilia Irene Pasten Perez","Mónica Isabel Cortés Rosso"]}]},
+{"nombre":"25° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 11° Piso, Santiago","telefonos":[],"correo":"","rut":"60306072-5","cta":"129","tit":[{"c":"Juez","p":["Susana Elizabeth Rodríguez Muñoz"]},
+{"c":"Secretario","p":["Beatriz Alejandra Catrileo Ojeda"]},
+{"c":"Oficial 1°","p":["Juan Carlos Díaz Toro"]}],"adi":[{"c":"Juez","p":["Beatriz Alejandra Catrileo Ojeda"]}]},
+{"nombre":"26° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huerfanos 1409 Santiago","telefonos":[],"correo":"","rut":"60306069-5","cta":"169471","tit":[{"c":"Juez","p":["Ricardo Humberto Cortés Cortés"]},
+{"c":"Secretario","p":["Carolina Elizabeth Canales Morales"]},
+{"c":"Oficial 1°","p":["Ana Loreto Grez Becker"]}],"adi":[{"c":"Juez","p":["Carolina Elizabeth Canales Morales"]}]},
+{"nombre":"27° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 13° Piso, Santiago","telefonos":[],"correo":"","rut":"60306070-9","tit":[{"c":"Juez","p":["Jacqueline Solange Dunlop Echavarria"]},
+{"c":"Secretario","p":["Felipe Andrés Salas Torres"]},
+{"c":"Oficial 1°","p":["Christian Silvano Viera Naranjo"]}],"adi":[{"c":"Juez","p":["Felipe Andrés Salas Torres"]}]},
+{"nombre":"28° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos 1409, Santiago","telefonos":[],"correo":"","rut":"60306073-3","cta":"130109","tit":[{"c":"Juez","p":["Claudia Natalia Veloso Burgos"]},
+{"c":"Secretario","p":["Lilian Esther Lizana Tapia"]},
+{"c":"Oficial 1°","p":["Mario Luis Rojas Galleguillos"]}],"adi":[{"c":"Juez","p":["Lilian Esther Lizana Tapia"]}]},
+{"nombre":"29° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 18° Piso, Santiago","telefonos":[],"correo":"","rut":"60306074-1","cta":"130192","tit":[{"c":"Juez","p":["Matías Andrés Franulic Gómez"]},
+{"c":"Secretario","p":["Marcela Andrea Maureira Caceres"]},
+{"c":"Oficial 1°","p":["Maria Constanza Baeza Ahumada"]}],"adi":[{"c":"Juez","p":["Marcela Andrea Maureira Caceres"]}]},
+{"nombre":"30° Juzgado Civil de Santiago","tipo":"Civil","comuna":"Santiago","direccion":"Huérfanos N° 1409, 19° Piso, Santiago","telefonos":[],"correo":"","rut":"60306075-K","cta":"130214","tit":[{"c":"Juez","p":["Daniela Andrea Royer Faúndez"]},
+{"c":"Secretario","p":["Francisco Javier Schwalm Davis"]},
+{"c":"Oficial 1°","p":["Iván Abelardo Covarrubias Pinochet"]}],"adi":[{"c":"Juez","p":["Francisco Javier Schwalm Davis"]}]},
+{"nombre":"4° Juzgado del Crimen de Santiago","tipo":"Otro","comuna":"Santiago","direccion":"Avda. España N° 503, Piso 2°, Santiago","telefonos":[],"correo":"","rut":"60305008-8"},
+{"nombre":"10° Juzgado del Crimen de Santiago","tipo":"Otro","comuna":"Santiago","direccion":"","telefonos":[],"correo":""},
+{"nombre":"14° Juzgado del Crimen de Santiago","tipo":"Otro","comuna":"Santiago","direccion":"Avda. España N° 503, Piso 7°, Santiago","telefonos":[],"correo":"","rut":"60306026-1"},
+{"nombre":"22° Juzgado del Crimen de Santiago","tipo":"Otro","comuna":"Santiago","direccion":"","telefonos":[],"correo":""},
+{"nombre":"32° Juzgado del Crimen de Santiago","tipo":"Otro","comuna":"Santiago","direccion":"","telefonos":[],"correo":""},
+{"nombre":"34° Juzgado del Crimen de Santiago","tipo":"Otro","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1853, Piso 2, Santiago","telefonos":[],"correo":"","rut":"61934000-0","adi":[{"c":"Juez","p":["Claudia Monserrat Pavez Arancibia"]},
+{"c":"Secretario","p":["Fabiola Karina Cornejo Castillo"]}]},
+{"nombre":"Centro Medidas Cautelares Jdos. Familia Santiago","tipo":"Otro","comuna":"Santiago","direccion":"General Mackenna N° 1477, Piso N° 1 y 2, Santiago","telefonos":[],"correo":""},
+{"nombre":"Unidad Especializada de Responsabilidad Penal Adolescente","tipo":"Otro","comuna":"Santiago","direccion":"","telefonos":["+56229759751"],"correo":"escritosdeplazojgstgo8_rpa@pjud.cl","cta":"6365701","tit":[{"c":"Juez","p":["Marcia Irene Figueroa Astudillo","Pablo Orlando Contreras Guerrero","Claudia Lorena Pizarro Luco","Andrea Fabiola Diaz-Muñoz Bagolini","Claudia Ximena Godoy Aspee","Antonia del Carmen Godoy Medina","Macarena Figueroa Ramirez"]},
+{"c":"Administrador","p":["Mario Ulises Cabrera Tapia Subadministradora","Carolina Andrea Hernandez Arcaya","Patricia Andrea Garcia Lucero","July Carola Aguila Gajardo"]}]},
+{"nombre":"5° Juzgado de Menores de Santiago","tipo":"Otro","comuna":"Santiago","direccion":"","telefonos":[],"correo":""},
+{"nombre":"1° Juzgado de Familia de Santiago","tipo":"Familia","comuna":"Santiago","direccion":"General Mackenna N° 1477, Santiago","telefonos":[],"correo":"","rut":"65549030-2","cta":"1956485","tit":[{"c":"Juez","p":["Sandra Paola Faundes Flores","Luisa Andrea Hernández Muñoz","Carolina Bustamante Sasmay","Carolina Andrea Illanes Monroy","Magaly del Pilar Henríquez Feliú","Karen Gigliola Hoyuelos de Luca","Alejandra Andrea Valencia Rojas","Elena Andrea Cotapos Ulloa","Andrea Loreto Contreras Plaza","Paulina Beatriz García Cárcamo","Lorena Andrea Bruna Machuca","Paula Mariana Jara Concha","Romina Munro Rivano","Claudia Paola Norambuena Sepúlveda","Pilar Daniela Alarcón Sabag"]},
+{"c":"Administrador","p":["Fernando Arturo Illanes Rodríguez"]},
+{"c":"Jefe de unidad","p":["Llilian Marcela Paez Segovia","Sergio Patricio Pozo Rojas","Soledad Alejandra Peña Cardenas"]},
+{"c":"Administrativo jefe","p":["Silvia Alejandra Garrido Hernández","Gerald Pablo Agloni Guevara","Raysa Arlette Toledo Herrera","Nancy Eugenia Flores Parra"]}],"adi":[{"c":"Juez","p":["Paola Andrea González Montecinos","Marcela Eugenia Palacios Martínez"]},
+{"c":"Administrativo jefe","p":["Miguel Jesús Durán Tapia"]}]},
+{"nombre":"2° Juzgado de Familia de Santiago","tipo":"Familia","comuna":"Santiago","direccion":"General Mackenna N° 1477, Santiago","telefonos":[],"correo":"","rut":"61977990-8","cta":"1956221","tit":[{"c":"Juez","p":["Sandra Margarita Bendeck Saba","Claudia Esther Reyes Dueñas","Pilar del Rosario Zamorano Moreno","Macarena del Pilar Rebolledo Rojas","Mónica Alejandra Jeldres Salazar","Jessica Alejandra Arenas Paredes","María Carolina Pinochet Olmo","Susana Leonora Poblete Arredondo","Arturo Javier Klenner Gutiérrez","Estefanía Garachena Leiva","Fabiola Andrea Collao Contreras","Gloria Esperanza Calvo Godoy","Max Enrique Iturra Leiva","Guinette Verónica López Insinilla","Verónica Andrea Vymazal Bascopé"]},
+{"c":"Administrador","p":["Rodrigo Antonio Castro Pavez"]},
+{"c":"Jefe de unidad","p":["Christian Hernán Saenz Farías","Ana María Bravo Ramírez","Fabián Ignacio Díaz Jara"]},
+{"c":"Administrativo jefe","p":["Margarita Loreto Moreno Sanchez","Gilberto Eduardo Muñoz Plaza","Ledda María Chovar Riquelme","Elizabeth Dafne Medina Herrera"]}],"adi":[{"c":"Juez","p":["Claudio Javier Lillo Gallardo"]},
+{"c":"Administrativo jefe","p":["Amelia Isabel Gordillo Vega"]}]},
+{"nombre":"3° Juzgado de Familia de Santiago","tipo":"Familia","comuna":"Santiago","direccion":"General Mackenna N° 1477, Piso N° 5, Santiago","telefonos":["+56224977300"],"correo":"jfsantiago3@pjud.cl","rut":"65548680-1","cta":"1956507","tit":[{"c":"Juez","p":["María Pilar Villarroel Gallardo","Ana Francisca Casanova Gallardo","Paulina Eugenia Roncagliolo Hantke","Paz Andrea Pérez Ahumada","Karen Ivette Becker Cares","Claudia Andrea Madariaga Contreras","Marta Eugenia Astudillo Ovalle","Constanza Verónica Feliú Slater","Vera Alejandra Garrido Crino","Susan Fabiola Sepúlveda Chacama","María Olga Troncoso Vergara","Rodrigo Antonio Mella Pérez","Paulina Andrea Aguirre Molina"]},
+{"c":"Administrador","p":["Katherine Alejandra Lara Aliaga"]},
+{"c":"Jefe de unidad","p":["Cristhian Mauricio Sánchez Tapia","Gustavo Adolfo Escalona Muñoz","Maseb Francisco Alejandro Concha Atenas"]},
+{"c":"Administrativo jefe","p":["Javier Enrique Figueroa de la Barra","Mirta Irene Chandia Marechal","Solange Andrea Abarca Arias"]}],"adi":[{"c":"Juez","p":["Ricardo Guillermo Anselmo Moraga Gonzalez","Francisca Paz Mayol Retamal"]},
+{"c":"Administrativo jefe","p":["Alejandro Patricio Fuentes Aros"]}]},
+{"nombre":"4° Juzgado de Familia de Santiago","tipo":"Familia","comuna":"Santiago","direccion":"General Mackenna 1477, Santiago","telefonos":[],"correo":"","rut":"61977960-6","cta":"1956523","tit":[{"c":"Juez","p":["María Cecilia González Diez","Luz María Barceló Williams","María Verónica Ortiz Baratta","Denise Aminne Sepúlveda Apse","Pedro Daniel Maldonado Escudero","María Astrid González Santander","Paula Alejandra Iturria Jara","Paola Andrea Rivas Mardones","Johana Andrea Sepúlveda Coria","Diego Nicholas Illanes Aspee","Ignacio Javier Araya Suárez","Constanza Gabriela Belloni Gil","Mariana Elena de Lourdes Díaz Díaz"]},
+{"c":"Jefe de unidad","p":["Gerardo Antonio Baeza Alfaro","Paola Alejandra Carrera Barrientos","Carolina Adriana Herrera Meza"]},
+{"c":"Administrativo jefe","p":["Héctor Enrique Miranda Araya","Paul Jonathan Cañoles Marchant","Gonzalo Hernán Contreras Cisternas","Oscar Esteban Yakobi Peña"]}],"adi":[{"c":"Juez","p":["Elizabeth Marlene Molina Gutiérrez"]},
+{"c":"Administrador","p":["Héctor Enrique Miranda Araya"]},
+{"c":"Administrativo jefe","p":["Mauricio Esteban Quiroz Bello"]}]},
+{"nombre":"Juzgado de Cobranza Laboral y Previsional de Santiago","tipo":"Cobranza","comuna":"Santiago","direccion":"San Martin N° 950, Santiago","telefonos":[],"correo":"","rut":"61978490-1","cta":"1956671","tit":[{"c":"Juez","p":["María Eugenia Cubillo Espinoza","Rubén Orlando Riveros Vargas","Cecilia Paz Agüero Calvo","Rayen Maria Duran Garay","Ramón Danilo Barría Cárcamo","Yelica Marianella Montenegro Galli","Gloria Marcela Cardenas Quintero","Pola Lorena Ugarte Cortes","Johanna Cecilia Hernández Álvarez"]},
+{"c":"Administrador","p":["Oscar Ernesto González Maturana"]},
+{"c":"Jefe de unidad","p":["Cristian Rodrigo Montes Albornoz","Guillermo Hernan Erazo Gonzalez","Paola Milagros Guerra Quijada"]},
+{"c":"Administrativo jefe","p":["Ana Karina Rojas Kern","Claudia Andrea Matus Leon","Claudio Marcelo Miranda Rojas"]}],"adi":[{"c":"Administrativo jefe","p":["Marcos Alberto Álvarez Ascuí"]}]},
+{"nombre":"1° Juzgado de Letras del Trabajo de Santiago","tipo":"Trabajo","comuna":"Santiago","direccion":"San Martin N° 950, Pisos 1° a 5°, Santiago","telefonos":[],"correo":"","rut":"61979540-7","cta":"578312","tit":[{"c":"Juez","p":["Carmen Gloria Correa Valenzuela","Ximena Carolina López Avaria","Luz Adriana Celedón Bulnes","María Loreto Reyes Gamboa","Angélica Paulina Pérez Castro","Mauricio Alejandro Vidal Caro","Daniel Matias Juricic Cerda","Claudia Roxana Riquelme Oyarce","Andrea Leonor Silva Ahumada","Claudia Elisa Tapia Tapia","Eduardo Alejandro Ramirez Urquiza","Ema del Pilar Novoa Mateos","Mauricio Andrés Guajardo Espinoza","Andrea Carolina Vásquez Bravo","Valeska Alejandra Osses Trincado","Daniel Eduardo Leiva Rojas","Claudio Mauricio Oliva Sotomayor","Claudia Pamela Salgado Rubilar","Sebastián Adolfo Bueno Santibáñez"]},
+{"c":"Administrador","p":["Paulina del Rosario Ocampo Rodríguez"]},
+{"c":"Jefe de unidad","p":["Miguel Angel Isaac Vergara Lagos","Karin Rocio Rojas Foncea","Gonzalo Erick García Ledesma","Jose Rodrigo Arancibia Donoso"]},
+{"c":"Administrativo jefe","p":["Katherine Andrea Arellano Opazo","Luis Alejandro Huerta Ayala","Guillermo Antonio Guerra Muñoz","María Teresa García Miranda","William Alberto Rojas Carrasco","Christian Rodrigo Rauld Dercolto","María Carolina Díaz Valenzuela","Roberto Carlos Maturana Moreno","Andrea Margarita González Olmedo"]}],"adi":[{"c":"Juez","p":["Valentina Marcela Ávalos Bozo","Carolina Isabel Gajardo Benítez","Macarena Ester Muñoz Valenzuela","Cecilia del Pilar Troncoso Lara","Iván Mauricio Pereira Arriagada","Alonso Ignacio Muñoz Villalobos","Violeta Elizabeth Diaz Silva"]},
+{"c":"Administrativo jefe","p":["Ruth Victoria Soto Carrasco"]}]},
+{"nombre":"2° Juzgado de Letras del Trabajo de Santiago","tipo":"Trabajo","comuna":"Santiago","direccion":"Merced N° 360, Pisos 1° a 6°, Santiago","telefonos":[],"correo":"","rut":"61979530-K","cta":"575801","tit":[{"c":"Juez","p":["Álvaro Felipe Flores Monardes","Maritza Regina Vásquez Díaz","Gonzalo Figueroa Edwards","Lorena Renata del Carmen Flores Canevaro","Paola Cecilia Díaz Urtubia","Liliana Luisa Ledezma Miranda","Ricardo Antonio Araya Pérez","Andrea Paola Soler Merino","Carolina Andrea Luengo Portilla","Germaine Nicole Petit-Laurent Eliceiry","Fabiola Elena Villalón Gallardo","Catalina Andrea Casanova Silva","Víctor Manuel Riffo Orellana","Marcela Alejandra Solar Catalán","Víctor Manuel Covarrubias Suárez","Ivette Renee Mourguet Besoain","Yanira María de los Angeles González Valderrama","Mario Felipe Henríquez Contreras","Eva Fanny de Jesús Aránguiz Canedo"]},
+{"c":"Administrador","p":["Sergio Enrique Quijano Cáceres"]},
+{"c":"Jefe de unidad","p":["Iván Javier Jesús Álvarez Ossio","Ricardo Milivoi Galetovic Guerra","César Manuel Chamia Torres","Marcia Estela Arriagada Proschle"]},
+{"c":"Administrativo jefe","p":["Rocio Estefania Sandoval Salas","Fabian Alexander Arenas Espinoza","Macarena de Lourdes Soto Hidalgo","Héctor Basilio Carreño López","Sergio Andrés Díaz Cerda","Juan Antonio González González","Christian Alfredo Campos Charnock","Paola Alejandra de Lourdes Gonzalez Riquelme","Eduardo Andres Jara Carmona","Daniel Enrique González Leiva"]}],"adi":[{"c":"Juez","p":["Jorge Luis Escudero Navarro","Karen Elizabeth Muñoz Jaramillo","Carolina Elvira Palacios Vera","Roberto José Hansen López"]}]},
+{"nombre":"1° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1606, Edificio e, 2° Piso, Santiago","telefonos":[],"correo":"","rut":"61976500-1","cta":"6365841","tit":[{"c":"Juez","p":["María Francisca Zapata García","Fernando Guzmán Fuenzalida","Marlys Eileen Welsch Chahuán"]},
+{"c":"Administrador","p":["Patricio Héctor Aguilar Paulsen"]},
+{"c":"Jefe de unidad","p":["Pilar Andrea Espinoza Espinoza","Juan Pablo Parada Ruiz","Victor Joaquin Cartes Petit-Lauren"]}],"adi":[{"c":"Juez","p":["Víctor Manuel Fernández Ortega"]},
+{"c":"Jefe de unidad","p":["Adriana Paz Freitte Mazzola"]}]},
+{"nombre":"2° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1606, 4° Piso, Acceso B, Santiago","telefonos":[],"correo":"","rut":"61977100-1","cta":"6365825","tit":[{"c":"Juez","p":["Paulo Valentín Orozco López","César Augusto Orellana López","Rodrigo Agustín García León","Claudia Lorena Pizarro Luco","María Verónica Orozco Lobos","Claudia Viviana Hermosilla Toro","Mónica Patricia Bellalta Queralto","Carolina Ivonne Reyes Candia","Elizabeth Soledad Melero López","Carolina Natalia Donoso Ortega"]},
+{"c":"Administrador","p":["María Vicenta Silva Benito"]},
+{"c":"Jefe de unidad","p":["Pedro Ricardo González Lara","Jimy Cristian Román Mariani","María Francisca Chivite Pérez","Mauricio Eduardo Espinoza Farías"]}],"adi":[{"c":"Juez","p":["Ivo Radames Arteaga Cartagena"]}]},
+{"nombre":"3° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Pedro Montt N° 1606, Torre F, Piso 9, Santiago","telefonos":[],"correo":"","rut":"61977200-8","tit":[{"c":"Juez","p":["María Fernanda Sierra Cáceres","Antonia del Carmen Godoy Medina","Paula Andrea Brito Castro","Katherinne Isabel Roman Delfabbro","José Tomás Herrera Araneda"]},
+{"c":"Administrador","p":["Miryam Edith Ramos Barraza"]},
+{"c":"Jefe de unidad","p":["Ricardo Guillermo Bruna Silva","Soledad Jackelyn Sazo Mansilla","Patricia Alejandra Martínez Barra"]}],"adi":[{"c":"Juez","p":["Cristian Alejandro Azócar Carmona"]}]},
+{"nombre":"4° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1606, Piso 9, Edificio B, Centro de Justicia de Santiago","telefonos":[],"correo":"","rut":"61977550-3","cta":"6365787","tit":[{"c":"Juez","p":["Carolina Andrea Araya Hernández","Guillermo Rodríguez González","Andrea Fabiola Díaz-Muñoz Bagolini","Rodrigo Alejandro Carrasco Meza","Andrea Paola Osorio Ganderats","Ximena Alejandra Rivera Salinas","Daniela Verónica Guerrero González","Francis Patricia Fell Franco","Cecilia Soledad Villanueva Pérez","Mariana Andrea Leyton Andaur","Paulina Alejandra Moya Jiménez"]},
+{"c":"Administrador","p":["Mauricio Abdon Alejandro Vargas Lizana"]},
+{"c":"Jefe de unidad","p":["Manuel Segundo Calderón Valladares","Cosme Alfredo Zavala Muñoz","Karem de los Angeles Viera Cuneo","María de los Santos Maldonado Caroca"]}],"adi":[{"c":"Juez","p":["Nicolás Ignacio Flores Campos","Elena Verónica Contreras Daza"]},
+{"c":"Jefe de unidad","p":["Yasna Maricel Macías Henríquez"]}]},
+{"nombre":"5° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Pedro Montt N° 1606, Santiago","telefonos":[],"correo":"","rut":"61976800-0","cta":"6365761","tit":[{"c":"Juez","p":["Lorraine Caroline Gigogne Miqueles","Carlos Daniel Gutiérrez Moya","Sandra Patricia Rojas González","Elena Olaya Gahona Flores","Jorge Andrés Abollado Vivanco"]},
+{"c":"Administrador","p":["Daniel Vicente Robles Vega"]},
+{"c":"Jefe de unidad","p":["Roxana Andrea Castillo Carrasco","Luis Alberto González Plaza","Álvaro Andrés Román Dumont"]}]},
+{"nombre":"6° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Pedro Montt N° 1606, Torre F, Piso 7, Santiago","telefonos":["+56229757523"],"correo":"jgsantiago6@pjud.cl","rut":"61976600-8","cta":"6365744","tit":[{"c":"Juez","p":["Rodrigo Ignacio Palma Ruiz","Sergio Enrique Padilla Farías","Juan Enrique Olivares Urzúa","Vania del Pilar Boutaud Mejías","Nibaldo Bernardo Arévalo Macías","Eduardo Antonio Vásquez González","Pablo Orlando Contreras Guerrero"]},
+{"c":"Administrador","p":["Jesús Ignacio Vázquez Espinoza"]},
+{"c":"Jefe de unidad","p":["Oscar Orlando Pasten Ordenes","Tania Pawlova Flores Contreras"]}]},
+{"nombre":"7° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1606 Edificio a Piso 3, Centro de Justicia de Santiago","telefonos":["+56229757550"],"correo":"escritosdeplazosjg7@pjud.cl","rut":"61976900-7","cta":"00006365728","tit":[{"c":"Juez","p":["Patricio Ernesto Alvarez Maldini","Freddy Antonio Cubillos Jofré","Daniel David Urrutia Laubreaux","Carla Valeria Cappello Valle","Cristian Luis Sánchez Rivera","Ponciano Andrés Sallés Bastarrica","Jaime Leonardo Fuica Martínez","Pilar Andrea Ahumada Otarola","Carolina Luisa Gajardo Fontecilla","Mario Alfredo Cayul Estrada","Marcia Irene Figueroa Astudillo","Isabel Margarita Correa Haeussler","Patricia Michel Virginia Ibacache Toledo"]},
+{"c":"Administrador","p":["Sylvia Marcela Cárdenas Huentelicán"]},
+{"c":"Jefe de unidad","p":["Susana Andrea Moreira Velásquez","Ingrid Yolanda Siefert Méndez","Paola del Carmen Martínez Salazar","Felipe Ignacio Miranda Tejo"]}]},
+{"nombre":"8° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1606, Edificio a, 4° Piso, Santiago","telefonos":["+56229757600"],"correo":"","rut":"61977530-9","cta":"6365701","tit":[{"c":"Juez","p":["Irene Gladys Rodríguez Chávez","Daniel Eduardo Aravena Pérez","Ely Cecilia Rothfeld Santelices","Juan Carlos Valdés Peñailillo","Leonardo Enrique Valdivieso Lobos","Karin Lorena Mercado Rivas","Christopher Danilo Fernández de la Cuadra","Iván Sebastián Olavarría Berbelagua"]},
+{"c":"Administrador","p":["Mario Ulises Cabrera Tapia"]},
+{"c":"Jefe de unidad","p":["José Eduardo Piña Núñez","Carolina Andrea Fernández Ríos","Juan Carlos Parra Parada","Paulo Antonio Castilla Vásquez"]}],"adi":[{"c":"Juez","p":["Juan Diego Hugo Álvarez Jiménez","Melissa Scarlett Joo Amunátegui"]},
+{"c":"Jefe de unidad","p":["Roxana Cecilia Riquelme Perez"]}]},
+{"nombre":"9° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda. Pedro Montt N° 1606, 9° Piso, Santiago","telefonos":[],"correo":"","rut":"61976400-5","cta":"6365680","tit":[{"c":"Juez","p":["Claudia Cristina Burgos Sanhueza","María Inés Hernández Cáceres","Juan Carlos Silva Opazo","Inés Elizabeth Reinoso Diez","Hugo Andrés Torres Arias","Hugo Alejandro Salgado Morales","Macarena Figueroa Ramírez"]},
+{"c":"Administrador","p":["Tomás Edison Silva Maulén"]},
+{"c":"Jefe de unidad","p":["Juan Luis Cubillos Lisperguier","Johanna Isabel Isaac Rosas","Carolina Andrea Hernández Arcaya","Cristian Marcel Tapia Arrepol"]}],"adi":[{"c":"Juez","p":["Lilian Elizabeth Sáez Lemari","Valentina Dominique Brunet Bustamante","Constanza Andrea Estay Álvarez"]},
+{"c":"Jefe de unidad","p":["Felipe Andrés Sáez López"]}]},
+{"nombre":"13° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Pedro Montt N° 1606, Torre F, Piso 6, Santiago","telefonos":[],"correo":"","rut":"61976700-4","cta":"6365906","tit":[{"c":"Juez","p":["Verónica Alejandra Sepúlveda Briones","Valeria Magdalena Vega Sepúlveda","Natacha Alejandra Ruz Grez","Claudia Ximena Godoy Aspee","Paz Victoria Reyes Moreno","Myriam Andrea Mora Rodríguez"]},
+{"c":"Administrador","p":["Claudia Andrea Ruiz Fernández"]},
+{"c":"Jefe de unidad","p":["Leonardo Andrés Alarcón Maya","Carolain Andrea Swain Cabezas","Lorena del Pilar Caceres Gutierrez"]}]},
+{"nombre":"14° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Pedro Montt N° 1606, Torre e, Piso 9, Santiago","telefonos":["+56229758138"],"correo":"jgsantiago14@pjud.cl","rut":"61976300-9","cta":"6366112","tit":[{"c":"Juez","p":["Patricio Roberto Souza Bejares","Jacqueline Karen Atala Riffo","Laura Andrea Assef Monsalve","Verónica Andrea Toledo López","Carlos Humberto Muñoz Sepúlveda","Mauricio Iván Pontino Cortés","Sebastián Ernesto Zulch Barrios","Pamela Beatriz Muñoz Canales"]},
+{"c":"Administrador","p":["Gabriel Enrique Cruzat Contardo"]},
+{"c":"Jefe de unidad","p":["Manuel Fernando Arancibia Bravo","Alicia del Rosario Gutierrez Saldias","Marcela Ivonne Rivera Muñoz"]}]},
+{"nombre":"Juzgado de Familia de Pudahuel","tipo":"Familia","comuna":"Pudahuel","direccion":"San Pablo 4455, Quinta Normal, Pudahuel","telefonos":[],"correo":"","rut":"61977900-2","cta":"4951395","tit":[{"c":"Juez","p":["Hernán Gonzalo López Barrientos","Paula Andrea Zigante Romero","María Angélica Rosso Gajardo","Carmen Luz Urzúa Ibar","Carlo Marcelo Casaula Mezzano","Claudia Paz Miranda Fuentes","Jacqueline Vannia Ramírez Arregui","Tania Ximena Oyarzo Kramm","Eugenia Paz Fuenzalida Reyes","Pablo Andrés Lara Toloza","María Paz Gutiérrez Adasme","Soledad Carolina María Vielva Iriondo","María Consuelo Díaz Bovio"]},
+{"c":"Administrador","p":["Manuel Fernando Santana Araya"]},
+{"c":"Jefe de unidad","p":["Gabriela Andrea Asenjo Burgos","Elizabeth Andrea Carisaya López","Gustavo Andrés López Tamayo","Rodrigo Andrés Fuentes Zuloaga"]},
+{"c":"Administrativo jefe","p":["Claudia Andrea Catalán Lagos","Verónica Alejandra Pérez Morales","Julia Rosa Naranjo Olivares","Claudio Moran Bezama"]}],"adi":[{"c":"Juez","p":["Laura Julieta Catalán Peña"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Colina","tipo":"Penal","comuna":"Colina","direccion":"Carretera Gral. San Martin 521, 3° Piso, Colina","telefonos":[],"correo":"","rut":"61978370-0","cta":"3808980","tit":[{"c":"Juez","p":["Ingrid del Pilar Droguett Torres","Gabriela Angélica Abusabal Chacoff","René Alejandro Subiabre Pérez","Mindy Cristina Villar Simon","María Laura Gjurovic Manríquez","Juan Pablo Luciano Ramírez Núñez"]},
+{"c":"Administrador","p":["Alexander Olbertz Stuven"]},
+{"c":"Jefe de unidad","p":["Claudia Andrea Mayo Greco","Víctor Andrés Salazar Flores","Eugenio Rodrigo Blanco Granifo","Paola Francceska Preuss Vlatko"]}],"adi":[{"c":"Juez","p":["Jordi Xavier Teixidor Heim","María Anabel Campo Díaz","Javiera Andrea López Ossandón"]},
+{"c":"Administrador","p":["Claudia Andrea Mayo Greco"]},
+{"c":"Jefe de unidad","p":["Claudia Andrea Matus Leon","Fabiola Alejandra Mujica Reyes","Valeska Guacolda Soto Lacalle"]}]},
+{"nombre":"Juzgado de Letras de Colina","tipo":"Civil","comuna":"Colina","direccion":"Calle Interprovincial N° 130, Esquina Av. San Martin, Colina","telefonos":[],"correo":"","rut":"61939500-K","cta":"3793591","tit":[{"c":"Juez","p":["Ximena Carolina Marzal Núñez","América Antonia Rojas Rojas","María Paz Rodríguez Maluenda"]},
+{"c":"Administrador","p":["Gerko Patricio Henríquez Morales"]},
+{"c":"Jefe de unidad","p":["Diego Matias Rojas Torres"]},
+{"c":"Administrativo jefe","p":["Gloria Andrea Guerra Guerra","Patricia Carla Ahumada Díaz"]}]},
+{"nombre":"Juzgado de Familia de Colina","tipo":"Familia","comuna":"Colina","direccion":"Chacabuco N° 195, Colina","telefonos":["+56225123900"],"correo":"jfcolina@pjud.cl","rut":"61977910-K","cta":"3808963","tit":[{"c":"Juez","p":["Sergio Eduardo Ojeda Aguilar","Carola Edith Aracena Egas","Patricio Andrés Mellado Sagredo","Paulina del Pilar Valenzuela Negrete"]},
+{"c":"Administrador","p":["María Ester Vargas Jeraldo"]},
+{"c":"Jefe de unidad","p":["Claudia Andrea Tapia Fernandez"]},
+{"c":"Administrativo jefe","p":["Rossana Carolina Lillo Cirano","Viviana Haydee Guajardo Moreira"]}],"adi":[{"c":"Juez","p":["Rudy de Lourdes Prieto Gajardo","María Victoria Andrea Yunge Aldunate","Héctor Hugo Caro Molina"]},
+{"c":"Administrativo jefe","p":["Katherine Valeska Hernández Guzmán"]}]},
+{"nombre":"Juzgado de Garantía de Colina","tipo":"Penal","comuna":"Colina","direccion":"Carretera General San Martin N° 521, Colina","telefonos":[],"correo":"","rut":"61977510-4","cta":"3808254","tit":[{"c":"Juez","p":["Lilian Elizabeth Sáez Lemari","Carmen Gloria Troncoso Ubilla","Carlos Arturo Poblete González","Rubén Hernán Donoso Paredes"]},
+{"c":"Administrador","p":["Roberto Andres Morales Almendras"]},
+{"c":"Jefe de unidad","p":["Fabricio Jesús González Vásquez"]}],"adi":[{"c":"Juez","p":["María Carolina Torrealba Sandoval","Rodrigo Antonio Cartes Pino"]}]}],"San Miguel":[{"nombre":"6° Tribunal de Juicio Oral en lo Penal de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Av. Pedro Montt N° 1606, Torre C, 8° Piso, Santiago","telefonos":[],"correo":"","rut":"61977600-3","cta":"6370454","tit":[{"c":"Administrador","p":["Claudia Patricia Abarca Gutiérrez"]},
+{"c":"Jefe de unidad","p":["Erika Leonor Farfán Velozo","Claudio David Vallejos Aravena","Eliel Jehu Sandoval Sobarzo","Ernesto Diogenes Rivas Garrido","Lucia Veronica Letelier Gonzalez"]}]},
+{"nombre":"10° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avda Pedro Montt 1606 Edificio B Piso 1, Santiago","telefonos":[],"correo":"","rut":"61977500-7","cta":"6365663","tit":[{"c":"Juez","p":["María Carolina Salinas Hernández","Claudio Marcelo Larre Rojas","Gloria Alejandra Lolas Basualdo","Karin Soledad Bustamante Alvial","María Verónica Arancibia Pacheco"]},
+{"c":"Administrador","p":["David Hugo Rivera Lagos"]},
+{"c":"Jefe de unidad","p":["Rodrigo Eduardo Flores Castro","Sandra Cristina Sanjuanes López","Francisco Javier Moscoso Lizana"]}],"adi":[{"c":"Juez","p":["Victoria Paz Carrasco Carcamo","Álvaro Enrique Mardones Barría","Daniela Fernanda Cabrillana Godoy","Veronica Alejandra Valenzuela Rojas"]}]},
+{"nombre":"11° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Centro de Justicia, Avenida Pedro Montt 1606, Santiago","telefonos":[],"correo":"","rut":"61977400-0","cta":"6365647","tit":[{"c":"Juez","p":["Leonardo Varas Herrera","María Eugenia Masihy Cattan","Verónica Elena Vázquez Henríquez","Roberto César Guzmán Concha","Alejandra Eugenia Apablaza Reyes","Rodrigo Benedicto Hormazábal Montecino","Gricel Valeska Muñoz Ruiz","Mauricio Andrés Vergara Toro"]},
+{"c":"Administrador","p":["Rodrigo Alejandro Muñoz Vergara"]},
+{"c":"Jefe de unidad","p":["Claudia Paz Ocampo Rodríguez","María Elena Suazo Vásquez","Constanza Maria Gutierrez Toro","Besterli Alejandra Palma Baeza"]}]},
+{"nombre":"12° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Centro de Justicia, Torre B, Piso 6, Pedro Montt, Santiago","telefonos":[],"correo":"","rut":"61977570-8","tit":[{"c":"Juez","p":["Angélica María Palacios Rioseco","Francisco Javier Ramos Pazó","Alejandra Andrea Muñoz Sánchez","Javiera Millaray Gaínza Flores"]},
+{"c":"Administrador","p":["Marlene del Pilar Jofré Berríos"]},
+{"c":"Jefe de unidad","p":["Solange Angelica Contreras Pinto","Alejandro Omar Méndez Garrido","Marcos Andrés Puentes Fuentes"]}],"adi":[{"c":"Juez","p":["Sara Elena Mardones Estuardo"]}]},
+{"nombre":"15° Juzgado de Garantía de Santiago","tipo":"Penal","comuna":"Santiago","direccion":"Avenida Pedro Montt 1606, Santiago","telefonos":[],"correo":"","rut":"61977520-1","tit":[{"c":"Juez","p":["René Alejandro César Cerda Espinoza","María Angélica Rosen López","Lucía Giannini Rodríguez","Marcela Alejandra Dattas Zapata","Monica Andrea Vergara Maldonado","Mariela Andrea Hernández Acevedo"]},
+{"c":"Administrador","p":["Claudia Alejandra Araneda Canales"]},
+{"c":"Jefe de unidad","p":["Leonel Alejandro Soto Torreblanca","Esteban Andrés López López","Ernesto Bernardo González Rodríguez"]}],"adi":[{"c":"Juez","p":["Esperanza Andrea Carmona Araya"]}]},
+{"nombre":"1° Juzgado Civil de San Miguel","tipo":"Civil","comuna":"San Miguel","direccion":"Ureta Cox N° 855, Piso 3°, San Miguel","telefonos":[],"correo":"","rut":"60306037-7","cta":"6302939","tit":[{"c":"Juez","p":["Susana Chacón Arancibia"]},
+{"c":"Secretario","p":["Miguel Andrés Jiménez Farías"]},
+{"c":"Oficial 1°","p":["Julio Anibal Miranda Nigro"]}],"adi":[{"c":"Juez","p":["Miguel Andrés Jiménez Farías"]}]},
+{"nombre":"2° Juzgado Civil de San Miguel","tipo":"Civil","comuna":"San Miguel","direccion":"Salesianos N° 1180, 2° Piso, San Miguel","telefonos":["+56225241493"],"correo":"jc2_sanmiguel@pjud.cl","rut":"60306038-5","cta":"6302785","tit":[{"c":"Secretario","p":["Gonzalo Alejandro Neira Campos"]},
+{"c":"Oficial 1°","p":["Carlos Andrés Canales Morales"]}],"adi":[{"c":"Juez","p":["Gonzalo Alejandro Neira Campos","Camila Andrea de Jesús Leal Salinas"]}]},
+{"nombre":"3° Juzgado Civil de San Miguel","tipo":"Civil","comuna":"San Miguel","direccion":"Gran Avda. J.m. Carrera N° 5811, San Miguel","telefonos":["+56225212799"],"correo":"jc3_sanmiguel@pjud.cl","rut":"60306054-7","cta":"6305784","tit":[{"c":"Juez","p":["Rebeca Cristina Soto Roble"]},
+{"c":"Secretario","p":["Carolyn Andrea Medina Duarte"]},
+{"c":"Oficial 1°","p":["Antonio Elías Cornejo Lara"]}],"adi":[{"c":"Juez","p":["Carolyn Andrea Medina Duarte"]}]},
+{"nombre":"4° Juzgado Civil de San Miguel","tipo":"Civil","comuna":"San Miguel","direccion":"Salvador Allende N° 1180, San Miguel","telefonos":[],"correo":"","rut":"60316000-2","tit":[{"c":"Juez","p":["Claudia Paola Marín Campusano"]},
+{"c":"Secretario","p":["María Carolina Picón Pertuiset"]}],"adi":[{"c":"Juez","p":["María Carolina Picón Pertuiset"]},
+{"c":"Oficial 1°","p":["Victor Camilo Meneses Caceres"]}]},
+{"nombre":"1° Juzgado de Familia de San Miguel","tipo":"Familia","comuna":"San Miguel","direccion":"Álvarez de Toledo N° 1020, San Miguel","telefonos":[],"correo":"","rut":"61978020-5","cta":"6368107","tit":[{"c":"Juez","p":["Beatriz Isabel Ramírez Gómez","Carlos Osvaldo Hidalgo Herrera","Ximena Alejandra Barrenechea Cáceres","Carolina Andrea Fuentes Garrido","Rodrigo Javier Téllez Lugaro","Darwin Eric Bratti Jorquera","Rossana Jovita Aracena Wilk","María Ester Castillo Grandón","Paula María Ortúzar Pruzzo","María Vivianne Morandé Dattwyler","Sergio Nicolás Tagle Montt","Andrea Gemita Alarcón Fernández","Evelyn Pamela Araya Salgado"]},
+{"c":"Administrador","p":["Críspulo Jaime Marañón Lira"]},
+{"c":"Jefe de unidad","p":["Sandra Carolina Valentin Cantos","Carlos Alberto Sotomayor Díaz","Juan Carlos Montiel Ruiz","Raúl Esteban Olivares Palma"]},
+{"c":"Administrativo jefe","p":["Mónica Andrea Rodríguez Rivas","Clara Elisa Frez Muñoz","César Andrés Arenas Galindo","Mauricio Alexander Osses Martinez"]}],"adi":[{"c":"Juez","p":["Daniela Paz Delgado Garrido"]},
+{"c":"Administrador","p":["Carlos Alberto Sotomayor Díaz"]},
+{"c":"Jefe de unidad","p":["Mónica Andrea Rodríguez Rivas","Juan Alejandro Riffo Rodríguez"]},
+{"c":"Administrativo jefe","p":["Daniel Alejandro González Gacitúa"]}]},
+{"nombre":"2° Juzgado de Familia de San Miguel","tipo":"Familia","comuna":"San Miguel","direccion":"Álvarez de Toledo N° 1020, San Miguel","telefonos":[],"correo":"","rut":"61978040-K","cta":"6368123","tit":[{"c":"Juez","p":["Juan Eduardo Fuentes Garrido","Beatriz Alejandra Cabrera Celsi","María Pía Castillo Golborne","Ricardo Antonio Soto Muñoz","Carolina Alejandra Benavides Muñoz","Juan Ignacio Undurraga Barros","Antonio Gustavo Sergio López Torres","Natascha Eugenia Núñez Ursic","Abraham Alfredo Egnen Saldías","Leonidas Eduardo Irarrázaval Ossandón","Paulina Soledad Jerez Ode","Mónica Isabel Núñez Bustamante","María Rosa Palacios Lazo"]},
+{"c":"Administrador","p":["Luis Ignacio Maturana Flores"]},
+{"c":"Jefe de unidad","p":["Víctor Hugo Garrido Leyton","Pamela Rosa Campos Loyola","José Pablo Pizarro Reyes","Carolina Beatriz Arrué González"]},
+{"c":"Administrativo jefe","p":["Noelia Solange Carvallo Aguilera","Ximena Alejandra Nemarich Martinez","Paz Andrea Rodriguez Miranda","Sandra Andrea Maldonado Gonzalez"]}]},
+{"nombre":"Juzgado de Cobranza Laboral y Previsional de San Miguel","tipo":"Cobranza","comuna":"San Miguel","direccion":"Ureta Cox N° 855, Piso 3°, San Miguel","telefonos":[],"correo":"","rut":"65618500-7","cta":"6372082","tit":[{"c":"Juez","p":["Marta Graciela Sepulveda Vilugron","Wilma Teresita de Jesús Matte Zamorano"]},
+{"c":"Administrador","p":["Oscar José Miguel Beyzaga Muñoz"]},
+{"c":"Jefe de unidad","p":["Néstor Mauricio Arévalo Macías"]},
+{"c":"Administrativo jefe","p":["Luis Rodrigo Torres Ruiz"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de San Miguel","tipo":"Trabajo","comuna":"San Miguel","direccion":"Ureta Cox N° 855, San Miguel","telefonos":["+56225563210"],"correo":"jlabsanmiguel@pjud.cl","rut":"61979590-3","cta":"6341004","tit":[{"c":"Juez","p":["Alondra Valentina Castro Jiménez","Patricia Andrea Agüero Gaete","Marcela Alejandra Poblete Valdés","Juana Amelia Álvarez Arenas"]},
+{"c":"Administrador","p":["Rodrigo Alejandro Araya Salcedo"]},
+{"c":"Jefe de unidad","p":["María Carolina Recabarren González","Mauricio Alejandro Rojas Guzman"]},
+{"c":"Administrativo jefe","p":["Lissete Soraya del Pilar Zarzar Juri","Jose Ignacio Jiménez Farías"]}],"adi":[{"c":"Juez","p":["Felipe Andrés Prenafeta Zúñiga","Vilma Valentina Aravena Abarzúa","María Asunción de la Barra Suma de Villa"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Puente Alto","tipo":"Penal","comuna":"Puente Alto","direccion":"Avda. Concha y Toro N° 1723, Puente Alto","telefonos":[],"correo":"","rut":"61978290-9","cta":"7343680","tit":[{"c":"Juez","p":["Juan Pablo Villavicencio Theoduloz","Andrea Gloria Gonzalez Araya","Gladys Camila Villablanca Morales","Sandra Carolina Naser Csaszar","Fernando Andrés Martínez Arias","Marcela Alejandra Soto Galdames","Paulo Antonio Jara Sepúlveda"]},
+{"c":"Administrador","p":["Jorge Andrés Bravo Galdames"]},
+{"c":"Jefe de unidad","p":["David Christian Charles Montecinos Valdés","Juan Pablo Jaque Caro","Juan Pablo Alarcón Guajardo"]}],"adi":[{"c":"Juez","p":["Diana Dolores Maquilon Tamayo","Paola Alejandra Orellana Torres","Mariela Ester Hernández Beiza","Marcos Andres Rivera Cesin"]},
+{"c":"Jefe de unidad","p":["Marjorie Corrales Leon"]}]},
+{"nombre":"1° Juzgado Civil de Puente Alto","tipo":"Civil","comuna":"Puente Alto","direccion":"Domingo Tocornal N° 143, Puente Alto","telefonos":["+56233038200"],"correo":"jc1_puentealto@pjud.cl","rut":"60306041-5","cta":"7302061","tit":[{"c":"Juez","p":["Cristian Marcelo Garcia Charles"]},
+{"c":"Secretario","p":["Claudia Alejandra Parga Ríos"]},
+{"c":"Oficial 1°","p":["Nathalie Macarena de la Cruz Suarez"]}],"adi":[{"c":"Juez","p":["Claudia Alejandra Parga Ríos"]}]},
+{"nombre":"Juzgado de Familia de Puente Alto","tipo":"Familia","comuna":"Puente Alto","direccion":"Domingo Tocornal N° 143, Puente Alto","telefonos":["+56233038000"],"correo":"","rut":"61978070-1","cta":"7342101","tit":[{"c":"Juez","p":["Sandra Victoria Pérez Díaz","Paula Graciela Ugarte Araya","Cristina Elena Mujica Bringas","Cecilia Amada Hernández Ramírez","Vilma Luz López Ramírez","Carla Gabriela Aguirre Correa","María Eugenia Luis Oyarce","Rodrigo Fernando Polanco Ovalle","Claudia Consuelo Cerda Lara","Carolina Alejandra Bravo Yáñez"]},
+{"c":"Administrador","p":["Caroline Elizabeth Velasco Gutierrez"]},
+{"c":"Jefe de unidad","p":["Alexander Salinas Foncea","Pamela del Pilar Uribe Garrido","Daniela Belén Venegas Arenas"]},
+{"c":"Administrativo jefe","p":["Cristian Absalon Wegner Araya","Francisco Javier Castro Arrouch","Alex Sebastian Garin Saez"]}],"adi":[{"c":"Juez","p":["Cecilia Alejandra Sepúlveda Cabrera"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Puente Alto","tipo":"Trabajo","comuna":"Puente Alto","direccion":"Domingo Tocornal 143, Puente Alto","telefonos":["+56233038100"],"correo":"jlabpuentealto@pjud.cl","rut":"61979560-1","cta":"7360975","tit":[{"c":"Juez","p":["Moira Paola Ramirez Valenzuela","Vilma Valentina Aravena Abarzúa"]},
+{"c":"Administrador","p":["Silvana Andrea Barra Castro"]},
+{"c":"Jefe de unidad","p":["Rafael Alejandro Repetto Figueroa"]},
+{"c":"Administrativo jefe","p":["Andrea Karina Santibáñez Torres","Stefany Soledad Farias Canales"]}],"adi":[{"c":"Juez","p":["Daniel Alejandro Ricardi Mac-Evoy"]}]},
+{"nombre":"Juzgado de Garantía de Puente Alto","tipo":"Penal","comuna":"Puente Alto","direccion":"Avda. Concha y Toro N° 1723, Puente Alto","telefonos":["+56225696900"],"correo":"","rut":"61977560-0","cta":"7338961","tit":[{"c":"Juez","p":["María Carolina Martin Miguel","Roxana Jacqueline Venegas Díaz","Cristian Daniel Villegas Giscard","José Paulo Coronado Álvarez","Rodrigo Antonio Hernández Pérez","Carolina Alejandra Toledo López","María José Araya Saavedra","Manuel Angel Muñoz Cid"]},
+{"c":"Administrador","p":["Patricio Ivan Yañez Oliva"]},
+{"c":"Jefe de unidad","p":["Oliva María Pilar Moyano Yugovic","Daniel Enrique Palacios Maturana","Juan Francisco Tapia García","Enrique Sebastián Crisóstomo Vega"]}],"adi":[{"c":"Juez","p":["Rodrigo Javier Pérez Aracena"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de San Bernardo","tipo":"Penal","comuna":"San Bernardo","direccion":"Urmeneta N° 330, San Bernardo","telefonos":[],"correo":"","rut":"61978300-K","cta":"7121920","tit":[{"c":"Juez","p":["Heber Manuel Rocco Martínez","María Pilar Valladares Santander","Marcela Andrea Miranda Cornejo","Carla Marie Aude Villemur Torres","Maritza Pamela Campos Campos","María Teresa Ramírez Soto","Maria Jose Araya Alvarez","Sergio Andrés Henríquez Galindo"]},
+{"c":"Administrador","p":["Andrea del Rosario Sandoval Asencio"]},
+{"c":"Jefe de unidad","p":["Gino Orlando Donoso Aguilar","Fabiola Alejandra Mujica Reyes","Gabriela Eusebia Cisternas Romero","Jenny Andrea Farias Gadal"]}],"adi":[{"c":"Juez","p":["Marisel Jeanette Canales Moya","Pamela Alejandra Silva Gaete"]},
+{"c":"Jefe de unidad","p":["Ginette Andrea Handy Avendaño"]}]},
+{"nombre":"1° Juzgado de Letras de San Bernardo","tipo":"Civil","comuna":"San Bernardo","direccion":"Urmeneta N° 467, San Bernardo","telefonos":[],"correo":"","rut":"60306040-7","cta":"7082746","tit":[{"c":"Juez","p":["Sergio Raúl Vial López"]},
+{"c":"Secretario","p":["Gregory Anthony Rojas Cerda"]}]},
+{"nombre":"2° Juzgado de Letras de San Bernardo","tipo":"Civil","comuna":"San Bernardo","direccion":"Urmeneta N° 467, San Bernardo","telefonos":["+56228593446"],"correo":"jl2_sanbernardo@pjud.cl","rut":"60306051-2","cta":"7086806","tit":[{"c":"Juez","p":["Cristina Solange Gatica Gutiérrez"]},
+{"c":"Secretario","p":["Carolina Andrea Cordero Jara"]},
+{"c":"Oficial 1°","p":["Rubén Alfonso Medina Torres"]}]},
+{"nombre":"Juzgado de Familia de San Bernardo","tipo":"Familia","comuna":"San Bernardo","direccion":"San Jose N° 545, San Bernardo","telefonos":["+56228563833"],"correo":"","rut":"61978050-7","cta":"7120681","tit":[{"c":"Juez","p":["Daniela Patricia Kompatzki Delarze","Eliana Alejandra Garay Herrera","María Pilar Moraga Reyes","Mauricio Alejandro Castillo Pizarro","Alejandra Cecilia Soto Nilo","Camila Bernardita Philp Salgado","María Soledad Parada Garay"]},
+{"c":"Administrador","p":["Ximena del Carmen Agurto Vásquez"]},
+{"c":"Jefe de unidad","p":["José Antonio Varas Bustos","Francisco Igor Moreno Adad"]},
+{"c":"Administrativo jefe","p":["Rosa Angelica Padron Miranda","Carlos Alberto Nuñez Jimenez"]}],"adi":[{"c":"Juez","p":["Camila Andrea Galle Aravena"]},
+{"c":"Administrador","p":["Jose Rodrigo Arancibia Donoso"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de San Bernardo","tipo":"Trabajo","comuna":"San Bernardo","direccion":"Urmeneta N° 467, San Bernardo","telefonos":["+56228790320"],"correo":"jlabsanbernardo@pjud.cl","rut":"61979570-9","cta":"7134835","tit":[{"c":"Juez","p":["Clara Rosa Rojo Silva","Diego Francisco Rubi Araya"]},
+{"c":"Administrador","p":["Luciano Tomás Juacida Erenchun"]},
+{"c":"Jefe de unidad","p":["Mario Héctor Joo Muñoz","Adriana del Carmen Pizarro Muñoz","Margarita Millaray Fuentes Conejeros"]},
+{"c":"Administrativo jefe","p":["Ivan Alejandro Troncoso Morales","Constanza Gallegos Cortés"]}],"adi":[{"c":"Juez","p":["Graciel Alejandra Muñoz Tapia"]}]},
+{"nombre":"Juzgado de Garantía de San Bernardo","tipo":"Penal","comuna":"San Bernardo","direccion":"Urmeneta N° 330, San Bernardo","telefonos":[],"correo":"","rut":"65497420-9","cta":"7119143","tit":[{"c":"Juez","p":["José Luis Alvarado Foerster","María José Moreno Bravo","Pablo Alfonso Escobar Navarro","Claudio Andrés Ortega Loyola","Cristian Fabián Morales Pereira","Ingrid Eliet Vistoso Monreal","Marilyn Johanna Neira Mendoza","Salvador Andre Garrido Aranela","René Alexander Reyes Pradenas"]},
+{"c":"Administrador","p":["Soledad Alejandra Carrasco Ruiz"]},
+{"c":"Jefe de unidad","p":["Ximena del Carmen Sepúlveda Lagos","Rodrigo Javier Pérez Aracena","Mónica Andrea Rivas Pérez"]}],"adi":[{"c":"Juez","p":["Andrea Alejandra Román Bravo"]},
+{"c":"Jefe de unidad","p":["Jennifer Andrea Coña Perez","Valeria Andrea Muñoz Dávila"]}]},
+{"nombre":"1° Juzgado de Letras de Buin","tipo":"Civil","comuna":"Buin","direccion":"Calle Arturo Prat N° 573, Buin","telefonos":["+56228213328"],"correo":"jl1_buin@pjud.cl","rut":"60306053-9","cta":"37700029060","tit":[{"c":"Juez","p":["Myriam Verónica Ortiz Urra"]},
+{"c":"Oficial 1°","p":["Joselyn Paz Peña Cofre"]}],"adi":[{"c":"Secretario","p":["Nicole Romina Escarate Gneis"]}]},
+{"nombre":"2° Juzgado de Letras de Buin","tipo":"Civil","comuna":"Buin","direccion":"Arturo Prat N° 573, Buin","telefonos":[],"correo":"","rut":"61957600-4","cta":"37700047157","tit":[{"c":"Secretario","p":["Silvia Edith Jaramillo Cisternas"]},
+{"c":"Oficial 1°","p":["Mariela Francisca Ormeño Quezada"]}],"adi":[{"c":"Juez","p":["Francisco Javier Cavieres Fernández"]}]},
+{"nombre":"Juzgado de Familia de Buin","tipo":"Familia","comuna":"Buin","direccion":"Manuel Montt N° 376, Buin","telefonos":[],"correo":"","rut":"61978030-2","tit":[{"c":"Juez","p":["Ximena Teresa Robles Rodríguez","Carolina Loreto Yáñez Cañas","Paola Alejandra Orellana Torres","Romina Simonne de la Merced Onetto Bertin"]},
+{"c":"Administrador","p":["Marcos Erik Lynch Baack"]},
+{"c":"Jefe de unidad","p":["Francisco Garay Torres"]},
+{"c":"Administrativo jefe","p":["Marianella del Pilar Castro Pinto","Mauricio Andrés Torres Fuentes"]}],"adi":[{"c":"Juez","p":["Minou Francisca Jancso Carstens","Maria Celeste Azocar Villena"]},
+{"c":"Administrativo jefe","p":["Pablo Patricio Gómez Yáñez"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Melipilla","tipo":"Penal","comuna":"Melipilla","direccion":"Ortuzar N° 538, Melipilla","telefonos":[],"correo":"","rut":"61978760-9","tit":[{"c":"Juez","p":["Jessica del Carmen Cofre Hidalgo","Camila Beatriz Riquelme Cisterna","Mauricio Alejandro Cuevas Gatica","Ana María Vega Ramírez","Sylvia Alvarado Estay"]},
+{"c":"Administrador","p":["Pamela Ebert Gotschlich Fuentes"]},
+{"c":"Jefe de unidad","p":["Juan Guillermo Rivera Leiva","Daniel Alejandro Sepúlveda Moyano","Leonardo Antonio Castillo Castro"]}],"adi":[{"c":"Juez","p":["Cristian Felipe Ríos Robledo"]}]},
+{"nombre":"1° Juzgado de Letras de Melipilla","tipo":"Civil","comuna":"Melipilla","direccion":"Correa N° 490, Segundo Piso, Melipilla","telefonos":[],"correo":"","rut":"60306043-1","cta":"37500055473","tit":[{"c":"Juez","p":["José Svato Nesvara Herrera","José Mario Fati Tepano"]},
+{"c":"Administrador","p":["Luis Alberto Villa Retamal"]},
+{"c":"Jefe de unidad","p":["Roberto Angelo Rosales Montesinos"]},
+{"c":"Administrativo jefe","p":["Fernando Elías Villarroel González","Verónica Alejandra Juica Hidalgo"]}],"adi":[{"c":"Juez","p":["Daniela Ivalou Pérez Vivallo"]}]},
+{"nombre":"Juzgado de Familia de Melipilla","tipo":"Familia","comuna":"Melipilla","direccion":"Correa N° 490, 1° Piso, Melipilla","telefonos":["+56228321130"],"correo":"jfmelipilla@pjud.cl","rut":"61978090-6","cta":"37500092425","tit":[{"c":"Juez","p":["Francisco Javier Bravo Ramírez","Marianela del Carmen Garrido Sandoval","Paola Teresa Órdenes Vitali","Soraya Padilla Bustos"]},
+{"c":"Administrador","p":["Roberto Ricardo Gutiérrez Schleef"]},
+{"c":"Jefe de unidad","p":["Lorena Emilia Maturana Bignotti"]},
+{"c":"Administrativo jefe","p":["Rodolfo Antonio Herrera Lineros","Francisco Javier Reyes Arenas"]}],"adi":[{"c":"Juez","p":["Gustavo Oscar Campaña Cugat"]}]},
+{"nombre":"Juzgado de Garantía de Melipilla","tipo":"Penal","comuna":"Melipilla","direccion":"Ortuzar 851-853 Esq. Barrales, Melipilla","telefonos":[],"correo":"","rut":"61977590-2","cta":"37500092221","tit":[{"c":"Juez","p":["Patricia Liliana Castañeda Quezada","Víctor Manuel Fernández Ortega"]},
+{"c":"Administrador","p":["Omar Eduardo Schwerter Werner"]},
+{"c":"Jefe de unidad","p":["Adriana Paz Freitte Mazzola","Paula Andrea Duran Rojas"]}],"adi":[{"c":"Juez","p":["Erick Leonardo Slater Soto","María de los Angeles Ceardi Nazar"]},
+{"c":"Jefe de unidad","p":["Horacio Antonio Muñoz Ramírez"]}]},
+{"nombre":"Juzgado de Garantía de Curacaví","tipo":"Penal","comuna":"Curacaví","direccion":"Presbitero Moraga Sur N° 122, Curacavi","telefonos":["+56982884315"],"correo":"jgcuracavi@pjud.cl","rut":"61977580-5","cta":"31000019294","tit":[{"c":"Juez","p":["Álvaro Enrique Mardones Barría","Natalia Ekaterina Lillo Cuevas"]},
+{"c":"Administrador","p":["Luis Alfredo Concha Mariangel"]},
+{"c":"Jefe de unidad","p":["Juan Alberto Petit-Laurent Charpentier"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Talagante","tipo":"Penal","comuna":"Talagante","direccion":"Av. Bernardo O'Higgins N° 2160 Esq. San Fco, Talagante","telefonos":["+56229166650"],"correo":"toptalagante@pjud.cl","rut":"61978330-1","cta":"7430868","tit":[{"c":"Juez","p":["Jorge Luis Cataldo Aedo","Alfonso José Jove Avilés","Alejandra del Carmen Chacón Plaza","Eden Salvador Briceño Guevara"]},
+{"c":"Administrador","p":["Juan Carlos Durán Moreno"]},
+{"c":"Jefe de unidad","p":["Javier Alejandro Charme Jiménez","Silvana Andrea Medina Villarroel","Gonzalo Arturo Vergara Astorga"]}],"adi":[{"c":"Juez","p":["Katiuska Andrea Sobarzo Sobarzo","Valentina Fernanda González Tello"]}]},
+{"nombre":"1° Juzgado de Letras de Talagante","tipo":"Civil","comuna":"Talagante","direccion":"21 de Mayo N° 1245 Primer Piso, Talagante","telefonos":["+56228151426"],"correo":"jl1_talagante@pjud.cl","rut":"60306042-3","cta":"7402368","tit":[{"c":"Juez","p":["Daniela Andrea Soto López"]},
+{"c":"Secretario","p":["Mariela Ester Hernández Beiza"]},
+{"c":"Oficial 1°","p":["Marcela Alejandra Jemita Labrín Vivanco"]}]},
+{"nombre":"2° Juzgado de Letras de Talagante","tipo":"Civil","comuna":"Talagante","direccion":"21 de Mayo N° 1245, Talagante","telefonos":[],"correo":"","rut":"60306086-5","tit":[{"c":"Juez","p":["Gerardo Jorge Mena Edwards"]},
+{"c":"Secretario","p":["Andrea Alejandra Román Bravo"]},
+{"c":"Oficial 1°","p":["Sylvia del Carmen Varas López"]}]},
+{"nombre":"Juzgado de Familia de Talagante","tipo":"Familia","comuna":"Talagante","direccion":"Jose Leyan N° 654, Talagante","telefonos":[],"correo":"jftalagante@pjud.cl","rut":"61978060-4","cta":"7430345","tit":[{"c":"Juez","p":["Marcela del Carmen Cisterna Valenzuela","Claudia Andrea Lari Madrid Díaz","María Macarena Zárate Lara"]},
+{"c":"Administrador","p":["Jessica Marisol Fuentes Barrera"]},
+{"c":"Jefe de unidad","p":["Daniela Carolina Pozas Barria"]},
+{"c":"Administrativo jefe","p":["Alan Mauricio Rivas Droguett","Rubén Darío Medel Leyton"]}],"adi":[{"c":"Juez","p":["Rafael Andrés Escalante Ortega"]}]},
+{"nombre":"Juzgado de Garantía de Talagante","tipo":"Penal","comuna":"Talagante","direccion":"Avda. Bernardo O'Higgins N° 2160 Esq. San Fco, Talagante","telefonos":[],"correo":"","rut":"61977540-6","cta":"7429509","tit":[{"c":"Juez","p":["María Magdalena Gricelda Paiva Passero","Christian Gabriel Arturo Cáceres Molina","Carlos César Moreno Briones","Gabriela de la Luz Contreras Piderit","Lisette Karina Droguett Jara","Catherine Ivonne Norambuena González"]},
+{"c":"Administrador","p":["Erika Jazmín Ormazábal Astete"]},
+{"c":"Jefe de unidad","p":["Loreto Patricia Manríquez Díaz","Magaly Ivonne Aedo Ponce"]}],"adi":[{"c":"Jefe de unidad","p":["Lorena Andrea Acevedo Molina"]}]},
+{"nombre":"Juzgado de Letras de Peñaflor","tipo":"Civil","comuna":"Peñaflor","direccion":"María Ester Garay 135, Peñaflor","telefonos":["+56228129097"],"correo":"jl_penaflor@pjud.cl","rut":"61939600-6","cta":"7233850","tit":[{"c":"Juez","p":["María Leonor de Lourdes Geisse Fernández"]},
+{"c":"Secretario","p":["Daniela Isabel Ramírez Marambio"]},
+{"c":"Oficial 1°","p":["Cindy Tamara Villalobos Castro"]}],"adi":[{"c":"Juez","p":["Daniela Isabel Ramírez Marambio"]}]},
+{"nombre":"Juzgado de Familia de Peñaflor","tipo":"Familia","comuna":"Peñaflor","direccion":"Avda. 18 de Septiembre N° 172, Peñaflor","telefonos":[],"correo":"jfpenaflor@pjud.cl","rut":"61978000-0","cta":"7239726","tit":[{"c":"Juez","p":["Olga Francisca Barahona Estay","Lía Fernanda Chepe Semmler","Natalia Marisol Álvarez Villarroel"]},
+{"c":"Administrador","p":["Juan José Sepúlveda Pérez"]},
+{"c":"Administrativo jefe","p":["Anibal Garay Salcedo","Karla Andrea Marchant Galaz"]}],"adi":[{"c":"Juez","p":["Jaime Esteban Silva Feistner"]},
+{"c":"Administrativo jefe","p":["Mario Felipe Flores Soto"]}]}],"Rancagua":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Rancagua","tipo":"Penal","comuna":"Rancagua","direccion":"Avda. Libertador Bernardo O'Higgins N° 720, Rancagua","telefonos":["+56722207750"],"correo":"","rut":"61970600-5","cta":"38100149351","tit":[{"c":"Juez","p":["Oscar Alfredo Castro Allendes","Paola Sandra González López","Erika Antonieta Silva Pavez","Marcela Alejandra Paredes Olave","María Esperanza Franichevic Pedrals","César Alexanders Torres Mesías","Fadua Pamela Salas Eljatib","Paulina Alejandra Bossy Chaparro","Hernán Carlos González Muñoz","Carolina Isabel Garrido Acevedo","Sergio Enrique Allende Cabeza","Raúl Andrés Baldomino Díaz","Luis Cristian Fredes Hernández","Rocío del Pilar Castello Cordero","Yesica Alejandra Hidalgo Parra","Felipe Ignacio Cortés Ibacache"]},
+{"c":"Administrador","p":["Nelson Alejandro Torres López"]},
+{"c":"Jefe de unidad","p":["Mauricio Andrés Abarca Silva","Héctor Arturo Ferrufino Valenzuela","Mario Ricardo Medina Muñoz","Ingrid Rosario Cerda Pérez","Esteban Álvaro Lizana Faúndez"]}],"adi":[{"c":"Juez","p":["Patricio Mario Acevedo Silva","Héctor Ignacio Benavides Silva"]}]},
+{"nombre":"1° Juzgado Civil de Rancagua","tipo":"Civil","comuna":"Rancagua","direccion":"Centro de Justicia, Lastarria N° 410, Piso 5, Rancagua","telefonos":[],"correo":"","rut":"60307007-0","cta":"38100086171","tit":[{"c":"Juez","p":["Andrés Antonio Fraser Pinto"]},
+{"c":"Secretario","p":["Margarita Loreto Navarrete Zurita"]},
+{"c":"Oficial 1°","p":["Clara Luz Vasquez Riquelme"]}],"adi":[{"c":"Juez","p":["Margarita Loreto Navarrete Zurita"]}]},
+{"nombre":"2° Juzgado Civil de Rancagua","tipo":"Civil","comuna":"Rancagua","direccion":"Lastarria N° 410, Piso 6, Centro de Justicia, Rancagua","telefonos":[],"correo":"","rut":"61943000-K","cta":"38100127528","tit":[{"c":"Juez","p":["Cristian Eduardo Fernández González"]},
+{"c":"Secretario","p":["Marcelo Andre Araya Rojas"]},
+{"c":"Oficial 1°","p":["Jorge German del Transito Orostica Villagran"]}],"adi":[{"c":"Juez","p":["Marcelo Andre Araya Rojas"]}]},
+{"nombre":"Juzgado de Familia de Rancagua","tipo":"Familia","comuna":"Rancagua","direccion":"José Victorino Lastarria N° 410, Rancagua","telefonos":[],"correo":"","rut":"61978280-1","cta":"38100164083","tit":[{"c":"Juez","p":["Ana María Salas Muñoz","Waleska Antonieta Cholaky Cabezas","Visnia Faridi Mahmoud Auad","María Carolina Olea Bascuñán","Sonia Elizabeth Burgos Araneda","Hugo Orlando Umaña Mendoza","Exequiel Antonio González Castillo","Claudia Alejandra Donoso Muñoz","Carlos Sánchez Grez","Carolina Maribel Vallejo Correa"]},
+{"c":"Administrador","p":["Marcela Andrea Muñoz Olate"]},
+{"c":"Jefe de unidad","p":["Daniel Alexis Faúndez de la Fuente","Rosa Ester Soto Yañez","Johana Daniela Garrido Parada","Maria Olga de los Angeles Nilo Rivera"]},
+{"c":"Administrativo jefe","p":["Jessica Alejandra Campos Verdugo","Paulo David Araya Zavala","Luis Felipe Cornejo Peña","Mack Jonathan Urtubia Rojas"]}],"adi":[{"c":"Juez","p":["Marisol Alejandra López Machuca","Teresita Alejandra López Rojas","Evelyn Catalina Díaz Retamal"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Rancagua","tipo":"Trabajo","comuna":"Rancagua","direccion":"José Victorino Lastarria N° 410, Piso 4, Rancagua","telefonos":[],"correo":"","rut":"61978650-5","cta":"38100027027","tit":[{"c":"Juez","p":["Pablo Alonso Vergara Lillo","Vania del Carmen León Segura","Alonso Danilo Fredes Hernández","Christian Pablo Inostroza Peñailillo"]},
+{"c":"Administrador","p":["Geovanni Andrés Quintanilla Muñoz"]},
+{"c":"Jefe de unidad","p":["German Eugenio Videla Araneda","Francisca Alexandra Navarro Pinto","Claudia Pamela Calquin Almeyda"]},
+{"c":"Administrativo jefe","p":["Ximena Ismenia Araya Matus","Gonzalo Andres Rojas Gonzalez"]}]},
+{"nombre":"Juzgado de Garantía de Rancagua","tipo":"Penal","comuna":"Rancagua","direccion":"Avda. Libertador Bernardo O'Higgins N° 720, Rancagua","telefonos":[],"correo":"","rut":"61968000-6","cta":"38100149149","tit":[{"c":"Juez","p":["Mauricio Voltaire Silva Vásquez","Andrea Paola Urbina Salazar","Felipe Izquierdo Parga","Jessica Verónica Bascuñán Morales","Gianni Ricardo Libretti Peña","Loreto Alejandra Salas Cortés","Gonzalo Benjamín Celedón Bulnes","Carolina Pía Lazen Maldonado"]},
+{"c":"Administrador","p":["Rodrigo Andrés Valenzuela Correa"]},
+{"c":"Jefe de unidad","p":["Carlos Roberto Gordon Olave","Felipe Alejandro Gaspar Candia","Claudia Ximena Cabezas Mira","Keith Alenz Mellado Valdés"]}],"adi":[{"c":"Juez","p":["Tatiana Samantha Díaz Coloma"]},
+{"c":"Jefe de unidad","p":["Jacob Andrés Osses Reveco"]}]},
+{"nombre":"Juzgado de Garantía de Graneros","tipo":"Penal","comuna":"Graneros","direccion":"Antonio Varas N° 137, Graneros","telefonos":["+56982995818"],"correo":"jggraneros@pjud.cl","rut":"61968700-0","cta":"37900041846","tit":[{"c":"Juez","p":["Piedad del Villar Domínguez"]},
+{"c":"Administrador","p":["María Isabel Soto Rubio"]}],"adi":[{"c":"Juez","p":["Mariano Andrés Rubio Bastías"]}]},
+{"nombre":"1° Juzgado de Letras de Rengo","tipo":"Civil","comuna":"Rengo","direccion":"Ernesto Riquelme N° 56, Rengo","telefonos":["+56722511193"],"correo":"","rut":"60307001-1","cta":"39100035808","tit":[{"c":"Juez","p":["Sandra Carolina Herrera Menares"]},
+{"c":"Secretario","p":["Claudia Loreto Garrido Rosales"]},
+{"c":"Jefe de unidad","p":["Jean Andree Delso Madrid"]},
+{"c":"Oficial 1°","p":["Edson Marcelo Alvarado Díaz"]},
+{"c":"Administrativo jefe","p":["Luis Arnaldo Godoy Rojas"]}],"adi":[{"c":"Administrativo jefe","p":["Ana María Arce Marmolejo"]}]},
+{"nombre":"Juzgado de Familia de Rengo","tipo":"Familia","comuna":"Rengo","direccion":"Diego Portales N° 258, Rengo","telefonos":["+56722513787"],"correo":"jfrengo@pjud.cl","rut":"61977720-4","cta":"39100064956","tit":[{"c":"Juez","p":["Andrea María Morales López","Edgardo Andrés López González"]},
+{"c":"Administrador","p":["Juan Alejandro Gómez Serrano"]},
+{"c":"Jefe de unidad","p":["Karla Vanessa Meza Cabrera"]},
+{"c":"Administrativo jefe","p":["Marcela del Carmen Santibañez Herrera","Patricio Raúl Isbej Morales"]}],"adi":[{"c":"Juez","p":["Doris Natasha García Rojas","Daniela Paz Pavez Correa","Roberto Gabriel Zurita Lara"]},
+{"c":"Administrador","p":["Juan Alejandro Riquelme Lorca"]}]},
+{"nombre":"Juzgado de Garantía de Rengo","tipo":"Penal","comuna":"Rengo","direccion":"Pedro Segundo Estrada N° 36, Rengo","telefonos":["+56722512844"],"correo":"jgrengo@pjud.cl","rut":"61970800-8","cta":"39100060969","tit":[{"c":"Juez","p":["Lisbeth Yenifer Cartes López","Paulina María Alejandra Delgado Barriga"]},
+{"c":"Administrador","p":["Dorys Michel Medina Riquelme"]},
+{"c":"Jefe de unidad","p":["Gloria Elizabeth Paredes Prieto","Luis Orlando Mañan Vidal"]}],"adi":[{"c":"Juez","p":["Rodrigo Andres Barrera Yañez"]}]},
+{"nombre":"Juzgado de Letras de San Vicente","tipo":"Civil","comuna":"San Vicente","direccion":"Av. Bernardo O'Higgins 385, San Vicente de T.t","telefonos":[],"correo":"","rut":"60307003-8","cta":"39300031122","tit":[{"c":"Juez","p":["Solange Alejandra Diuana Eade","Daniel Alejandro Hidalgo Leiva"]},
+{"c":"Administrador","p":["Aracely del Pilar Valenzuela Muñoz"]},
+{"c":"Oficial 1°","p":["Lorenzo Antonio Bustamante Méndez"]}],"adi":[{"c":"Juez","p":["Karina del Pilar Cea Cea","Edith Cristina Lagos Saldías"]}]},
+{"nombre":"Juzgado de Garantía de San Vicente","tipo":"Penal","comuna":"San Vicente","direccion":"Av. Bernardo O'Higgins N° 385, San Vicente de T.t","telefonos":["+56722573189"],"correo":"jgsanvicentedett@pjud.cl","rut":"61969300-0","cta":"39300069367","tit":[{"c":"Juez","p":["Víctor Ilich Estanislao Ruiz Huerta","Jorge Aliro Parragué López"]},
+{"c":"Administrador","p":["Paulo César Troncoso Pavez"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Peumo","tipo":"Mixto","comuna":"Peumo","direccion":"León Xiii N° 091, Peumo","telefonos":["+56722561699"],"correo":"","rut":"60307015-1","cta":"38900016911","tit":[{"c":"Juez","p":["Cristóbal Andrés Geldun Mansilla"]},
+{"c":"Administrador","p":["Juan Alejandro Riquelme Lorca"]}],"adi":[{"c":"Juez","p":["Cristobal Matias Avila Mora"]},
+{"c":"Administrador","p":["Angelica Paloma Urrutia Aguilera"]},
+{"c":"Oficial 1°","p":["Aída Eva Pérez Soto"]}]},
+{"nombre":"Tribunal Juicio Oral en lo Penal de San Fernando","tipo":"Penal","comuna":"San Fernando","direccion":"Juan Jimenez N° 1525, San Fernando","telefonos":[],"correo":"","rut":"61978430-8","cta":"41700091030","tit":[{"c":"Juez","p":["Marcela Paola Yáñez Cabello","Carlos Eduardo Pérez Díaz","Constanza Valentina Acuña Sauterel"]},
+{"c":"Administrador","p":["Sergio Pablo Jorquera Espinoza"]},
+{"c":"Jefe de unidad","p":["Esteban Alejandro Galdames Meléndez"]}],"adi":[{"c":"Juez","p":["Verónica Ximena Ramírez Mufdi","José Antonio Ruiz Stanke","Claudia Vanessa Letelier Morales"]}]},
+{"nombre":"1° Juzgado de Letras de San Fernando","tipo":"Civil","comuna":"San Fernando","direccion":"Luis Amesti N° 1550, Primer Piso, San Fernando","telefonos":["+56722711121"],"correo":"jl1_sanfernando@pjud.cl","rut":"60307004-6","cta":"41700021368","tit":[{"c":"Juez","p":["Felipe Eduardo Cabrera Celsi"]},
+{"c":"Secretario","p":["Paola Antonieta Chacón Cogler"]},
+{"c":"Oficial 1°","p":["Jorge Eduardo Sepúlveda Palma"]}]},
+{"nombre":"2° Juzgado de Letras de San Fernando","tipo":"Civil","comuna":"San Fernando","direccion":"Luis Amesti N° 1550, 2° Piso, San Fernando","telefonos":[],"correo":"","rut":"60307012-7","tit":[{"c":"Juez","p":["José Miguel Valenzuela Morales"]},
+{"c":"Secretario","p":["María Victoria Barrera Gacitúa"]},
+{"c":"Oficial 1°","p":["Vanessa Olivia Manríquez Maulén"]}]},
+{"nombre":"Juzgado de Familia de San Fernando","tipo":"Familia","comuna":"San Fernando","direccion":"Nincunlauta N° 1800, San Fernando","telefonos":[],"correo":"jfsanfernando@pjud.cl","rut":"65541740-0","cta":"41700090301","tit":[{"c":"Juez","p":["Kathyuzka Kenya Miroslava Drpic González","Carlos Sebastián Campos Calderón","Sebastián Ignacio Bravo Ibarra"]},
+{"c":"Administrador","p":["Clotilde Paz Muñoz Aravena"]},
+{"c":"Administrativo jefe","p":["Ivania de la Luz Rubio Rivera","Sandra Antonieta del Carmen Mañán Vidal"]}],"adi":[{"c":"Juez","p":["Paola Elizabeth Acuña Gutiérrez","Ledda María Chovar Riquelme"]},
+{"c":"Administrativo jefe","p":["Jenny Alejandra Quinteros Méndez"]}]},
+{"nombre":"Juzgado de Garantía de San Fernando","tipo":"Penal","comuna":"San Fernando","direccion":"Juan Jimenez N° 1525, San Fernando","telefonos":[],"correo":"","rut":"65277150-5","cta":"41700084416","tit":[{"c":"Juez","p":["María Teresa Rodríguez Fondon","Erick Fabian Rios Leiva"]},
+{"c":"Administrador","p":["Marcela Irene Jara Pinto"]},
+{"c":"Jefe de unidad","p":["Rolando Andres Requena Diaz"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Santa Cruz","tipo":"Penal","comuna":"Santa Cruz","direccion":"Nicolas Palacios N° 355, 2 Piso, Santa Cruz","telefonos":["+56722443820"],"correo":"","rut":"61978440-5","cta":"41900070738","tit":[{"c":"Juez","p":["Maria Angelica Mulatti Oyarzo","Raul Matias Castro Valderrama","Eliana Taborga Collao","Gricelda Margarita Valenzuela Rodríguez","Alejandra Paula Corvalán Helbig"]},
+{"c":"Administrador","p":["Diego Aurelio Vasquez Palomino"]},
+{"c":"Jefe de unidad","p":["Andrea Darinka Arriagada Herrera","Ivonne del Carmen Iturriaga Brito","Marco Antonio Palma Reyes","Jose Mario Arce Donoso"]}],"adi":[{"c":"Juez","p":["Daniel Alejandro Ocampo Rubio","Javiera Catalina Santibañez Peralta"]}]},
+{"nombre":"1° Juzgado de Letras de Santa Cruz","tipo":"Civil","comuna":"Santa Cruz","direccion":"Diego Portales N° 546, Santa Cruz","telefonos":[],"correo":"","rut":"60307002-K","tit":[{"c":"Juez","p":["Mauricio Antonio Núñez Echeverría"]},
+{"c":"Oficial 1°","p":["Katherine del Carmen Urrutia Contreras"]}]},
+{"nombre":"Juzgado de Familia de Santa Cruz","tipo":"Familia","comuna":"Santa Cruz","direccion":"Diego Portales N° 546, Santa Cruz","telefonos":[],"correo":"","rut":"65541650-1","cta":"41900070461","tit":[{"c":"Juez","p":["Carolina Andrea Muñoz León","Paula Katina Montserrat Najle Spuler"]},
+{"c":"Administrador","p":["Christian Álvaro Molina Arias"]},
+{"c":"Jefe de unidad","p":["Mauricio Andrés Guzmán Cifuentes"]},
+{"c":"Administrativo jefe","p":["Patricia Marlene Maldonado Valdivia","Jasmin Carolina Muñoz Galvez"]}],"adi":[{"c":"Juez","p":["Laura Fernanda Núñez Madrid","Pía Tamara Caro Oyarzún"]},
+{"c":"Administrativo jefe","p":["Carolina Andrea González Rodríguez"]}]},
+{"nombre":"Juzgado de Garantía de Santa Cruz","tipo":"Penal","comuna":"Santa Cruz","direccion":"Nicolas Palacios N° 355, Santa Cruz","telefonos":[],"correo":"","rut":"61969400-7","cta":"41900063464","tit":[{"c":"Juez","p":["Rodrigo Alejandro Ponce Soto","Alejandro Igor Vilches Hernández"]},
+{"c":"Administrador","p":["Luis Eduardo Quintana Quintana"]},
+{"c":"Jefe de unidad","p":["Katya Goretty Lizama Lizama"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Peralillo","tipo":"Mixto","comuna":"Peralillo","direccion":"O'Higgins S/N Esq. 11 Septiembre, Peralillo","telefonos":["+56722861160"],"correo":"","rut":"61971000-2","cta":"41500013646","tit":[{"c":"Juez","p":["Oscar Ignacio Caorsi Leñero","Guillermo Enrique Rodríguez Órdenes"]},
+{"c":"Administrador","p":["Mario Marcelo Andrades Jara"]},
+{"c":"Oficial 1°","p":["Angela María Peña Lorca"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Pichilemu","tipo":"Mixto","comuna":"Pichilemu","direccion":"Dionisio Acevedo N° 490, Pichilemu","telefonos":["+56722841085"],"correo":"","rut":"60307016-K","cta":"39000002139","tit":[{"c":"Juez","p":["Juan Manuel Gatica Lizana","Víctor Leopoldo Sánchez Gutiérrez"]},
+{"c":"Administrador","p":["Javier Adrián Acuña Oliva"]},
+{"c":"Jefe de unidad","p":["Paloma Natalia de la Paz Meneses Fuentes"]},
+{"c":"Oficial 1°","p":["María Esmeralda Peña Fernández"]},
+{"c":"Administrativo jefe","p":["Ana Carolina Lecaros Lorca"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Litueche","tipo":"Mixto","comuna":"Litueche","direccion":"Obispo Larrain N° 745, Litueche","telefonos":[],"correo":"","rut":"61971200-5","cta":"38800002351","tit":[{"c":"Juez","p":["Leandro Miguel Bahamonde Hernández"]},
+{"c":"Secretario","p":["Marisol Paz Olivares Becerra"]},
+{"c":"Oficial 1°","p":["Marisol Andrea Quijada Mora"]}]}],"Talca":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Curicó","tipo":"Penal","comuna":"Curicó","direccion":"Camilo Henriquez N° 033, 3° Piso, Curico, Curicó","telefonos":[],"correo":"","rut":"61948000-7","cta":"42800000879","tit":[{"c":"Juez","p":["Roberto García Gil","Amelia Patricia Avendaño González","Paulina Soledad Rodríguez Rodríguez","Jimena Eloisa Orellana Fuenzalida","Mariel Ivonne Molina Guerrero","Macarena del Pilar Yáñez Cerda","Rodrigo Higinio Gómez Marambio"]},
+{"c":"Administrador","p":["Alfonso Eduardo Antonio Prado Lara"]},
+{"c":"Jefe de unidad","p":["Estela del Rosario Garrido Molina","Ítalo Enrique Albornoz Rojas","Maria Eugenia Bahamondes Rivas","Oscar Alejandro Matus Meza"]}]},
+{"nombre":"1° Juzgado de Letras de Curicó","tipo":"Civil","comuna":"Curicó","direccion":"Av.camilo Henríquez S/N, Curico, Curicó","telefonos":[],"correo":"","rut":"60308015-7","cta":"42500058247","tit":[{"c":"Juez","p":["María Alejandra Orellana Yáñez"]},
+{"c":"Secretario","p":["Estefanía Andrea Hunrichse Andrade"]},
+{"c":"Oficial 1°","p":["Christian Francisco Olguin Olavarria"]}]},
+{"nombre":"2° Juzgado de Letras de Curicó","tipo":"Civil","comuna":"Curicó","direccion":"Manso de Velasco 484, Curicó","telefonos":[],"correo":"","rut":"60308002-5","cta":"42500058409","tit":[{"c":"Juez","p":["Marcia Alejandra Esmeralda Arce Ayub"]},
+{"c":"Secretario","p":["Marisol Andrea Román Riquelme"]},
+{"c":"Oficial 1°","p":["Mario Enrique Riera Navarro"]}]},
+{"nombre":"Juzgado de Familia de Curicó","tipo":"Familia","comuna":"Curicó","direccion":"Estado N° 661, Curicó","telefonos":["+56752310580"],"correo":"jfcurico@pjud.cl","rut":"61977830-8","tit":[{"c":"Juez","p":["Andrea Díaz Vega","María Elena Ortiz Cornejo","Beatriz Carolina Aranda Ortiz","Fernando Patricio Bravo Ibarra"]},
+{"c":"Administrador","p":["Andrea Carolina Sepulveda Dachelet"]},
+{"c":"Jefe de unidad","p":["Romina Andrea Fuentes Salgado"]},
+{"c":"Administrativo jefe","p":["Celia del Carmen Soto Donaire","Marjorie de Jesús González Cáceres"]}],"adi":[{"c":"Juez","p":["María Ester Venegas Ramírez"]},
+{"c":"Administrativo jefe","p":["Álvaro Giacomo Muñoz Aguayo"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Curicó","tipo":"Trabajo","comuna":"Curicó","direccion":"Manso de Velasco N° 474, Curico, Curicó","telefonos":["+56752317476"],"correo":"jlabtcurico@pjud.cl","rut":"61979460-5","cta":"42500016889","tit":[{"c":"Juez","p":["Patricio Alfredo Navarro Fierro","Jorge Luis Gutiérrez González"]},
+{"c":"Administrador","p":["Giuliano Eufemio Candia Leal"]},
+{"c":"Jefe de unidad","p":["Genoveva Alejandra Aburto Godoy"]},
+{"c":"Administrativo jefe","p":["Cristina Inés Espinoza Espinoza","Pamela Rossana Padilla Figueroa"]}]},
+{"nombre":"Juzgado de Garantía de Curicó","tipo":"Penal","comuna":"Curicó","direccion":"Camilo Henriquez N° 033, 1° Piso, Curico, Curicó","telefonos":["+56752315354"],"correo":"","rut":"65044290-3","cta":"42800000861","tit":[{"c":"Juez","p":["Mauricio Andrés Aravena Gajardo","Eduardo Andrés Fritz Castro","Héctor Andrés Mardones Echeverría"]},
+{"c":"Administrador","p":["Anita María Díaz Poblete"]},
+{"c":"Jefe de unidad","p":["Fernando Arturo Maldonado Bravo","Karina Andrea Medina Fuentes"]}],"adi":[{"c":"Juez","p":["Rodrigo Andrés Fuentes Flores","Natalia Paz Rojas Bravo"]}]},
+{"nombre":"Juzgado de Letras de Molina","tipo":"Civil","comuna":"Molina","direccion":"Avda. Poniente N° 1985, Esq. Libertad, 2° Piso, Molina","telefonos":["+56752491209"],"correo":"jl_molina@pjud.cl","rut":"60308014-9","cta":"43100023688","tit":[{"c":"Juez","p":["Karina Andrea Cofré Contreras"]},
+{"c":"Administrador","p":["Raúl Alejandro Aguilera Morales"]},
+{"c":"Oficial 1°","p":["Fernanda Antonia Esteban Peña"]}],"adi":[{"c":"Juez","p":["María Constanza Cabello Pino","Jorge Gabriel Muñoz Escobar"]},
+{"c":"Administrador","p":["Héctor Manuel Yáñez Bobadilla"]}]},
+{"nombre":"Juzgado de Garantía de Molina","tipo":"Penal","comuna":"Molina","direccion":"Avda. Poniente N° 1985, Molina","telefonos":[],"correo":"","rut":"65043670-9","cta":"43100038103","tit":[{"c":"Juez","p":["Carolina Andrea Becerra Santi"]},
+{"c":"Administrador","p":["Carlos Alberto Riveros Maturana"]},
+{"c":"Jefe de unidad","p":["Patricio Eduardo Castillo Guzman"]}],"adi":[{"c":"Juez","p":["María Jesús Reyes Fuenzalida"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Licantén","tipo":"Mixto","comuna":"Licantén","direccion":"Ciro Boetto N° 273, Licanten, Licantén","telefonos":[],"correo":"","rut":"60308001-7","tit":[{"c":"Secretario","p":["María Jesús Reyes Fuenzalida"]},
+{"c":"Oficial 1°","p":["Liliana Myrian Gonzalez Hormazabal"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Talca","tipo":"Penal","comuna":"Talca","direccion":"4 Norte 541, Talca","telefonos":[],"correo":"","rut":"65039290-6","cta":"43500140861","tit":[{"c":"Juez","p":["Wilfredo Temistocles Urrutia Gaete","Cristian Mauricio Barrientos González","Cecilia del Carmen Díaz Arrué","Juan Pablo Nadeau Pereira","Luis Marcelo Sumonte Rojas","Carlos Andrés Gajardo Ortiz","Esteban Alonso Inostroza Ruiz"]},
+{"c":"Administrador","p":["Juan Orlando Villalon Cabezas"]},
+{"c":"Jefe de unidad","p":["Williams Eduardo Fuentes Quezada","Carlos Antonio Rodríguez de la Barra","Daniel Alfredo Peñailillo Muñoz","Jorge Enrique Maldini López"]}],"adi":[{"c":"Juez","p":["Cristian Gonzalo Albarrán Cáceres","Natalia Sofía Astudillo Morales","Marcial Taborga Collao"]},
+{"c":"Jefe de unidad","p":["Jimmy Ivan Rojas Mundaca"]}]},
+{"nombre":"1° Juzgado de Letras de Talca","tipo":"Civil","comuna":"Talca","direccion":"4 Norte N° 615, Talca","telefonos":["+56712416477"],"correo":"jl1_talca@pjud.cl","rut":"60308010-6","cta":"43","tit":[{"c":"Juez","p":["Nelson Eugenio Lorca Poblete"]},
+{"c":"Secretario","p":["Rosario Aida de las Mercedes Yañez Schafer"]},
+{"c":"Oficial 1°","p":["Sandra Mireya Rojo Arenas"]}]},
+{"nombre":"2° Juzgado de Letras de Talca","tipo":"Civil","comuna":"Talca","direccion":"4 Norte N° 615, Talca","telefonos":[],"correo":"","rut":"60308008-4","tit":[{"c":"Juez","p":["María Antonieta Paredes Sánchez"]},
+{"c":"Secretario","p":["Carolina Pilar Rojas Araya"]},
+{"c":"Oficial 1°","p":["Marcela Loreto San Martín Parra"]}]},
+{"nombre":"3° Juzgado de Letras de Talca","tipo":"Civil","comuna":"Talca","direccion":"4 Norte N° 615, Talca","telefonos":["+56712416432"],"correo":"jl3_talca@pjud.cl","rut":"60308011-4","cta":"4350010446","tit":[{"c":"Juez","p":["Álvaro Andrés Saavedra Sepúlveda"]},
+{"c":"Secretario","p":["Karen Valeria Lagos Medina"]},
+{"c":"Oficial 1°","p":["Juan Esteban Rodriguez Moya"]}],"adi":[{"c":"Secretario","p":["Claudio Francisco Canales González"]}]},
+{"nombre":"4° Juzgado de Letras de Talca","tipo":"Civil","comuna":"Talca","direccion":"4 Norte N° 615, Talca","telefonos":["+56712416475"],"correo":"jl4_talca@pjud.cl","rut":"60308018-1","cta":"43500118220","tit":[{"c":"Juez","p":["María Luisa Manríquez Novoa"]},
+{"c":"Secretario","p":["Bárbara Andrea Cabello Parada"]},
+{"c":"Oficial 1°","p":["Carmen Patricia González Barrios"]}]},
+{"nombre":"Juzgado de Familia de Talca","tipo":"Familia","comuna":"Talca","direccion":"5 Oriente 3 Norte N° 1361, Talca","telefonos":["+56712633600"],"correo":"jftalca@pjud.cl","rut":"61977710-7","cta":"43500171155","tit":[{"c":"Juez","p":["Christiane Inge Ibarra Stech","Olga María Díaz Fernández","Carla Virginia Valladares Perroni","Alejandra Lorena Inés Santibáñez Díaz","María Elena Andrea Baeza Medina","Oscar Raúl Antonio Pérez Oyarce","Oscar Fernando Vásquez Marín","Arnoldo Patricio González Ponce","Paola Alejandra Castillo Espinosa","Ruth Marlene Tapia Baeza"]},
+{"c":"Administrador","p":["Carlos Julio Figueroa Richards"]},
+{"c":"Jefe de unidad","p":["Paulo Francisco Dumas Opazo","Cristian Andres Valenzuela Diaz","Francisca Hernández Fuentes"]},
+{"c":"Administrativo jefe","p":["Jacqueline del Pilar Muñoz Candia","Patricio Alejandro Rojas Ramos","Pablo Andres Jaque Badilla"]}],"adi":[{"c":"Juez","p":["Carolina Paola Muñoz Díaz"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Talca","tipo":"Trabajo","comuna":"Talca","direccion":"4 Norte 615 2° Piso Talca","telefonos":[],"correo":"","rut":"61979470-2","cta":"43500027020","tit":[{"c":"Juez","p":["Jaime Álvaro Cruces Neira","Lis Rondinella Aguilera Jiménez","Juan Marcelo Bruna Parada"]},
+{"c":"Administrador","p":["Mario Humberto Alruiz Valenzuela"]},
+{"c":"Jefe de unidad","p":["Cecilia del Carmen Agurto Casanova","Homero Alejandro Arriagada González","Paola Patricia Guzmán Rojas"]},
+{"c":"Administrativo jefe","p":["José Luis Toloza Fuentes","Eva Walezka Ibáñez López"]}],"adi":[{"c":"Juez","p":["Carolina Ivonne Saavedra Morales"]}]},
+{"nombre":"Juzgado de Garantía de Talca","tipo":"Penal","comuna":"Talca","direccion":"4 Norte N° 541, Talca","telefonos":["+56712210400"],"correo":"jgtalca@pjud.cl","rut":"65043900-7","cta":"43500077990","tit":[{"c":"Juez","p":["Isabel del Carmen Salas Castro","Marta Benita Asiain Madariaga","Humberto Andrés Paiva Passero","Ricardo Guillermo Riquelme Carpenter","Héctor Américo Castro Figueroa","Víctor Manuel Rojas Oyarce"]},
+{"c":"Administrador","p":["Rodrigo Ignacio Gatica Donoso"]},
+{"c":"Jefe de unidad","p":["Gabriela del Carmen Martínez Fernández","José Pablo Bobadilla Torres"]}],"adi":[{"c":"Juez","p":["Evelyn del Carmen Pérez Jaña"]}]},
+{"nombre":"Juzgado de Letras de Constitución","tipo":"Civil","comuna":"Constitución","direccion":"Blanco N° 390, Constitucion, Constitución","telefonos":["+56712675007"],"correo":"","rut":"75209900-6","cta":"43300024573","tit":[{"c":"Juez","p":["Gustavo Edison Benavente Mora"]},
+{"c":"Administrador","p":["Flavio Stefano Besomi Hernández"]},
+{"c":"Jefe de unidad","p":["Domingo Antonio Parada Cifuentes"]},
+{"c":"Administrativo jefe","p":["Maciel Enriqueta Sepulveda Molnar","Paula Andrea López Cancino"]}],"adi":[{"c":"Juez","p":["Diego Luis Arnoldo Cares Mella"]},
+{"c":"Jefe de unidad","p":["Paula Andrea López Cancino"]},
+{"c":"Administrativo jefe","p":["Paula Carolina Bernal Godoy"]}]},
+{"nombre":"Juzgado de Familia de Constitución","tipo":"Familia","comuna":"Constitución","direccion":"Blanco N° 390, Constitución","telefonos":[],"correo":"","rut":"61977790-5","cta":"43300046348","tit":[{"c":"Juez","p":["Crhistian Alejandro Saavedra Lemp"]},
+{"c":"Jefe de unidad","p":["Ricardo Antonio Reyes Valenzuela"]},
+{"c":"Administrativo jefe","p":["Ricardo Antonio Barrios Rojas","Rodrigo Adolfo Rojas Espinoza"]}],"adi":[{"c":"Juez","p":["Ximena del Carmen Agurto Vásquez"]},
+{"c":"Administrador","p":["Ricardo Antonio Barrios Rojas"]},
+{"c":"Jefe de unidad","p":["Evelyn Andrea Retamal Rojas"]},
+{"c":"Administrativo jefe","p":["Veronica Margarita Castillo Perez","Mariangel Esther Paulina Arellano Leyton"]}]},
+{"nombre":"Juzgado de Garantía de Constitución","tipo":"Penal","comuna":"Constitución","direccion":"Bulnes N° 90, Constitucion, Constitución","telefonos":["+56994891464"],"correo":"jgconstitucion@pjud.cl","rut":"61945100-7","cta":"43300040765","tit":[{"c":"Juez","p":["Gisela Inés Barrientos Campos"]},
+{"c":"Administrador","p":["María Paz Aravena Urrutia"]},
+{"c":"Jefe de unidad","p":["Gina Pastora Salgado Núñez"]}],"adi":[{"c":"Juez","p":["Carolina Estefany Agurto Carter"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Curepto","tipo":"Mixto","comuna":"Curepto","direccion":"Manuel Rodríguez N° 10, Curepto","telefonos":["+56994891101"],"correo":"jlyg_curepto@pjud.cl","rut":"60308016-5","cta":"42900005738","tit":[{"c":"Juez","p":["Sebastián Alonso Platt Astorga"]},
+{"c":"Secretario","p":["Claudia Javiera María Sallorenzo Jadue"]},
+{"c":"Oficial 1°","p":["Jorge Gonzalo Valdés Acevedo"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Linares","tipo":"Penal","comuna":"Linares","direccion":"Avda. León Bustos 0817, Linares","telefonos":["+56732222145"],"correo":"","rut":"65037030-9","tit":[{"c":"Juez","p":["Claudia Andrea Mora Cuadra","Christian Aníbal Leyton Serrano","Mauricio Alfredo Leyton Salas","Scarlet Gisela Quiroga Jara","Cristian Eugenio Adriazola Jeria","Paula Yocelyn Roca Berrocal"]},
+{"c":"Administrador","p":["Rodrigo Alejandro Gálvez Gutiérrez"]},
+{"c":"Jefe de unidad","p":["Jorge Hernán Toro Moreno","Ingrid Ivonne Rojas Poblete","Karen Susana Cifuentes Peñailillo","Viviana Magdalena Ugarte Ponce"]}],"adi":[{"c":"Juez","p":["Andrea del Pilar Suazo Quiroz","Guillermo Alberto Cofré Rivera","Edilio Damián Jorquera Rivera"]}]},
+{"nombre":"1° Juzgado de Letras de Linares","tipo":"Civil","comuna":"Linares","direccion":"Sotomayor 461, Linares","telefonos":[],"correo":"","rut":"60308009-2","cta":"44300057494","tit":[{"c":"Juez","p":["Alejandro Antonio Sumonte Verdejo"]},
+{"c":"Secretario","p":["Mario Andrés Villagra García"]},
+{"c":"Oficial 1°","p":["Prisilla Alejandra Contreras Vergara"]}]},
+{"nombre":"2° Juzgado de Letras de Linares","tipo":"Civil","comuna":"Linares","direccion":"Sotomayor N° 461, 2° Piso, Linares","telefonos":["+56732219792"],"correo":"jl2_linares@pjud.cl","rut":"60308004-1","cta":"44300058237","tit":[{"c":"Juez","p":["Paula Francisca Luengo Montecino"]},
+{"c":"Secretario","p":["Elizabeth Priscila Rodríguez Hernández"]},
+{"c":"Oficial 1°","p":["Haydee del Carmen Valdes Muñoz"]}]},
+{"nombre":"Juzgado de Familia de Linares","tipo":"Familia","comuna":"Linares","direccion":"Avenida Leon Bustos N° 0817 Linares","telefonos":[],"correo":"","rut":"61977730-1","cta":"44300105014","tit":[{"c":"Juez","p":["Katia Alejandra Valenzuela Morras","Carmen Gloria Améstica Ponce","Mario Hernán Tapia Ferreira","César Alejandro Leyton Cornejos"]},
+{"c":"Administrador","p":["Eugenio Andrés Jara Contreras"]},
+{"c":"Jefe de unidad","p":["Viviana Veronica Sanchez Cid"]},
+{"c":"Administrativo jefe","p":["Jose Mauricio Pizarro Diaz","Miriam Isabel Garrido Inzulza"]}],"adi":[{"c":"Juez","p":["Ivania de la Luz Rubio Rivera"]}]},
+{"nombre":"Juzgado de Garantía de Linares","tipo":"Penal","comuna":"Linares","direccion":"Avenida Aníbal León Bustos N° 0817, Linares","telefonos":["+56732224120"],"correo":"jglinares@pjud.cl","rut":"61945300-K","cta":"44300087857","tit":[{"c":"Juez","p":["Claudia Cristina Olea Tapia","Paula Solange Gema Sánchez Gutiérrez"]},
+{"c":"Administrador","p":["María del Rosario Gómez Sepúlveda"]},
+{"c":"Jefe de unidad","p":["Paula María Inés Castillo Seguel","Maritza Susana Fernandez Vera"]}],"adi":[{"c":"Juez","p":["Javiera Andrea González Rosales"]}]},
+{"nombre":"Juzgado de Letras de Parral","tipo":"Civil","comuna":"Parral","direccion":"Delicias S/N, Parral","telefonos":["+56732462412"],"correo":"jl_parral@pjud.cl","rut":"60308012-2","cta":"44700035945","tit":[{"c":"Juez","p":["Pablo Dionisio Ramos Abarzúa"]},
+{"c":"Secretario","p":["Claudia Andrea González Grandón"]},
+{"c":"Oficial 1°","p":["Sonia Ximena Benavente Nader"]}]},
+{"nombre":"Juzgado de Familia de Parral","tipo":"Familia","comuna":"Parral","direccion":"Calle Buin N° 665-A, Parral","telefonos":["+56732464735"],"correo":"jfparral@pjud.cl","rut":"61977820-0","cta":"44700060061","tit":[{"c":"Juez","p":["Erna Alejandra Fuentes Bravo","Nicolás Andre Leppe Abarzúa"]},
+{"c":"Administrador","p":["Julio Alberto Córdoba Rosson"]},
+{"c":"Jefe de unidad","p":["Maribel Edith Cardenas Jara"]},
+{"c":"Administrativo jefe","p":["Carlos Patricio Flores Navarro","Karen Nielssen Carrasco Morales"]}]},
+{"nombre":"Juzgado de Garantía de Parral","tipo":"Penal","comuna":"Parral","direccion":"Carrera Pinto N° 551, Parral","telefonos":["+56732465027"],"correo":"jgparral@pjud.cl","rut":"61945400-6","cta":"44700055270","tit":[{"c":"Juez","p":["John Williams Landero Salgado"]},
+{"c":"Administrador","p":["Cristian Luis Valdés Badilla"]}]},
+{"nombre":"Juzgado de Letras de San Javier","tipo":"Civil","comuna":"San Javier","direccion":"Sargento Aldea N° 2690, 2° Piso, San Javier","telefonos":["+56732322527"],"correo":"jl_sanjavier@pjud.cl","rut":"60308005-K","cta":"43700028292","tit":[{"c":"Juez","p":["María José Narváez Fuentes","Francisco Ignacio Madrid Alarcón"]},
+{"c":"Administrador","p":["Jesica del Carmen Mancilla Abarza"]},
+{"c":"Oficial 1°","p":["Daniela Estefani González González"]}],"adi":[{"c":"Juez","p":["María Carolina Aliaga Navarro"]}]},
+{"nombre":"Juzgado de Garantía de San Javier","tipo":"Penal","comuna":"San Javier","direccion":"Sargento Aldea N° 2690, 1° Piso, San Javier","telefonos":[],"correo":"","rut":"61948400-2","tit":[{"c":"Juez","p":["Rolando Antonio Correa Pesante"]},
+{"c":"Administrador","p":["Carlos Alberto Luna Amigo"]},
+{"c":"Jefe de unidad","p":["Enrique Arturo Valenzuela Álvarez"]}],"adi":[{"c":"Juez","p":["Bastián Andrés Habib González"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Cauquenes","tipo":"Penal","comuna":"Cauquenes","direccion":"Maipú N° 890, Cauquenes","telefonos":["+56732514777"],"correo":"","rut":"65043070-0","cta":"44500013076","tit":[{"c":"Juez","p":["Rodrigo Andrés Tordecilla Gaete","Manuel Alejandro Salgado Berna"]},
+{"c":"Administrador","p":["Nelly Orfelina Véliz Farías"]},
+{"c":"Jefe de unidad","p":["Marisol de las Mercedes Soto Leal"]}],"adi":[{"c":"Juez","p":["Claudia Andrea Flies Vásquez","Rodrigo Alejandro Cerecera Fuenzalida"]}]},
+{"nombre":"Juzgado de Letras de Cauquenes","tipo":"Civil","comuna":"Cauquenes","direccion":"Maipú S/N, Cauquenes","telefonos":[],"correo":"","rut":"60309001-2","cta":"44500035738","tit":[{"c":"Juez","p":["Juan Pablo Tartari Cornejo"]},
+{"c":"Jefe de unidad","p":["Vanessa Alejandra Cruz Valdebenito"]},
+{"c":"Administrativo jefe","p":["Walter Francisco Yáñez Ramírez","Héctor Eduardo Arriagada Mujica"]}],"adi":[{"c":"Juez","p":["Mariela Alejandra Rojas Diaz"]},
+{"c":"Administrativo jefe","p":["Camila Elizabeth Pérez Gallardo"]}]},
+{"nombre":"Juzgado de Garantía de Cauquenes","tipo":"Penal","comuna":"Cauquenes","direccion":"Maipu N° 890, Cauquenes","telefonos":[],"correo":"","rut":"61945500-2","cta":"44500048228","tit":[{"c":"Juez","p":["Carina Dayan Honorato Gajardo"]},
+{"c":"Administrador","p":["Marcelo Enrique Riquelme Morales"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Chanco","tipo":"Mixto","comuna":"Chanco","direccion":"Errázuriz S/N, Chanco","telefonos":["+56732551002"],"correo":"jlyg_chanco@pjud.cl","rut":"60308006-8","cta":"44100001605","tit":[{"c":"Juez","p":["Carlos Jesus Francisco Sebasti Letelier Lara"]},
+{"c":"Secretario","p":["Bastián Andrés Habib González"]},
+{"c":"Oficial 1°","p":["Lila Angelica Andahur Peñailillo"]}]}],"Chillán":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Chillán","tipo":"Penal","comuna":"Chillán","direccion":"Ecuador N° 1167, Chillan, Chillán","telefonos":[],"correo":"","rut":"61971500-4","cta":"52100245841","tit":[{"c":"Juez","p":["Claudia Andrea Montero Céspedes","Jorge Luis Antonio Muñoz Guiñez","Berta Roxana Salgado Salamé","María Paz González González","Raúl Eduardo Romero Sáez","Olga Rosa Fuentes Ponce"]},
+{"c":"Jefe de unidad","p":["Myriam Inés Jara Gutiérrez","Verónica Andrea Urrutia Alvear","Claudio Enrique Arroyo Vejar","Sergio Enrique Riquelme Zuñiga"]}],"adi":[{"c":"Juez","p":["Christian Marcel Osses Baeza"]},
+{"c":"Administrador","p":["Hermuths Iván Fuentes Herrera"]}]},
+{"nombre":"1° Juzgado Civil de Chillán","tipo":"Civil","comuna":"Chillán","direccion":"Vega de Saldias 1044, Chillán","telefonos":[],"correo":"","rut":"60309004-7","cta":"52100107422","tit":[{"c":"Juez","p":["Carolina Isabel Vásquez Epuñán"]},
+{"c":"Secretario","p":["Gonzalo Ignacio Inda Pérez de Arce"]},
+{"c":"Oficial 1°","p":["Marco Antonio Arredondo Gonzalez"]}],"adi":[{"c":"Secretario","p":["David Antonio Pastén Ahumada"]}]},
+{"nombre":"2° Juzgado Civil de Chillán","tipo":"Civil","comuna":"Chillán","direccion":"Vegas de Saldias N° 1044, Chillan, Chillán","telefonos":["+56422221842"],"correo":"jc2_chillan@pjud.cl","rut":"60309012-8","cta":"52100107414","tit":[{"c":"Juez","p":["Milena Andrea Aedo Zapata"]},
+{"c":"Secretario","p":["María Alejandra Cruz Vial"]},
+{"c":"Oficial 1°","p":["Luis Nelson Cardenas Gaete"]}]},
+{"nombre":"Juzgado de Familia de Chillán","tipo":"Familia","comuna":"Chillán","direccion":"Vega de Saldias N° 1044 (esquina Yerbas Buenas), Chillan, Chillán","telefonos":["+56422209800"],"correo":"","rut":"61977620-8","tit":[{"c":"Juez","p":["Dilys Marged Araya Couch","María Cecilia Brígida Venturelli Lizama","María Verónica Sáez Ruiz","Carla Antonella Palomera Astroza","Antonio Godoy Villalobos"]},
+{"c":"Administrador","p":["Felipe Alfredo Catalan Vilche"]},
+{"c":"Jefe de unidad","p":["Patricio Juan Abdon Rodriguez Parra"]},
+{"c":"Administrativo jefe","p":["Raniero Nathan Zarzosa Aravena","Pablo Esteban Salazar González"]}],"adi":[{"c":"Juez","p":["Ivonne Alejandra Concha Becerra"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Chillán","tipo":"Trabajo","comuna":"Chillán","direccion":"Isabel Riquelme N° 280, Chillan, Chillán","telefonos":[],"correo":"","rut":"61979330-7","cta":"52100021510","tit":[{"c":"Juez","p":["Sergio Rodrigo Dunlop Echavarría","Juan Luis Salgado Vásquez","Juan Pablo Lagos Ortega"]},
+{"c":"Administrador","p":["Mauricio Eduardo Osorio Cortés"]},
+{"c":"Jefe de unidad","p":["Robinson Andrés Moscoso Castro","Victor Hugo Contreras Gutierrez","Marlene Alejandra Matte Casanova"]},
+{"c":"Administrativo jefe","p":["Juan Edgardo Saldías Saldías","Víctor Manuel Allende Gálvez"]}],"adi":[{"c":"Jefe de unidad","p":["Juan Edgardo Saldías Saldías"]},
+{"c":"Administrativo jefe","p":["Gladys Salome Riveros Castillo"]}]},
+{"nombre":"Juzgado de Garantía de Chillán","tipo":"Penal","comuna":"Chillán","direccion":"Ecuador N° 1167, Chillan, Chillán","telefonos":["+56422249459"],"correo":"","rut":"61965300-9","cta":"52100243369","tit":[{"c":"Juez","p":["Carlos Antonio Benavente Garcia","Claudia Veronica Madsen Venegas","Manuel Alejandro Vilches Meza","Paulina Rebeca Rodríguez Zapata"]},
+{"c":"Administrador","p":["Manuel Alejandro Mendy Quiero"]},
+{"c":"Jefe de unidad","p":["Claudia Paola Lobos Andrade","Margarita Viviana Parada Acuña"]}],"adi":[{"c":"Administrador","p":["Claudia Paola Lobos Andrade"]},
+{"c":"Jefe de unidad","p":["Jorge Rodrigo Cruzat Contardo"]}]},
+{"nombre":"1° Juzgado de Letras de San Carlos","tipo":"Civil","comuna":"San Carlos","direccion":"Vicuña Mackenna N° 556, San Carlos","telefonos":["+56422411168"],"correo":"juzletrassancarlos@pjud.cl","rut":"60309005-5","cta":"51700042581","tit":[{"c":"Juez","p":["Debora Beatriz Riquelme Contreras","Claudia Andrea Vergara Pérez"]},
+{"c":"Administrador","p":["Jorge Luis Negrete Pascal"]},
+{"c":"Jefe de unidad","p":["Mónica Cecilia Parra González"]},
+{"c":"Administrativo jefe","p":["Sandra Elena López Sáez","Alex Eduardo Andrades San Martin"]}],"adi":[{"c":"Juez","p":["Paola Beatriz Rojas Labarca"]}]},
+{"nombre":"Juzgado de Garantía de San Carlos","tipo":"Penal","comuna":"San Carlos","direccion":"Roble N° 650, San Carlos","telefonos":["+56422416728"],"correo":"jgsancarlos@pjud.cl","rut":"61965100-6","tit":[{"c":"Juez","p":["Iván Rodrigo Santibáñez Torres"]},
+{"c":"Administrador","p":["Diego Sebastian Kaik Junge"]},
+{"c":"Jefe de unidad","p":["Claudia Alejandra Polanco Peña"]}]},
+{"nombre":"Juzgado de Letras de Yungay","tipo":"Civil","comuna":"Yungay","direccion":"Chorrillos N° 61, Yungay","telefonos":[],"correo":"","rut":"60309007-1","cta":"54300016971","tit":[{"c":"Juez","p":["Antonieta Andrea Núñez Olave"]},
+{"c":"Administrador","p":["Jorge Marcelo Ramón Orellana Martínez"]},
+{"c":"Jefe de unidad","p":["Ernesto Segundo Quijón Aravena"]},
+{"c":"Administrativo jefe","p":["Paulina Andrea Palma Martínez","Alex Eduardo Mardones Barrera"]}],"adi":[{"c":"Juez","p":["Richard Badilla Peña"]}]},
+{"nombre":"Juzgado de Garantía de Yungay","tipo":"Penal","comuna":"Yungay","direccion":"Esmeralda N° 716, Yungay","telefonos":["+56422680400"],"correo":"","rut":"61965200-2","cta":"54300028015","tit":[{"c":"Juez","p":["Sandra Carolina Schuffeneger Rozas"]},
+{"c":"Administrador","p":["Rodrigo Alejandro Cuevas Ruiz"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Bulnes","tipo":"Mixto","comuna":"Bulnes","direccion":"Ignacio Serrano N° 300, Bulnes","telefonos":["+56422631023"],"correo":"jlyg_bulnes@pjud.cl","rut":"60309011-K","cta":"52500018241","tit":[{"c":"Juez","p":["Carolina Andrea Sánchez Abarca","Claudia Alejandra Aguayo Dolmestch"]},
+{"c":"Administrador","p":["Carolina Bustamante Sánchez"]},
+{"c":"Oficial 1°","p":["Leslie Veronica San Martin Feres"]}],"adi":[{"c":"Juez","p":["Daniel Jerónimo Valenzuela Castillo"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Coelemu","tipo":"Mixto","comuna":"Coelemu","direccion":"Calle Anibal Pinto N° 30, Coelemu","telefonos":[],"correo":"","rut":"61310009-1","tit":[{"c":"Juez","p":["Javiera Fernanda Grandón Romero"]},
+{"c":"Secretario","p":["Juan Elias Yañez Nuñez"]},
+{"c":"Oficial 1°","p":["Cynthia Manon Aravena Beltran"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Quirihue","tipo":"Mixto","comuna":"Quirihue","direccion":"Agustin Moulet N° 212, Quirihue","telefonos":["+56422531803"],"correo":"jlyg_quirihue@pjud.cl","rut":"60309006-3","cta":"51500011525","tit":[{"c":"Juez","p":["Ivonne Alejandra Concha Becerra"]},
+{"c":"Secretario","p":["Adolfo Rigoberto Montenegro Venegas"]},
+{"c":"Oficial 1°","p":["Jorge Luciano Röber Vega"]}],"adi":[{"c":"Juez","p":["Adolfo Rigoberto Montenegro Venegas"]}]}],"Concepción":[{"nombre":"Juzgado de Garantía de San Pedro de La Paz","tipo":"Penal","comuna":"San Pedro de La Paz","direccion":"Los Mañios N° 1585, San Pedro de La Paz","telefonos":[],"correo":"","rut":"61964200-7","cta":"53300261589","tit":[{"c":"Juez","p":["Andrea Angelica Comas Lobato","Carolina Andrea Llanos Ojeda","Marianne Luisa Schuck Dannenberg"]},
+{"c":"Administrador","p":["Wladimir Enrique Ramos Astete"]},
+{"c":"Jefe de unidad","p":["Raúl Andrés Linco Moreno"]}],"adi":[{"c":"Jefe de unidad","p":["Rosa Magdalena Ulloa Rozas"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Los Ángeles","tipo":"Penal","comuna":"Los Ángeles","direccion":"O'Higgins 751, Los Ángeles","telefonos":["+56432317941"],"correo":"","rut":"61978420-0","cta":"55100123460","tit":[{"c":"Juez","p":["Marisol Verónica Panes Viveros","Anamaría Soledad Sauterel Jouannet","Ingrid Andrea Quezada Valdebenito","Gino Alessandro Viale Acosta","Kary Evelyn Videla Beltrán"]},
+{"c":"Administrador","p":["Marcos Alfredo Muñoz Ortiz"]},
+{"c":"Jefe de unidad","p":["Enrique Humberto Echegaray Morales","Aquiles Miguel Altamirano Garrido"]}],"adi":[{"c":"Juez","p":["Perla Andrea Roa Borgoño","Oscar Fernando Pacheco Pacheco"]}]},
+{"nombre":"1° Juzgado de Letras de Los Ángeles","tipo":"Civil","comuna":"Los Ángeles","direccion":"Valdivia N° 123, Los Angeles, Los Ángeles","telefonos":[],"correo":"","rut":"62000490-1","cta":"55100070960","tit":[{"c":"Juez","p":["Jorge Patricio Carrasco Martínez"]},
+{"c":"Secretario","p":["Bernardita Maria Palominos Reyes"]},
+{"c":"Oficial 1°","p":["Juan Pablo Escobar Valdebenito"]}]},
+{"nombre":"2° Juzgado de Letras de Los Ángeles","tipo":"Civil","comuna":"Los Ángeles","direccion":"Valdivia N° 123, Los Angeles, Los Ángeles","telefonos":[],"correo":"","rut":"60310004-2","cta":"55100070978","tit":[{"c":"Juez","p":["Susana del Carmen Arroyo Ceballos"]},
+{"c":"Secretario","p":["Daniel Abdel Inzunza Vásquez"]},
+{"c":"Oficial 1°","p":["Mario Antonio Díaz Carvajal"]}]},
+{"nombre":"Juzgado de Familia de Los Ángeles","tipo":"Familia","comuna":"Los Ángeles","direccion":"Vicuña Mackenna N° 687, Los Angeles, Los Ángeles","telefonos":[],"correo":"","rut":"61977770-0","cta":"55100121432","tit":[{"c":"Juez","p":["Daianna Nadezda Eade Cambiazo","María Soledad López Núñez","Cristian Andrés Pacheco Pino","Christian Alejandro Salgado Sepúlveda","Jorge Adrián Garcés Hernández"]},
+{"c":"Administrador","p":["Marcela Andrea Delgado Marquez"]},
+{"c":"Jefe de unidad","p":["Alejandra Isabel Parrondo Pinto"]},
+{"c":"Administrativo jefe","p":["José Osvaldo Figueroa Leal","Yury Roxana Sandoval Andias"]}],"adi":[{"c":"Juez","p":["Francia Odette Sandoval Troncoso","Felipe Gabriel Fica Álvarez"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Los Ángeles","tipo":"Trabajo","comuna":"Los Ángeles","direccion":"Vicuña Mackenna N° 687, Los Angeles, Los Ángeles","telefonos":[],"correo":"","rut":"61979390-0","cta":"55100017988","tit":[{"c":"Juez","p":["Sergio Hernán Yáñez Arellano"]},
+{"c":"Administrador","p":["Gonzalo Patricio Peña Y Lillo Montecinos"]},
+{"c":"Jefe de unidad","p":["Arturo Mauricio Domínguez Pérez"]},
+{"c":"Administrativo jefe","p":["Mauricio Osvaldo Araneda Arteaga","Christopher Danilo Orellana Morales"]}],"adi":[{"c":"Juez","p":["Manuel Rodrigo Argandoña Osses","Bárbara Andrea Leal Torrealba"]},
+{"c":"Administrativo jefe","p":["Laura Elizabeth Ulloa Gallardo"]}]},
+{"nombre":"Juzgado de Garantía de Los Ángeles","tipo":"Penal","comuna":"Los Ángeles","direccion":"O'Higgins 751, Los Ángeles","telefonos":["+56432317898"],"correo":"","rut":"61964300-3","cta":"55100116919","tit":[{"c":"Juez","p":["Cherie Solange Palomera Astroza","Soledad Ellen García Nannig"]},
+{"c":"Administrador","p":["Darío Patricio Manríquez Pedreros"]},
+{"c":"Jefe de unidad","p":["Luis Osvaldo Ulloa Rozas","Iván Gonzalo Alister Barriga"]}],"adi":[{"c":"Juez","p":["Bayron Andres Gallardo Caceres","Claudia Eliana Aguilera González"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Cabrero","tipo":"Mixto","comuna":"Cabrero","direccion":"Las Delicias N° 55, Cabrero","telefonos":[],"correo":"","rut":"61971400-8","cta":"53700041898","tit":[{"c":"Juez","p":["Macarena Bobadilla García","Miguel Angel Miranda Ferrada"]},
+{"c":"Administrador","p":["Pamela Alejandra Vásquez Bustos"]},
+{"c":"Oficial 1°","p":["Bayron Andres Gallardo Caceres"]}],"adi":[{"c":"Administrador","p":["Carolina Andrea Osses Noriega"]},
+{"c":"Oficial 1°","p":["Gastón Andrés Solar Martínez"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Santa Bárbara","tipo":"Mixto","comuna":"Santa Bárbara","direccion":"Salamanca N° 141, Santa Barbara, Santa Bárbara","telefonos":["+56432581232"],"correo":"","rut":"61926700-1","cta":"55700008940","tit":[{"c":"Juez","p":["Mery Laura Ramírez Escalante"]},
+{"c":"Administrador","p":["Enzo Enrique Seguel Riveros"]},
+{"c":"Jefe de unidad","p":["Denisse Vianeis Guzmán Fuentealba"]},
+{"c":"Oficial 1°","p":["Jorge Alexi Gonzalez Jara"]},
+{"c":"Administrativo jefe","p":["Vanessa Bristela Rubio Venegas"]}],"adi":[{"c":"Juez","p":["Viviana Lorena Garrido Cabrera"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Mulchén","tipo":"Mixto","comuna":"Mulchén","direccion":"Villagra 047, Mulchen, Mulchén","telefonos":["+56432561353"],"correo":"jlyg_mulchen@pjud.cl","rut":"60310011-5","cta":"56100023216","tit":[{"c":"Juez","p":["Pamela Aracelli Pino Almendras"]},
+{"c":"Administrador","p":["Johanna Sarita Castillo Zambrano"]},
+{"c":"Administrativo jefe","p":["Riola Trinidad Saavedra Saavedra","Ignacio Patricio González Larrondo"]}],"adi":[{"c":"Juez","p":["Mauro Andrés Arriagada Torres"]},
+{"c":"Jefe de unidad","p":["Ignacio Patricio González Larrondo"]},
+{"c":"Administrativo jefe","p":["Josefa Patricia Cárcamo Reyes"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Nacimiento","tipo":"Mixto","comuna":"Nacimiento","direccion":"Prieto N° 401, Nacimiento","telefonos":[],"correo":"","rut":"60310014-K","cta":"55500029705","tit":[{"c":"Juez","p":["Héctor Gabriel Gutiérrez Vera"]},
+{"c":"Administrador","p":["Glenda Fernanda García Gallegos"]},
+{"c":"Jefe de unidad","p":["Josue Salomón Martínez Pinto"]},
+{"c":"Administrativo jefe","p":["Geovanna Astrid Illanes Muñoz","Marco Antonio Jimenez Rojas"]}],"adi":[{"c":"Juez","p":["Magaly Carolina Melgarejo Padilla"]},
+{"c":"Jefe de unidad","p":["Marco Antonio Jimenez Rojas"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Laja","tipo":"Mixto","comuna":"Laja","direccion":"O'Higgins N° 194, Laja","telefonos":["+56999781767"],"correo":"","rut":"61980810-K","cta":"54900003733","tit":[{"c":"Juez","p":["Pablo Salvador Zambrano Castillo"]},
+{"c":"Administrador","p":["Oscar Benigno Miguel Mosqueira Corvalán"]},
+{"c":"Jefe de unidad","p":["Mario Alonso Sanhueza Núñez"]},
+{"c":"Oficial 1°","p":["Claudio Andrés Riquelme Riquelme"]},
+{"c":"Administrativo jefe","p":["Ana Macarena Millán Monares"]}],"adi":[{"c":"Juez","p":["Natalia Inés Sandoval Jara","Maruja Natalia Chavez Alvarez"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Yumbel","tipo":"Mixto","comuna":"Yumbel","direccion":"General Cruz N° 550, Yumbel","telefonos":[],"correo":"","rut":"60310008-5","cta":"54100010871","tit":[{"c":"Juez","p":["Ricardo Rodrigo Patricio Domínguez Monroy"]},
+{"c":"Secretario","p":["Carolina del Pilar Becerra Meléndez"]},
+{"c":"Oficial 1°","p":["Karla Ninett de la Barra González"]}],"adi":[{"c":"Juez","p":["Ana Elizabeth Pino Parra"]}]},
+{"nombre":"Juzgado de Familia de Yumbel","tipo":"Familia","comuna":"Yumbel","direccion":"General Cruz N° 860, Yumbel","telefonos":[],"correo":"","rut":"61977800-6","cta":"54100020648","tit":[{"c":"Juez","p":["Andrea Verónica Rodríguez Rabah"]},
+{"c":"Administrador","p":["Patricio Alberto Rojas Ruiz"]},
+{"c":"Jefe de unidad","p":["Sergio Alejandro Villalobos Muñoz"]},
+{"c":"Administrativo jefe","p":["Carolina Andrea Cortes Neira","Gastón Alberto Suazo Varela"]}]},
+{"nombre":"Juzgado de Garantía de Chiguayante","tipo":"Penal","comuna":"Chiguayante","direccion":"Avenida 8 Oriente N° 2372, Chiguayante","telefonos":["+56412335432"],"correo":"jgchiguayante@pjud.cl","rut":"61963800-K","cta":"53400005229","tit":[{"c":"Juez","p":["Elvira Hortensia Muñoz Sanhueza","Silvia Patricia Jiménez Cid"]},
+{"c":"Administrador","p":["Leonardo Javier Guevara Fernández"]},
+{"c":"Jefe de unidad","p":["Marcela del Carmen Sobarzo Morales"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Concepción","tipo":"Penal","comuna":"Concepción","direccion":"Avda. San Juan Bosco N° 2010, Concepcion, Concepción","telefonos":[],"correo":"","rut":"61971100-9","cta":"53300253128","tit":[{"c":"Juez","p":["Gonzalo Gabriel Díaz González","Selin Omar Figueroa Araneda","Carmen Gloria Durán Vergara","Jaime Rodrigo Vejar Carvajal","Jimena Loreto Israel Quilodrán","Mirentxu Bernardita San Miguel Bravo","Nancy Loreto Vargas Bustamante","Claudia Andrea Vásquez Guíñez","Milena Andrea Ubilla Carvajal","María Paulina García Soto","Cecilia Marlene Grant del Río","Claudia Andrea Etcheberry Barrera","Michele Sofia Bascur Postel","Marcela Alejandra Norris Bustos","Paula Susana Cruces López","María José Vidal Araya","Karina Gema Mihovilovic Gutiérrez","Antonia Flores Rubilar","Rogelio Patricio Inostroza Rivera","Natalia Paz Espinoza Arriagada","Paola Andrea Schisano Pérez","Cristina Loreto Campos Andaur"]},
+{"c":"Administrador","p":["Juan Agustín López Alister"]},
+{"c":"Jefe de unidad","p":["María Verónica Alejandra Ottesen Pérez","Christian Rodrigo Ruiz Fernández","Yanina Julia Cárdenas Artigas","Aldo Marcelo Rico Rebolledo","Felipe Alejandro Hernández Cartes"]}]},
+{"nombre":"1° Juzgado Civil de Concepción","tipo":"Civil","comuna":"Concepción","direccion":"Barros Arana N° 1098, 11° Piso, Edificio Torre del Centro, Concepción","telefonos":["+56412460051"],"correo":"jc1_concepcion@pjud.cl","rut":"60310006-9","cta":"53300154090","tit":[{"c":"Juez","p":["Margarita Elena Sanhueza Núñez"]},
+{"c":"Secretario","p":["Andrea Soledad Caro Vargas"]},
+{"c":"Oficial 1°","p":["Claudia Alejandra Torres Melo"]}],"adi":[{"c":"Juez","p":["Andrea Soledad Caro Vargas"]}]},
+{"nombre":"2° Juzgado Civil de Concepción","tipo":"Civil","comuna":"Concepción","direccion":"Castellon N° 432, 2° Piso, Concepcion, Concepción","telefonos":[],"correo":"","rut":"60310007-7","cta":"53300154081","tit":[{"c":"Juez","p":["Adolfo Ignacio Depolo Cabrera"]},
+{"c":"Secretario","p":["Ana María Suárez Gaensly"]},
+{"c":"Oficial 1°","p":["Karin Elizabeth Seguel Zapata"]}],"adi":[{"c":"Juez","p":["Ana María Suárez Gaensly"]}]},
+{"nombre":"3° Juzgado Civil de Concepción","tipo":"Civil","comuna":"Concepción","direccion":"Barros Arana N° 1098, 10° Piso, Oficina 1006, Edificio Torre del Centro, Concepción","telefonos":["+56412225120"],"correo":"jc3_concepcion@pjud.cl","rut":"60310018-2","cta":"53300154111","tit":[{"c":"Juez","p":["Carlos Alejandro Hidalgo Muñoz"]},
+{"c":"Secretario","p":["Paula Carolina Fredes Monsalve"]},
+{"c":"Oficial 1°","p":["Héctor Eduardo Rivera Casanova"]}],"adi":[{"c":"Juez","p":["Paula Carolina Fredes Monsalve","Raúl Antonio Orellana Placencia"]}]},
+{"nombre":"Juzgado de Familia de Concepción","tipo":"Familia","comuna":"Concepción","direccion":"Castellon N° 432, Concepción","telefonos":[],"correo":"","rut":"61977690-9","cta":"53300293316","tit":[{"c":"Juez","p":["Liliana Verónica del Rosario Acuña Acuña","Carmen Elizabeth Gatica Muñoz","Paulina Marlen Soto Fuentes","María Loreto Pozo Salgado","Maribel Roxana Oelckers Jerez","Cristian René Rodas Riquelme","Claudia Loreto Castillo Merino","María Soledad Fuentes Concha","Gabriela Bárbara Vargas Rojas","Emilia Soledad Ramírez Watson","María Pía Lertora Silva","Cristian Marcelo Alarcón Manríquez","Claudio Alejandro Álvarez Ramírez"]},
+{"c":"Administrador","p":["María Marcela Araneda Madsen"]},
+{"c":"Jefe de unidad","p":["Carlos Fabián González Arancibia","Jorge Luis Ríos Ojeda","Irene de la Luz Echeverria Madies","Claudio Andres Donoso Nadeau"]},
+{"c":"Administrativo jefe","p":["Marco Antonio Vásquez Bravo","Lorena Soledad Núñez Paz","Alex Patricio Bustos Villouta","Daniel Esteban Burgos Villacorta"]}],"adi":[{"c":"Juez","p":["Alicia Valentina Bravo Ojeda"]},
+{"c":"Jefe de unidad","p":["Marco Antonio Vásquez Bravo"]},
+{"c":"Administrativo jefe","p":["Raquel Eunice Torres Jara"]}]},
+{"nombre":"Juzgado de Cobranza Laboral y Previsional de Concepción","tipo":"Cobranza","comuna":"Concepción","direccion":"Av. Libertado Bernardo O'Higgins N° 241, Piso 11, Oficina 1122, Concepción","telefonos":["+56412697624"],"correo":"jcobconcepcion@pjud.cl","rut":"61978500-2","cta":"53300301807","tit":[{"c":"Juez","p":["Ana María Fierro Oyarzo","Raúl Antonio Orellana Placencia"]},
+{"c":"Administrador","p":["Helga Alejandra Alvarado Cárcamo"]},
+{"c":"Jefe de unidad","p":["Siuleng Ina Hanshing Miranda"]},
+{"c":"Administrativo jefe","p":["Patricio Eduardo Valenzuela Yáñez"]}],"adi":[{"c":"Juez","p":["Andrea Valeria Rodríguez Ferrada"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Concepción","tipo":"Trabajo","comuna":"Concepción","direccion":"Castellón 432, Concepción","telefonos":[],"correo":"","rut":"61979410-9","cta":"53300045096","tit":[{"c":"Juez","p":["Valeria Cecilia Zúñiga Aravena","Eliecer Alfonso Cayul Gallegos","Fernando Andrés Stehr Gesche","Angela Mabel Hernández Gutiérrez","José Gabriel Hernández Silva","Valeria Amparo Garrido Cabrera"]},
+{"c":"Administrador","p":["Florentino Antonio Moreno Vásquez"]},
+{"c":"Jefe de unidad","p":["Patricio Marcelo Ulloa Matamala","Pamela Alejandra Acuña Caro","Claudio Rene Aguayo Medina"]},
+{"c":"Administrativo jefe","p":["Carolina Elizabeth Mayorga Sepulveda","José Antonio Pacheco Canales","Wolfgang Andreas Moller Bianchi"]}],"adi":[{"c":"Juez","p":["Liliana Margot Medrano Alarcón","Rodrigo Hernán Vera García","Stephanie Ester Fernández Reyes"]}]},
+{"nombre":"Juzgado de Garantía de Concepción","tipo":"Penal","comuna":"Concepción","direccion":"Avda. San Juan Bosco 2010, Concepción","telefonos":[],"correo":"jgconcepcion@pjud.cl","rut":"61964100-0","cta":"53300261538","tit":[{"c":"Juez","p":["Jimena Cecilia Troncoso Sáez","Marcelo Joaquín Antonio Bustos Vergara","Carlos Rodrigo Aguayo Dolmestch","Juan Domingo Pinochet Tejos","Iohan Iakov León Espinoza","Claudia Andrea Castillo Jimenez","Tania Galgani Ugarte"]},
+{"c":"Administrador","p":["Mónica del Pilar Ramírez Muñoz"]},
+{"c":"Jefe de unidad","p":["Rodrigo Víctor Hugo González Araneda","Valentina Paola Araya Henríquez","Claudio Felipe Álvarez Rodríguez","Erick Marcelo Cartes Cartes"]}],"adi":[{"c":"Juez","p":["Milena Andrea Ubilla Carvajal","Denis Rodrigo Oyarce Orrego"]}]},
+{"nombre":"1° Juzgado Civil de Talcahuano","tipo":"Civil","comuna":"Talcahuano","direccion":"Calle Colón 1115, Talcahuano","telefonos":[],"correo":"","rut":"60310028-K","cta":"52700042791","tit":[{"c":"Juez","p":["Leonardo Andrés Llanos Lagos"]},
+{"c":"Secretario","p":["Claudia Eliana Aguilera González"]},
+{"c":"Oficial 1°","p":["Marcela Alejandra Carrasco Alarcon"]}]},
+{"nombre":"2° Juzgado Civil de Talcahuano","tipo":"Civil","comuna":"Talcahuano","direccion":"Avda. Colón N° 1115, Talcahuano","telefonos":[],"correo":"","rut":"61932400-5","cta":"52700066002","tit":[{"c":"Juez","p":["Cristian Daniel Gutiérrez Lecaros"]},
+{"c":"Secretario","p":["Karina Ivonne Luna Angulo"]},
+{"c":"Oficial 1°","p":["Valentina Isabel Sánchez Sagardía"]}]},
+{"nombre":"Juzgado de Familia de Talcahuano","tipo":"Familia","comuna":"Talcahuano","direccion":"Avda. Colon N° 1115, Talcahuano","telefonos":["+56412542802"],"correo":"","rut":"61977780-8","cta":"52700729303","tit":[{"c":"Juez","p":["Nicole Renee D'alencon Castrillón","Roberto Antonio Parra Alvear","Carmen Lorena Fuentealba Carrasco","Paulina Patricia Muñoz Urrizola","Pamela Jacqueline Villarroel Miquel","Ximena Alejandra Vega Martínez","Lorena Angélica Salgado Varela"]},
+{"c":"Administrador","p":["Teresa Soledad Córdova Maturana"]},
+{"c":"Jefe de unidad","p":["Jorge Américo Rodríguez Rossel","Jorge Andrés Ruiz Torres","Bosco Marcelo Lara Ortiz"]},
+{"c":"Administrativo jefe","p":["Daniel Leonardo Cuevas Zúñiga","Leandra Ester Vergara Muñoz","Jorge Emilio Provoste Zúñiga"]}],"adi":[{"c":"Juez","p":["May-Lin Cecilia Wong Parra"]},
+{"c":"Administrativo jefe","p":["Esteban Rodolfo Rioseco Espinoza"]}]},
+{"nombre":"Juzgado de Garantía de Talcahuano","tipo":"Penal","comuna":"Talcahuano","direccion":"Avda. Colon N° 1115, Talcahuano","telefonos":[],"correo":"","rut":"61964400-K","cta":"52700719171","tit":[{"c":"Juez","p":["Humilde del Carmen Silva Gaete","Felipe Marcelo Vega Letelier","Solange Lorena Patricia Andrade Negroni"]},
+{"c":"Administrador","p":["Roberto Arnoldo Venturelli Lizama"]},
+{"c":"Jefe de unidad","p":["Nadia Emma Andrade Hernández","Sandy Carolinne Córdova Bustos"]}],"adi":[{"c":"Juez","p":["Teresa Toro Aravena","Camila Alejandra Escobar Araya"]}]},
+{"nombre":"Juzgado de Letras de Tomé","tipo":"Civil","comuna":"Tomé","direccion":"Maipu N° 1080, Tomé","telefonos":["+56412650254"],"correo":"jl_tome@pjud.cl","rut":"60310015-8","cta":"52300026940","tit":[{"c":"Juez","p":["Nicolás Patricio Humeres Guajardo"]},
+{"c":"Secretario","p":["Pamela Alejandra Morales Rubilar"]},
+{"c":"Oficial 1°","p":["Jorge Edgardo Jara Catalan"]}]},
+{"nombre":"Juzgado de Familia de Tomé","tipo":"Familia","comuna":"Tomé","direccion":"Maipú 1080 Interior, Tome, Tomé","telefonos":["+56412658975"],"correo":"jftome@pjud.cl","rut":"61977680-1","cta":"52300050549","tit":[{"c":"Juez","p":["Paula Soraya Mella Fierro","Pablo Iszachar Noziglia Reyes"]},
+{"c":"Administrador","p":["Nally Marioly Ojeda Pérez"]},
+{"c":"Jefe de unidad","p":["Camilo Ignacio Srain Cerna"]},
+{"c":"Administrativo jefe","p":["Raquel Eunice Torres Jara","Héctor Patricio Martínez Cartes"]}],"adi":[{"c":"Administrativo jefe","p":["Natalia Andrea Rodriguez Sandoval"]}]},
+{"nombre":"Juzgado de Garantía de Tomé","tipo":"Penal","comuna":"Tomé","direccion":"Maipu N° 1038, Tome, Tomé","telefonos":[],"correo":"","rut":"61963700-3","tit":[{"c":"Juez","p":["Ximena Andrea Martínez Parra"]},
+{"c":"Administrador","p":["Claudio Alejandro Toloza Urrutia"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Florida","tipo":"Mixto","comuna":"Florida","direccion":"Ignacio Serrano N° 500-D, Florida","telefonos":["+56412645625"],"correo":"jlyg_florida@pjud.cl","rut":"60310024-7","cta":"53300154642","tit":[{"c":"Juez","p":["Claudio Marcelo Gálvez Giordano"]},
+{"c":"Oficial 1°","p":["Carmen Gloria Cerna Rivera"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Santa Juana","tipo":"Mixto","comuna":"Santa Juana","direccion":"Yungay N° 241, Santa Juana","telefonos":["+56998835421"],"correo":"","rut":"61980480-5","tit":[{"c":"Juez","p":["Jaime Andrés González Orrico"]},
+{"c":"Secretario","p":["Maritza Raquel Aldana Cabezas"]},
+{"c":"Oficial 1°","p":["Jaime Antonio Parra Toro"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Lota","tipo":"Mixto","comuna":"Lota","direccion":"Galvarino S/N, Lota","telefonos":["+56984498647"],"correo":"jlyg_lota@pjud.cl","rut":"60310005-0","cta":"54500019037","tit":[{"c":"Juez","p":["Constanza Catalina Naranjo Alé"]},
+{"c":"Secretario","p":["Gonzalo Andrés Muñoz Muñoz"]},
+{"c":"Oficial 1°","p":["Aurora Yolanda Pampaloni Concha"]}]},
+{"nombre":"1° Juzgado de Letras de Coronel","tipo":"Civil","comuna":"Coronel","direccion":"Manuel Montt N° 935, 1° Piso, Coronel","telefonos":[],"correo":"","rut":"60310010-7","cta":"53900018670","tit":[{"c":"Juez","p":["Paulina Cecilia Bermúdez Saenz"]},
+{"c":"Oficial 1°","p":["Karen Araceli Molina Vera"]}]},
+{"nombre":"2° Juzgado de Letras de Coronel","tipo":"Civil","comuna":"Coronel","direccion":"Manuel Montt N° 935, 2° Piso, Coronel","telefonos":[],"correo":"","rut":"61961100-4","tit":[{"c":"Juez","p":["Leyla Macarena Velásquez Molina"]},
+{"c":"Oficial 1°","p":["Melany Alma Eduvigis Roberts Bustos"]}]},
+{"nombre":"Juzgado de Familia de Coronel","tipo":"Familia","comuna":"Coronel","direccion":"Carvallo N° 831, Coronel","telefonos":["+56412712464"],"correo":"","rut":"61977670-4","cta":"53900047955","tit":[{"c":"Juez","p":["Carolina Andrea Alejandra Meza Saldía","Cecilia Elizabeth Sanhueza Sanhueza","Anja Constance Wendt Helle"]},
+{"c":"Administrador","p":["José Manuel Soto Pedraza"]},
+{"c":"Jefe de unidad","p":["Claudia Alexandra Elvira Mejías García"]},
+{"c":"Administrativo jefe","p":["Claudio Rene Monroy Salgado","Susana Belén Rojas Fonseca"]}],"adi":[{"c":"Juez","p":["Katiusca Andrea Venegas Fierro","María Francisca González Ortega"]}]},
+{"nombre":"Juzgado de Garantía de Coronel","tipo":"Penal","comuna":"Coronel","direccion":"Bilbao N° 100, Coronel","telefonos":["+56412711838"],"correo":"","rut":"61963900-6","cta":"53900038964","tit":[{"c":"Juez","p":["Jorge Uldarico Henríquez Mora"]},
+{"c":"Administrador","p":["Victoria Daniela Bastías Leiva"]},
+{"c":"Jefe de unidad","p":["Paula María Caprile Costa"]}],"adi":[{"c":"Jefe de unidad","p":["Paulina Alejandra Contreras Sepúlveda"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Lebu","tipo":"Mixto","comuna":"Lebu","direccion":"Pérez N° 721, Lebu","telefonos":[],"correo":"","rut":"60310002-6","cta":"55900015789","tit":[{"c":"Juez","p":["Andrea Valeria Rodríguez Ferrada","Denis Rodrigo Oyarce Orrego"]},
+{"c":"Administrador","p":["Nicolás Abel Isidro Jofré Caro"]},
+{"c":"Oficial 1°","p":["Maira Alejandra Orrego Arroyo"]}],"adi":[{"c":"Juez","p":["Carolina Andrea Leiva Aguilera","Vania Carola Angulo Torrez","Sergio Alejandro Vargas Palma"]},
+{"c":"Oficial 1°","p":["Jonathan Alfredo Bernal Fuentealba"]}]},
+{"nombre":"Juzgado de Letras de Arauco","tipo":"Civil","comuna":"Arauco","direccion":"Los Carreras S/N, Arauco","telefonos":["+56412552972"],"correo":"","rut":"60310003-4","cta":"54700012703","tit":[{"c":"Juez","p":["Paulina Simone Wunderlich Escalona"]},
+{"c":"Secretario","p":["Constance Valentina Valle Figueroa"]},
+{"c":"Oficial 1°","p":["Ruth Margarita Chamblas Chamblas"]}],"adi":[{"c":"Secretario","p":["Javiera Belén Tapia Sepúlveda"]}]},
+{"nombre":"Juzgado de Garantía de Arauco","tipo":"Penal","comuna":"Arauco","direccion":"Covadonga N° 115, Arauco","telefonos":[],"correo":"","rut":"61964000-4","cta":"54700105353","tit":[{"c":"Juez","p":["Perla Andrea Roa Borgoño"]},
+{"c":"Administrador","p":["Wladimir Eustaquio Sánchez Quiroga"]}],"adi":[{"c":"Juez","p":["Paula María Caprile Costa"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Curanilahue","tipo":"Mixto","comuna":"Curanilahue","direccion":"Almirante Latorre 77, Curanilahue","telefonos":[],"correo":"","rut":"60310019-0","cta":"55300007995","tit":[{"c":"Juez","p":["Daniel Eduardo Ortiz Pérez","Diego Gonzalo Erices Díaz"]},
+{"c":"Administrador","p":["Hans Christian Neudorfer Retamal"]},
+{"c":"Jefe de unidad","p":["Tomás Fernando Retamal Benítez"]},
+{"c":"Administrativo jefe","p":["Adelina del Pilar Garrido Figueroa","Isabel Alejandra Avilez Ramirez"]}],"adi":[{"c":"Juez","p":["Natalia Inés Sandoval Jara"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Cañete","tipo":"Penal","comuna":"Cañete","direccion":"Villagrán 193 Cañete","telefonos":[],"correo":"","rut":"61978470-7","cta":"56300044111","tit":[{"c":"Juez","p":["Julio Segundo Ramírez Paredes","Ricardo Andrés Piña Vallejos","Lathy Paola Pérez Quilodrán","Marcos Antonio Pincheira Barrios","José Martín Cánovas Fuentes"]},
+{"c":"Administrador","p":["Ingrid Yohanna Agurto Benard"]},
+{"c":"Jefe de unidad","p":["Mirella Isabel Ayala Leal","Gonzalo Gualberto Meneses Corral"]}],"adi":[{"c":"Juez","p":["Pablo Prieto Valdés"]}]},
+{"nombre":"Juzgado de Letras de Cañete","tipo":"Civil","comuna":"Cañete","direccion":"Lautaro N° 90, Cañete","telefonos":["+56412611024"],"correo":"jl_canete@pjud.cl","rut":"60310001-8","cta":"56300013231","tit":[{"c":"Juez","p":["Carmen Lorena Seguel Pino"]},
+{"c":"Administrador","p":["Rodrigo Antonio Tapia Riffo"]},
+{"c":"Jefe de unidad","p":["Claudia Melissa Villa Esperguel"]},
+{"c":"Administrativo jefe","p":["David Eduardo Luarte San Martin","Yeny Fabiola Huenchuñir Huenchuñir"]}],"adi":[{"c":"Juez","p":["Eric Ivan San Martin Guajardo"]}]},
+{"nombre":"Juzgado de Garantía de Cañete","tipo":"Penal","comuna":"Cañete","direccion":"Villagran N° 193, Cañete","telefonos":["+56412612164"],"correo":"","rut":"61965000-K","cta":"56300036312","tit":[{"c":"Juez","p":["Cristian Mauricio Rosenberg de la Fuente"]},
+{"c":"Administrador","p":["Rodrigo Mauricio Salinas Pavez"]}]}],"Temuco":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Angol","tipo":"Penal","comuna":"Angol","direccion":"18 Septiembre N° 425, Angol","telefonos":[],"correo":"","rut":"61939900-5","cta":"61500066538","tit":[{"c":"Juez","p":["Solange Graciela Sufan Arias","Francisco Javier Boero Villagrán"]},
+{"c":"Administrador","p":["Marcelo Osvaldo Golombek Lillo"]},
+{"c":"Jefe de unidad","p":["Juan Aquiles Matus Parada"]}],"adi":[{"c":"Juez","p":["Loreto Irene Morales Rey","Juan Manuel Torres Zalazar","Cristóbal de Pablo Navarro Rodríguez"]}]},
+{"nombre":"1° Juzgado de Letras de Angol","tipo":"Civil","comuna":"Angol","direccion":"Dieciocho N° 529, Angol","telefonos":[],"correo":"","rut":"60311009-9","tit":[{"c":"Juez","p":["Claudio Alejandro Campos Carrasco"]},
+{"c":"Secretario","p":["Luis Fernando Pacheco Herrera"]},
+{"c":"Oficial 1°","p":["Monica Cecilia Torres Zapata"]}],"adi":[{"c":"Secretario","p":["Aracely Jimena Vásquez Acuña"]}]},
+{"nombre":"Juzgado de Familia de Angol","tipo":"Familia","comuna":"Angol","direccion":"Colipi N° 148, Angol","telefonos":["+56452719239"],"correo":"jfangol@pjud.cl","rut":"61977920-7","cta":"61500077998","tit":[{"c":"Juez","p":["Patricia Alejandra Rios Rojas","Karina Soledad Muñoz Paredes"]},
+{"c":"Administrador","p":["Tatiana Angélica San Martín Sotomayor"]},
+{"c":"Jefe de unidad","p":["Jeannette Alejandra Vega Arriagada"]},
+{"c":"Administrativo jefe","p":["Teresa Macarena Pérez Barraza","Luis Patricio Fernandez Perez"]}],"adi":[{"c":"Juez","p":["Sandra Patricia Nahuelcura Villamán"]}]},
+{"nombre":"Juzgado de Garantía de Angol","tipo":"Penal","comuna":"Angol","direccion":"Calle Dieciocho N° 425, Piso 1, Angol","telefonos":["+56996796491"],"correo":"","rut":"61939800-9","cta":"61500066511","tit":[{"c":"Juez","p":["Juan Mauricio Poblete Erices","Daniel Rolando Riquelme Fernández"]},
+{"c":"Administrador","p":["Claudia Verónica Muñoz Foglia"]},
+{"c":"Jefe de unidad","p":["Paula Alejandra Mac-Evoy Silva"]}],"adi":[{"c":"Juez","p":["Graciela Riobo Hermosilla"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Collipulli","tipo":"Mixto","comuna":"Collipulli","direccion":"O'Higgins N° 318, Collipulli","telefonos":[],"correo":"","rut":"60311008-0","cta":"61700018333","tit":[{"c":"Juez","p":["María Fernanda Lagos Lepe"]},
+{"c":"Administrador","p":["Marcelo Leonel Portiño Beltrán"]},
+{"c":"Jefe de unidad","p":["Elisabeth Goretty Romero Burgos"]},
+{"c":"Oficial 1°","p":["María Magdalena Muñoz Molina"]},
+{"c":"Administrativo jefe","p":["Alibeth Musi Seguel Riveros"]}],"adi":[{"c":"Juez","p":["Kevin Alberto Ritz Parra"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Curacautín","tipo":"Mixto","comuna":"Curacautín","direccion":"Yungay N° 201, Esq. O'Higgins, Curacautin","telefonos":["+56452881286"],"correo":"jlcuracautin_archivo@pjud.cl","rut":"60310013-1","cta":"62500021301","tit":[{"c":"Juez","p":["Marcela Bley Valenzuela"]},
+{"c":"Secretario","p":["Felipe Andrés Carrasco Véliz"]},
+{"c":"Oficial 1°","p":["Yessica Analia Olate Figueroa"]}],"adi":[{"c":"Juez","p":["Felipe Andrés Carrasco Véliz"]}]},
+{"nombre":"Juzgado de Letras de Victoria","tipo":"Civil","comuna":"Victoria","direccion":"Condell N° 801, Victoria","telefonos":["+56452841285"],"correo":"jl_victoria@pjud.cl","rut":"60311003-K","cta":"62100052542","tit":[{"c":"Juez","p":["Francisco Javier Maragaño Uribe"]},
+{"c":"Oficial 1°","p":["Claudia Rosa Rebolledo Vásquez"]}]},
+{"nombre":"Juzgado de Garantía de Victoria","tipo":"Penal","comuna":"Victoria","direccion":"Calama N° 1049, Victoria","telefonos":[],"correo":"","rut":"61940100-K","cta":"62100059466","tit":[{"c":"Juez","p":["Evelyn Cristina Zelaya Latham"]},
+{"c":"Administrador","p":["Beatriz Angelica Aeschlimann Troncoso"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Traiguén","tipo":"Mixto","comuna":"Traiguén","direccion":"Basilio Urrutia N° 880, Traiguén","telefonos":["+56452869558"],"correo":"","rut":"60311007-2","cta":"62300033879","tit":[{"c":"Juez","p":["Cristóbal de Pablo Navarro Rodríguez"]},
+{"c":"Administrador","p":["Gastón Enrique Rivas Medina"]},
+{"c":"Jefe de unidad","p":["Rossana Jacqueline Alfaro Freire"]},
+{"c":"Administrativo jefe","p":["Mabel Pichun Cid","Rechel Rosana Riquelme Flores"]}],"adi":[{"c":"Juez","p":["Rodrigo Alfredo Valdebenito Navarro"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Purén","tipo":"Mixto","comuna":"Purén","direccion":"Imperial N° 890, Puren, Purén","telefonos":[],"correo":"","rut":"61940500-5","cta":"61900011091","tit":[{"c":"Juez","p":["Juan Manuel Torres Zalazar"]},
+{"c":"Oficial 1°","p":["Patricio Eduardo Hernández Menares"]}],"adi":[{"c":"Juez","p":["Elías Gabriel Agüero Matamala"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Temuco","tipo":"Penal","comuna":"Temuco","direccion":"Manuel Bulnes N° 0465, Pisos 3º,4º,5º, Temuco","telefonos":["+56452554100"],"correo":"","rut":"61940900-0","cta":"62900185885","tit":[{"c":"Juez","p":["Jorge Gabriel González Salazar","Cecilia Elena Subiabre Tapia","Wilfred Augusto Ziehlmann Zamorano","Patricia Verónica Abollado Vivanco","José Ignacio Rau Atria","Rocío Antonella Pinilla Dabbadie","Leonel Yairo Torres Labbé","Roberto Enrique Herrera Olivos","Priscilla Karla Frantzen Cervantes","Javier Mauricio Bascur Pavez"]},
+{"c":"Administrador","p":["Jorge Valentín Oliva Gómez"]},
+{"c":"Jefe de unidad","p":["Sandra Evelyn Ohmke Elgueta","Christian Eduardo Fuentes Chamorro","Cristina Paola Charles Vásquez","Sebastián Alejandro Carrasco Escobar"]}]},
+{"nombre":"1° Juzgado Civil de Temuco","tipo":"Civil","comuna":"Temuco","direccion":"Balmaceda N° 490, 1° Piso, Temuco","telefonos":[],"correo":"","rut":"60311010-2","cta":"62900166147","tit":[{"c":"Juez","p":["Jorge Enrique Romero Adriazola"]},
+{"c":"Secretario","p":["Natalia Estefany Ferrada Retamal"]},
+{"c":"Oficial 1°","p":["Carola Jeannette Rivera Levancini"]}]},
+{"nombre":"2° Juzgado Civil de Temuco","tipo":"Civil","comuna":"Temuco","direccion":"Balmaceda N° 490, 2° Piso, Temuco","telefonos":[],"correo":"","rut":"60311015-3","cta":"62900143961","tit":[{"c":"Juez","p":["María Alejandra Margarita Santibáñez Chesta"]},
+{"c":"Secretario","p":["Constanza Cristina Rendich Salaverry"]},
+{"c":"Oficial 1°","p":["Carlos Daniel Gutierrez Salazar"]}],"adi":[{"c":"Juez","p":["Constanza Cristina Rendich Salaverry"]}]},
+{"nombre":"3° Juzgado Civil de Temuco","tipo":"Civil","comuna":"Temuco","direccion":"Balmaceda N° 490, 3° Piso, Temuco","telefonos":[],"correo":"","rut":"61941200-1","cta":"62900186636","tit":[{"c":"Juez","p":["María Cristina de la Cruz Arriagada"]},
+{"c":"Secretario","p":["Jorge Andrés Ibarrola Ávila"]}]},
+{"nombre":"Juzgado de Familia de Temuco","tipo":"Familia","comuna":"Temuco","direccion":"San Martin N° 524, Temuco","telefonos":[],"correo":"","rut":"61978170-8","cta":"62900215857","tit":[{"c":"Juez","p":["Mirna Ibeth de Lourdes Espejo Guíñez","Ada Patricia Villarreal Ramis","Maríajosé Anastassia Casanova de la Jara","Tania Gloria Zurita Riquelme","Francisco Antonio García Quezada","Gabriel Álvaro Montoya Jiménez","Sandra Paola Valenzuela Kelly","Claudia Ibeliz Sánchez Slater","Marcia Lorena Gutiérrez Arriagada","Mónica Leonor Toledo Reyne","Gabriel Felipe Ortiz Salgado"]},
+{"c":"Administrador","p":["Fabián Denis Vera Vargas"]},
+{"c":"Jefe de unidad","p":["Hugo Alfonso Cabezas Ibarra","María Lilian Seguel Soto","Eleazar David Jara Contreras"]},
+{"c":"Administrativo jefe","p":["Miguel Angel García Aravena","Andrea del Pilar Fuentealba Maturana","Paula Rosalyn Fica Sepúlveda"]}],"adi":[{"c":"Juez","p":["Karina Augusta del Carmen Rubio Solís"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Temuco","tipo":"Trabajo","comuna":"Temuco","direccion":"General Mackenna N° 763, Temuco","telefonos":[],"correo":"","rut":"61978710-2","cta":"62900048012","tit":[{"c":"Juez","p":["Viviana Loreto Ibarra Mendoza","Mónica Valeska Soto Silva","Robinson Fidel Villarroel Cruzat","Marta Paola Álvarez Basáez","Ricardo Erick Larenas Bustos"]},
+{"c":"Administrador","p":["Yuri Marcelo Bórquez Flores"]},
+{"c":"Jefe de unidad","p":["Patsy Lerdon Riquelme","Gonzalo Patricio Carrera Guzmán","Javier Alberto Gómez Leger"]},
+{"c":"Administrativo jefe","p":["Celeste Estrella Bublitz Molina","Vianka Marcela Bonilla Humeres"]}],"adi":[{"c":"Juez","p":["Mauricio Alejandro Torres Contreras"]}]},
+{"nombre":"Juzgado de Garantía de Temuco","tipo":"Penal","comuna":"Temuco","direccion":"Bulnes N° 0465, 1, 2 Piso, Temuco","telefonos":[],"correo":"","rut":"61940200-6","cta":"62900185729","tit":[{"c":"Juez","p":["Federico Eugenio Gutiérrez Salazar","Luis Alberto Olivares Apablaza","Luz Monica Arancibia Mena","Marcia Patricia Castillo Monjes","Leticia Andrea Rivera Reyes","Viviana Andrea García Utreras","Ruth Isabel Martínez Velásquez","Alfredo Edgardo Cox Castro"]},
+{"c":"Administrador","p":["Luis Rodrigo Lerzundi Díaz"]},
+{"c":"Jefe de unidad","p":["Juan Carlos Hoyuela López","Javier Ignacio Abarzúa Gómez","Victoria Elizabeth Fell Padilla","Jorge Alfredo Castillo Salinas"]}],"adi":[{"c":"Juez","p":["Juan Mauricio Poblete Erices","Eduardo Antonio Pérez Yáñez"]}]},
+{"nombre":"Juzgado de Letras de Lautaro","tipo":"Civil","comuna":"Lautaro","direccion":"Vicuña Mackenna N° 505, Lautaro","telefonos":[],"correo":"jl_lautaro@pjud.cl","rut":"60311011-0","cta":"62700033100","tit":[{"c":"Juez","p":["Carla Herince Alarcón Mora","Milena Andrea Anselmo Cartes"]},
+{"c":"Administrador","p":["Felipe Andrés Campos Fariña"]},
+{"c":"Jefe de unidad","p":["Sandra Magaly Andrade Hormazábal"]},
+{"c":"Oficial 1°","p":["Carlos Alexis Figueroa Riffo"]},
+{"c":"Administrativo jefe","p":["Mauricio Nicolás Canales Flores"]}],"adi":[{"c":"Juez","p":["Ruth Fiorella Jara Contreras","Selva Soledad Turra Lagos"]},
+{"c":"Administrador","p":["Sandra Magaly Andrade Hormazábal"]},
+{"c":"Jefe de unidad","p":["Pedro Marcelo Mellado Morales"]}]},
+{"nombre":"Juzgado de Garantía de Lautaro","tipo":"Penal","comuna":"Lautaro","direccion":"Bilbao N° 352, Lautaro","telefonos":["+56452534015"],"correo":"","rut":"61940000-3","cta":"62700046783","tit":[{"c":"Juez","p":["Eduardo Antonio Pérez Yáñez"]},
+{"c":"Administrador","p":["Jamil Alejandro Fuentes Cid"]}],"adi":[{"c":"Juez","p":["Freddy Marcelo Gramer Rascheya","Etienne Ernest Fellay Bertholet"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Pucón","tipo":"Mixto","comuna":"Pucón","direccion":"Arauco N° 371, Pucon, Pucón","telefonos":[],"correo":"","rut":"60191600-2","cta":"64700006113","tit":[{"c":"Juez","p":["José Luis Maureira González","Constanza Valentina Sepúlveda Grusic"]},
+{"c":"Administrador","p":["Héctor Enrique Bonilla Humeres"]},
+{"c":"Oficial 1°","p":["Enaldy Alejandra Salgado González"]}],"adi":[{"c":"Juez","p":["Paula Andrea Seco Vásquez"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Villarrica","tipo":"Penal","comuna":"Villarrica","direccion":"Pedro de Valdivia 0285, Villarrica","telefonos":[],"correo":"topvillarrica_archivo@pjud.cl","rut":"61940700-8","cta":"64500041631","tit":[{"c":"Juez","p":["Adriana Cecilia Knopel Jaramillo","Ximena de las Nieves Saldivia Vega","Alejandra Andrea Rosas Lagos","María Cecilia Zapata Pavez"]},
+{"c":"Administrador","p":["Alexis Eduardo Gajardo Tapia"]},
+{"c":"Jefe de unidad","p":["Laura Irene Otarola Llanos"]}]},
+{"nombre":"Juzgado de Letras de Villarrica","tipo":"Civil","comuna":"Villarrica","direccion":"Pedro de Valdivia N° 0305, Villarrica","telefonos":[],"correo":"","rut":"60311006-4","cta":"64500025300","tit":[{"c":"Juez","p":["Rodrigo Leonardo Alarcón Soto","Marianela Loreto Arellano Vaillant"]},
+{"c":"Administrador","p":["Eduardo José Manuel Garrido Vásquez"]},
+{"c":"Jefe de unidad","p":["Nancy Angélica Aqueveque Sáez"]},
+{"c":"Administrativo jefe","p":["Robinson Javier Espinoza Hernández"]}],"adi":[{"c":"Juez","p":["Jaime Andrés Manríquez Oyanader"]},
+{"c":"Administrativo jefe","p":["Orlando Shamir Sandoval Reyes","Enoc Alexis Ulloa López"]}]},
+{"nombre":"Juzgado de Garantía de Villarrica","tipo":"Penal","comuna":"Villarrica","direccion":"Pedro de Valdivia N° 285, Villarrica","telefonos":["+56452410633"],"correo":"jgvillarrica@pjud.cl","rut":"61940800-4","cta":"64500041615","tit":[{"c":"Juez","p":["Viviana Isolda Cárdenas Beltrán","Julio Luis Sandoval Berrocal"]},
+{"c":"Administrador","p":["María Isabel Aguilera Hafner"]},
+{"c":"Jefe de unidad","p":["Gissella Marta Padilla Huenchumán"]}]},
+{"nombre":"Juzgado de Letras de Pitrufquén","tipo":"Civil","comuna":"Pitrufquén","direccion":"Francisco Bilbao N° 398, Pitrufquen, Pitrufquén","telefonos":[],"correo":"","rut":"60311014-5","cta":"64100024088","tit":[{"c":"Juez","p":["Nicolás Andrés Martínez-Conde Schell"]},
+{"c":"Administrador","p":["Patricia Angelica Ramirez Flores"]},
+{"c":"Jefe de unidad","p":["Pablo Ignacio Cartes Díaz"]},
+{"c":"Oficial 1°","p":["Elías Gabriel Agüero Matamala"]},
+{"c":"Administrativo jefe","p":["Odette Elizabeth Leiva Lagos"]}],"adi":[{"c":"Juez","p":["Daniela Erika Carrasco Trapp"]},
+{"c":"Oficial 1°","p":["María Jacinta Salgado Delarze"]},
+{"c":"Administrativo jefe","p":["Julio César Thomas Soto"]}]},
+{"nombre":"Juzgado de Garantía de Pitrufquén","tipo":"Penal","comuna":"Pitrufquén","direccion":"Balmaceda N° 435, Pitrufquen, Pitrufquén","telefonos":[],"correo":"","rut":"61940600-1","cta":"64100034113","tit":[{"c":"Juez","p":["Caroline del Pilar Guzmán Muñoz"]},
+{"c":"Administrador","p":["Marcos Silvio Pizzeghello Ríos"]},
+{"c":"Jefe de unidad","p":["Tamara Alejandra Caro Muñoz"]}],"adi":[{"c":"Juez","p":["Robinson Javier Espinoza Hernández"]}]},
+{"nombre":"Juzgado de Letras de Loncoche","tipo":"Civil","comuna":"Loncoche","direccion":"Balmaceda N° 441, Loncoche","telefonos":[],"correo":"","rut":"65000086-2","cta":"64900026411","tit":[{"c":"Juez","p":["Renán Andrés Latin Quezada"]},
+{"c":"Secretario","p":["Christian Diego Vera Lobos"]},
+{"c":"Oficial 1°","p":["Katerine Paola Lavanderos Curaqueo"]}]},
+{"nombre":"Juzgado de Garantía de Loncoche","tipo":"Penal","comuna":"Loncoche","direccion":"Balmaceda N° 264, Loncoche","telefonos":[],"correo":"","rut":"61939200-0","cta":"64900032330","tit":[{"c":"Juez","p":["Evelin Yeniffer Irribarra Orozco"]},
+{"c":"Administrador","p":["Denis Eduardo Baeza Valenzuela"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Toltén","tipo":"Mixto","comuna":"Toltén","direccion":"Pedro Aguirre Cerda N° 520, N. Toltén","telefonos":[],"correo":"jlyg_tolten@pjud.cl","rut":"61940300-2","cta":"64400005573","tit":[{"c":"Juez","p":["Ignacio Javier Pichun Pino"]},
+{"c":"Oficial 1°","p":["Freddy Marcelo Gramer Rascheya"]}],"adi":[{"c":"Juez","p":["Paola Andrea Colombre Aburto"]},
+{"c":"Secretario","p":["Flor Emelina Quezada Pereira"]},
+{"c":"Oficial 1°","p":["Macarena Alejandra Veas Ponce"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Carahue","tipo":"Mixto","comuna":"Carahue","direccion":"Villagrán N° 447, Carahue","telefonos":[],"correo":"","rut":"60304018-K","cta":"63300013131","tit":[{"c":"Juez","p":["Carlos Gabriel Alejandro Jeria Montoya","Graciela Riobo Hermosilla"]},
+{"c":"Administrador","p":["Javier Eduardo Wachtendorff Martínez"]},
+{"c":"Jefe de unidad","p":["Ximena Tamara Mancilla Leiva"]},
+{"c":"Oficial 1°","p":["Aracely Jimena Vásquez Acuña"]},
+{"c":"Administrativo jefe","p":["Linda Celikbas"]}],"adi":[{"c":"Juez","p":["Blyette Laura Iris Ponsot Salazar","Iván Edison Santander Valenzuela"]},
+{"c":"Oficial 1°","p":["Carla Andrea Recabarren Díaz"]},
+{"c":"Administrativo jefe","p":["Elena Margarita Pailahueque Pichilén"]}]},
+{"nombre":"Juzgado de Letras de Nueva Imperial","tipo":"Civil","comuna":"Nueva Imperial","direccion":"Pedro Lagos N° 454, Nueva Imperial","telefonos":["+56452611069"],"correo":"","rut":"60311002-1","cta":"63500022045","tit":[{"c":"Juez","p":["Luis Emilio Soto Méndez","Johanna Paola Liberona Vitagliano"]},
+{"c":"Administrador","p":["Bibiana Ivette Rodríguez Zárate"]},
+{"c":"Oficial 1°","p":["Pedro Ariel Ortiz Lagos"]}]},
+{"nombre":"Juzgado de Garantía de Nueva Imperial","tipo":"Penal","comuna":"Nueva Imperial","direccion":"General Urrutia N° 546, Nueva Imperial","telefonos":["+56452613349"],"correo":"","rut":"61940400-9","tit":[{"c":"Juez","p":["Fabiola Leticia Andrea Cancino Muñoz"]},
+{"c":"Administrador","p":["Verónica Elizabeth Pincheira Wandersleben"]}]}],"Valdivia":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Valdivia","tipo":"Penal","comuna":"Valdivia","direccion":"Avda. Francia N° 2688 (3° Piso), Valdivia","telefonos":[],"correo":"","rut":"65286670-0","cta":"72100174023","tit":[{"c":"Juez","p":["Pamela Cecilia Hernández Machuca","Germán Cristian Adrián Olmedo Donoso","Ricardo Andrés Aravena Durán","Daniel Andrés Mercado Rilling","María Silvana Muñoz Jaramillo","María Soledad Santana Cardemil","Claudia Alejandra Hofmann Valdés"]},
+{"c":"Administrador","p":["Carlos Alejandro Muñoz Romero"]},
+{"c":"Jefe de unidad","p":["Fernando Valentin Gonzalez Abarca","Diógenes Patricio Acuña Muñoz","Hector Alejandro Cardenas Guerrero","Carlos Manuel Requena Magallanes"]}],"adi":[{"c":"Juez","p":["Ronnie Alexander Matamala Troncoso","Pablo Eleazar Salas Donoso","Guillermo Francisco Olate Aránguiz","Andrea Verónica Hurtado Villanueva"]}]},
+{"nombre":"1° Juzgado Civil de Valdivia","tipo":"Civil","comuna":"Valdivia","direccion":"Caupolican N° 330, Valdivia","telefonos":[],"correo":"","rut":"60312005-1","cta":"72100113687","tit":[{"c":"Juez","p":["Edinson Antonio Lara Aguayo"]},
+{"c":"Secretario","p":["David Manuel Silva Estrada"]},
+{"c":"Oficial 1°","p":["César Iván Agurto Mora"]}]},
+{"nombre":"2° Juzgado Civil de Valdivia","tipo":"Civil","comuna":"Valdivia","direccion":"Caupolican N° 330, Valdivia","telefonos":[],"correo":"","rut":"60312022-1","cta":"72100106281","tit":[{"c":"Juez","p":["Marcela Alejandra Robles Sanguinetti"]},
+{"c":"Secretario","p":["Alejandra Ivón Coronado Labbé"]}]},
+{"nombre":"Juzgado de Familia de Valdivia","tipo":"Familia","comuna":"Valdivia","direccion":"Aníbal Pinto 1925, Valdivia","telefonos":["+56632252175"],"correo":"jfvaldivia@pjud.cl","rut":"61978190-2","cta":"72100183952","tit":[{"c":"Juez","p":["María Isabel Eyssautier Sahr","Mónica Sanhueza Kusch","Marcela Andrea Valencia Labarca","Pamela Verónica Lobos Saavedra","Bárbara Elena Grob Duhalde","Lissette Milady Salazar Sandoval"]},
+{"c":"Administrador","p":["Carla Cecilia Gutierrez Segui"]},
+{"c":"Jefe de unidad","p":["Héctor Claudio Oyarzún Sepúlveda"]},
+{"c":"Administrativo jefe","p":["Germán Osvaldo Vega Riquelme","Cristian Marcelo Delgado Mathinson"]}],"adi":[{"c":"Jefe de unidad","p":["Germán Osvaldo Vega Riquelme"]},
+{"c":"Administrativo jefe","p":["Constanza Lehnebach Lobos"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Valdivia","tipo":"Trabajo","comuna":"Valdivia","direccion":"Anibal Pinto N° 1925, Piso 4°, Valdivia","telefonos":["+56632346275"],"correo":"","rut":"65733870-2","cta":"72100020484","tit":[{"c":"Juez","p":["Inge Karen Múller Méndez","Alodia Ximena Prieto Gongora"]},
+{"c":"Administrador","p":["Rafael Onofre Bahamondes Díaz"]},
+{"c":"Jefe de unidad","p":["José Iván González Pérez"]},
+{"c":"Administrativo jefe","p":["Maria Pilar Toro Aros","Elba Elena Gatica Marchant"]}],"adi":[{"c":"Juez","p":["Marianela Loreto Luna Neira"]},
+{"c":"Jefe de unidad","p":["Maria Pilar Toro Aros"]}]},
+{"nombre":"Juzgado de Garantía de Valdivia","tipo":"Penal","comuna":"Valdivia","direccion":"Avenida Francia N° 2688, Valdivia","telefonos":[],"correo":"","rut":"65254400-2","cta":"72100174007","tit":[{"c":"Juez","p":["Pablo Gabriel Yáñez Gómez","Carlos Andrés Flores Valenzuela","Fabián Eduardo Duffau García","Edmundo Ariel Devia González"]},
+{"c":"Administrador","p":["Gustavo Alonso Muñoz Díaz"]},
+{"c":"Jefe de unidad","p":["Patricia Andrea Venegas de la Vega","Wilma Karin Reyes Clasing"]}],"adi":[{"c":"Juez","p":["Pedro Eliecer Paredes Peña"]}]},
+{"nombre":"Juzgado de Letras de Mariquina","tipo":"Civil","comuna":"Mariquina","direccion":"Padre Plácido N° 1000, 2° y 3° Piso, Comuna de Mariquina","telefonos":[],"correo":"jl_mariquina@pjud.cl","rut":"60312010-8","cta":"71700000910","tit":[{"c":"Juez","p":["Paula Luzmira Fernández Bernal"]},
+{"c":"Administrador","p":["Ingrid Alejandra Montecinos Medina"]},
+{"c":"Jefe de unidad","p":["Jorge Alberto Agurto Mora"]},
+{"c":"Administrativo jefe","p":["Fernanda Hilda Westermeier Lafuente","Matías Lorenzo Vera Carrasco"]}],"adi":[{"c":"Juez","p":["Ivonne Andrea Angulo Cifuentes"]}]},
+{"nombre":"Juzgado de Garantía de Mariquina","tipo":"Penal","comuna":"Mariquina","direccion":"Padre Placido N° 1000, San Jose de La Mariquina","telefonos":["+56632451413"],"correo":"jgmariquina@pjud.cl","rut":"61968100-2","cta":"71700021534","tit":[{"c":"Juez","p":["Pamela Macarena Wulf Leal"]},
+{"c":"Administrador","p":["Héctor Hernán Muñoz Díaz"]}]},
+{"nombre":"Juzgado de Letras de Los Lagos","tipo":"Civil","comuna":"Los Lagos","direccion":"San Martin N° 280, Los Lagos","telefonos":[],"correo":"","rut":"60312002-7","cta":"72300016007","tit":[{"c":"Juez","p":["José Iván Milanca Sánchez"]},
+{"c":"Administrador","p":["Maribel Andrea Cabezas Villablanca"]},
+{"c":"Jefe de unidad","p":["Marie Rose Cortese Figueroa"]},
+{"c":"Administrativo jefe","p":["Julio Eric Espinoza Hidalgo","Pablo Eduardo Hernández Valenzuela"]}],"adi":[{"c":"Juez","p":["Pierre Maurice de Baeremaecker Quiroz"]}]},
+{"nombre":"Juzgado de Garantía de Los Lagos","tipo":"Penal","comuna":"Los Lagos","direccion":"San Martin N° 280 Esquina Tarapacá, Los Lagos","telefonos":["+56632460261"],"correo":"jgloslagos@pjud.cl","rut":"61968200-9","tit":[{"c":"Juez","p":["Andrés Eduardo Riveros Cáceres"]},
+{"c":"Administrador","p":["Mario Alfonso Arias Yessi"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Panguipulli","tipo":"Mixto","comuna":"Panguipulli","direccion":"Juan Bautista Etchegaray N° 823, Panguipulli","telefonos":[],"correo":"","rut":"60312007-8","cta":"71900008095","tit":[{"c":"Juez","p":["Carlos Guillermo Aguilar Hernández","Alex Fernando Espinoza Salinas"]},
+{"c":"Administrador","p":["Marilen Lea Moreno Riquelme"]},
+{"c":"Oficial 1°","p":["Andrea del Pilar Loyola Uribe"]}]},
+{"nombre":"Juzgado de Letras y Garantía de La Unión","tipo":"Mixto","comuna":"La Unión","direccion":"Phillippi N° 720, La Union, La Unión","telefonos":["+56642325417"],"correo":"","rut":"60312013-2","cta":"72700027946","tit":[{"c":"Juez","p":["Felipe Andrés Muñoz Hermosilla"]},
+{"c":"Administrador","p":["Ximena Alejandra Tuchie Miranda"]},
+{"c":"Jefe de unidad","p":["Ruth Eliana Cepeda Walther"]},
+{"c":"Administrativo jefe","p":["Jaime Patricio Mansilla Hernandez","Maria Roxana Manqui Vega"]}],"adi":[{"c":"Juez","p":["José Iván González Pérez"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Paillaco","tipo":"Mixto","comuna":"Paillaco","direccion":"Libertador Bernardo O'Higgins N° 516, Paillaco","telefonos":[],"correo":"","rut":"60312027-2","cta":"72500019001","tit":[{"c":"Juez","p":["Lucia Alejandra Massri Ergas"]},
+{"c":"Administrador","p":["Nibaldo Rubén Espíndola Cerna"]},
+{"c":"Jefe de unidad","p":["José David Muñoz Rosas"]},
+{"c":"Administrativo jefe","p":["Pedro Andres Sanchez Barria","Alejandro Rodrigo Cofre Cofre"]}],"adi":[{"c":"Juez","p":["Lorena Araceli Martínez Leyton"]},
+{"c":"Jefe de unidad","p":["Alejandro Rodrigo Cofre Cofre"]},
+{"c":"Administrativo jefe","p":["Ramon Antonio Vargas Peralta"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Río Bueno","tipo":"Mixto","comuna":"Río Bueno","direccion":"Ejercito Libertador S/N, Rio Bueno","telefonos":["+56642341213"],"correo":"jl_riobueno@pjud.cl","rut":"60312006-K","cta":"72900018917","tit":[{"c":"Juez","p":["Claudio Ernesto Thomas Veloso","Diego Felipe Fuentes Rolack"]},
+{"c":"Administrador","p":["Kertty Soledad Leal Ojeda"]},
+{"c":"Oficial 1°","p":["Alejandra Paola Fuentes Vera"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Osorno","tipo":"Penal","comuna":"Osorno","direccion":"Los Carrera N° 1400, Osorno","telefonos":["+56642316003"],"correo":"","rut":"61977970-3","cta":"81500143533","tit":[{"c":"Juez","p":["Edmundo Gastón Moller Bianchi","Héctor Armando Hinojosa Aubel","Marcelo Eduardo Reuse Staub","Claudio Alberto Vicuña Melo","Patricia Elizabeth Gallardo Maldonado","Fernando Felipe Feliú Correa"]},
+{"c":"Administrador","p":["Julio Román Améstica Mora"]},
+{"c":"Jefe de unidad","p":["Mayuli Antonieta Cárdenas Pérez","Carol Andrea Leighton Valderas","Constanza del Rocío Sepúlveda Soto","Alejandro Javier Fuentes Bahamondes"]}],"adi":[{"c":"Jefe de unidad","p":["Hector Enrique Aravena Paredes"]}]},
+{"nombre":"1° Juzgado de Letras de Osorno","tipo":"Civil","comuna":"Osorno","direccion":"Amthauer N° 1373, Osorno","telefonos":[],"correo":"","rut":"60312023-K","tit":[{"c":"Juez","p":["Raúl Fredy Ramírez López"]},
+{"c":"Secretario","p":["Loreto del Pilar Olivera Garcia"]},
+{"c":"Oficial 1°","p":["Raquel Marisol Bravo Nahuelquín"]}]},
+{"nombre":"2° Juzgado de Letras de Osorno","tipo":"Civil","comuna":"Osorno","direccion":"Amthauer N° 1373, Osorno","telefonos":["+56642232112"],"correo":"jl2_osorno@pjud.cl","rut":"60312021-3","cta":"81500086581","tit":[{"c":"Juez","p":["Guillermo Francisco Olate Aránguiz"]},
+{"c":"Secretario","p":["Massiel Maritza Guajardo Pacheco"]},
+{"c":"Oficial 1°","p":["Harold Gerardo Espinoza Asenjo"]}]},
+{"nombre":"Juzgado de Familia de Osorno","tipo":"Familia","comuna":"Osorno","direccion":"Los Carrera N° 1350, Osorno","telefonos":["+56642311511"],"correo":"","rut":"61978180-5","cta":"81500143517","tit":[{"c":"Juez","p":["Marcelo Osvaldo Leiva Venegas","Lorena Alicia Riquelme Moreira","Mauricio Alejandro Reuse Staub","Tito Edgardo Alarcón Salvo","Marcelo Alfonso Segura Esperguel"]},
+{"c":"Administrador","p":["Iván Elías Ruiz Guenel"]},
+{"c":"Jefe de unidad","p":["Joshua Israel Martínez Santibáñez"]},
+{"c":"Administrativo jefe","p":["Yarella del Pilar Valdebenito Kachele","Sandra Evelyn Ossandón Cáceres"]}],"adi":[{"c":"Juez","p":["Ingrid Guevara Reyes"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Osorno","tipo":"Trabajo","comuna":"Osorno","direccion":"Los Carrera N° 1400, Osorno","telefonos":[],"correo":"","rut":"61979550-4","cta":"81500030313","tit":[{"c":"Juez","p":["María Isabel Catalina Palacios Vicencio","Mariangel Cabrera Rabie"]},
+{"c":"Administrador","p":["Víctor Hugo Ruiz Velásquez"]},
+{"c":"Jefe de unidad","p":["Fabiola Irene Bachmann Oyarzún"]},
+{"c":"Administrativo jefe","p":["Carlos Patricio Herrera Vallejos","Javier Alejandro Merino Leal"]}]},
+{"nombre":"Juzgado de Garantía de Osorno","tipo":"Penal","comuna":"Osorno","direccion":"Los Carrera N° 1400, Osorno","telefonos":[],"correo":"jgosorno@pjud.cl","rut":"61968300-5","cta":"81500137517","tit":[{"c":"Juez","p":["Alex Eduardo Francke Ruiz","Marcelo Arturo Klagges López","Pablo Patricio Renato Álvarez Solís"]},
+{"c":"Administrador","p":["María Isabel Bahamonde Moreira"]},
+{"c":"Jefe de unidad","p":["Raúl Patricio Salas Valderas","Karin Elisabeth Schlie Vargas"]}],"adi":[{"c":"Juez","p":["Matías Esteban Alejandro Irribarra Olivares"]}]},
+{"nombre":"Juzgado de Letras de Río Negro","tipo":"Civil","comuna":"Río Negro","direccion":"Pedro Aguirre Cerda S/N, Rio Negro","telefonos":["+56642361213"],"correo":"","rut":"60312016-7","cta":"81700012824","tit":[{"c":"Juez","p":["Gerardo Adrián Rochow Sandoval"]},
+{"c":"Secretario","p":["Alejandro Javier Tenorio Ojeda"]},
+{"c":"Oficial 1°","p":["Natacha del Carmen Bugueño Garcés"]}]},
+{"nombre":"Juzgado de Garantía de Río Negro","tipo":"Penal","comuna":"Río Negro","direccion":"Pedro Aguirre Cerda 243, Río Negro","telefonos":["+56642361094"],"correo":"jgrionegro@pjud.cl","rut":"61968400-1","cta":"81700023761","tit":[{"c":"Juez","p":["Álvaro Marcel Fernández Morales"]},
+{"c":"Administrador","p":["Gustavo Eduardo Viveros Irribarra"]}]}],"Puerto Montt":[{"nombre":"Tribunal Juicio Oral en lo Penal de Puerto Montt","tipo":"Penal","comuna":"Puerto Montt","direccion":"Avenida Mariano Egaña 1141-B, 3° Piso, Puerto Montt","telefonos":[],"correo":"","rut":"65286010-9","cta":"82500125922","tit":[{"c":"Juez","p":["Patricia Irene Miranda Alvarado","Francisco Javier Ignacio del Campo Toledo","Rosario Andrea Cárdenas Carvajal","Andrés Marcelo Villagra Ramírez","Cristian Rodrigo Rojas Collao","Jorge Alejandro Díaz Rojas"]},
+{"c":"Administrador","p":["Claudia Viviana Oyarzún Cárdenas"]},
+{"c":"Jefe de unidad","p":["Valentina Marianela Alicia del Pilar Domínguez Añazco","Jorge Mauricio Oyarzún Díaz","Moises Erasmo de la Cruz Agurto Gutiérrez","Rodrigo Gabriel Lagos San Martín"]}],"adi":[{"c":"Jefe de unidad","p":["Felipe Javier Arancibia Bustos"]}]},
+{"nombre":"1° Juzgado Civil de Puerto Montt","tipo":"Civil","comuna":"Puerto Montt","direccion":"Egaña 1141-A, 4° Piso, Puerto Montt","telefonos":["+56652252829"],"correo":"jc1_puertomontt@pjud.cl","rut":"60312020-5","cta":"82500083766","tit":[{"c":"Juez","p":["Erika Marlene Stillner Ledezma"]},
+{"c":"Secretario","p":["Fernanda Sofía Corp Hoces de la Guardia"]},
+{"c":"Oficial 1°","p":["Patricia Andrea Chacc Espinoza"]}]},
+{"nombre":"2° Juzgado Civil de Puerto Montt","tipo":"Civil","comuna":"Puerto Montt","direccion":"Egaña N° 1141-A 4° Piso, Puerto Montt","telefonos":[],"correo":"","rut":"61963000-9","cta":"82500121676","tit":[{"c":"Juez","p":["Jacqueline Alejandra Guerra Vargas"]},
+{"c":"Secretario","p":["Antonio Isaac Valdivieso Barrales"]},
+{"c":"Oficial 1°","p":["Pamela Paola Biskupovic Barrientos"]}]},
+{"nombre":"Juzgado de Familia de Puerto Montt","tipo":"Familia","comuna":"Puerto Montt","direccion":"Egaña 1141-A, Puerto Montt","telefonos":[],"correo":"","rut":"61977740-9","cta":"82500139567","tit":[{"c":"Juez","p":["Jimena Alejandra del Pilar Muñoz Provoste","Claudia Jimena Cárdenas Navarro","Loreto Alejandra Paredes Carreño","Claudia Angélica Oyarzún Igor","Jacqueline Amparo Oliver Alarcón","Alejandra Michelle Sepúlveda Gloor"]},
+{"c":"Jefe de unidad","p":["Alexis Fabián Oyarzo Cárcamo","Claudio Andrés Andrade Martínez"]},
+{"c":"Administrativo jefe","p":["María Janet Ojeda Ovando","Adrian Alejandro Ojeda Cardenas"]}],"adi":[{"c":"Juez","p":["Paula Rosa Caico Niklitschek"]},
+{"c":"Administrador","p":["Adrian Alejandro Ojeda Cardenas"]},
+{"c":"Administrativo jefe","p":["Patricio Eduardo Acevedo Anabalón"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Puerto Montt","tipo":"Trabajo","comuna":"Puerto Montt","direccion":"Egaña N° 1141-A Tercer Piso, Puerto Montt","telefonos":[],"correo":"jlabpuertomontt@pjud.cl","rut":"61979630-6","cta":"82500033131","tit":[{"c":"Juez","p":["Marcia Viviana Yurgens Raimann","Paulina Mariela Pérez Hechenleitner","Andres Cristofer Arteaga Jara"]},
+{"c":"Administrador","p":["Marco Antonio Medrano Medrano"]},
+{"c":"Jefe de unidad","p":["Claudia Milenne Riffo Llanos","José Ricardo Bahamonde Pérez","Rodrigo Jorge Dippel Perez de Arce"]},
+{"c":"Administrativo jefe","p":["Carolina Dearly Novoa Quezada","Pedro Jose Pradenas Jara"]}],"adi":[{"c":"Juez","p":["Raúl Fernando Santander Padilla"]},
+{"c":"Jefe de unidad","p":["Maria Soledad Vallejos Yañez"]}]},
+{"nombre":"Juzgado de Garantía de Puerto Montt","tipo":"Penal","comuna":"Puerto Montt","direccion":"Mariano Egaña N° 1141-B, 1° Piso, Puerto Montt","telefonos":[],"correo":"","rut":"61967600-9","cta":"82500123431","tit":[{"c":"Juez","p":["Juan Carlos Orellana Venegas","Lorena Fernanda Fresard Briones","Miguel Angel García Herrera","Cristian Arturo Alfonso Durruty","Rolando Christian Diaz Coloma","Francisco Andrés Almonacid Faúndez"]},
+{"c":"Administrador","p":["Walter Istvan Cser Mayer"]},
+{"c":"Jefe de unidad","p":["Daniela Paz Diaz Montenegro","Yamil Oscar Eduardo Martínez Villarroel"]}],"adi":[{"c":"Juez","p":["José Omar Alegría Burgos"]}]},
+{"nombre":"1° Juzgado de Letras de Puerto Varas","tipo":"Civil","comuna":"Puerto Varas","direccion":"San José N° 2, 3° Piso, Puerto Varas","telefonos":["+56652235001"],"correo":"jl_puertovaras@pjud.cl","rut":"60312003-5","cta":"82300022886","tit":[{"c":"Juez","p":["Lorena Nancy Lemunao Aguilar"]},
+{"c":"Oficial 1°","p":["Regina Demesia Gómez Díaz"]}]},
+{"nombre":"Juzgado de Familia de Puerto Varas","tipo":"Familia","comuna":"Puerto Varas","direccion":"Estacion N° 120, Puerto Varas","telefonos":[],"correo":"","rut":"61977810-3","cta":"82300045509","tit":[{"c":"Juez","p":["Rodrigo Hernán Riquelme Mendoza","María Paloma Macarena Sepúlveda González"]},
+{"c":"Administrador","p":["Ricardo Eladio Jerez Pereira"]},
+{"c":"Jefe de unidad","p":["Cristian Marcelo Ortiz Martoq"]},
+{"c":"Administrativo jefe","p":["Juan Augusto Márquez Espolman","Lorena Cecilia Mardones González"]}],"adi":[{"c":"Juez","p":["Danae Cecilia Fuentes Ferrera","Ximena Celeste Boglio Quintana"]},
+{"c":"Administrativo jefe","p":["Marco Javier Pacheco Álvarez"]}]},
+{"nombre":"Juzgado de Garantía de Puerto Varas","tipo":"Penal","comuna":"Puerto Varas","direccion":"Estacion N° 200, Puerto Varas","telefonos":[],"correo":"","rut":"61969700-6","cta":"82300042917","tit":[{"c":"Juez","p":["Ximena Cristina Bertin Pugin","Paulina Natalia Tapia Lorca"]},
+{"c":"Administrador","p":["Elda Viola Gallardo Saldivia"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Calbuco","tipo":"Mixto","comuna":"Calbuco","direccion":"Antonio Varas N° 106, Calbuco","telefonos":["+56989900729"],"correo":"jlyg_calbuco@pjud.cl","rut":"60312004-3","cta":"60312004","tit":[{"c":"Juez","p":["Marianela del Carmen Mancilla Bañares","Fernanda Francisca Aguilar Berger"]},
+{"c":"Administrador","p":["Marcelo Alejandro Maldonado Nahuelanca"]},
+{"c":"Oficial 1°","p":["Mariana Verónica Neculcura Antilaf"]}],"adi":[{"c":"Juez","p":["Alejandra Isabel Osman Naoum","Francisco Alexis Cerda Pérez"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Maullín","tipo":"Mixto","comuna":"Maullín","direccion":"Almeyda S/N, Maullin","telefonos":["+56999993120"],"correo":"","rut":"60312017-5","cta":"82700011671","tit":[{"c":"Juez","p":["David Alexis Negrete Sepulveda"]},
+{"c":"Oficial 1°","p":["Gastón Enrique Andrade Vidal"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Los Muermos","tipo":"Mixto","comuna":"Los Muermos","direccion":"Calle San Martin Esq Antonio Varas, Los Muermos","telefonos":["+56979693489"],"correo":"","rut":"61959300-6","cta":"82600003115","tit":[{"c":"Juez","p":["Felipe Eduardo Pelantaru Martínez Kaechele"]},
+{"c":"Secretario","p":["Danae Cecilia Fuentes Ferrera"]},
+{"c":"Oficial 1°","p":["Hernán Felipe Alarcón Pérez"]}],"adi":[{"c":"Juez","p":["Rodrigo Jorge Dippel Perez de Arce"]},
+{"c":"Oficial 1°","p":["Paola Andrea Olivares Villarroel"]}]},
+{"nombre":"Tribunal de Juicio Oral en lo Penal de Castro","tipo":"Penal","comuna":"Castro","direccion":"Galvarino Riveros N° 832, Castro","telefonos":["+56652634563"],"correo":"topcastro@pjud.cl","rut":"61978550-9","cta":"83300066405","tit":[{"c":"Juez","p":["María Loreto Yáñez Sepúlveda","Rodrigo Hernando Alarcón Contreras","Patricio Renan Carrasco Uribe","Pablo Enrique Farfán Kemp"]},
+{"c":"Administrador","p":["Carlos Alberto Hormazabal Muñoz"]},
+{"c":"Jefe de unidad","p":["Lorenzo Raúl Salazar Contreras"]}]},
+{"nombre":"Juzgado de Letras de Castro","tipo":"Civil","comuna":"Castro","direccion":"Pasaje Monjitas N° 731, Castro","telefonos":["+56652635124"],"correo":"jl_castro@pjud.cl","rut":"60312015-9","cta":"83300027175","tit":[{"c":"Juez","p":["Isabel Margarita Rojas Torres"]},
+{"c":"Secretario","p":["Laura Andrea Romero Rojas"]},
+{"c":"Oficial 1°","p":["Eva del Carmen Ruay Barrientos"]}]},
+{"nombre":"Juzgado de Familia de Castro","tipo":"Familia","comuna":"Castro","direccion":"Sargento Aldea N° 463, Castro","telefonos":[],"correo":"","rut":"61978130-9","cta":"83300063457","tit":[{"c":"Juez","p":["María Carolina Prieto Saldivia","Félix Eduardo Asencio Hernández"]},
+{"c":"Administrador","p":["Lorenzo Edmundo Quilodrán Vergara"]},
+{"c":"Jefe de unidad","p":["Sandra Edith Aguilar Aguilar"]},
+{"c":"Administrativo jefe","p":["Patricio Alexis Arteaga Quiroz","Víctor Manuel Raimilla Oñate"]}],"adi":[{"c":"Juez","p":["Macarena Belén Muñoz Contreras"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Castro","tipo":"Trabajo","comuna":"Castro","direccion":"Pasaje Monjitas N° 731, Castro","telefonos":[],"correo":"","rut":"61979640-3","cta":"83300020537","tit":[{"c":"Juez","p":["Carolina Emilia Pardo Lobos"]},
+{"c":"Administrador","p":["Jorge Valentín Luarte Vergara"]},
+{"c":"Jefe de unidad","p":["Maria Marlene Muñoz Valderrama"]},
+{"c":"Administrativo jefe","p":["Guillermo Alejandro Cea Salinas","Alfredo Eulogio Loayza Alay"]}]},
+{"nombre":"Juzgado de Garantía de Castro","tipo":"Penal","comuna":"Castro","direccion":"Galvarino Riveros N° 832 Castro","telefonos":["+56991383173"],"correo":"juzgarcastro@pjud.cl","rut":"61969600-K","cta":"83300059824","tit":[{"c":"Juez","p":["Alejandra Fabiola Varas Cuevas","Jesica Andrea Yáñez Sanhueza"]},
+{"c":"Administrador","p":["Héctor Rosalino Córdova Muñoz"]},
+{"c":"Jefe de unidad","p":["Bernardo Ariel Núñez Arroyo"]}]},
+{"nombre":"Juzgado de Letras de Ancud","tipo":"Civil","comuna":"Ancud","direccion":"Almirante Latorre S/N, Ancud","telefonos":[],"correo":"","rut":"60314001-K","cta":"83100054950","tit":[{"c":"Juez","p":["Francisca Paulina de los Angeles Pavez Cepeda"]},
+{"c":"Secretario","p":["Nicolás Felipe Cristian Martínez Núñez"]},
+{"c":"Oficial 1°","p":["Leticia Carolina Mancilla Ojeda"]}]},
+{"nombre":"Juzgado de Familia de Ancud","tipo":"Familia","comuna":"Ancud","direccion":"Pudeto N° 201, Ancud","telefonos":["+56652626424"],"correo":"","rut":"61977750-6","cta":"83100061115","tit":[{"c":"Juez","p":["Cristian Eduardo Vilches Silva"]},
+{"c":"Administrador","p":["Alberto Armando Hinostroza Loaiza"]},
+{"c":"Jefe de unidad","p":["Patricio Alejandro Borquez Rosas"]},
+{"c":"Administrativo jefe","p":["Arnoldo Segundo Gonzalez Rivera","María Alejandra Albornoz Villamán"]}],"adi":[{"c":"Juez","p":["Tatiana Carola Subiabre Pérez"]}]},
+{"nombre":"Juzgado de Garantía de Ancud","tipo":"Penal","comuna":"Ancud","direccion":"Almirante Latorre N° 964, Ancud","telefonos":["+56652622236"],"correo":"jgancud@pjud.cl","rut":"61968500-8","cta":"83100057321","tit":[{"c":"Juez","p":["Verónica de Lourdes del Campo Díaz"]},
+{"c":"Administrador","p":["Miguel Angel Estrada Morales"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Quinchao","tipo":"Mixto","comuna":"Quinchao","direccion":"Calle Las Delicias N° 100, Achao, Quinchao","telefonos":[],"correo":"jlyg_quinchao@pjud.cl","rut":"60314003-6","cta":"83400000126","tit":[{"c":"Secretario","p":["Bruno Eneas Casale Morrison"]},
+{"c":"Oficial 1°","p":["Arlyn Marianela Sánchez Barrientos"]}],"adi":[{"c":"Juez","p":["Bruno Eneas Casale Morrison"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Quellón","tipo":"Mixto","comuna":"Quellón","direccion":"Juan Ladrillero N° 372, Quellon, Quellón","telefonos":[],"correo":"jlyg_quellon@pjud.cl","rut":"61978720-K","cta":"83700011821","tit":[{"c":"Juez","p":["Camila Andrea de la Barra Luegmayer","Felipe José Alemparte Croxatto"]},
+{"c":"Administrador","p":["Luis Manuel Figueroa Escobar"]},
+{"c":"Oficial 1°","p":["Leonardo Fabian Andrés Bruce Martinez"]}],"adi":[{"c":"Juez","p":["Daniel Augusto Díaz Cárdenas"]},
+{"c":"Oficial 1°","p":["Carolina Constanza Quezada Saldaño"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Chaitén","tipo":"Mixto","comuna":"Chaitén","direccion":"Lib. B. O'Higgins N° 206, Chaiten, Chaitén","telefonos":[],"correo":"","rut":"60312008-6","cta":"83800001148","tit":[{"c":"Juez","p":["Rode Ester Reyes Reumay"]},
+{"c":"Secretario","p":["José Omar Alegría Burgos"]},
+{"c":"Oficial 1°","p":["Jessica Alicia Fuica Zuñiga"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Hualaihué","tipo":"Mixto","comuna":"Hualaihué","direccion":"Bernardo O'higgins 355, Hornopiren, Hualaihué","telefonos":["+56652217202"],"correo":"jlyg_hualaihue@pjud.cl","rut":"61971900-K","cta":"8282500126040","tit":[{"c":"Juez","p":["Carolina Andrea Norambuena Barrales"]},
+{"c":"Secretario","p":["Paola Roxana Barra Gonzalez"]},
+{"c":"Oficial 1°","p":["Daniel Augusto Díaz Cárdenas"]}],"adi":[{"c":"Oficial 1°","p":["Hernán Alfonso Cortés Escobar"]}]}],"Coyhaique":[{"nombre":"Tribunal de Juicio Oral en lo Penal de Coyhaique","tipo":"Penal","comuna":"Coyhaique","direccion":"Baquedano N° 2008, Coyhaique","telefonos":["+56672256210"],"correo":"notifica_top_coyhaique@pjud.cl","rut":"65165970-1","cta":"84300095592","tit":[{"c":"Juez","p":["Pablo Andrés Freire Gavilán","Rosalía Edith Mansilla Quiroz","Patricio Alberto Zúñiga Valenzuela"]},
+{"c":"Administrador","p":["María Jesús Bravo Hinojosa"]},
+{"c":"Jefe de unidad","p":["Marcela del Carmen Vidal Romero"]}],"adi":[{"c":"Juez","p":["Luis Claudio Briones Paredes"]}]},
+{"nombre":"1° Juzgado de Letras de Coyhaique","tipo":"Civil","comuna":"Coyhaique","direccion":"Bilbao N° 777 a, Coyhaique","telefonos":[],"correo":"jl1_coyhaique@pjud.cl","rut":"60313009-K","cta":"84300029344","tit":[{"c":"Juez","p":["Florentina Rosalia Jeannette Ivette Rezuc Hernández"]},
+{"c":"Secretario","p":["José Alfredo Briones Escobar"]},
+{"c":"Oficial 1°","p":["Miriam Carmen Muñoz Contreras"]}]},
+{"nombre":"Juzgado de Familia de Coyhaique","tipo":"Familia","comuna":"Coyhaique","direccion":"Calle Moraleda N° 448, Coyhaique","telefonos":["+56672214370"],"correo":"jfcoyhaique@pjud.cl","rut":"61977890-1","cta":"84300102432","tit":[{"c":"Juez","p":["Norma Andrea Maldonado Illanes","Rudy Hald Ramírez"]},
+{"c":"Administrador","p":["Sergio Vicente Arre Barichivich"]},
+{"c":"Jefe de unidad","p":["Jaime Andrés Rutte Galindo"]},
+{"c":"Administrativo jefe","p":["Hernan Omar Acuña Acuña","Catalina Angelica Jaña Prado"]}],"adi":[{"c":"Juez","p":["Felipe Andrés Norambuena Barrales"]},
+{"c":"Jefe de unidad","p":["Marco Antonio Carreño Herrera"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Coyhaique","tipo":"Trabajo","comuna":"Coyhaique","direccion":"Freire N° 293 Coyhaique","telefonos":["+56672250325"],"correo":"jlabcoihaique@pjud.cl","rut":"61979580-6","cta":"84300017435","tit":[{"c":"Juez","p":["Guillermo Reinaldo Frene Candia"]},
+{"c":"Administrador","p":["Ennio Ulises Jara Sobarzo"]},
+{"c":"Jefe de unidad","p":["Daniel Eduardo Murphy Arcos"]},
+{"c":"Administrativo jefe","p":["César Fabián Cárdenas Ojeda","Patricio Enrique Brintrup Villarroel"]}]},
+{"nombre":"Juzgado de Garantía de Coyhaique","tipo":"Penal","comuna":"Coyhaique","direccion":"Avda. Baquedano N° 2008, Coyhaique","telefonos":[],"correo":"","rut":"65166960-K","tit":[{"c":"Juez","p":["Mario Enrique Devaud Ojeda","Fabiola Viviana Muñoz Fierro"]},
+{"c":"Administrador","p":["Álvaro Rodrigo Gutiérrez Muñoz"]},
+{"c":"Jefe de unidad","p":["Gonzalo Hernan Riquelme Alvear"]}],"adi":[{"c":"Administrador","p":["Pamela Vanessa Aburto Muñoz"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Aysén","tipo":"Mixto","comuna":"Aysén","direccion":"Circunvalación S/N, Aisen, Aysén","telefonos":["+56672336800"],"correo":"jlyg_puertoaysen@pjud.cl","rut":"60313006-5","cta":"84100022841","tit":[{"c":"Juez","p":["Rodrigo Alfredo Grez Fuenzalida","Dalia del Carmen Illezca Carrasco"]},
+{"c":"Administrador","p":["Mauricio Hernán Tillería Carrasco"]},
+{"c":"Jefe de unidad","p":["Pamela Vanessa Aburto Muñoz"]},
+{"c":"Administrativo jefe","p":["Orlando Rafael Muñoz Burgos","Catherine Yessenia Ulloa Valdebenito"]}],"adi":[{"c":"Juez","p":["Mónica Gisela Coloma Pulgar"]},
+{"c":"Jefe de unidad","p":["Orlando Rafael Muñoz Burgos"]},
+{"c":"Administrativo jefe","p":["Mabel Alejandra Cárdenas Oyarzún"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Cisnes","tipo":"Mixto","comuna":"Cisnes","direccion":"Condell N° 381, Cisnes","telefonos":["+56672346991"],"correo":"","rut":"61962300-2","cta":"84300096327","tit":[{"c":"Juez","p":["Fernando Abelino Acuña Gutiérrez"]},
+{"c":"Secretario","p":["Vanessa Alexandra Dutra Vidal"]},
+{"c":"Oficial 1°","p":["Carlos Fidel Villagran Henriquez"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Chile Chico","tipo":"Mixto","comuna":"Chile Chico","direccion":"Manuel Rodriguez N° 101, Chile Chico","telefonos":["+56968503612"],"correo":"jlyg_chilechico@pjud.cl","rut":"60313005-7","cta":"84500006136","tit":[{"c":"Secretario","p":["Carlos Antonio Astudillo Cerda"]},
+{"c":"Oficial 1°","p":["Fernando Arturo Uribe Nilian"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Cochrane","tipo":"Mixto","comuna":"Cochrane","direccion":"Av. Bernardo O'Higgins N° 324, Cochrane","telefonos":[],"correo":"","rut":"60313004-9","cta":"84700000817","tit":[{"c":"Juez","p":["Javiera Alarcón Zurita"]},
+{"c":"Secretario","p":["Luisa Catalina Cornejo Jara"]},
+{"c":"Oficial 1°","p":["Benjamín Leopoldo Alarcón Casanova"]}]}],"Punta Arenas":[{"nombre":"Juzgado de Letras y Garantía de Natales","tipo":"Mixto","comuna":"Natales","direccion":"Ladrilleros N° 110, Puerto Natales","telefonos":["+56612411422"],"correo":"jlyg_ptonatales@pjud.cl","rut":"61978800-1","cta":"91500017134","tit":[{"c":"Juez","p":["Jorge Juan Enrique Lavín Saint-Pierre","Marianela Chacur Benítez"]},
+{"c":"Administrador","p":["Pablo Miguel Saldivia Saldivia"]},
+{"c":"Jefe de unidad","p":["Sonia Jeannette Araya Pizarro"]},
+{"c":"Administrativo jefe","p":["María Angélica Venturelli Molina","Karina Alejandra Álvarez Órdenes"]}]},
+{"nombre":"Tribunal Juicio Oral en lo Penal de Punta Arenas","tipo":"Penal","comuna":"Punta Arenas","direccion":"Jose Miguel Carrera 450, 3° Piso, Edificio a, Punta Arenas","telefonos":[],"correo":"","rut":"65158280-6","cta":"91900163253","tit":[{"c":"Juez","p":["José Octavio Flores Vásquez","Guillermo Alfredo Cádiz Vatcky","Julio Rodrigo Álvarez Toro","Constanza Alejandra Sutter Lagarejos","Rosana Mabel Vidal Ojeda"]},
+{"c":"Administrador","p":["Francisco Miguel Díaz Luengo"]},
+{"c":"Jefe de unidad","p":["Maritza Lilette Romero Romero","Selma Verónica Carrasco Scepanovic","Arnaldo Carlos Vásquez Alvarado","Carlos Javier Trujillo Emilqueo"]}],"adi":[{"c":"Juez","p":["Rosa Beatriz Cáceres Julio","Rodrigo Andrés González-Fuente Rubilar"]}]},
+{"nombre":"1° Juzgado de Letras de Punta Arenas","tipo":"Civil","comuna":"Punta Arenas","direccion":"Independencia N° 617, Primer Piso, Punta Arenas","telefonos":[],"correo":"","rut":"60313003-0","tit":[{"c":"Juez","p":["Claudio Iván Neculmán Muñoz"]},
+{"c":"Secretario","p":["Flavia Javiera del Carmen Guajardo Hermosilla"]},
+{"c":"Oficial 1°","p":["Juan Carlos Ronald Sparza Arriagada"]}],"adi":[{"c":"Oficial 1°","p":["Marta Miryam Vásquez Pérez"]}]},
+{"nombre":"2° Juzgado de Letras de Punta Arenas","tipo":"Civil","comuna":"Punta Arenas","direccion":"Independencia N° 617, Segundo Piso, Punta Arenas","telefonos":["+56612242851"],"correo":"jl2_puntaarenas@pjud.cl","rut":"60313001-4","cta":"91","tit":[{"c":"Juez","p":["Claudio Marcelo Jara Inostroza"]},
+{"c":"Secretario","p":["César Osvaldo Millanao Andaur"]},
+{"c":"Oficial 1°","p":["José Armando Alvarado Ruiz"]}],"adi":[{"c":"Oficial 1°","p":["Viviana Soledad Bravo Santelices"]}]},
+{"nombre":"3° Juzgado de Letras de Punta Arenas","tipo":"Civil","comuna":"Punta Arenas","direccion":"Independencia N° 617, Tercer Piso, Punta Arenas","telefonos":["+56612241094"],"correo":"jl3_puntaarenas@pjud.cl","rut":"60313008-1","cta":"91900101169","tit":[{"c":"Juez","p":["Javier Antonio Toledo Vildósola"]},
+{"c":"Secretario","p":["Patricia Edith Machuca Gaete"]}],"adi":[{"c":"Oficial 1°","p":["Angela Yeannette Gallardo Barrientos"]}]},
+{"nombre":"Juzgado de Familia de Punta Arenas","tipo":"Familia","comuna":"Punta Arenas","direccion":"Jose Miguel Carrera 450, 1° Piso, Edificio B, Punta Arenas","telefonos":[],"correo":"","rut":"61978250-K","cta":"91900178463","tit":[{"c":"Juez","p":["Marcela Rossana Vergara Rubilar","Katherine Nanette González Butcher","Connie Blanca Cecilia de Lourdes Fuentealba Oyarzún","Pablo Andrés Hernández Neira"]},
+{"c":"Administrador","p":["Pablo Israel Jarabran Chandía"]},
+{"c":"Jefe de unidad","p":["Patricia Andrea Fontecha Peña"]},
+{"c":"Administrativo jefe","p":["María Elizabeth Mancilla Álvarez","Sonia del Carmen Ovando Barría"]}],"adi":[{"c":"Juez","p":["Jaime Antonio Leighton Espinoza","Belén Natalia Arancibia Agüero","Javier Eduardo Albornoz Hernández"]}]},
+{"nombre":"Juzgado de Letras del Trabajo de Punta Arenas","tipo":"Trabajo","comuna":"Punta Arenas","direccion":"Jose Miguel Carrera 450, 5° Piso, Edificio B, Punta Arenas","telefonos":["+56612222419"],"correo":"jlabpuntaarenas@pjud.cl","rut":"53307560-6","tit":[{"c":"Juez","p":["Claudia Andrea Ortiz Quinteros"]},
+{"c":"Administrador","p":["Luis Heraldo Fica Gerbier"]},
+{"c":"Jefe de unidad","p":["Marta Luisa Villarroel Vera"]},
+{"c":"Administrativo jefe","p":["Gustavo Javier Garrido Carcamo","Sandra del Carmen Alvial Salazar"]}],"adi":[{"c":"Juez","p":["Octavio Eduardo Rómulo Salinas Cabrera","Cristian Javier Armijo Silva"]}]},
+{"nombre":"Juzgado de Garantía de Punta Arenas","tipo":"Penal","comuna":"Punta Arenas","direccion":"Jose Miguel Carrera 450, 1° Piso, Edificio a, Punta Arenas","telefonos":["+56612225354"],"correo":"notifica_jg_ptarenas@pjud.cl","rut":"65158530-9","cta":"91900163288","tit":[{"c":"Juez","p":["Paula Andrea Stange Kahler","Mónica Alejandra Mancilla Barría","Franco Daniel Reyes Pozo"]},
+{"c":"Administrador","p":["Eduardo Miguel López Velic"]},
+{"c":"Jefe de unidad","p":["Kurt Alexis Martel Monroy","Ana Carolina Izquierdo Monasterio"]}],"adi":[{"c":"Juez","p":["Ignacio Javier Low Miranda"]}]},
+{"nombre":"Juzgado de Letras y Garantía de Porvenir","tipo":"Mixto","comuna":"Porvenir","direccion":"Bernardo Phillips N° 362, Porvenir","telefonos":[],"correo":"","rut":"60313002-2","cta":"92100013667","tit":[{"c":"Juez","p":["Pablo Audilio Aceituno Romero"]},
+{"c":"Secretario","p":["Ricardo Alfonso Herrera Castillo"]},
+{"c":"Oficial 1°","p":["Claudia Andrea Villarroel Saldivia"]}]},
+{"nombre":"Juzgado de Letras de Cabo de Hornos","tipo":"Civil","comuna":"Cabo de Hornos","direccion":"O'Higgins N° 201, Puerto Williams, Cabo de Hornos","telefonos":["+56963959140"],"correo":"jl_cabodehornos@pjud.cl","rut":"61980780-4","tit":[{"c":"Juez","p":["Rosa Francisca Luque López"]},
+{"c":"Secretario","p":["Cristóbal Lamas Undurraga"]},
+{"c":"Oficial 1°","p":["Andrea Adriana Paredes Cárdenas"]}]}]};
+// Ficha adicional (RUT, cuenta corriente, dotación) de los tribunales de la Corte de Iquique, por nombre normalizado.
+const TRIB_EXTRA_IQ = {"tribunaldejuiciooralenlopenaldeiquique":{"rut":"61960700-7","cta":"1300149878"},"1juzgadodeletrasdeiquique":{"rut":"60302006-5","cta":"1300088984","tit":[{"c":"Juez","p":["Héctor Andrés Kompatzki Delarze"]},{"c":"Oficial 1°","p":["Viviana Gemma de Lourdes Sánchez González"]}]},"2juzgadodeletrasdeiquique":{"rut":"60302010-3","cta":"01300089212","tit":[{"c":"Juez","p":["Patricia Alejandra Shand Scholz"]},{"c":"Oficial 1°","p":["Armando Genaro Vilches Cayo"]}]},"3juzgadodeletrasdeiquique":{"rut":"60302007-3","cta":"1300102766","tit":[{"c":"Secretario","p":["Álvaro Iván Arriagada Fernández"]},{"c":"Oficial 1°","p":["Ana Maria Rivera Aracena"]}],"adi":[{"c":"Juez","p":["Horacio Manuel Andrade Aguilante"]}]},"juzgadodefamiliadeiquique":{"rut":"61978200-3","cta":"1300177049","tit":[{"c":"Juez","p":["Francisco Javier Berríos Veloso","Patricia Aida Araya Ponce","Francisco Damián Palacios Henríquez","Patricia Alejandra Seguel Muñoz","Daniela Criss Gutiérrez Albornoz","Rafael Hernán González Otárola","Loreto Constanza Guarachi Bravo"]},{"c":"Administrador","p":["Tatiana Elena Aceituno Flores"]},{"c":"Jefe de unidad","p":["Sandra Gordillo Guerra","Soledad Jacqueline Contreras Videla","Carmen Gloria Pérez Castillo"]},{"c":"Administrativo jefe","p":["Benilde del Carmen Apablaza López","Jacqueline Inés Varas Castillo","Carol Yohana Maldonado Maya"]}]},"juzgadodeletrasdeltrabajodeiquique":{"rut":"61979230-0","cta":"1300022053","tit":[{"c":"Juez","p":["Francisco Javier Vargas Vera","Marcela Mabel Díaz Méndez","David Orlando Sepúlveda Cid"]},{"c":"Administrador","p":["Guido Guillermo Tapia Funes"]},{"c":"Jefe de unidad","p":["Armando Francisco López Villalobos","Sandra de Lourdes Fraga Ayca","Luis Flavio Rodríguez Yala"]},{"c":"Administrativo jefe","p":["Alejandro Andres Cruz Hidalgo","Benita del Carmen Cespedes Fuentes"]}],"adi":[{"c":"Juez","p":["Leticia María Quezada Núñez"]},{"c":"Jefe de unidad","p":["Constanza Carolina Aravena Picarte"]}]},"juzgadodegarantiadeiquique":{"rut":"56076960-1","cta":"01300149916","tit":[{"c":"Juez","p":["Frederick Arturo Roco Alvarado","Ricardo Marcelo Leyton Pavez","Vicente Antonio Muratori Quezada","Mauricio Antonio Chia Pizarro","Verónica del Pilar Opazo Miranda","Diego Eduardo Reyes López","Tamara Rocío Muñoz Sáez"]},{"c":"Administrador","p":["Víctor Eduardo Argandoña Illanes"]},{"c":"Jefe de unidad","p":["Carla Andrea Vilca Vilca","Patricia Viviana Monserrat Lucía del Castillo Zamudio"]}],"adi":[{"c":"Administrador","p":["Patricia Viviana Monserrat Lucía del Castillo Zamudio"]},{"c":"Jefe de unidad","p":["Claudio Andrés Hervas Ramos","Camilo Ignacio Escudero Chiesa","Katterine Denis Plaza Gallardo"]}]},"juzgadodeletrasygarantiadepozoalmonte":{"rut":"61979310-2","cta":"1300098696","tit":[{"c":"Juez","p":["Horacio Manuel Andrade Aguilante"]},{"c":"Administrador","p":["Luis Claudio Bugueño Etcheverry"]},{"c":"Jefe de unidad","p":["Damaris Noemí Flores Torres"]},{"c":"Administrativo jefe","p":["Leonel Alonso Molina Jiménez","Gonzalo Eduardo Jara Espinoza"]}],"adi":[{"c":"Juez","p":["Giannina Andrea Cortez Martí"]}]},"juzgadodeletrasdefamiliagarantiaytrabajodealtohospicio":{"rut":"61980760-K","cta":"1800031318","tit":[{"c":"Juez","p":["Camila Fernanda Suazo Cobos","Sergio Enrique Almonacid Muñoz","Eva Ivonne Salgado Díaz"]},{"c":"Administrador","p":["Natalia Carolina Campos Castro"]},{"c":"Jefe de unidad","p":["Patricia del Carmen Oliva Perea"]},{"c":"Administrativo jefe","p":["Maria Viviana del Carmen Vélez Hormazábal","Katterine Denis Plaza Gallardo","Hellen Priscila Alfaro Alvear"]}],"adi":[{"c":"Juez","p":["Luis Flavio Rodríguez Yala"]},{"c":"Jefe de unidad","p":["Maria Viviana del Carmen Vélez Hormazábal","Patricia del Carmen Oliva Perea"]},{"c":"Administrativo jefe","p":["Diego Esteban Martínez Campos","Lucy Norma Sanchez Sazo","Andrés Benjamín Soto Mellado"]}]}};

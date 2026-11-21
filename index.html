@@ -126,6 +126,11 @@
   .fila { display: flex; gap: 8px; align-items: flex-start; margin: 6px 0; font-size: .95rem; }
   .fila .ico { width: 20px; flex: none; text-align: center; color: var(--suave); }
   .fila a { color: var(--acento); text-decoration: none; }
+  details.mas { margin: 8px 0 4px; font-size: .92rem; }
+  details.mas summary { cursor: pointer; color: var(--acento); padding: 4px 0; }
+  details.mas .cargo { margin: 6px 0; }
+  details.mas .cargo b { font-weight: 600; }
+  details.mas h4 { font-size: .85rem; color: var(--suave); margin: 10px 0 2px; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
   .acciones { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
   .acciones a {
     flex: 1 1 auto; text-align: center; padding: 9px 10px; border-radius: 9px;
@@ -177,12 +182,12 @@
     <label class="etiqueta-select" for="corteTrib">Corte de Apelaciones</label>
     <select id="corteTrib" class="sel"></select>
     <div class="controles">
-      <input type="search" id="buscarTrib" placeholder="Buscar tribunal (ej.: garantía, familia, Pozo Almonte)" aria-label="Buscar tribunal">
+      <input type="search" id="buscarTrib" placeholder="Buscar tribunal o juez (ej.: garantía, familia, Pozo Almonte)" aria-label="Buscar tribunal">
       <div class="filtros" id="filtrosTrib"></div>
     </div>
     <div class="contador" id="contadorTrib"></div>
     <div id="listaTrib"></div>
-    <p class="nota">Fuera de Tarapacá, los datos provienen del buscador de tribunales de primera instancia de pjud.cl (21/11/2026); si el Poder Judicial no publica teléfono o correo, la ficha no lo muestra. Los datos marcados "Por confirmar" aún no se han verificado en un documento del Poder Judicial.</p>
+    <p class="nota">El juez, la cuenta corriente y la dotación provienen de pjud.cl (21/11/2026) y pueden cambiar por traslados o suplencias. Fuera de Tarapacá, los demás datos provienen del buscador de tribunales de primera instancia de pjud.cl (21/11/2026); si el Poder Judicial no publica teléfono o correo, la ficha no lo muestra. Los datos marcados "Por confirmar" aún no se han verificado en un documento del Poder Judicial.</p>
   </section>
 
   <!-- JUZGADOS DE POLICÍA LOCAL -->
@@ -454,9 +459,22 @@
   let comunaTrib = "Todas", listaCorte = TRIBUNALES;
   const CORTES_T = ["Arica","Iquique","Antofagasta","Copiapó","La Serena","Valparaíso","Santiago","San Miguel","Rancagua","Talca",
     "Chillán","Concepción","Temuco","Valdivia","Puerto Montt","Coyhaique","Punta Arenas"];
-  const tribDeCorte = c => c === "Iquique" ? TRIBUNALES : (TRIBUNALES_PAIS[c] || []).map(t => ({...t, verificado: true}));
+  const letrasT = n => normalizar(n).replace(/[^a-z0-9]/g, "");
+  const tribDeCorte = c => c === "Iquique" ? TRIBUNALES.map(t => ({...(TRIB_EXTRA_IQ[letrasT(t.nombre)] || {}), ...t}))
+    : (TRIBUNALES_PAIS[c] || []).map(t => ({...t, verificado: true}));
+  const cargosHTML = l => l.map(g => `<div class="cargo"><b>${g.c}:</b> ${g.p.join(" · ")}</div>`).join("");
+  function masDatosTrib(t) {
+    const otros = (t.tit || []).filter(g => g.c !== "Juez");
+    if (!t.rut && !otros.length && !(t.adi || []).length) return "";
+    return `<details class="mas"><summary>Más datos</summary>
+      ${t.rut ? `<div class="cargo"><b>RUT del tribunal:</b> ${t.rut}</div>` : ""}
+      ${otros.length ? `<h4>Dotación titular</h4>${cargosHTML(otros)}` : ""}
+      ${(t.adi || []).length ? `<h4>Reemplazo o adicional</h4>${cargosHTML(t.adi)}` : ""}
+    </details>`;
+  }
   function tarjetaTrib(t) {
     const tels = t.telefonos || [];
+    const jueces = ((t.tit || []).find(g => g.c === "Juez") || {p: []}).p;
     return `<article class="tarjeta">
       <h3>${t.nombre}</h3>
       <div class="etiquetas">
@@ -467,6 +485,9 @@
       ${tels.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(tels)}</span></div>` : ""}
       ${t.turno ? `<div class="fila"><span class="ico">&#9200;</span><span>Turno: <a href="tel:${t.turno}">${formatearFono(t.turno)}</a></span></div>` : ""}
       ${t.correo ? `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${t.correo}">${t.correo}</a></div>` : ""}
+      ${jueces.length ? `<div class="fila"><span class="ico">&#9878;</span><span>${jueces.length > 1 ? "Jueces" : "Juez"}: ${jueces.join(" · ")}</span></div>` : ""}
+      ${t.cta ? `<div class="fila"><span class="ico">&#36;</span><span>Cuenta corriente jurisdiccional: ${t.cta}</span></div>` : ""}
+      ${masDatosTrib(t)}
       <div class="acciones">
         ${tels.length ? `<a class="principal" href="tel:${tels[0]}">Llamar</a>` : ""}
         ${t.direccion ? `<a href="${mapa(t.nombre, t.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>` : ""}
@@ -475,7 +496,7 @@
   function pintarTrib() {
     const q = normalizar(document.getElementById("buscarTrib").value.trim());
     const l = listaCorte.filter(t => (comunaTrib === "Todas" || t.comuna === comunaTrib) &&
-      (!q || normalizar(t.nombre + " " + t.comuna + " " + t.tipo + " " + t.direccion).includes(q)));
+      (!q || normalizar(t.nombre + " " + t.comuna + " " + t.tipo + " " + t.direccion + " " + [...(t.tit || []), ...(t.adi || [])].map(g => g.p.join(" ")).join(" ")).includes(q)));
     document.getElementById("listaTrib").innerHTML = l.length ? l.map(tarjetaTrib).join("") : '<p class="vacio">No se encontraron tribunales.</p>';
     document.getElementById("contadorTrib").textContent = l.length === 1 ? "1 tribunal" : l.length + " tribunales";
   }
@@ -485,6 +506,7 @@
     armarFiltros("filtrosTrib", listaCorte, x => { comunaTrib = x; pintarTrib(); });
     pintarTrib();
   }
+  listaCorte = tribDeCorte("Iquique");
   const selCorteT = document.getElementById("corteTrib");
   selCorteT.innerHTML = CORTES_T.map(c => `<option value="${c}"${c === "Iquique" ? " selected" : ""}>Corte de Apelaciones de ${c} (${tribDeCorte(c).length})</option>`).join("");
   selCorteT.addEventListener("change", () => cambiarCorteTrib(selCorteT.value));
