@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Procurando · Guía del litigante</title>
-<meta name="description" content="Dirección y teléfono de los tribunales de la Región de Tarapacá.">
+<meta name="description" content="Guía práctica para abogados litigantes de la Región de Tarapacá: avisos, tribunales y notarías.">
 <style>
   :root {
     --fondo: #f4f1ec;
@@ -16,6 +16,8 @@
     --acento-claro: #e6eef6;
     --aviso: #8a5a00;
     --aviso-fondo: #fff4dc;
+    --turno: #1d6b45;
+    --turno-fondo: #e5f3ea;
   }
   * { box-sizing: border-box; }
   body {
@@ -26,14 +28,60 @@
     line-height: 1.45;
   }
   header {
-    background: var(--acento);
-    color: #fff;
-    padding: 22px 18px 18px;
+    position: sticky; top: 0; z-index: 10;
+    background: var(--acento); color: #fff;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
   }
-  header h1 { margin: 0; font-size: 1.35rem; font-weight: 650; }
-  header p { margin: 4px 0 0; opacity: .85; font-size: .92rem; }
+  .btn-menu {
+    background: none; border: 0; color: #fff; cursor: pointer;
+    width: 40px; height: 40px; border-radius: 8px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+  }
+  .btn-menu span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
+  .btn-menu:hover { background: rgba(255,255,255,.12); }
+  .marca h1 { margin: 0; font-size: 1.2rem; font-weight: 650; }
+  .marca p { margin: 0; opacity: .85; font-size: .82rem; }
+
+  /* Menú lateral */
+  .velo {
+    position: fixed; inset: 0; background: rgba(0,0,0,.35);
+    opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 20;
+  }
+  .velo.abierto { opacity: 1; pointer-events: auto; }
+  nav {
+    position: fixed; top: 0; left: 0; bottom: 0; width: 270px; max-width: 82vw;
+    background: #fff; z-index: 30; transform: translateX(-100%); transition: transform .22s;
+    display: flex; flex-direction: column;
+  }
+  nav.abierto { transform: translateX(0); }
+  nav .cabeza { background: var(--acento); color: #fff; padding: 20px 18px; }
+  nav .cabeza strong { font-size: 1.15rem; }
+  nav .cabeza div { font-size: .82rem; opacity: .85; }
+  nav a {
+    display: block; padding: 14px 18px; color: var(--texto); text-decoration: none;
+    border-bottom: 1px solid var(--linea); font-size: .98rem;
+  }
+  nav a.activo { background: var(--acento-claro); color: var(--acento); font-weight: 600; }
+
   main { max-width: 760px; margin: 0 auto; padding: 16px; }
-  .controles { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+  section { display: none; }
+  section.visible { display: block; }
+  h2.titulo { font-size: 1.15rem; margin: 4px 0 12px; }
+  .fecha-hoy { color: var(--suave); margin: -6px 0 14px; font-size: .92rem; }
+
+  .tarjeta {
+    background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 12px;
+    padding: 15px 16px; margin-bottom: 12px;
+  }
+  .tarjeta h3 { margin: 0 0 4px; font-size: 1.02rem; font-weight: 650; }
+  .tarjeta.turno { border-color: #b9dcc6; background: var(--turno-fondo); }
+  .tarjeta.turno h3 { color: var(--turno); }
+  .bloque-titulo { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--suave); margin: 0 0 8px; }
+  .aviso-fecha { font-size: .8rem; color: var(--suave); }
+  .tarjeta p { margin: 6px 0 0; text-align: justify; }
+
+  .controles { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
   input[type="search"] {
     width: 100%; padding: 12px 14px; font-size: 1rem;
     border: 1px solid var(--linea); border-radius: 10px; background: #fff;
@@ -45,117 +93,246 @@
   }
   .filtros button.activo { background: var(--acento); border-color: var(--acento); color: #fff; }
   .contador { color: var(--suave); font-size: .88rem; margin: 4px 2px 10px; }
-  .tarjeta {
-    background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 12px;
-    padding: 15px 16px; margin-bottom: 12px;
-  }
-  .tarjeta h2 { margin: 0 0 4px; font-size: 1.04rem; font-weight: 650; }
   .etiquetas { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-  .etiqueta {
-    font-size: .76rem; padding: 2px 8px; border-radius: 6px;
-    background: var(--acento-claro); color: var(--acento);
-  }
+  .etiqueta { font-size: .76rem; padding: 2px 8px; border-radius: 6px; background: var(--acento-claro); color: var(--acento); }
   .etiqueta.revisar { background: var(--aviso-fondo); color: var(--aviso); }
+  .etiqueta.de-turno { background: var(--turno); color: #fff; }
   .fila { display: flex; gap: 8px; align-items: flex-start; margin: 6px 0; font-size: .95rem; }
   .fila .ico { width: 20px; flex: none; text-align: center; color: var(--suave); }
   .fila a { color: var(--acento); text-decoration: none; }
-  .fila a:hover { text-decoration: underline; }
   .acciones { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
   .acciones a {
     flex: 1 1 auto; text-align: center; padding: 9px 10px; border-radius: 9px;
     font-size: .9rem; text-decoration: none; border: 1px solid var(--acento); color: var(--acento);
   }
   .acciones a.principal { background: var(--acento); color: #fff; }
-  .vacio { text-align: center; color: var(--suave); padding: 30px 0; }
+  .vacio { text-align: center; color: var(--suave); padding: 24px 0; }
+  .nota { color: var(--suave); font-size: .85rem; text-align: justify; }
   footer { max-width: 760px; margin: 10px auto 30px; padding: 0 16px; color: var(--suave); font-size: .82rem; }
   footer p { margin: 6px 0; text-align: justify; }
 </style>
 </head>
 <body>
+
 <header>
-  <h1>Procurando</h1>
-  <p>Guía del litigante · Región de Tarapacá</p>
+  <button class="btn-menu" id="btnMenu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <div class="marca">
+    <h1>Procurando</h1>
+    <p>Guía del litigante · Región de Tarapacá</p>
+  </div>
 </header>
 
+<div class="velo" id="velo"></div>
+<nav id="menu" aria-label="Menú principal">
+  <div class="cabeza"><strong>Procurando</strong><div>Región de Tarapacá</div></div>
+  <a href="#inicio" data-seccion="inicio">Inicio · Avisos del día</a>
+  <a href="#tribunales" data-seccion="tribunales">Guía de tribunales</a>
+  <a href="#notarias" data-seccion="notarias">Guía de notarías</a>
+</nav>
+
 <main>
-  <div class="controles">
-    <input type="search" id="buscar" placeholder="Buscar tribunal (ej.: garantía, familia, Pozo Almonte)" aria-label="Buscar tribunal">
-    <div class="filtros" id="filtros"></div>
-  </div>
-  <div class="contador" id="contador"></div>
-  <div id="lista"></div>
+  <!-- INICIO -->
+  <section id="inicio">
+    <h2 class="titulo">Avisos del día</h2>
+    <div class="fecha-hoy" id="fechaHoy"></div>
+    <div id="inicioTurno"></div>
+    <div id="inicioFeriado"></div>
+    <div id="inicioAvisos"></div>
+  </section>
+
+  <!-- TRIBUNALES -->
+  <section id="tribunales">
+    <h2 class="titulo">Guía de tribunales</h2>
+    <div class="controles">
+      <input type="search" id="buscarTrib" placeholder="Buscar tribunal (ej.: garantía, familia, Pozo Almonte)" aria-label="Buscar tribunal">
+      <div class="filtros" id="filtrosTrib"></div>
+    </div>
+    <div class="contador" id="contadorTrib"></div>
+    <div id="listaTrib"></div>
+    <p class="nota">Los datos marcados "Por confirmar" provienen de fuentes no oficiales y aún no se han verificado en un documento del Poder Judicial.</p>
+  </section>
+
+  <!-- NOTARÍAS -->
+  <section id="notarias">
+    <h2 class="titulo">Guía de notarías</h2>
+    <div id="notariasTurno"></div>
+    <div class="controles">
+      <input type="search" id="buscarNot" placeholder="Buscar notaría o notario" aria-label="Buscar notaría">
+      <div class="filtros" id="filtrosNot"></div>
+    </div>
+    <div class="contador" id="contadorNot"></div>
+    <div id="listaNot"></div>
+    <p class="nota">Listado basado en la nómina oficial de notarías del Poder Judicial (06/11/2026). Los horarios pueden variar; confírmalos antes de ir.</p>
+  </section>
 </main>
 
 <footer>
-  <p>Información referencial, reunida desde documentos y sitios del Poder Judicial. Antes de acudir o enviar documentos, confirma los datos en pjud.cl.</p>
-  <p>Los datos marcados "por confirmar" provienen de fuentes no oficiales y aún no se han verificado en un documento del Poder Judicial.</p>
+  <p>Información referencial. Antes de acudir o enviar documentos, confirma los datos en las fuentes oficiales.</p>
   <p>Elaborado por Daniel Mamani Quispe.</p>
 </footer>
 
 <script src="data/tribunales.js"></script>
+<script src="data/notarias.js"></script>
+<script src="data/turnos.js"></script>
+<script src="data/avisos.js"></script>
 <script>
-  const comunas = ["Todas", ...new Set(TRIBUNALES.map(t => t.comuna))];
-  let comunaActiva = "Todas";
-
+  /* ---------- utilidades ---------- */
+  const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  const DIAS = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+  const hoy = new Date();
+  const iso = d => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+  const hoyISO = iso(hoy);
+  const fechaCL = s => { const [a,m,d] = s.split("-"); return d + "/" + m + "/" + a; };
+  const normalizar = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   function formatearFono(f) {
-    // +56572738300 -> +56 57 273 8300 ; +56961628128 -> +56 9 6162 8128
     const n = f.replace("+56", "");
     if (n.startsWith("9")) return "+56 9 " + n.slice(1, 5) + " " + n.slice(5);
     return "+56 " + n.slice(0, 2) + " " + n.slice(2, 5) + " " + n.slice(5);
   }
+  const mapa = (nombre, dir) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(nombre + ", " + dir);
+  const fonosHTML = arr => arr.map(f => `<a href="tel:${f}">${formatearFono(f)}</a>`).join(" · ");
 
-  function normalizar(s) {
-    return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  /* ---------- menú ---------- */
+  const menu = document.getElementById("menu"), velo = document.getElementById("velo");
+  const abrir = () => { menu.classList.add("abierto"); velo.classList.add("abierto"); };
+  const cerrar = () => { menu.classList.remove("abierto"); velo.classList.remove("abierto"); };
+  document.getElementById("btnMenu").onclick = abrir;
+  velo.onclick = cerrar;
+
+  function mostrarSeccion() {
+    const id = (location.hash || "#inicio").slice(1);
+    const valida = ["inicio","tribunales","notarias"].includes(id) ? id : "inicio";
+    document.querySelectorAll("main section").forEach(s => s.classList.toggle("visible", s.id === valida));
+    document.querySelectorAll("nav a").forEach(a => a.classList.toggle("activo", a.dataset.seccion === valida));
+    cerrar();
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", mostrarSeccion);
+
+  /* ---------- filtros reutilizables ---------- */
+  function armarFiltros(contId, items, alCambiar) {
+    const cont = document.getElementById(contId);
+    ["Todas", ...new Set(items.map(t => t.comuna))].forEach((c, i) => {
+      const b = document.createElement("button");
+      b.textContent = c;
+      if (i === 0) b.classList.add("activo");
+      b.onclick = () => {
+        cont.querySelectorAll("button").forEach(x => x.classList.toggle("activo", x === b));
+        alCambiar(c);
+      };
+      cont.appendChild(b);
+    });
   }
 
-  function tarjeta(t) {
-    const fonos = t.telefonos.map(f => `<a href="tel:${f}">${formatearFono(f)}</a>`).join(" · ");
-    const mapa = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(t.nombre + ", " + t.direccion);
-    return `
-      <article class="tarjeta">
-        <h2>${t.nombre}</h2>
-        <div class="etiquetas">
-          <span class="etiqueta">${t.comuna}</span>
-          <span class="etiqueta">${t.tipo}</span>
-          ${t.verificado ? "" : '<span class="etiqueta revisar">Por confirmar</span>'}
-        </div>
-        <div class="fila"><span class="ico">&#9873;</span><span>${t.direccion}</span></div>
-        <div class="fila"><span class="ico">&#9742;</span><span>${fonos}</span></div>
-        ${t.turno ? `<div class="fila"><span class="ico">&#9200;</span><span>Turno: <a href="tel:${t.turno}">${formatearFono(t.turno)}</a></span></div>` : ""}
-        ${t.correo ? `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${t.correo}">${t.correo}</a></div>` : ""}
-        <div class="acciones">
-          <a class="principal" href="tel:${t.telefonos[0]}">Llamar</a>
-          <a href="${mapa}" target="_blank" rel="noopener">Cómo llegar</a>
-        </div>
-      </article>`;
+  /* ---------- turno del mes ---------- */
+  const claveMes = hoyISO.slice(0, 7);
+  const turnoMes = TURNOS_NOTARIAS[claveMes];
+  const nombreMes = MESES[hoy.getMonth()] + " de " + hoy.getFullYear();
+
+  function bloqueTurno() {
+    if (!turnoMes) {
+      return `<div class="tarjeta"><div class="bloque-titulo">Notarías de turno · ${nombreMes}</div>
+              <p>El turno de este mes aún no se ha cargado.</p></div>`;
+    }
+    const filas = turnoMes.notarias.map(id => NOTARIAS.find(n => n.id === id)).filter(Boolean).map(n => `
+      <div style="margin-top:10px">
+        <h3>${n.nombre}</h3>
+        <div class="fila"><span class="ico">&#9873;</span><span>${n.direccion}</span></div>
+        ${n.telefonos.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(n.telefonos)}</span></div>` : ""}
+      </div>`).join("");
+    return `<div class="tarjeta turno">
+      <div class="bloque-titulo">Notarías de turno · ${nombreMes}</div>
+      ${filas}
+      <p class="nota" style="margin-top:10px">${turnoMes.nota} Horario de atención del turno: ${turnoMes.horario}.</p>
+    </div>`;
   }
 
-  function mostrar() {
-    const q = normalizar(document.getElementById("buscar").value.trim());
-    const lista = TRIBUNALES.filter(t =>
-      (comunaActiva === "Todas" || t.comuna === comunaActiva) &&
-      (!q || normalizar(t.nombre + " " + t.comuna + " " + t.tipo + " " + t.direccion).includes(q))
-    );
-    document.getElementById("lista").innerHTML =
-      lista.length ? lista.map(tarjeta).join("") : '<p class="vacio">No se encontraron tribunales.</p>';
-    document.getElementById("contador").textContent =
-      lista.length === 1 ? "1 tribunal" : lista.length + " tribunales";
+  /* ---------- INICIO ---------- */
+  document.getElementById("fechaHoy").textContent =
+    "Hoy es " + DIAS[hoy.getDay()] + " " + fechaCL(hoyISO) + ".";
+  document.getElementById("inicioTurno").innerHTML = bloqueTurno();
+
+  const proxFeriado = FERIADOS.find(f => f.fecha >= hoyISO);
+  if (proxFeriado) {
+    const dias = Math.round((new Date(proxFeriado.fecha + "T00:00:00") - new Date(hoyISO + "T00:00:00")) / 86400000);
+    const cuando = dias === 0 ? "es hoy" : dias === 1 ? "es mañana" : "es en " + dias + " días";
+    document.getElementById("inicioFeriado").innerHTML = `
+      <div class="tarjeta"><div class="bloque-titulo">Próximo feriado</div>
+      <h3>${proxFeriado.nombre}</h3>
+      <p>${fechaCL(proxFeriado.fecha)} (${cuando}).</p></div>`;
   }
 
-  const cont = document.getElementById("filtros");
-  comunas.forEach(c => {
-    const b = document.createElement("button");
-    b.textContent = c;
-    if (c === comunaActiva) b.classList.add("activo");
-    b.onclick = () => {
-      comunaActiva = c;
-      cont.querySelectorAll("button").forEach(x => x.classList.toggle("activo", x === b));
-      mostrar();
-    };
-    cont.appendChild(b);
-  });
-  document.getElementById("buscar").addEventListener("input", mostrar);
-  mostrar();
+  const vigentes = AVISOS.filter(a => a.fecha <= hoyISO && (!a.hasta || a.hasta >= hoyISO))
+                         .sort((a, b) => b.fecha.localeCompare(a.fecha));
+  document.getElementById("inicioAvisos").innerHTML = vigentes.length
+    ? `<div class="bloque-titulo" style="margin:16px 2px 8px">Avisos</div>` + vigentes.map(a => `
+        <div class="tarjeta"><div class="aviso-fecha">${fechaCL(a.fecha)}</div>
+        <h3>${a.titulo}</h3><p>${a.texto}</p></div>`).join("")
+    : `<p class="vacio">No hay avisos para hoy.</p>`;
+
+  /* ---------- TRIBUNALES ---------- */
+  let comunaTrib = "Todas";
+  function tarjetaTrib(t) {
+    return `<article class="tarjeta">
+      <h3>${t.nombre}</h3>
+      <div class="etiquetas">
+        <span class="etiqueta">${t.comuna}</span><span class="etiqueta">${t.tipo}</span>
+        ${t.verificado ? "" : '<span class="etiqueta revisar">Por confirmar</span>'}
+      </div>
+      <div class="fila"><span class="ico">&#9873;</span><span>${t.direccion}</span></div>
+      <div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(t.telefonos)}</span></div>
+      ${t.turno ? `<div class="fila"><span class="ico">&#9200;</span><span>Turno: <a href="tel:${t.turno}">${formatearFono(t.turno)}</a></span></div>` : ""}
+      ${t.correo ? `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${t.correo}">${t.correo}</a></div>` : ""}
+      <div class="acciones">
+        <a class="principal" href="tel:${t.telefonos[0]}">Llamar</a>
+        <a href="${mapa(t.nombre, t.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
+      </div></article>`;
+  }
+  function pintarTrib() {
+    const q = normalizar(document.getElementById("buscarTrib").value.trim());
+    const l = TRIBUNALES.filter(t => (comunaTrib === "Todas" || t.comuna === comunaTrib) &&
+      (!q || normalizar(t.nombre + " " + t.comuna + " " + t.tipo + " " + t.direccion).includes(q)));
+    document.getElementById("listaTrib").innerHTML = l.length ? l.map(tarjetaTrib).join("") : '<p class="vacio">No se encontraron tribunales.</p>';
+    document.getElementById("contadorTrib").textContent = l.length === 1 ? "1 tribunal" : l.length + " tribunales";
+  }
+  armarFiltros("filtrosTrib", TRIBUNALES, c => { comunaTrib = c; pintarTrib(); });
+  document.getElementById("buscarTrib").addEventListener("input", pintarTrib);
+  pintarTrib();
+
+  /* ---------- NOTARÍAS ---------- */
+  let comunaNot = "Todas";
+  const idsTurno = turnoMes ? turnoMes.notarias : [];
+  document.getElementById("notariasTurno").innerHTML = bloqueTurno();
+  function tarjetaNot(n) {
+    return `<article class="tarjeta">
+      <h3>${n.nombre}</h3>
+      <div class="etiquetas">
+        <span class="etiqueta">${n.comuna}</span>
+        ${idsTurno.includes(n.id) ? '<span class="etiqueta de-turno">De turno este mes</span>' : ""}
+      </div>
+      <div class="fila"><span class="ico">&#9878;</span><span>${n.notario}</span></div>
+      <div class="fila"><span class="ico">&#9873;</span><span>${n.direccion}</span></div>
+      ${n.telefonos.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(n.telefonos)}</span></div>`
+                           : `<div class="fila"><span class="ico">&#9742;</span><span>Teléfono no informado</span></div>`}
+      <div class="fila"><span class="ico">&#9200;</span><span>${n.horario}</span></div>
+      <div class="acciones">
+        ${n.telefonos.length ? `<a class="principal" href="tel:${n.telefonos[0]}">Llamar</a>` : ""}
+        <a href="${mapa(n.nombre, n.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
+        ${n.web ? `<a href="${n.web}" target="_blank" rel="noopener">Sitio web</a>` : ""}
+      </div></article>`;
+  }
+  function pintarNot() {
+    const q = normalizar(document.getElementById("buscarNot").value.trim());
+    const l = NOTARIAS.filter(n => (comunaNot === "Todas" || n.comuna === comunaNot) &&
+      (!q || normalizar(n.nombre + " " + n.notario + " " + n.comuna + " " + n.direccion).includes(q)));
+    document.getElementById("listaNot").innerHTML = l.length ? l.map(tarjetaNot).join("") : '<p class="vacio">No se encontraron notarías.</p>';
+    document.getElementById("contadorNot").textContent = l.length === 1 ? "1 notaría" : l.length + " notarías";
+  }
+  armarFiltros("filtrosNot", NOTARIAS, c => { comunaNot = c; pintarNot(); });
+  document.getElementById("buscarNot").addEventListener("input", pintarNot);
+  pintarNot();
+
+  mostrarSeccion();
 </script>
 </body>
 </html>
