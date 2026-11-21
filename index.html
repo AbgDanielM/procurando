@@ -149,6 +149,7 @@
   <a href="#jpl" data-seccion="jpl">Juzgados de Policía Local</a>
   <a href="#notarias" data-seccion="notarias">Guía de notarías</a>
   <a href="#peritos" data-seccion="peritos">Guía de peritos</a>
+  <a href="#mediadores" data-seccion="mediadores">Guía de mediadores</a>
 </nav>
 
 <main>
@@ -217,6 +218,19 @@
     <button id="masP" class="btn-mas" style="display:none">Ver más peritos</button>
     <p class="nota" id="fuenteP"></p>
   </section>
+  <!-- MEDIADORES -->
+  <section id="mediadores">
+    <h2 class="titulo">Guía de mediadores familiares</h2>
+    <label class="etiqueta-select" for="regionM">Región</label>
+    <select id="regionM" class="sel"></select>
+    <label class="etiqueta-select" for="juzgadoM">Juzgado donde está inscrito</label>
+    <select id="juzgadoM" class="sel"></select>
+    <input type="search" id="buscarM" placeholder="Buscar por nombre, comuna o dirección" aria-label="Buscar mediador">
+    <div class="contador" id="contadorM"></div>
+    <div id="listaM"></div>
+    <button id="masM" class="btn-mas" style="display:none">Ver más mediadores</button>
+    <p class="nota">Fuente: Nómina de Mediadores Privados del Servicio Nacional de Mediación Familiar, Ministerio de Justicia y Derechos Humanos (mediacionchile.gob.cl), descargada el 21/11/2026. Son mediadores privados, que cobran por sus servicios hasta el arancel máximo fijado cada año por el Ministerio.</p>
+  </section>
 </main>
 
 <footer>
@@ -230,6 +244,7 @@
 <script src="data/turnos.js"></script>
 <script src="data/avisos.js"></script>
 <script src="data/peritos_meta.js"></script>
+<script src="data/mediadores_meta.js"></script>
 <script>
   /* ---------- utilidades ---------- */
   const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
@@ -256,7 +271,7 @@
 
   function mostrarSeccion() {
     const id = (location.hash || "#inicio").slice(1);
-    const valida = ["inicio","tribunales","jpl","notarias","peritos"].includes(id) ? id : "inicio";
+    const valida = ["inicio","tribunales","jpl","notarias","peritos","mediadores"].includes(id) ? id : "inicio";
     document.querySelectorAll("main section").forEach(s => s.classList.toggle("visible", s.id === valida));
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("activo", a.dataset.seccion === valida));
     cerrar();
@@ -584,6 +599,75 @@
   function iniciarPeritos() { if (!peritosIniciados) { peritosIniciados = true; cargarCorte(); } }
   window.addEventListener("hashchange", () => { if (location.hash === "#peritos") iniciarPeritos(); });
   if (location.hash === "#peritos") iniciarPeritos();
+
+  /* ---------- MEDIADORES ---------- */
+  const cacheM = {}; let mediadores = [], filtradosM = [], mostradosM = 0;
+  const selRegM = document.getElementById("regionM"), selJuzM = document.getElementById("juzgadoM");
+  selRegM.innerHTML = MEDIADORES_META.map(r => `<option value="${r.region}"${r.region === "Tarapacá" ? " selected" : ""}>${r.region}</option>`).join("");
+  function telM(t, f) {
+    // Celulares antiguos de 8 dígitos: se les antepone el 9 (cambio de numeración de 2012)
+    if (/^[5-9]\d{7}$/.test(t)) return { tel: "+569" + t, txt: "+56 9 " + t.slice(0, 4) + " " + t.slice(4) };
+    if (/^\+56\d{9}$/.test(t)) return { tel: t, txt: f.startsWith("+") ? f : fonoP(t.slice(3)).txt };
+    return t ? { tel: t, txt: f || t } : null;
+  }
+  function tarjetaM(p) {
+    const juz = [...new Set(p.i.map(x => x.j))];
+    const dirs = [...new Set(p.i.map(x => x.d).filter(Boolean))];
+    const vt = new Set(), fonos = []; p.i.forEach(x => { const f = telM(x.t, x.f); if (f && !vt.has(f.tel)) { vt.add(f.tel); fonos.push(f); } });
+    const mails = [...new Set(p.i.map(x => x.m).filter(Boolean))];
+    const tel0 = fonos[0], mail0 = mails[0];
+    return `<article class="tarjeta">
+      <h3>${p.n}</h3>
+      <div class="esp">${juz.map(j => `<span>${j}</span>`).join("")}</div>
+      ${dirs.map(d => `<div class="fila"><span class="ico">&#9873;</span><span>${d}</span></div>`).join("")}
+      ${fonos.map(f => `<div class="fila"><span class="ico">&#9742;</span><a href="tel:${f.tel}">${f.txt}</a></div>`).join("")}
+      ${mails.map(m => `<div class="fila"><span class="ico">&#9993;</span><a href="mailto:${m}">${m}</a></div>`).join("")}
+      <div class="acciones">
+        ${tel0 ? `<a class="principal" href="tel:${tel0.tel}">Llamar</a>` : ""}
+        ${mail0 ? `<a href="mailto:${mail0}">Escribir correo</a>` : ""}
+      </div></article>`;
+  }
+  function pintarMasM() {
+    const lote = filtradosM.slice(mostradosM, mostradosM + 40);
+    document.getElementById("listaM").insertAdjacentHTML("beforeend", lote.map(tarjetaM).join(""));
+    mostradosM += lote.length;
+    document.getElementById("masM").style.display = mostradosM < filtradosM.length ? "block" : "none";
+  }
+  function filtrarM() {
+    const juz = selJuzM.value, palabras = normalizar(document.getElementById("buscarM").value.trim()).split(/\s+/).filter(Boolean);
+    filtradosM = mediadores.filter(p => (juz === "todos" || p.i.some(x => x.j === juz)) && palabras.every(w => p._txt.includes(w)));
+    mostradosM = 0;
+    document.getElementById("listaM").innerHTML = filtradosM.length ? "" : '<p class="vacio">No se encontraron mediadores.</p>';
+    document.getElementById("contadorM").textContent = filtradosM.length === 1 ? "1 mediador/a" : filtradosM.length.toLocaleString("es-CL") + " mediadores/as";
+    pintarMasM();
+  }
+  async function cargarRegionM() {
+    const r = MEDIADORES_META.find(x => x.region === selRegM.value);
+    document.getElementById("contadorM").textContent = "Cargando mediadores...";
+    document.getElementById("listaM").innerHTML = ""; document.getElementById("masM").style.display = "none";
+    try {
+      if (!cacheM[r.archivo]) {
+        const datos = await fetch("data/mediadores/" + r.archivo + ".json").then(x => x.json());
+        datos.forEach(p => p._txt = normalizar(p.n + " " + p.i.map(x => x.j + " " + x.d).join(" ")));
+        cacheM[r.archivo] = datos;
+      }
+      mediadores = cacheM[r.archivo];
+      const cuenta = {}; mediadores.forEach(p => new Set(p.i.map(x => x.j)).forEach(j => cuenta[j] = (cuenta[j] || 0) + 1));
+      selJuzM.innerHTML = `<option value="todos">Todos los juzgados (${mediadores.length.toLocaleString("es-CL")})</option>` +
+        Object.keys(cuenta).sort((a, b) => a.localeCompare(b, "es")).map(j => `<option value="${j}">${j} (${cuenta[j]})</option>`).join("");
+      filtrarM();
+    } catch (e) {
+      document.getElementById("contadorM").textContent = "No se pudo cargar el listado. Revisa tu conexión e inténtalo de nuevo.";
+    }
+  }
+  selRegM.addEventListener("change", () => { document.getElementById("buscarM").value = ""; cargarRegionM(); });
+  selJuzM.addEventListener("change", filtrarM);
+  let esperaM; document.getElementById("buscarM").addEventListener("input", () => { clearTimeout(esperaM); esperaM = setTimeout(filtrarM, 200); });
+  document.getElementById("masM").addEventListener("click", pintarMasM);
+  let medIniciados = false;
+  function iniciarMediadores() { if (!medIniciados) { medIniciados = true; cargarRegionM(); } }
+  window.addEventListener("hashchange", () => { if (location.hash === "#mediadores") iniciarMediadores(); });
+  if (location.hash === "#mediadores") iniciarMediadores();
 
   mostrarSeccion();
 </script>
