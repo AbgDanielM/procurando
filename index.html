@@ -176,13 +176,15 @@
   <!-- JUZGADOS DE POLICÍA LOCAL -->
   <section id="jpl">
     <h2 class="titulo">Juzgados de Policía Local</h2>
+    <label class="etiqueta-select" for="regionJpl">Región</label>
+    <select id="regionJpl" class="sel"></select>
     <div class="controles">
       <input type="search" id="buscarJpl" placeholder="Buscar por comuna o juzgado" aria-label="Buscar juzgado de policía local">
-      <div class="filtros" id="filtrosJpl"></div>
+      <select id="comunaJpl" class="sel" aria-label="Comuna" style="margin-bottom:0"></select>
     </div>
     <div class="contador" id="contadorJpl"></div>
     <div id="listaJpl"></div>
-    <p class="nota">Los Juzgados de Policía Local dependen de cada municipalidad y no forman parte del Poder Judicial. Direcciones según el listado del SERNAC; confírmalas antes de ir.</p>
+    <p class="nota">Los Juzgados de Policía Local dependen de cada municipalidad y no forman parte del Poder Judicial. Direcciones según el listado de Juzgados de Policía Local por región del SERNAC; confírmalas antes de ir.</p>
   </section>
 
   <!-- NOTARÍAS -->
@@ -411,7 +413,7 @@
   pintarTrib();
 
   /* ---------- JUZGADOS DE POLICÍA LOCAL ---------- */
-  let comunaJpl = "Todas";
+  let comunaJpl = "Todas", regionJpl = "Tarapacá";
   function tarjetaJpl(j) {
     return `<article class="tarjeta">
       <h3>${j.nombre}</h3>
@@ -425,12 +427,21 @@
   }
   function pintarJpl() {
     const q = normalizar(document.getElementById("buscarJpl").value.trim());
-    const l = JPL.filter(j => (comunaJpl === "Todas" || j.comuna === comunaJpl) &&
+    const l = JPL.filter(j => j.region === regionJpl && (comunaJpl === "Todas" || j.comuna === comunaJpl) &&
       (!q || normalizar(j.nombre + " " + j.comuna + " " + j.direccion).includes(q)));
     document.getElementById("listaJpl").innerHTML = l.length ? l.map(tarjetaJpl).join("") : '<p class="vacio">No se encontraron juzgados.</p>';
     document.getElementById("contadorJpl").textContent = l.length === 1 ? "1 juzgado" : l.length + " juzgados";
   }
-  armarFiltros("filtrosJpl", JPL, c => { comunaJpl = c; pintarJpl(); });
+  const selRegJpl = document.getElementById("regionJpl"), selComJpl = document.getElementById("comunaJpl");
+  selRegJpl.innerHTML = REGIONES.map(r => `<option${r === regionJpl ? " selected" : ""}>${r}</option>`).join("");
+  function armarComunasJpl() {
+    const comunas = [...new Set(JPL.filter(j => j.region === regionJpl).map(j => j.comuna))].sort((a, b) => a.localeCompare(b, "es"));
+    selComJpl.innerHTML = `<option value="Todas">Todas las comunas</option>` + comunas.map(c => `<option>${c}</option>`).join("");
+    comunaJpl = "Todas";
+  }
+  selRegJpl.addEventListener("change", () => { regionJpl = selRegJpl.value; document.getElementById("buscarJpl").value = ""; armarComunasJpl(); pintarJpl(); });
+  selComJpl.addEventListener("change", () => { comunaJpl = selComJpl.value; pintarJpl(); });
+  armarComunasJpl();
   document.getElementById("buscarJpl").addEventListener("input", pintarJpl);
   pintarJpl();
 
