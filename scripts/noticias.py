@@ -1,5 +1,5 @@
-# Descarga el RSS de Diario Constitucional y guarda las 2 noticias más recientes
-# (solo título, enlace y fecha) en data/noticias.json para la pantalla de inicio.
+# Descarga el RSS de Diario Constitucional y guarda las 12 noticias más recientes
+# (solo título, enlace y fecha) en data/noticias.json. El inicio las muestra de a 2, rotando.
 import json, urllib.request, xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
@@ -10,7 +10,7 @@ noticias = []
 for item in raiz.iter("item"):
     fecha = parsedate_to_datetime(item.findtext("pubDate")).astimezone().strftime("%Y-%m-%d")
     noticias.append({"titulo": item.findtext("title").strip(), "enlace": item.findtext("link").strip(), "fecha": fecha})
-    if len(noticias) == 2:
+    if len(noticias) == 12:
         break
 with open("data/noticias.json", "w", encoding="utf-8") as f:
     json.dump({"fuente": "Diario Constitucional", "noticias": noticias}, f, ensure_ascii=False, indent=1)

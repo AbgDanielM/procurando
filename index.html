@@ -91,6 +91,8 @@
     color: var(--acento); font-size: .95rem; cursor:pointer; margin-bottom: 12px; }
   .noticia { padding: 8px 0; border-top: 1px solid var(--linea); }
   .noticia:first-of-type { border-top: 0; padding-top: 2px; }
+  .pie-noticias { display:flex; justify-content:space-between; align-items:center; margin-top:8px; }
+  .btn-link { background:none; border:0; color: var(--acento); font-size:.88rem; font-weight:600; cursor:pointer; padding:4px 0; }
   .noticia a { color: var(--acento); text-decoration: none; font-weight: 600; line-height: 1.35; }
   .horario-turno { font-size: .88rem; color: var(--turno); margin: -4px 0 6px; }
   .item-turno { border-top: 1px solid #c9e3d2; padding-top: 10px; margin-top: 10px; }
@@ -403,14 +405,28 @@
     : `<p class="vacio">No hay avisos para hoy.</p>`;
 
   /* ---------- NOTICIAS (Diario Constitucional) ---------- */
-  fetch("data/noticias.json", { cache: "no-store" }).then(r => r.json()).then(d => {
-    if (!d.noticias || !d.noticias.length) return;
+  // Se muestran de a 2 y van rotando entre las más recientes (cada 12 segundos o con el botón).
+  let noticias = [], parNoticias = 0, rotacion;
+  function pintarNoticias() {
+    const total = Math.ceil(noticias.length / 2);
+    const par = noticias.slice(parNoticias * 2, parNoticias * 2 + 2);
     document.getElementById("inicioNoticias").innerHTML = `
-      <div class="tarjeta"><div class="bloque-titulo">Noticias jurídicas · ${d.fuente}</div>
-      ${d.noticias.map(n => `<div class="noticia">
-        <div class="aviso-fecha">${fechaCL(n.fecha)}</div>
+      <div class="tarjeta"><div class="bloque-titulo">Noticias jurídicas · Diario Constitucional</div>
+      ${par.map(n => `<div class="noticia"><div class="aviso-fecha">${fechaCL(n.fecha)}</div>
         <a href="${n.enlace}" target="_blank" rel="noopener">${n.titulo}</a></div>`).join("")}
-      <p class="nota" style="margin-top:8px">Toca el titular para leer la noticia completa en diarioconstitucional.cl.</p></div>`;
+      <div class="pie-noticias">
+        <span class="nota">${parNoticias * 2 + 1}-${parNoticias * 2 + par.length} de ${noticias.length}</span>
+        ${total > 1 ? '<button id="otrasNoticias" class="btn-link">Ver otras noticias</button>' : ""}
+      </div></div>`;
+    const b = document.getElementById("otrasNoticias");
+    if (b) b.onclick = () => { avanzarNoticias(); reiniciarRotacion(); };
+  }
+  function avanzarNoticias() { parNoticias = (parNoticias + 1) % Math.ceil(noticias.length / 2); pintarNoticias(); }
+  function reiniciarRotacion() { clearInterval(rotacion); rotacion = setInterval(avanzarNoticias, 12000); }
+  fetch("data/noticias.json", { cache: "no-store" }).then(r => r.json()).then(d => {
+    noticias = d.noticias || [];
+    if (!noticias.length) return;
+    pintarNoticias(); if (noticias.length > 2) reiniciarRotacion();
   }).catch(() => {});
 
   /* ---------- TRIBUNALES ---------- */
