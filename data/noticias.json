@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema valida rechazo de 15 licencias médicas de profesora y establece que no es obligatorio realizar nuevos peritajes",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-valida-rechazo-de-15-licencias-medicas-de-profesora-y-establece-que-no-es-obligatorio",
+   "fecha": "2026-11-21",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-valida-rechazo-de-15-licencias-medicas-de-profesora-y-establece-que-no-es-obligatorio-fX3vFbTlwywRSvJzwbLHl5w3Oaw9AN.jpg"
+  },
+  {
    "titulo": "¿Qué es la Amnistía?",
    "enlace": "https://www.diarioconstitucional.cl/educacion-civica/que-es-la-amnistia",
    "fecha": "2026-11-21",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-limita-el-pago-de-feriados-adeudados-a-las-dos-ultimas-anualidades-trabajadas",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-88faaa21-1795220110570-KDUOt9yRMWEOPIhUkCdGMQvQZN13NT.jpg"
-  },
-  {
-   "titulo": "Iniciativa legal busca ampliar facultades de CORFO para invertir en fondos de capital de riesgo y atraer inversión privada",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/iniciativa-legal-busca-ampliar-facultades-de-corfo-para-invertir-en-fondos-de-capital-de-riesgo-y",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Finiciativa-legal-busca-ampliar-facultades-de-corfo-para-invertir-en-fondos-de-capital-de-riesgo-y-P2lS6ECmnNuRgGC3xNdDx8xxxB9l62.jpg"
   }
  ]
 }
