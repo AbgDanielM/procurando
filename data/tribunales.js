@@ -72,7 +72,7 @@ const TRIBUNALES = [
     tipo: "Penal",
     comuna: "Iquique",
     direccion: "Patricio Lynch N° 60, Iquique",
-    telefonos: ["+56572739099", "+56572737200"],
+    telefonos: ["+56996792620", "+56572739099", "+56572737200"], // el primero figura en pjud.cl (21/11/2026)
     correo: "topiquique@pjud.cl",
     verificado: false
   },
