@@ -6,7 +6,7 @@ Guía práctica para abogados litigantes. Comienza con la Región de Tarapacá.
 
 - **Inicio · Avisos del día:** fecha de hoy, notarías de turno del mes, próximo feriado y avisos.
 - **Guía de tribunales:** dirección, teléfono, teléfono de turno y correo de cada tribunal de la jurisdicción de la Corte de Apelaciones de Iquique.
-- **Guía de notarías:** todas las notarías de la región, destacando las de turno del mes.
+- **Guía de notarías:** notarías de turno de todo Chile (se abre en Tarapacá, con selector de región) y directorio completo de las notarías de Tarapacá.
 
 ## Cómo actualizar los datos
 
@@ -14,7 +14,7 @@ Guía práctica para abogados litigantes. Comienza con la Región de Tarapacá.
 |---|---|
 | `data/tribunales.js` | Tribunales |
 | `data/notarias.js` | Notarías |
-| `data/turnos.js` | Notarías de turno de cada mes (agregar una entrada nueva cada mes) |
+| `data/turnos.js` | Notarías de turno de todo el país, por mes y región (agregar una entrada nueva cada mes desde el PDF de la Asociación de Notarios) |
 | `data/avisos.js` | Avisos de la pantalla de inicio y feriados próximos |
 
 ## Aviso

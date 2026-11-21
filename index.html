@@ -76,6 +76,16 @@
   }
   .tarjeta h3 { margin: 0 0 4px; font-size: 1.02rem; font-weight: 650; }
   .subtitulo { color: var(--suave); font-size: .88rem; margin: -2px 0 8px; }
+  .etiqueta-select { display:block; font-size:.85rem; color: var(--suave); margin: 0 2px 4px; }
+  select#regionTurno {
+    width: 100%; padding: 11px 12px; font-size: 1rem; margin-bottom: 12px;
+    border: 1px solid var(--linea); border-radius: 10px; background: #fff; color: var(--texto);
+  }
+  .horario-turno { font-size: .88rem; color: var(--turno); margin: -4px 0 6px; }
+  .item-turno { border-top: 1px solid #c9e3d2; padding-top: 10px; margin-top: 10px; }
+  .item-turno:first-of-type { border-top: 0; }
+  .item-turno.pasado { opacity: .5; }
+  .fecha-turno { font-size: .85rem; font-weight: 600; color: var(--turno); margin-bottom: 2px; }
   .tarjeta.turno { border-color: #b9dcc6; background: var(--turno-fondo); }
   .tarjeta.turno h3 { color: var(--turno); }
   .bloque-titulo { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--suave); margin: 0 0 8px; }
@@ -156,7 +166,12 @@
   <!-- NOTARÍAS -->
   <section id="notarias">
     <h2 class="titulo">Guía de notarías</h2>
+    <div class="bloque-titulo" style="margin:0 2px 8px">Notarías de turno · <span id="mesTurno"></span></div>
+    <label class="etiqueta-select" for="regionTurno">Región</label>
+    <select id="regionTurno"></select>
     <div id="notariasTurno"></div>
+    <p class="nota" style="margin:-4px 2px 18px">Los turnos son los sábados. Fuente: listado mensual de la Asociación de Notarios, Conservadores y Archiveros Judiciales de Chile.</p>
+    <h2 class="titulo" style="margin-top:22px">Directorio de notarías · Tarapacá</h2>
     <div class="controles">
       <input type="search" id="buscarNot" placeholder="Buscar notaría o notario" aria-label="Buscar notaría">
       <div class="filtros" id="filtrosNot"></div>
@@ -225,34 +240,73 @@
     });
   }
 
-  /* ---------- turno del mes ---------- */
+  /* ---------- turnos de notarías (nacional) ---------- */
   const claveMes = hoyISO.slice(0, 7);
-  const turnoMes = TURNOS_NOTARIAS[claveMes];
+  const turnoMes = TURNOS[claveMes];
   const nombreMes = MESES[hoy.getMonth()] + " de " + hoy.getFullYear();
+  const REGION_INICIAL = "Tarapacá";
+  // sábado de esta semana (o hoy, si es sábado)
+  const sabado = new Date(hoy); sabado.setDate(hoy.getDate() + ((6 - hoy.getDay() + 7) % 7));
+  const sabadoISO = iso(sabado);
 
-  function bloqueTurno() {
-    if (!turnoMes) {
-      return `<div class="tarjeta"><div class="bloque-titulo">Notarías de turno · ${nombreMes}</div>
-              <p>El turno de este mes aún no se ha cargado.</p></div>`;
+  function filaNotariaTurno(n) {
+    const local = n.id ? NOTARIAS.find(x => x.id === n.id) : null;
+    const titulo = local && local.publico ? local.publico : n.nombre;
+    const sub = local && local.publico ? local.nombre : n.notario;
+    const fonos = local && local.telefonos.length ? local.telefonos : [];
+    let fecha = "";
+    if (n.fecha) {
+      const pasado = n.fecha < hoyISO;
+      const esta = n.fecha === sabadoISO;
+      fecha = `<div class="fecha-turno ${pasado ? "pasado" : ""}">Sábado ${fechaCL(n.fecha)}${esta ? ' <span class="etiqueta de-turno">' + (n.fecha === hoyISO ? "Hoy" : "Este sábado") + "</span>" : ""}</div>`;
     }
-    const filas = turnoMes.notarias.map(id => NOTARIAS.find(n => n.id === id)).filter(Boolean).map(n => `
-      <div style="margin-top:10px">
-        <h3>${n.publico || n.nombre}</h3>
-        ${n.publico ? `<div class="subtitulo">${n.nombre}</div>` : ""}
+    return `<div class="item-turno ${n.fecha && n.fecha < hoyISO ? "pasado" : ""}">
+        ${fecha}
+        <h3>${titulo}</h3>
+        <div class="subtitulo">${sub}</div>
         <div class="fila"><span class="ico">&#9873;</span><span>${n.direccion}</span></div>
-        ${n.telefonos.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(n.telefonos)}</span></div>` : ""}
+        ${fonos.length ? `<div class="fila"><span class="ico">&#9742;</span><span>${fonosHTML(fonos)}</span></div>` : ""}
+        <div class="acciones">
+          ${fonos.length ? `<a class="principal" href="tel:${fonos[0]}">Llamar</a>` : ""}
+          <a href="${mapa(titulo, n.direccion)}" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>`;
+  }
+
+  function bloqueRegion(nombreRegion) {
+    if (!turnoMes) return `<div class="tarjeta"><p>El turno de ${nombreMes} aún no se ha cargado.</p></div>`;
+    const r = turnoMes.regiones.find(x => x.region === nombreRegion);
+    if (!r) return `<div class="tarjeta"><p>No hay notarías de turno informadas para esta región en ${nombreMes}.</p></div>`;
+    return r.ciudades.map(c => `
+      <div class="tarjeta turno">
+        <div class="bloque-titulo">${c.ciudad}</div>
+        <div class="horario-turno">Horario del turno: ${c.horario}</div>
+        ${c.notarias.map(filaNotariaTurno).join("")}
+        ${c.extra ? `<div class="bloque-titulo" style="margin-top:14px">${c.extraTitulo}</div>${c.extra.map(filaNotariaTurno).join("")}` : ""}
       </div>`).join("");
-    return `<div class="tarjeta turno">
-      <div class="bloque-titulo">Notarías de turno · ${nombreMes}</div>
-      ${filas}
-      <p class="nota" style="margin-top:10px">${turnoMes.nota} Horario de atención del turno: ${turnoMes.horario}.</p>
-    </div>`;
+  }
+
+  function armarSelectorRegion() {
+    const sel = document.getElementById("regionTurno");
+    if (!turnoMes) { sel.style.display = "none"; return; }
+    turnoMes.regiones.forEach(r => {
+      const o = document.createElement("option");
+      o.value = r.region; o.textContent = r.region;
+      if (r.region === REGION_INICIAL) o.selected = true;
+      sel.appendChild(o);
+    });
+    const pintar = () => document.getElementById("notariasTurno").innerHTML = bloqueRegion(sel.value);
+    sel.addEventListener("change", pintar);
+    pintar();
   }
 
   /* ---------- INICIO ---------- */
   document.getElementById("fechaHoy").textContent =
     "Hoy es " + DIAS[hoy.getDay()] + " " + fechaCL(hoyISO) + ".";
-  document.getElementById("inicioTurno").innerHTML = bloqueTurno();
+  document.getElementById("inicioTurno").innerHTML =
+    `<div class="bloque-titulo" style="margin:0 2px 8px">Notarías de turno · ${nombreMes} · ${REGION_INICIAL}</div>` +
+    bloqueRegion(REGION_INICIAL) +
+    `<p class="nota" style="margin:-4px 2px 14px">Los turnos son los sábados. <a href="#notarias">Ver otras regiones</a></p>`;
 
   const proxFeriado = FERIADOS.find(f => f.fecha >= hoyISO);
   if (proxFeriado) {
@@ -303,8 +357,9 @@
 
   /* ---------- NOTARÍAS ---------- */
   let comunaNot = "Todas";
-  const idsTurno = turnoMes ? turnoMes.notarias : [];
-  document.getElementById("notariasTurno").innerHTML = bloqueTurno();
+  const idsTurno = turnoMes ? turnoMes.regiones.flatMap(r => r.ciudades.flatMap(c => c.notarias.map(n => n.id))).filter(Boolean) : [];
+  document.getElementById("mesTurno").textContent = nombreMes;
+  armarSelectorRegion();
   function tarjetaNot(n) {
     return `<article class="tarjeta">
       <h3>${n.publico || n.nombre}</h3>
