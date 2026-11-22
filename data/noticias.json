@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Uso inadecuado de viviendas sociales",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/uso-inadecuado-de-viviendas-sociales",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fuso-inadecuado-de-viviendas-sociales-bw9EHFHeB3wg1paS4b0jMSpYGV9nuP.jpg"
+  },
+  {
+   "titulo": "20 años de la Convención sobre los Derechos de las Personas con Discapacidad: Chile sigue en deuda y el país no se ha enterado",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/20-anos-de-la-convencion-sobre-los-derechos-de-las-personas-con-discapacidad-chile-sigue-en-deuda-y",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2F20-anos-de-la-convencion-sobre-los-derechos-de-las-personas-con-discapacidad-chile-sigue-en-deuda-y-Pbsh9LP6QyFvIsS4VWFk4W8llWofyy.jpg"
+  },
+  {
    "titulo": "Rabat: ni justicia ni derechos humanos",
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/rabat-ni-justicia-ni-derechos-humanos",
    "fecha": "2026-11-22",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/entrevistas/marco-antonio-medina-ramirez-cuando-una-deuda-impaga-deja-de-ser-un-problema-civil-y-se-convierte-en",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fmarco-antonio-medina-ramirez-cuando-una-deuda-impaga-deja-de-ser-un-problema-civil-y-se-convierte-en-ESu4Ccnrs3PH1XA3gcJrDkY0XZgtrE.jpg"
-  },
-  {
-   "titulo": "Elogio del papel en tiempos de incertidumbre digital",
-   "enlace": "https://www.diarioconstitucional.cl/opinion/elogio-del-papel-en-tiempos-de-incertidumbre-digital",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Felogio-del-papel-en-tiempos-de-incertidumbre-digital-lbEpuLlJfuTUjiYpDgZ7SYRRf42sYr.jpg"
-  },
-  {
-   "titulo": "Ley TEA y responsabilidad institucional: ¿Quién responde cuando la inclusión falla?",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/ley-tea-y-responsabilidad-institucional-quien-responde-cuando-la-inclusion-falla",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fley-tea-y-responsabilidad-institucional-quien-responde-cuando-la-inclusion-falla-v6ulrpKEjdhMNelHZPp1wIfRctpXLd.jpg"
   }
  ]
 }
