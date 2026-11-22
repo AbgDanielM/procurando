@@ -2,6 +2,42 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte atribuye al SERVIU responsabilidad solidaria por accidente laboral fatal",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-atribuye-al-serviu-responsabilidad-solidaria-por-accidente-laboral-fatal",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-atribuye-al-serviu-responsabilidad-solidaria-por-accidente-laboral-fatal-0Dwawa97OfSI7qInzD6yPYImqDx7XH.jpg"
+  },
+  {
+   "titulo": "Corte Suprema avala cobro de patente municipal a salmonera que elabora y comercializa sus productos",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-avala-cobro-de-patente-municipal-a-salmonera-que-elabora-y-comercializa-sus-productos",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-avala-cobro-de-patente-municipal-a-salmonera-que-elabora-y-comercializa-sus-productos-HrFogOPQYSZsahfwpZm9FUlB03gboo.jpg"
+  },
+  {
+   "titulo": "No procede abandono del procedimiento en juicio ejecutivo de cobro de patentes municipales porque correspondía al juez impulsar el procedimiento y citar a oír sentencia",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/no-procede-abandono-del-procedimiento-en-juicio-ejecutivo-de-cobro-de-patentes-municipales-porque",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-facilitar-la-obtencion-de-patentes-definitivas-para-pequenos-comercios-y-nWOt4sE0cu8nQ2uYzFDSRNWlarpb3S.jpg"
+  },
+  {
+   "titulo": "Corte Suprema confirma rechazo de indemnización por falta de prueba de la existencia de daño moral",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-rechazo-de-indemnizacion-por-falta-de-prueba-de-la-existencia-de-dano-moral",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-santiago-confirma-indemnizacion-de-135-millones-contra-exejecutivo-por-pagos-fraudulentos-a-L57zmjSUs8kEachdceWxQulBfokq38.jpg"
+  },
+  {
+   "titulo": "TCP declara ilegal y arbitrario requerimiento de cobro de garantía efectuado por Municipalidad de Huechuraba sin respetar el procedimiento previsto en las bases",
+   "enlace": "https://www.diarioconstitucional.cl/contratacion-publica/tcp-declara-ilegal-y-arbitrario-requerimiento-de-cobro-de-garantia-efectuado-por-municipalidad-de",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-10%2Fpexels-7643999-IS6EfnPrIrMMLjkj7mgJLeaUreQyvw.jpg"
+  },
+  {
+   "titulo": "Corte Suprema valida control policial cerca de la frontera y mantiene condena por receptación aduanera",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-valida-control-policial-cerca-de-la-frontera-y-mantiene-condena-por-receptacion",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F668315-28v7nbQAnvv2sMwsi4z2SD8m6ybJUX.png"
+  },
+  {
    "titulo": "Corte Internacional de Justicia dictamina que Myanmar cometió genocidio contra etnia rohinyá",
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/corte-internacional-de-justicia-dictamina-que-myanmar-cometio-genocidio-contra-etnia-rohinya",
    "fecha": "2026-11-22",
@@ -36,42 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/uai-realizara-seminario-sobre-pirateria-falsificacion-y-propiedad-intelectual",
    "fecha": "2026-11-22",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fuai-realizara-seminario-sobre-pirateria-falsificacion-y-propiedad-intelectual-Ups3D5O1ErOwJzaEUxhjzUUUUOivvc.jpg"
-  },
-  {
-   "titulo": "El derecho del trabajo es hoy, más internacional que nunca",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/el-derecho-del-trabajo-es-hoy-mas-internacional-que-nunca-2",
-   "fecha": "2026-11-22",
-   "imagen": ""
-  },
-  {
-   "titulo": "El comprador público ante la reforma del empleo público: fundamentos para un estatuto especial",
-   "enlace": "https://www.diarioconstitucional.cl/opinion/el-comprador-publico-ante-la-reforma-del-empleo-publico-fundamentos-para-un-estatuto-especial",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fel-comprador-publico-ante-la-reforma-del-empleo-publico-fundamentos-para-un-estatuto-especial-0rvzQRc57o8NUbUP6DgZdPKH80MOQs.jpg"
-  },
-  {
-   "titulo": "Black Friday: derechos y oportunidades",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/black-friday-derechos-y-oportunidades",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fblack-friday-derechos-y-oportunidades-uR38S403bqhlBqu3ucCBIgcWwM9vNQ.jpg"
-  },
-  {
-   "titulo": "Diego Sanhueza Pérez : ¿Las exigencias probatorias dificultan la reparación de los consumidores?",
-   "enlace": "https://www.diarioconstitucional.cl/entrevistas/diego-sanhueza-perez-las-exigencias-probatorias-dificultan-la-reparacion-de-los-consumidores",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fdiego-sanhueza-perez-las-exigencias-probatorias-dificultan-la-reparacion-de-los-consumidores-ejsQb7WwL8lpgkPb384hgVJVSn5FJY.jpg"
-  },
-  {
-   "titulo": "Proyecto de ley busca endurecer las penas por robo de ganado cometido en sectores rurales",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-endurecer-las-penas-por-robo-de-ganado-cometido-en-sectores-rurales-2",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-endurecer-las-penas-por-robo-de-ganado-cometido-en-sectores-rurales-2-uFzEXvHUlgZRNBoEMUBHLwcFxBkUjz.jpg"
-  },
-  {
-   "titulo": "Corte de Chillán ordena a SUSESO reevaluar licencias médicas por 53 días de reposo psiquiátrico",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-chillan-ordena-a-suseso-reevaluar-licencias-medicas-por-53-dias-de-reposo-psiquiatrico",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-chillan-ordena-a-suseso-reevaluar-licencias-medicas-por-53-dias-de-reposo-psiquiatrico-eZJ0LgVlOrTxDZuOmm6eWSRQTXFKES.jpg"
   }
  ]
 }
