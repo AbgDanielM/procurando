@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Permiso laboral remunerado de hasta tres horas mensuales para retirar medicamentos en centros de salud públicos, proponen diputados",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/permiso-laboral-remunerado-de-hasta-tres-horas-mensuales-para-retirar-medicamentos-en-centros-de",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpermiso-laboral-remunerado-de-hasta-tres-horas-mensuales-para-retirar-medicamentos-en-centros-de-dUlcxKxYRL5LpDq3DINECmJRGnM1ef.jpg"
+  },
+  {
+   "titulo": "Corte de Temuco concede libertad condicional tras cuestionar falta de fundamentación en rechazo del beneficio",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-temuco-concede-libertad-condicional-tras-cuestionar-falta-de-fundamentacion-en-rechazo-del",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-temuco-concede-libertad-condicional-tras-cuestionar-falta-de-fundamentacion-en-rechazo-del-CLgu1IhoFka3QdKiVCOUTJ7YEI2uin.jpg"
+  },
+  {
+   "titulo": "Los derechos humanos en el discurso del Papa León XIV",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/los-derechos-humanos-en-el-discurso-del-papa-leon-xiv",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Flos-derechos-humanos-en-el-discurso-del-papa-leon-xiv-z8DkNnMuCuBqoUfHsYIu3lQYrNlfIZ.jpg"
+  },
+  {
    "titulo": "TC confirma que funcionarios judiciales pueden ser investigados incluso después de dejar sus cargos",
    "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-confirma-que-funcionarios-judiciales-pueden-ser-investigados-incluso-despues-de-dejar-sus-cargos",
    "fecha": "2026-11-22",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-avala-cobro-de-patente-municipal-a-salmonera-que-elabora-y-comercializa-sus-productos",
    "fecha": "2026-11-22",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-avala-cobro-de-patente-municipal-a-salmonera-que-elabora-y-comercializa-sus-productos-HrFogOPQYSZsahfwpZm9FUlB03gboo.jpg"
-  },
-  {
-   "titulo": "No procede abandono del procedimiento en juicio ejecutivo de cobro de patentes municipales porque correspondía al juez impulsar el procedimiento y citar a oír sentencia",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/no-procede-abandono-del-procedimiento-en-juicio-ejecutivo-de-cobro-de-patentes-municipales-porque",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-facilitar-la-obtencion-de-patentes-definitivas-para-pequenos-comercios-y-nWOt4sE0cu8nQ2uYzFDSRNWlarpb3S.jpg"
-  },
-  {
-   "titulo": "Corte Suprema confirma rechazo de indemnización por falta de prueba de la existencia de daño moral",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-rechazo-de-indemnizacion-por-falta-de-prueba-de-la-existencia-de-dano-moral",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-santiago-confirma-indemnizacion-de-135-millones-contra-exejecutivo-por-pagos-fraudulentos-a-L57zmjSUs8kEachdceWxQulBfokq38.jpg"
-  },
-  {
-   "titulo": "TCP declara ilegal y arbitrario requerimiento de cobro de garantía efectuado por Municipalidad de Huechuraba sin respetar el procedimiento previsto en las bases",
-   "enlace": "https://www.diarioconstitucional.cl/contratacion-publica/tcp-declara-ilegal-y-arbitrario-requerimiento-de-cobro-de-garantia-efectuado-por-municipalidad-de",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-10%2Fpexels-7643999-IS6EfnPrIrMMLjkj7mgJLeaUreQyvw.jpg"
   }
  ]
 }
