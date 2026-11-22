@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "El derecho del trabajo es hoy, más internacional que nunca",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/el-derecho-del-trabajo-es-hoy-mas-internacional-que-nunca-2",
+   "fecha": "2026-11-22",
+   "imagen": ""
+  },
+  {
+   "titulo": "El comprador público ante la reforma del empleo público: fundamentos para un estatuto especial",
+   "enlace": "https://www.diarioconstitucional.cl/opinion/el-comprador-publico-ante-la-reforma-del-empleo-publico-fundamentos-para-un-estatuto-especial",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fel-comprador-publico-ante-la-reforma-del-empleo-publico-fundamentos-para-un-estatuto-especial-0rvzQRc57o8NUbUP6DgZdPKH80MOQs.jpg"
+  },
+  {
+   "titulo": "Black Friday: derechos y oportunidades",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/black-friday-derechos-y-oportunidades",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fblack-friday-derechos-y-oportunidades-uR38S403bqhlBqu3ucCBIgcWwM9vNQ.jpg"
+  },
+  {
    "titulo": "Diego Sanhueza Pérez : ¿Las exigencias probatorias dificultan la reparación de los consumidores?",
    "enlace": "https://www.diarioconstitucional.cl/entrevistas/diego-sanhueza-perez-las-exigencias-probatorias-dificultan-la-reparacion-de-los-consumidores",
    "fecha": "2026-11-22",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-se-pronunciara-sobre-el-fondo-de-impugnacion-contra-norma-que-impide-apelar-resoluciones-en",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-se-pronunciara-sobre-el-fondo-de-impugnacion-contra-norma-que-impide-apelar-resoluciones-en-ZVzrOs7LYBtpqte8k9jV1OE5fkNq7x.jpg"
-  },
-  {
-   "titulo": "SMA formula dos cargos graves contra Codelco Ministro Hales por incumplimientos en el control de emisiones",
-   "enlace": "https://www.diarioconstitucional.cl/ambiental/sma-formula-dos-cargos-graves-contra-codelco-ministro-hales-por-incumplimientos-en-el-control-de",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsma-formula-dos-cargos-graves-contra-codelco-ministro-hales-por-incumplimientos-en-el-control-de-Hj6PwKIYzGfPzwvAlAI44gacCh1Ne5.jpg"
-  },
-  {
-   "titulo": "Proponen conceder la nacionalidad chilena por especial gracia al empresario noruego Dan Odfjell",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/proponen-conceder-la-nacionalidad-chilena-por-especial-gracia-al-empresario-noruego-dan-odfjell",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproponen-conceder-la-nacionalidad-chilena-por-especial-gracia-al-empresario-noruego-dan-odfjell-Viydkkd50lFoxO1r9MpKMQo6hNyY8N.jpg"
-  },
-  {
-   "titulo": "Condenan a urólogo a 10 años de presidio y 300 días de reclusión por violación y abusos sexuales en Los Ángeles",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-urologo-a-10-anos-de-presidio-y-300-dias-de-reclusion-por-violacion-y-abusos-sexuales-en",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcondenan-a-urologo-a-10-anos-de-presidio-y-300-dias-de-reclusion-por-violacion-y-abusos-sexuales-en-Uiueq8QEOyZPLKxrKcoRm0CYXRjBQr.jpg"
   }
  ]
 }
