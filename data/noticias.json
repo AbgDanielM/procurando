@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "CS anula condena por tráfico en pequeñas cantidades al estimar ilegal control de identidad basado en denuncia anónima",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/cs-anula-condena-por-trafico-en-pequenas-cantidades-al-estimar-ilegal-control-de-identidad-basado-en",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcs-anula-condena-por-trafico-en-pequenas-cantidades-al-estimar-ilegal-control-de-identidad-basado-en-zriUhyRJETYApi9X2MJtjqgeSWn6A6.jpg"
+  },
+  {
+   "titulo": "Corte Suprema descarta ilegalidad en demora de solicitud de nacionalización y revoca orden de resolver en 60 días",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-descarta-ilegalidad-en-demora-de-solicitud-de-nacionalizacion-y-revoca-orden-de",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-descarta-ilegalidad-en-demora-de-solicitud-de-nacionalizacion-y-revoca-orden-de-rMESkkJoh97mtKQ3fdzpMB4ZD5AbE9.jpg"
+  },
+  {
    "titulo": "Permiso laboral remunerado de hasta tres horas mensuales para retirar medicamentos en centros de salud públicos, proponen diputados",
    "enlace": "https://www.diarioconstitucional.cl/legislativo/permiso-laboral-remunerado-de-hasta-tres-horas-mensuales-para-retirar-medicamentos-en-centros-de",
    "fecha": "2026-11-22",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-deja-sin-efecto-convocatoria-a-asamblea-extraordinaria-en-vega-central-por-incumplir",
    "fecha": "2026-11-22",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-deja-sin-efecto-convocatoria-a-asamblea-extraordinaria-en-vega-central-por-incumplir-Q5KmEZ7tcxAJSBgJldH9lwcfmBX3OZ.jpg"
-  },
-  {
-   "titulo": "Corte atribuye al SERVIU responsabilidad solidaria por accidente laboral fatal",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-atribuye-al-serviu-responsabilidad-solidaria-por-accidente-laboral-fatal",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-atribuye-al-serviu-responsabilidad-solidaria-por-accidente-laboral-fatal-0Dwawa97OfSI7qInzD6yPYImqDx7XH.jpg"
-  },
-  {
-   "titulo": "Corte Suprema avala cobro de patente municipal a salmonera que elabora y comercializa sus productos",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-avala-cobro-de-patente-municipal-a-salmonera-que-elabora-y-comercializa-sus-productos",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-avala-cobro-de-patente-municipal-a-salmonera-que-elabora-y-comercializa-sus-productos-HrFogOPQYSZsahfwpZm9FUlB03gboo.jpg"
   }
  ]
 }
