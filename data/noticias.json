@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Diego Sanhueza Pérez : ¿Las exigencias probatorias dificultan la reparación de los consumidores?",
+   "enlace": "https://www.diarioconstitucional.cl/entrevistas/diego-sanhueza-perez-las-exigencias-probatorias-dificultan-la-reparacion-de-los-consumidores",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fdiego-sanhueza-perez-las-exigencias-probatorias-dificultan-la-reparacion-de-los-consumidores-ejsQb7WwL8lpgkPb384hgVJVSn5FJY.jpg"
+  },
+  {
    "titulo": "Proyecto de ley busca endurecer las penas por robo de ganado cometido en sectores rurales",
    "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-endurecer-las-penas-por-robo-de-ganado-cometido-en-sectores-rurales-2",
    "fecha": "2026-11-21",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-urologo-a-10-anos-de-presidio-y-300-dias-de-reclusion-por-violacion-y-abusos-sexuales-en",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcondenan-a-urologo-a-10-anos-de-presidio-y-300-dias-de-reclusion-por-violacion-y-abusos-sexuales-en-Uiueq8QEOyZPLKxrKcoRm0CYXRjBQr.jpg"
-  },
-  {
-   "titulo": "Restitución anticipada de inmuebles por usurpación no vulnera presunción de inocencia, resuelve Tribunal Constitucional",
-   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/restitucion-anticipada-de-inmuebles-por-usurpacion-no-vulnera-presuncion-de-inocencia-resuelve",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4e146157-1795209178102-lwCzPek3H64kcPkc6CmbQxXa2Eyumk.jpg"
   }
  ]
 }
