@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Internacional de Justicia dictamina que Myanmar cometió genocidio contra etnia rohinyá",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/corte-internacional-de-justicia-dictamina-que-myanmar-cometio-genocidio-contra-etnia-rohinya",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-internacional-de-justicia-dictamina-que-myanmar-cometio-genocidio-contra-etnia-rohinya-xf9b1I7sFcxR2bQrPLv1nhMOOrFn83.jpg"
+  },
+  {
    "titulo": "Uso inadecuado de viviendas sociales",
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/uso-inadecuado-de-viviendas-sociales",
    "fecha": "2026-11-22",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-chillan-ordena-a-suseso-reevaluar-licencias-medicas-por-53-dias-de-reposo-psiquiatrico",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-chillan-ordena-a-suseso-reevaluar-licencias-medicas-por-53-dias-de-reposo-psiquiatrico-eZJ0LgVlOrTxDZuOmm6eWSRQTXFKES.jpg"
-  },
-  {
-   "titulo": "Marco Antonio Medina Ramírez: ¿Cuándo una deuda impaga deja de ser un problema civil y se convierte en un delito?",
-   "enlace": "https://www.diarioconstitucional.cl/entrevistas/marco-antonio-medina-ramirez-cuando-una-deuda-impaga-deja-de-ser-un-problema-civil-y-se-convierte-en",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fmarco-antonio-medina-ramirez-cuando-una-deuda-impaga-deja-de-ser-un-problema-civil-y-se-convierte-en-ESu4Ccnrs3PH1XA3gcJrDkY0XZgtrE.jpg"
   }
  ]
 }
