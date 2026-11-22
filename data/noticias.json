@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "TC confirma que funcionarios judiciales pueden ser investigados incluso después de dejar sus cargos",
+   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-confirma-que-funcionarios-judiciales-pueden-ser-investigados-incluso-despues-de-dejar-sus-cargos",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-confirma-que-funcionarios-judiciales-pueden-ser-investigados-incluso-despues-de-dejar-sus-cargos-jcU6ECgFXycddOkkpFCjK8FJ7D42qB.jpg"
+  },
+  {
+   "titulo": "Easy deberá devolver más de $633 mil por puertas que nunca entregó y pagar indemnización por daño moral",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/easy-debera-devolver-mas-de-633-mil-por-puertas-que-nunca-entrego-y-pagar-indemnizacion-por-dano",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Feasy-debera-devolver-mas-de-633-mil-por-puertas-que-nunca-entrego-y-pagar-indemnizacion-por-dano-WKkx0drqseXoLfLJkMZoQQEbsGECKo.jpeg"
+  },
+  {
    "titulo": "Corte multa a tienda por vender flotadores infantiles sin advertencias de seguridad",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-multa-a-tienda-por-vender-flotadores-infantiles-sin-advertencias-de-seguridad",
    "fecha": "2026-11-22",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/contratacion-publica/tcp-declara-ilegal-y-arbitrario-requerimiento-de-cobro-de-garantia-efectuado-por-municipalidad-de",
    "fecha": "2026-11-22",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-10%2Fpexels-7643999-IS6EfnPrIrMMLjkj7mgJLeaUreQyvw.jpg"
-  },
-  {
-   "titulo": "Corte Suprema valida control policial cerca de la frontera y mantiene condena por receptación aduanera",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-valida-control-policial-cerca-de-la-frontera-y-mantiene-condena-por-receptacion",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F668315-28v7nbQAnvv2sMwsi4z2SD8m6ybJUX.png"
-  },
-  {
-   "titulo": "Corte Internacional de Justicia dictamina que Myanmar cometió genocidio contra etnia rohinyá",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/corte-internacional-de-justicia-dictamina-que-myanmar-cometio-genocidio-contra-etnia-rohinya",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-internacional-de-justicia-dictamina-que-myanmar-cometio-genocidio-contra-etnia-rohinya-xf9b1I7sFcxR2bQrPLv1nhMOOrFn83.jpg"
   }
  ]
 }
