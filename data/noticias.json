@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Rabat: ni justicia ni derechos humanos",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/rabat-ni-justicia-ni-derechos-humanos",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Frabat-ni-justicia-ni-derechos-humanos-mrW2fToQSUwwJPyLCufAQ2F7uxxbmn.jpg"
+  },
+  {
+   "titulo": "Invalidación más estricta, nulidad más incierta",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/invalidacion-mas-estricta-nulidad-mas-incierta",
+   "fecha": "2026-11-22",
+   "imagen": ""
+  },
+  {
+   "titulo": "UAI realizará seminario sobre piratería, falsificación y propiedad intelectual",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/uai-realizara-seminario-sobre-pirateria-falsificacion-y-propiedad-intelectual",
+   "fecha": "2026-11-22",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fuai-realizara-seminario-sobre-pirateria-falsificacion-y-propiedad-intelectual-Ups3D5O1ErOwJzaEUxhjzUUUUOivvc.jpg"
+  },
+  {
    "titulo": "El derecho del trabajo es hoy, más internacional que nunca",
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/el-derecho-del-trabajo-es-hoy-mas-internacional-que-nunca-2",
    "fecha": "2026-11-22",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/ley-tea-y-responsabilidad-institucional-quien-responde-cuando-la-inclusion-falla",
    "fecha": "2026-11-21",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fley-tea-y-responsabilidad-institucional-quien-responde-cuando-la-inclusion-falla-v6ulrpKEjdhMNelHZPp1wIfRctpXLd.jpg"
-  },
-  {
-   "titulo": "Corte Suprema valida rechazo de 15 licencias médicas de profesora y establece que no es obligatorio realizar nuevos peritajes",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-valida-rechazo-de-15-licencias-medicas-de-profesora-y-establece-que-no-es-obligatorio",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-valida-rechazo-de-15-licencias-medicas-de-profesora-y-establece-que-no-es-obligatorio-fX3vFbTlwywRSvJzwbLHl5w3Oaw9AN.jpg"
-  },
-  {
-   "titulo": "¿Qué es la Amnistía?",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/que-es-la-amnistia",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-38253321-iL5MitR8lBUJSPvNRjwKkUhOACamHP.jpg"
-  },
-  {
-   "titulo": "TC se pronunciará sobre el fondo de impugnación contra norma que impide apelar resoluciones en juicios ejecutivos laborales",
-   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-se-pronunciara-sobre-el-fondo-de-impugnacion-contra-norma-que-impide-apelar-resoluciones-en",
-   "fecha": "2026-11-21",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-se-pronunciara-sobre-el-fondo-de-impugnacion-contra-norma-que-impide-apelar-resoluciones-en-ZVzrOs7LYBtpqte8k9jV1OE5fkNq7x.jpg"
   }
  ]
 }
