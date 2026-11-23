@@ -2,6 +2,60 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema confirma multa de 5.500 UF a aseguradora por negarse a pagar indemnización",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-multa-de-5500-uf-a-aseguradora-por-negarse-a-pagar-indemnizacion",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-de-5500-uf-a-aseguradora-por-negarse-a-pagar-indemnizacion-P6iZzYCzjXbfKzO1m7lntKqvRFRpbS.jpg"
+  },
+  {
+   "titulo": "Corte Suprema valida no renovación de contrata de funcionario de la Universidad de Magallanes por reestructuración institucional",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-valida-no-renovacion-de-contrata-de-funcionario-de-la-universidad-de-magallanes-por",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F671662-NeBU4tnNnnlePQv4hFM4NQxMcYYoOX.jpg"
+  },
+  {
+   "titulo": "CS confirma que reclamación pendiente ante la SUSESO no suspende por sí sola los descuentos de remuneraciones",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/cs-confirma-que-reclamacion-pendiente-ante-la-suseso-no-suspende-por-si-sola-los-descuentos-de",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-5211428-8LjXEkReRa6JzrnpqodKPfI4XaPKUv.jpg"
+  },
+  {
+   "titulo": "Corte Suprema mantiene condena por más de $1.670 millones tras declarar inadmisibles recursos de casación",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-condena-por-mas-de-1670-millones-tras-declarar-inadmisibles-recursos-de",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-mantiene-condena-por-mas-de-1670-millones-tras-declarar-inadmisibles-recursos-de-Zua38Rk6YkqC2yfijXVOjfYt47RAZM.jpg"
+  },
+  {
+   "titulo": "Corte Suprema descarta que demora en procedimiento sancionatorio invalide multa sanitaria a constructora y mantiene sanción de 240 UTM",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-descarta-que-demora-en-procedimiento-sancionatorio-invalide-multa-sanitaria-a",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F681322-ecJ1yzSM45A40MZyAkp6TKpI0AGAep.png"
+  },
+  {
+   "titulo": "Comunero puede reivindicar un inmueble frente a terceros sin autorización de los demás copropietarios",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/comunero-puede-reivindicar-un-inmueble-frente-a-terceros-sin-autorizacion-de-los-demas",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcomunero-puede-reivindicar-un-inmueble-frente-a-terceros-sin-autorizacion-de-los-demas-cpScIw2UPWSGbfPNA2RBlYIAXJLfc8.jpg"
+  },
+  {
+   "titulo": "Justicia colombiana exhorta al Congreso a tipificar como delito la difusión no autorizada de material íntimo",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-colombiana-exhorta-al-congreso-a-tipificar-como-delito-la-difusion-no-autorizada-de",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-colombiana-exhorta-al-congreso-a-tipificar-como-delito-la-difusion-no-autorizada-de-AQAtbc5qwAxDfvrpNCvEG6Rt2Bbwcb.jpg"
+  },
+  {
+   "titulo": "Advierten sobre riesgos para la privacidad y el secreto profesional por uso de inteligencia artificial en tribunales",
+   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/advierten-sobre-riesgos-para-la-privacidad-y-el-secreto-profesional-por-uso-de-inteligencia",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fadvierten-sobre-riesgos-para-la-privacidad-y-el-secreto-profesional-por-uso-de-inteligencia-oDQ9MU0YYzYqswbnVbUi2WfUcf8BvQ.jpg"
+  },
+  {
+   "titulo": "Juzgado Laboral de Iquique rechaza demanda de cocinero que acusó discriminación por edad tras no renovación de su contrata",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/juzgado-laboral-de-iquique-rechaza-demanda-de-cocinero-que-acuso-discriminacion-por-edad-tras-no",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjuzgado-laboral-de-iquique-rechaza-demanda-de-cocinero-que-acuso-discriminacion-por-edad-tras-no-F424c6Lfoy1wlDGzoawqOzk7ymXqxj.jpg"
+  },
+  {
    "titulo": "Corte Suprema anula donación encubierta como compraventa que perjudicó derechos hereditarios",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-anula-donacion-encubierta-como-compraventa-que-perjudico-derechos-hereditarios",
    "fecha": "2026-11-23",
@@ -18,60 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/nueva-york-permite-usar-inteligencia-artificial-en-escritos-judiciales-pero-exige-verificar-las",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fnueva-york-permite-usar-inteligencia-artificial-en-escritos-judiciales-pero-exige-verificar-las-DgXfgtFJQH82PT86u5NslrFLg9yjyx.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago confirma despido injustificado de trabajadora de L’Oréal por falta de pruebas de reestructuración",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-de-santiago-confirma-despido-injustificado-de-trabajadora-de-loreal-por-falta-de-pruebas-de",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-santiago-confirma-despido-injustificado-de-trabajadora-de-loreal-por-falta-de-pruebas-de-Uj5wfYG2nheU7qbOZZ7Jw7koYPx2Wt.jpg"
-  },
-  {
-   "titulo": "Adjudicación del servicio de retiro de residuos del Hospital de Angol se ajustó a las bases",
-   "enlace": "https://www.diarioconstitucional.cl/contratacion-publica/adjudicacion-del-servicio-de-retiro-de-residuos-del-hospital-de-angol-se-ajusto-a-las-bases",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-27312907-NpEjmoAytA0biRbGybdxzK2WFsAyEQ.jpg"
-  },
-  {
-   "titulo": "Violencia sexual digital e inteligencia artificial: ¿Está preparado el Derecho chileno para enfrentar los nuevos delitos en internet?",
-   "enlace": "https://www.diarioconstitucional.cl/contrapunto/violencia-sexual-digital-e-inteligencia-artificial-esta-preparado-el-derecho-chileno-para-enfrentar",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-violencia-sexual-digital-e-inteligencia-artificial-esta-prep-vXny71nihrZSyYmb6e0lEp2Hai3yWG.jpg"
-  },
-  {
-   "titulo": "CS anula condena por tráfico en pequeñas cantidades al estimar ilegal control de identidad basado en denuncia anónima",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/cs-anula-condena-por-trafico-en-pequenas-cantidades-al-estimar-ilegal-control-de-identidad-basado-en",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcs-anula-condena-por-trafico-en-pequenas-cantidades-al-estimar-ilegal-control-de-identidad-basado-en-zriUhyRJETYApi9X2MJtjqgeSWn6A6.jpg"
-  },
-  {
-   "titulo": "Corte Suprema descarta ilegalidad en demora de solicitud de nacionalización y revoca orden de resolver en 60 días",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-descarta-ilegalidad-en-demora-de-solicitud-de-nacionalizacion-y-revoca-orden-de",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-descarta-ilegalidad-en-demora-de-solicitud-de-nacionalizacion-y-revoca-orden-de-rMESkkJoh97mtKQ3fdzpMB4ZD5AbE9.jpg"
-  },
-  {
-   "titulo": "Permiso laboral remunerado de hasta tres horas mensuales para retirar medicamentos en centros de salud públicos, proponen diputados",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/permiso-laboral-remunerado-de-hasta-tres-horas-mensuales-para-retirar-medicamentos-en-centros-de",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpermiso-laboral-remunerado-de-hasta-tres-horas-mensuales-para-retirar-medicamentos-en-centros-de-dUlcxKxYRL5LpDq3DINECmJRGnM1ef.jpg"
-  },
-  {
-   "titulo": "Corte de Temuco concede libertad condicional tras cuestionar falta de fundamentación en rechazo del beneficio",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-temuco-concede-libertad-condicional-tras-cuestionar-falta-de-fundamentacion-en-rechazo-del",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-temuco-concede-libertad-condicional-tras-cuestionar-falta-de-fundamentacion-en-rechazo-del-CLgu1IhoFka3QdKiVCOUTJ7YEI2uin.jpg"
-  },
-  {
-   "titulo": "Los derechos humanos en el discurso del Papa León XIV",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/los-derechos-humanos-en-el-discurso-del-papa-leon-xiv",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Flos-derechos-humanos-en-el-discurso-del-papa-leon-xiv-z8DkNnMuCuBqoUfHsYIu3lQYrNlfIZ.jpg"
-  },
-  {
-   "titulo": "TC confirma que funcionarios judiciales pueden ser investigados incluso después de dejar sus cargos",
-   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-confirma-que-funcionarios-judiciales-pueden-ser-investigados-incluso-despues-de-dejar-sus-cargos",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-confirma-que-funcionarios-judiciales-pueden-ser-investigados-incluso-despues-de-dejar-sus-cargos-jcU6ECgFXycddOkkpFCjK8FJ7D42qB.jpg"
   }
  ]
 }
