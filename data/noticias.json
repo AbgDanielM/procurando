@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Violencia sexual digital e inteligencia artificial: ¿Está preparado el Derecho chileno para enfrentar los nuevos delitos en internet?",
+   "enlace": "https://www.diarioconstitucional.cl/contrapunto/violencia-sexual-digital-e-inteligencia-artificial-esta-preparado-el-derecho-chileno-para-enfrentar",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-violencia-sexual-digital-e-inteligencia-artificial-esta-prep-vXny71nihrZSyYmb6e0lEp2Hai3yWG.jpg"
+  },
+  {
    "titulo": "CS anula condena por tráfico en pequeñas cantidades al estimar ilegal control de identidad basado en denuncia anónima",
    "enlace": "https://www.diarioconstitucional.cl/judicial/cs-anula-condena-por-trafico-en-pequenas-cantidades-al-estimar-ilegal-control-de-identidad-basado-en",
    "fecha": "2026-11-22",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-rechaza-proteccion-por-cese-de-bonos-de-riesgo-y-arriendo-a-docentes-de-isla-santa",
    "fecha": "2026-11-22",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2Fcorte-suprema-confirma-condena-a-pagar-casi-25-millones-a-empresa-por-servicios-publicitarios-impagos-bRDvOWU7APfJLaC1ScYwdfRfW6FSsj.png"
-  },
-  {
-   "titulo": "Corte deja sin efecto convocatoria a asamblea extraordinaria en Vega Central por incumplir Reglamento de Copropiedad",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-deja-sin-efecto-convocatoria-a-asamblea-extraordinaria-en-vega-central-por-incumplir",
-   "fecha": "2026-11-22",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-deja-sin-efecto-convocatoria-a-asamblea-extraordinaria-en-vega-central-por-incumplir-Q5KmEZ7tcxAJSBgJldH9lwcfmBX3OZ.jpg"
   }
  ]
 }
