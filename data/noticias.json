@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema descarta nulidad del despido por diferencias de semana corrida al no acreditarse deuda previsional",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-descarta-nulidad-del-despido-por-diferencias-de-semana-corrida-al-no-acreditarse-deuda",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-d3758ea0-1795264919459-EECtbKN0cWAE9N81x59g3B5wOj0YrT.jpg"
+  },
+  {
+   "titulo": "Cancelación de inscripción de dominio de un inmueble en Lanco queda firme",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/cancelacion-de-inscripcion-de-dominio-de-un-inmueble-en-lanco-queda-firme",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-4959739-qv8ybqRVGoQcBRiFPEbnvKpjpjtGnd.jpg"
+  },
+  {
+   "titulo": "Corte Suprema mantiene usufructo vitalicio sobre terrenos y rechaza demanda que buscaba anularlo",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-usufructo-vitalicio-sobre-terrenos-y-rechaza-demanda-que-buscaba-anularlo",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-329829cc-1795229168184-jaQxGKwF5phgGitZjEHc64hvy5La9o.jpg"
+  },
+  {
    "titulo": "Corte Suprema confirma multa de 5.500 UF a aseguradora por negarse a pagar indemnización",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-multa-de-5500-uf-a-aseguradora-por-negarse-a-pagar-indemnizacion",
    "fecha": "2026-11-23",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/juzgado-laboral-de-iquique-rechaza-demanda-de-cocinero-que-acuso-discriminacion-por-edad-tras-no",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjuzgado-laboral-de-iquique-rechaza-demanda-de-cocinero-que-acuso-discriminacion-por-edad-tras-no-F424c6Lfoy1wlDGzoawqOzk7ymXqxj.jpg"
-  },
-  {
-   "titulo": "Corte Suprema anula donación encubierta como compraventa que perjudicó derechos hereditarios",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-anula-donacion-encubierta-como-compraventa-que-perjudico-derechos-hereditarios",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-anula-donacion-encubierta-como-compraventa-que-perjudico-derechos-hereditarios-ap9iM7kUEwEqvNNOVgJII1YUNmykG3.jpg"
-  },
-  {
-   "titulo": "Tribunal rebaja multa a Prosegur por jornada laboral no autorizada tras detectar error en cálculo de la sanción",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/tribunal-rebaja-multa-a-prosegur-por-jornada-laboral-no-autorizada-tras-detectar-error-en-calculo-de",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-rebaja-multa-a-prosegur-por-jornada-laboral-no-autorizada-tras-detectar-error-en-calculo-de-kdAAAY7ZasNGuvPhxjVV8XdHOcwZkH.jpg"
-  },
-  {
-   "titulo": "Nueva York permite usar inteligencia artificial en escritos judiciales, pero exige verificar las fuentes y argumentos",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/nueva-york-permite-usar-inteligencia-artificial-en-escritos-judiciales-pero-exige-verificar-las",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fnueva-york-permite-usar-inteligencia-artificial-en-escritos-judiciales-pero-exige-verificar-las-DgXfgtFJQH82PT86u5NslrFLg9yjyx.jpg"
   }
  ]
 }
