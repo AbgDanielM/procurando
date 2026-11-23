@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Condenan a presidio perpetuo a dos hombres por robo con homicidio de un padre que acudió a vender una consola en Rancagua",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-presidio-perpetuo-a-dos-hombres-por-robo-con-homicidio-de-un-padre-que-acudio-a-vender",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-218d67cf-1795455817710-wFH3DaXKYcGXayphXIyioO4GoUF40U.jpg"
+  },
+  {
+   "titulo": "Corte de Santiago acoge querella contra compañía de telefonía por suspender servicio de clínica durante siete días sin justificación",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-acoge-querella-contra-compania-de-telefonia-por-suspender-servicio-de-clinica",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-2510994-pFg83lGPKpTTfs8lHmMgQqQuDDo8wR.jpg"
+  },
+  {
+   "titulo": "Corte Suprema mantiene condena por robo pese a incorporación de declaración policial de la víctima",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-condena-por-robo-pese-a-incorporacion-de-declaracion-policial-de-la-victima",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-mantiene-condena-por-robo-pese-a-incorporacion-de-declaracion-policial-de-la-victima-3kcelOJnGDl3BfFlcksN3P5oHmm3eh.jpg"
+  },
+  {
    "titulo": "Corte Suprema descarta nulidad del despido por diferencias de semana corrida al no acreditarse deuda previsional",
    "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-descarta-nulidad-del-despido-por-diferencias-de-semana-corrida-al-no-acreditarse-deuda",
    "fecha": "2026-11-23",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/comunero-puede-reivindicar-un-inmueble-frente-a-terceros-sin-autorizacion-de-los-demas",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcomunero-puede-reivindicar-un-inmueble-frente-a-terceros-sin-autorizacion-de-los-demas-cpScIw2UPWSGbfPNA2RBlYIAXJLfc8.jpg"
-  },
-  {
-   "titulo": "Justicia colombiana exhorta al Congreso a tipificar como delito la difusión no autorizada de material íntimo",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-colombiana-exhorta-al-congreso-a-tipificar-como-delito-la-difusion-no-autorizada-de",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-colombiana-exhorta-al-congreso-a-tipificar-como-delito-la-difusion-no-autorizada-de-AQAtbc5qwAxDfvrpNCvEG6Rt2Bbwcb.jpg"
-  },
-  {
-   "titulo": "Advierten sobre riesgos para la privacidad y el secreto profesional por uso de inteligencia artificial en tribunales",
-   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/advierten-sobre-riesgos-para-la-privacidad-y-el-secreto-profesional-por-uso-de-inteligencia",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fadvierten-sobre-riesgos-para-la-privacidad-y-el-secreto-profesional-por-uso-de-inteligencia-oDQ9MU0YYzYqswbnVbUi2WfUcf8BvQ.jpg"
-  },
-  {
-   "titulo": "Juzgado Laboral de Iquique rechaza demanda de cocinero que acusó discriminación por edad tras no renovación de su contrata",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/juzgado-laboral-de-iquique-rechaza-demanda-de-cocinero-que-acuso-discriminacion-por-edad-tras-no",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjuzgado-laboral-de-iquique-rechaza-demanda-de-cocinero-que-acuso-discriminacion-por-edad-tras-no-F424c6Lfoy1wlDGzoawqOzk7ymXqxj.jpg"
   }
  ]
 }
