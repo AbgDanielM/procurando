@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema confirma que tener un celular sin tarjeta SIM en la cárcel configura delito",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-que-tener-un-celular-sin-tarjeta-sim-en-la-carcel-configura-delito",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-que-tener-un-celular-sin-tarjeta-sim-en-la-carcel-configura-delito-K3esOK6alHCrgAFURdZzzIi3i8J752.jpg"
+  },
+  {
+   "titulo": "Proyecto busca sancionar vuelos no autorizados de drones sobre cárceles y facilitar el comiso de estos dispositivos",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-busca-sancionar-vuelos-no-autorizados-de-drones-sobre-carceles-y-facilitar-el-comiso-de",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-busca-sancionar-vuelos-no-autorizados-de-drones-sobre-carceles-y-facilitar-el-comiso-de-pURA6WGVe1cjkizwZyki7HL1FzXcnW.jpg"
+  },
+  {
+   "titulo": "Corte de Coyhaique ordena a SENAMA acreditar medidas para corregir deficiencias en residencia de adultos mayores",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-coyhaique-ordena-a-senama-acreditar-medidas-para-corregir-deficiencias-en-residencia-de",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-coyhaique-ordena-a-senama-acreditar-medidas-para-corregir-deficiencias-en-residencia-de-3CBDfX8lkF2pGU7R6l2BK3rwz2mddx.jpg"
+  },
+  {
    "titulo": "TC tiene por no presentado requerimiento contra la nulidad del despido por falta de certificado actualizado",
    "enlace": "https://www.diarioconstitucional.cl/judicial/tc-tiene-por-no-presentado-requerimiento-contra-la-nulidad-del-despido-por-falta-de-certificado",
    "fecha": "2026-11-23",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-usufructo-vitalicio-sobre-terrenos-y-rechaza-demanda-que-buscaba-anularlo",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-329829cc-1795229168184-jaQxGKwF5phgGitZjEHc64hvy5La9o.jpg"
-  },
-  {
-   "titulo": "Corte Suprema confirma multa de 5.500 UF a aseguradora por negarse a pagar indemnización",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-multa-de-5500-uf-a-aseguradora-por-negarse-a-pagar-indemnizacion",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-de-5500-uf-a-aseguradora-por-negarse-a-pagar-indemnizacion-P6iZzYCzjXbfKzO1m7lntKqvRFRpbS.jpg"
-  },
-  {
-   "titulo": "CS confirma que reclamación pendiente ante la SUSESO no suspende por sí sola los descuentos de remuneraciones",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/cs-confirma-que-reclamacion-pendiente-ante-la-suseso-no-suspende-por-si-sola-los-descuentos-de",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-5211428-8LjXEkReRa6JzrnpqodKPfI4XaPKUv.jpg"
-  },
-  {
-   "titulo": "Corte Suprema mantiene condena por más de $1.670 millones tras declarar inadmisibles recursos de casación",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-condena-por-mas-de-1670-millones-tras-declarar-inadmisibles-recursos-de",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-mantiene-condena-por-mas-de-1670-millones-tras-declarar-inadmisibles-recursos-de-Zua38Rk6YkqC2yfijXVOjfYt47RAZM.jpg"
   }
  ]
 }
