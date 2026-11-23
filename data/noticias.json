@@ -2,10 +2,22 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte ordena indemnizar a profesora presionada a aprobar estudianteCorte ordena indemnizar a profesora presionada a aprobar estudiante",
+   "enlace": "https://www.diarioconstitucional.cl/videos/corte-ordena-indemnizar-a-profesora-presionada-a-aprobar-estudiantecorte-ordena-indemnizar-a",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Fcorte-ordena-indemnizar-a-profesora-presionada-a-aprobar-estudiantecorte-ordena-indemnizar-a-DhjKCrqmsEnOmC957glFbsyMpIPBHi.jpg"
+  },
+  {
+   "titulo": "Corte Suprema rechaza recurso de funcionario del IPS contra sanciones disciplinarias por extemporáneo",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-rechaza-recurso-de-funcionario-del-ips-contra-sanciones-disciplinarias-por",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-rechaza-recurso-de-funcionario-del-ips-contra-sanciones-disciplinarias-por-kqhf7AuGk9gZJ8nULfwlhMbOn5KTvo.jpg"
+  },
+  {
    "titulo": "Corte Suprema confirma que tener un celular sin tarjeta SIM en la cárcel configura delito",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-que-tener-un-celular-sin-tarjeta-sim-en-la-carcel-configura-delito",
    "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-que-tener-un-celular-sin-tarjeta-sim-en-la-carcel-configura-delito-K3esOK6alHCrgAFURdZzzIi3i8J752.jpg"
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-66d04955-1795474748317-J0rRzKGegPIsx5aQ8Sb4EGhD8FlZEw.jpg"
   },
   {
    "titulo": "Proyecto busca sancionar vuelos no autorizados de drones sobre cárceles y facilitar el comiso de estos dispositivos",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-descarta-nulidad-del-despido-por-diferencias-de-semana-corrida-al-no-acreditarse-deuda",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-d3758ea0-1795264919459-EECtbKN0cWAE9N81x59g3B5wOj0YrT.jpg"
-  },
-  {
-   "titulo": "Cancelación de inscripción de dominio de un inmueble en Lanco queda firme",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/cancelacion-de-inscripcion-de-dominio-de-un-inmueble-en-lanco-queda-firme",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-4959739-qv8ybqRVGoQcBRiFPEbnvKpjpjtGnd.jpg"
-  },
-  {
-   "titulo": "Corte Suprema mantiene usufructo vitalicio sobre terrenos y rechaza demanda que buscaba anularlo",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-usufructo-vitalicio-sobre-terrenos-y-rechaza-demanda-que-buscaba-anularlo",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-329829cc-1795229168184-jaQxGKwF5phgGitZjEHc64hvy5La9o.jpg"
   }
  ]
 }
