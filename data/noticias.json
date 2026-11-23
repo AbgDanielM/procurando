@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "TC tiene por no presentado requerimiento contra la nulidad del despido por falta de certificado actualizado",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/tc-tiene-por-no-presentado-requerimiento-contra-la-nulidad-del-despido-por-falta-de-certificado",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-tiene-por-no-presentado-requerimiento-contra-la-nulidad-del-despido-por-falta-de-certificado-c9YGnUrVmjDG6kxfyT5rB6DxUTvyiW.jpg"
+  },
+  {
+   "titulo": "Corte Suprema reenvía a Corte de Rancagua recurso de nulidad de condenado por conducir ebrio y causar la muerte un motociclista",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-reenvia-a-corte-de-rancagua-recurso-de-nulidad-de-condenado-por-conducir-ebrio-y",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-reenvia-a-corte-de-rancagua-recurso-de-nulidad-de-condenado-por-conducir-ebrio-y-KrYmfmq0G1rq0joM9VQ6hsO8jBSRZb.jpg"
+  },
+  {
+   "titulo": "Senadores proponen derogar sistema de reducción de condenas por buena conducta y crear nueva agravante penal",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/senadores-proponen-derogar-sistema-de-reduccion-de-condenas-por-buena-conducta-y-crear-nueva",
+   "fecha": "2026-11-23",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsenadores-proponen-derogar-sistema-de-reduccion-de-condenas-por-buena-conducta-y-crear-nueva-nd6hBMd8iKttWqCIxpOLP6xj4TSkOX.jpg"
+  },
+  {
    "titulo": "Condenan a presidio perpetuo a dos hombres por robo con homicidio de un padre que acudió a vender una consola en Rancagua",
    "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-presidio-perpetuo-a-dos-hombres-por-robo-con-homicidio-de-un-padre-que-acudio-a-vender",
    "fecha": "2026-11-23",
@@ -44,12 +62,6 @@
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-de-5500-uf-a-aseguradora-por-negarse-a-pagar-indemnizacion-P6iZzYCzjXbfKzO1m7lntKqvRFRpbS.jpg"
   },
   {
-   "titulo": "Corte Suprema valida no renovación de contrata de funcionario de la Universidad de Magallanes por reestructuración institucional",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-valida-no-renovacion-de-contrata-de-funcionario-de-la-universidad-de-magallanes-por",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F671662-NeBU4tnNnnlePQv4hFM4NQxMcYYoOX.jpg"
-  },
-  {
    "titulo": "CS confirma que reclamación pendiente ante la SUSESO no suspende por sí sola los descuentos de remuneraciones",
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/cs-confirma-que-reclamacion-pendiente-ante-la-suseso-no-suspende-por-si-sola-los-descuentos-de",
    "fecha": "2026-11-23",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-condena-por-mas-de-1670-millones-tras-declarar-inadmisibles-recursos-de",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-mantiene-condena-por-mas-de-1670-millones-tras-declarar-inadmisibles-recursos-de-Zua38Rk6YkqC2yfijXVOjfYt47RAZM.jpg"
-  },
-  {
-   "titulo": "Corte Suprema descarta que demora en procedimiento sancionatorio invalide multa sanitaria a constructora y mantiene sanción de 240 UTM",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-descarta-que-demora-en-procedimiento-sancionatorio-invalide-multa-sanitaria-a",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F681322-ecJ1yzSM45A40MZyAkp6TKpI0AGAep.png"
-  },
-  {
-   "titulo": "Comunero puede reivindicar un inmueble frente a terceros sin autorización de los demás copropietarios",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/comunero-puede-reivindicar-un-inmueble-frente-a-terceros-sin-autorizacion-de-los-demas",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcomunero-puede-reivindicar-un-inmueble-frente-a-terceros-sin-autorizacion-de-los-demas-cpScIw2UPWSGbfPNA2RBlYIAXJLfc8.jpg"
   }
  ]
 }
