@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Condenan a presidio perpetuo a hombre que secuestró y violó a su exconviviente en Puerto Aysén",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-presidio-perpetuo-a-hombre-que-secuestro-y-violo-a-su-exconviviente-en-puerto-aysen",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-2cbbcc39-1795489145595-NshxnjP9NXMJBgfatHU10HihWPQeZc.jpg"
+  },
+  {
+   "titulo": "Ordenan reintegrar a inspectora de colegio de Arica tras declarar vulnerada su libertad de trabajo por destinación a docencia de aula",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/ordenan-reintegrar-a-inspectora-de-colegio-de-arica-tras-declarar-vulnerada-su-libertad-de-trabajo",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-90449006-1795488884437-TawteW5ueVkOEH6r1uY67V9Fa8pSHh.jpg"
+  },
+  {
    "titulo": "Corte Suprema confirma sanción a liceo por expulsar a estudiante sin garantizar su derecho a defensa",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-sancion-a-liceo-por-expulsar-a-estudiante-sin-garantizar-su-derecho-a-defensa",
    "fecha": "2026-11-24",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/corte-suprema-argentina-deja-firme-condena-de-18-anos-a-madre-que-no-denuncio-abusos-sexuales-contra",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-argentina-deja-firme-condena-de-18-anos-a-madre-que-no-denuncio-abusos-sexuales-contra-Cx2t1oTipy3ioYa272cCFt5bJK1uDi.jpg"
-  },
-  {
-   "titulo": "Corte deja sin efecto expulsión de socios de club de rodeo por falta de procedimiento disciplinario",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-deja-sin-efecto-expulsion-de-socios-de-club-de-rodeo-por-falta-de-procedimiento-disciplinario",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-deja-sin-efecto-expulsion-de-socios-de-club-de-rodeo-por-falta-de-procedimiento-disciplinario-qakps0n2riQZSohOA0EbhwSbJOEMOm.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza registro de la marca SANIPER por riesgo de confusión con la marca SANPER en productos de la Clase 5",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-registro-de-la-marca-saniper-por-riesgo-de-confusion-con-la-marca-sanper-en",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4a6886d0-1795488606161-wbwMDT42dP8gFmc8WCybqFMbtyXLWI.jpg"
   }
  ]
 }
