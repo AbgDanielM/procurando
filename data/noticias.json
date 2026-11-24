@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema anula condena por desacato y lesiones tras constatar que sentencia no fue entregada íntegramente",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-anula-condena-por-desacato-y-lesiones-tras-constatar-que-sentencia-no-fue-entregada",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-anula-condena-por-desacato-y-lesiones-tras-constatar-que-sentencia-no-fue-entregada-l3Cn4rSDZtZT1ycUi0NmRCyNfcPwJR.jpg"
+  },
+  {
    "titulo": "Corte ordena indemnizar a profesora presionada a aprobar estudianteCorte ordena indemnizar a profesora presionada a aprobar estudiante",
    "enlace": "https://www.diarioconstitucional.cl/videos/corte-ordena-indemnizar-a-profesora-presionada-a-aprobar-estudiantecorte-ordena-indemnizar-a",
    "fecha": "2026-11-23",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-condena-por-robo-pese-a-incorporacion-de-declaracion-policial-de-la-victima",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-mantiene-condena-por-robo-pese-a-incorporacion-de-declaracion-policial-de-la-victima-3kcelOJnGDl3BfFlcksN3P5oHmm3eh.jpg"
-  },
-  {
-   "titulo": "Corte Suprema descarta nulidad del despido por diferencias de semana corrida al no acreditarse deuda previsional",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-descarta-nulidad-del-despido-por-diferencias-de-semana-corrida-al-no-acreditarse-deuda",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-d3758ea0-1795264919459-EECtbKN0cWAE9N81x59g3B5wOj0YrT.jpg"
   }
  ]
 }
