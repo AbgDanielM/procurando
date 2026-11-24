@@ -2,6 +2,36 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema confirma sanción a liceo por expulsar a estudiante sin garantizar su derecho a defensa",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-sancion-a-liceo-por-expulsar-a-estudiante-sin-garantizar-su-derecho-a-defensa",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-sancion-a-liceo-por-expulsar-a-estudiante-sin-garantizar-su-derecho-a-defensa-9V9nKW2PqnJRcjJaCM8wTjwHTYT4al.jpg"
+  },
+  {
+   "titulo": "Condenan a médico y clínica a indemnizar a paciente por intervención quirúrgica negligente que agravó su hiperhidrosis",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-medico-y-clinica-a-indemnizar-a-paciente-por-intervencion-quirurgica-negligente-que",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-33916261-1j84GBq0SmMYVH4IwCVIQgACgAyT9m.jpg"
+  },
+  {
+   "titulo": "Corte de Santiago confirma indemnización de $53 millones a familiares de interno agredido que falleció en Colina II",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-indemnizacion-de-53-millones-a-familiares-de-interno-agredido-que",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-0ce11936-1795486179473-rk576OIas7zqYLoJwo8tF9SViCU04z.jpg"
+  },
+  {
+   "titulo": "Corte Suprema rechaza financiar costosa inmunoterapia a paciente con cáncer avanzado por falta de cobertura legal",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-financiar-costosa-inmunoterapia-a-paciente-con-cancer-avanzado-por-falta-de",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-6436263-DYwxeMzyZE5gxPTYKM3C8JTU3loaE4.jpg"
+  },
+  {
+   "titulo": "Tribunal de EE.UU. ordena suspender de forma indefinida construcción de arco triunfal impulsado por Donald Trump",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/tribunal-de-eeuu-ordena-suspender-de-forma-indefinida-construccion-de-arco-triunfal-impulsado-por",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-de-eeuu-ordena-suspender-de-forma-indefinida-construccion-de-arco-triunfal-impulsado-por-1vGlFxyvCtvPVaSxOcyYKEHGQmj6JV.jpg"
+  },
+  {
    "titulo": "Javier Macaya solicita desafuero del diputado Jaime Bassa por acusaciones sobre uso de bots electorales",
    "enlace": "https://www.diarioconstitucional.cl/judicial/javier-macaya-solicita-desafuero-del-diputado-jaime-bassa-por-acusaciones-sobre-uso-de-bots",
    "fecha": "2026-11-24",
@@ -42,36 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-registro-de-la-marca-saniper-por-riesgo-de-confusion-con-la-marca-sanper-en",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4a6886d0-1795488606161-wbwMDT42dP8gFmc8WCybqFMbtyXLWI.jpg"
-  },
-  {
-   "titulo": "Condenan a doce años de presidio a hombre que intentó robar a un transeúnte y le causó lesiones graves con un cuchillo en Quilicura",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-doce-anos-de-presidio-a-hombre-que-intento-robar-a-un-transeunte-y-le-causo-lesiones",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-9519bfca-1795488274945-JoXbXPj4NjTObrHg738pWwBShTo3Ap.jpg"
-  },
-  {
-   "titulo": "Corte Suprema anula condena por desacato y lesiones tras constatar que sentencia no fue entregada íntegramente",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-anula-condena-por-desacato-y-lesiones-tras-constatar-que-sentencia-no-fue-entregada",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-anula-condena-por-desacato-y-lesiones-tras-constatar-que-sentencia-no-fue-entregada-l3Cn4rSDZtZT1ycUi0NmRCyNfcPwJR.jpg"
-  },
-  {
-   "titulo": "Corte ordena indemnizar a profesora presionada a aprobar estudiante",
-   "enlace": "https://www.diarioconstitucional.cl/videos/corte-ordena-indemnizar-a-profesora-presionada-a-aprobar-estudiantecorte-ordena-indemnizar-a",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Fcorte-ordena-indemnizar-a-profesora-presionada-a-aprobar-estudiantecorte-ordena-indemnizar-a-DhjKCrqmsEnOmC957glFbsyMpIPBHi.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza recurso de funcionario del IPS contra sanciones disciplinarias por extemporáneo",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-rechaza-recurso-de-funcionario-del-ips-contra-sanciones-disciplinarias-por",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-rechaza-recurso-de-funcionario-del-ips-contra-sanciones-disciplinarias-por-kqhf7AuGk9gZJ8nULfwlhMbOn5KTvo.jpg"
-  },
-  {
-   "titulo": "Corte Suprema confirma que tener un celular sin tarjeta SIM en la cárcel configura delito",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-que-tener-un-celular-sin-tarjeta-sim-en-la-carcel-configura-delito",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-66d04955-1795474748317-J0rRzKGegPIsx5aQ8Sb4EGhD8FlZEw.jpg"
   }
  ]
 }
