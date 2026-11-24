@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "CPLT advierte que siete de cada diez rechazos de solicitudes de información por exceso de trabajo carecen de justificación",
+   "enlace": "https://www.diarioconstitucional.cl/ley-de-transparencia/cplt-advierte-que-siete-de-cada-diez-rechazos-de-solicitudes-de-informacion-por-exceso-de-trabajo",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcplt-advierte-que-siete-de-cada-diez-rechazos-de-solicitudes-de-informacion-por-exceso-de-trabajo-TcLILOT636ORQR0yZpJbwfC3zhS1Hw.jpg"
+  },
+  {
+   "titulo": "Gendarmería mantuvo a interno preso más de cinco meses después de cumplir su condena y Corte acoge amparo",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/gendarmeria-mantuvo-a-interno-preso-mas-de-cinco-meses-despues-de-cumplir-su-condena-y-corte-acoge",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fgendarmeria-mantuvo-a-interno-preso-mas-de-cinco-meses-despues-de-cumplir-su-condena-y-corte-acoge-VVidbU4cSaccJxEmXPu8SRntL4litW.jpg"
+  },
+  {
+   "titulo": "Cuando la Corte Suprema cambia de criterio, ¿cómo deben decidir las empresas?",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/cuando-la-corte-suprema-cambia-de-criterio-como-deben-decidir-las-empresas",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-7194215b-1795536665852-YnpudFa3FqROGxCvtbs2sTJsXjbH3a.jpg"
+  },
+  {
    "titulo": "Médico pidió eliminar noticias que lo identificaban por trabajar sin EUNACOM, pero Corte de Coyhaique rechazó recurso",
    "enlace": "https://www.diarioconstitucional.cl/judicial/medico-pidio-eliminar-noticias-que-lo-identificaban-por-trabajar-sin-eunacom-pero-corte-de-coyhaique",
    "fecha": "2026-11-24",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-sancion-a-liceo-por-expulsar-a-estudiante-sin-garantizar-su-derecho-a-defensa",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-sancion-a-liceo-por-expulsar-a-estudiante-sin-garantizar-su-derecho-a-defensa-9V9nKW2PqnJRcjJaCM8wTjwHTYT4al.jpg"
-  },
-  {
-   "titulo": "Condenan a médico y clínica a indemnizar a paciente por intervención quirúrgica negligente que agravó su hiperhidrosis",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-medico-y-clinica-a-indemnizar-a-paciente-por-intervencion-quirurgica-negligente-que",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-33916261-1j84GBq0SmMYVH4IwCVIQgACgAyT9m.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago confirma indemnización de $53 millones a familiares de interno agredido que falleció en Colina II",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-indemnizacion-de-53-millones-a-familiares-de-interno-agredido-que",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-0ce11936-1795486179473-rk576OIas7zqYLoJwo8tF9SViCU04z.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza financiar costosa inmunoterapia a paciente con cáncer avanzado por falta de cobertura legal",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-financiar-costosa-inmunoterapia-a-paciente-con-cancer-avanzado-por-falta-de",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-6436263-DYwxeMzyZE5gxPTYKM3C8JTU3loaE4.jpg"
   }
  ]
 }
