@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Javier Macaya solicita desafuero del diputado Jaime Bassa por acusaciones sobre uso de bots electorales",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/javier-macaya-solicita-desafuero-del-diputado-jaime-bassa-por-acusaciones-sobre-uso-de-bots",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-2ded8ee6-1795469363475-yOUt4eHS5TUSVfvmdUt0EQPBjeXHPs.jpg"
+  },
+  {
+   "titulo": "Corte de Santiago confirma indemnización a hijos y viudas de cuatro víctimas de prisión política y tortura",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-indemnizacion-a-hijos-y-viudas-de-cuatro-victimas-de-prision-politica-y",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-80d8e35a-1795265825656-op9dVrloKubyL93YnOQ6yH61BJYBbK.jpg"
+  },
+  {
+   "titulo": "Justicia española condena a entidad de salud por tardar 16 meses en diagnosticar cáncer de pulmón",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-espanola-condena-a-entidad-de-salud-por-tardar-16-meses-en-diagnosticar-cancer-de-pulmon",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-espanola-condena-a-entidad-de-salud-por-tardar-16-meses-en-diagnosticar-cancer-de-pulmon-oYsAx8pae8D7K1D6sxTKtEGV3cNPo0.jpg"
+  },
+  {
+   "titulo": "Corte Suprema cuestiona proyecto para reforzar bloqueo de sitios de apuestas en línea por duplicar facultades judiciales",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-cuestiona-proyecto-para-reforzar-bloqueo-de-sitios-de-apuestas-en-linea-por-duplicar",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-cuestiona-proyecto-para-reforzar-bloqueo-de-sitios-de-apuestas-en-linea-por-duplicar-p618w5EzPCQciqilDSjcgBhPbFkZST.jpg"
+  },
+  {
    "titulo": "Corte Suprema argentina deja firme condena de 18 años a madre que no denunció abusos sexuales contra su hija",
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/corte-suprema-argentina-deja-firme-condena-de-18-anos-a-madre-que-no-denuncio-abusos-sexuales-contra",
    "fecha": "2026-11-24",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-que-tener-un-celular-sin-tarjeta-sim-en-la-carcel-configura-delito",
    "fecha": "2026-11-23",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-66d04955-1795474748317-J0rRzKGegPIsx5aQ8Sb4EGhD8FlZEw.jpg"
-  },
-  {
-   "titulo": "Proyecto busca sancionar vuelos no autorizados de drones sobre cárceles y facilitar el comiso de estos dispositivos",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-busca-sancionar-vuelos-no-autorizados-de-drones-sobre-carceles-y-facilitar-el-comiso-de",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-busca-sancionar-vuelos-no-autorizados-de-drones-sobre-carceles-y-facilitar-el-comiso-de-pURA6WGVe1cjkizwZyki7HL1FzXcnW.jpg"
-  },
-  {
-   "titulo": "Corte de Coyhaique ordena a SENAMA acreditar medidas para corregir deficiencias en residencia de adultos mayores",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-coyhaique-ordena-a-senama-acreditar-medidas-para-corregir-deficiencias-en-residencia-de",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-coyhaique-ordena-a-senama-acreditar-medidas-para-corregir-deficiencias-en-residencia-de-3CBDfX8lkF2pGU7R6l2BK3rwz2mddx.jpg"
-  },
-  {
-   "titulo": "TC tiene por no presentado requerimiento contra la nulidad del despido por falta de certificado actualizado",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/tc-tiene-por-no-presentado-requerimiento-contra-la-nulidad-del-despido-por-falta-de-certificado",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-tiene-por-no-presentado-requerimiento-contra-la-nulidad-del-despido-por-falta-de-certificado-c9YGnUrVmjDG6kxfyT5rB6DxUTvyiW.jpg"
-  },
-  {
-   "titulo": "Corte Suprema reenvía a Corte de Rancagua recurso de nulidad de condenado por conducir ebrio y causar la muerte un motociclista",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-reenvia-a-corte-de-rancagua-recurso-de-nulidad-de-condenado-por-conducir-ebrio-y",
-   "fecha": "2026-11-23",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-reenvia-a-corte-de-rancagua-recurso-de-nulidad-de-condenado-por-conducir-ebrio-y-KrYmfmq0G1rq0joM9VQ6hsO8jBSRZb.jpg"
   }
  ]
 }
