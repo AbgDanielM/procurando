@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Proyecto de ley busca facilitar regularización de pequeños negocios y sedes comunitarias mediante modificaciones a la Ley del Mono",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-facilitar-regularizacion-de-pequenos-negocios-y-sedes-comunitarias-mediante",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-facilitar-regularizacion-de-pequenos-negocios-y-sedes-comunitarias-mediante-PBslZqAtjhtIEcbUu3JHepRPdLUqYe.jpg"
+  },
+  {
+   "titulo": "Tribunal de Concepción absuelve a carabinero acusado de apremios ilegítimos contra adolescente durante el estallido social",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/tribunal-de-concepcion-absuelve-a-carabinero-acusado-de-apremios-ilegitimos-contra-adolescente",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-de-concepcion-absuelve-a-carabinero-acusado-de-apremios-ilegitimos-contra-adolescente-svQghEBfPRCEupIS8BxKtzf5s4iMlm.jpg"
+  },
+  {
    "titulo": "Corte confirma multa de 21 UTM a TV Más por no transmitir campaña contra incendios forestales",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-confirma-multa-de-21-utm-a-tv-mas-por-no-transmitir-campana-contra-incendios-forestales",
    "fecha": "2026-11-24",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/tribunal-ordena-expulsar-de-chile-a-extranjero-condenado-por-robo-de-celular-y-le-prohibe-regresar",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-06664bc2-1795529969350-6YljNHVlxv4OdPfhnDorK3MQ4LjR7X.jpg"
-  },
-  {
-   "titulo": "Condenan a presidio perpetuo a hombre que secuestró y violó a su exconviviente en Puerto Aysén",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-presidio-perpetuo-a-hombre-que-secuestro-y-violo-a-su-exconviviente-en-puerto-aysen",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-2cbbcc39-1795489145595-NshxnjP9NXMJBgfatHU10HihWPQeZc.jpg"
-  },
-  {
-   "titulo": "Ordenan reintegrar a inspectora de colegio de Arica tras declarar vulnerada su libertad de trabajo por destinación a docencia de aula",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/ordenan-reintegrar-a-inspectora-de-colegio-de-arica-tras-declarar-vulnerada-su-libertad-de-trabajo",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-90449006-1795488884437-TawteW5ueVkOEH6r1uY67V9Fa8pSHh.jpg"
   }
  ]
 }
