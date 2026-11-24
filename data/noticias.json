@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema rechaza recurso contra BancoEstado porque clienta retiró la totalidad de los fondos reclamados",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-rechaza-recurso-contra-bancoestado-porque-clienta-retiro-la-totalidad-de-los-fondos",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-rechaza-recurso-contra-bancoestado-porque-clienta-retiro-la-totalidad-de-los-fondos-ZQMKRslCjQPcCt4pxyddPaRq817vuq.jpg"
+  },
+  {
+   "titulo": "Proyecto de ley busca que baños accesibles incorporen condiciones adecuadas para personas ostomizadas",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-que-banos-accesibles-incorporen-condiciones-adecuadas-para-personas",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-que-banos-accesibles-incorporen-condiciones-adecuadas-para-personas-M4FfzoStfacctxdlkRiXQumoKYaxsZ.jpg"
+  },
+  {
+   "titulo": "Corte de San Miguel confirma condena de 15 años y un día de presidio a conductor que participó en un homicidio consumado y otro frustrado en Puente Alto",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-san-miguel-confirma-condena-de-15-anos-y-un-dia-de-presidio-a-conductor-que-participo-en-un",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-san-miguel-confirma-condena-de-15-anos-y-un-dia-de-presidio-a-conductor-que-participo-en-un-ga8TVZ80U5LnnUwlXuc3BIb2i5MK1S.jpg"
+  },
+  {
    "titulo": "Proyecto de ley busca facilitar regularización de pequeños negocios y sedes comunitarias mediante modificaciones a la Ley del Mono",
    "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-facilitar-regularizacion-de-pequenos-negocios-y-sedes-comunitarias-mediante",
    "fecha": "2026-11-24",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-catorce-anos-de-presidio-efectivo-a-hombre-que-dio-muerte-a-otro-con-arma-blanca-en-san",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-39018ddb-1795531122258-e7wxz6kkzyiWmPVcB1IJskLWWpCHPg.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago respalda a Municipalidad de Las Condes por no renovar patentes de alcoholes de restaurante",
-   "enlace": "https://www.diarioconstitucional.cl/nacional/corte-de-santiago-respalda-a-municipalidad-de-las-condes-por-no-renovar-patentes-de-alcoholes-de",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4392f48a-1795530708738-5l3ORlcX6tP34S3e6G9XyiQV26UmwT.jpg"
-  },
-  {
-   "titulo": "Corte Suprema anula juicio por droga tras declarar ilícito control fundado en denuncia anónima no corroborada",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-anula-juicio-por-droga-tras-declarar-ilicito-control-fundado-en-denuncia-anonima-no",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-d6db377e-1795530317657-KYzM0nF78kc6l1EdNdU36TJkS9Dphu.jpg"
-  },
-  {
-   "titulo": "Tribunal ordena expulsar de Chile a extranjero condenado por robo de celular y le prohíbe regresar por diez años",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/tribunal-ordena-expulsar-de-chile-a-extranjero-condenado-por-robo-de-celular-y-le-prohibe-regresar",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-06664bc2-1795529969350-6YljNHVlxv4OdPfhnDorK3MQ4LjR7X.jpg"
   }
  ]
 }
