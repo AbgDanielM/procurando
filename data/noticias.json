@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte confirma multa de 21 UTM a TV Más por no transmitir campaña contra incendios forestales",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-confirma-multa-de-21-utm-a-tv-mas-por-no-transmitir-campana-contra-incendios-forestales",
+   "fecha": "2026-11-24",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-confirma-multa-de-21-utm-a-tv-mas-por-no-transmitir-campana-contra-incendios-forestales-rE2lFsmIlkaJ59bGYpHRW03cXr0BmX.jpg"
+  },
+  {
    "titulo": "CPLT advierte que siete de cada diez rechazos de solicitudes de información por exceso de trabajo carecen de justificación",
    "enlace": "https://www.diarioconstitucional.cl/ley-de-transparencia/cplt-advierte-que-siete-de-cada-diez-rechazos-de-solicitudes-de-informacion-por-exceso-de-trabajo",
    "fecha": "2026-11-24",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/ordenan-reintegrar-a-inspectora-de-colegio-de-arica-tras-declarar-vulnerada-su-libertad-de-trabajo",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-90449006-1795488884437-TawteW5ueVkOEH6r1uY67V9Fa8pSHh.jpg"
-  },
-  {
-   "titulo": "Corte Suprema confirma sanción a liceo por expulsar a estudiante sin garantizar su derecho a defensa",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-sancion-a-liceo-por-expulsar-a-estudiante-sin-garantizar-su-derecho-a-defensa",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-sancion-a-liceo-por-expulsar-a-estudiante-sin-garantizar-su-derecho-a-defensa-9V9nKW2PqnJRcjJaCM8wTjwHTYT4al.jpg"
   }
  ]
 }
