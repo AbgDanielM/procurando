@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Condenan a 18 años de presidio a mujer que mató a su ex pareja con un cuchillo en un departamento de Talca al descartar legítima defensa",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-18-anos-de-presidio-a-mujer-que-mato-a-su-ex-pareja-con-un-cuchillo-en-un-departamento-de",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-50f9f97e-1795620467368-B1TVcPYKUL7hsfJnx7yCdwAG8VNj5o.jpg"
+  },
+  {
+   "titulo": "La lesión de los datos personales y el daño extrapatrimonial: desafíos para la teoría general de la responsabilidad civil en Chile",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/la-lesion-de-los-datos-personales-y-el-dano-extrapatrimonial-desafios-para-la-teoria-general-de-la",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-ff1ad344-1795619916953-m5rtn3GzXtfDj5Xkj5nfgel1GwdKNo.jpg"
+  },
+  {
    "titulo": "Proyecto de ley propone presidio perpetuo para el delito de violación y castración química como requisito para acceder a beneficios penitenciarios",
    "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-propone-presidio-perpetuo-para-el-delito-de-violacion-y-castracion-quimica-como",
    "fecha": "2026-11-25",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/estudio-uc-revela-72-cambios-de-criterio-de-la-corte-suprema-sobre-rebajas-de-condenas-por-delitos",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Festudio-uc-revela-72-cambios-de-criterio-de-la-corte-suprema-sobre-rebajas-de-condenas-por-delitos-sDGf30QzOBQgfZRtsBJ9G2WiaY2b0c.jpg"
-  },
-  {
-   "titulo": "Corte Suprema descarta reclamo judicial contra determinación de saldos de subvenciones educacionales",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-descarta-reclamo-judicial-contra-determinacion-de-saldos-de-subvenciones-educacionales",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-descarta-reclamo-judicial-contra-determinacion-de-saldos-de-subvenciones-educacionales-abjFGEdNW2nuAvR12fLhMF72n8ztpd.jpg"
-  },
-  {
-   "titulo": "Lorenzo Silva rescata el pensamiento de Francisco de Vitoria, precursor del Derecho Internacional moderno",
-   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/lorenzo-silva-rescata-el-pensamiento-de-francisco-de-vitoria-precursor-del-derecho-internacional",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Florenzo-silva-rescata-el-pensamiento-de-francisco-de-vitoria-precursor-del-derecho-internacional-x6N7Oea1VB8vm9FgQP12BYQHd7URIC.jpg"
   }
  ]
 }
