@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "TC abre la puerta a indemnización por daño moral en demanda de exfuncionario del INE contra exautoridades",
+   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-abre-la-puerta-a-indemnizacion-por-dano-moral-en-demanda-de-exfuncionario-del-ine-contra",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-abre-la-puerta-a-indemnizacion-por-dano-moral-en-demanda-de-exfuncionario-del-ine-contra-seIDcG9HadpNExxcmxxGQxgMgY5fFw.jpg"
+  },
+  {
    "titulo": "Corte de Valdivia anula aprobación de proyecto inmobiliario en lago Ranco por omitir consulta indígena",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-valdivia-anula-aprobacion-de-proyecto-inmobiliario-en-lago-ranco-por-omitir-consulta",
    "fecha": "2026-11-25",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-rebaja-de-multa-a-colegio-por-prescripcion-de-una-infraccion",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-rebaja-de-multa-a-colegio-por-prescripcion-de-una-infraccion-YOub5FDC5HguwPC11bWhqp4f5lbRmq.jpg"
-  },
-  {
-   "titulo": "Condenan a 10 años de cárcel a sujeto que inmovilizó a copiloto para robar un celular",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-10-anos-de-carcel-a-sujeto-que-inmovilizo-a-copiloto-para-robar-un-celular",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-5a39cdc0-1795573656894-qt1it2xs7FOBDwLlO58O87UPx8yTwj.jpg"
   }
  ]
 }
