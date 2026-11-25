@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Fútbol femenino e igualdad",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/futbol-femenino-e-igualdad",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Ffutbol-femenino-e-igualdad-Uh1yEIZKoLeCCKWxAUVoAEcq0ERgZA.jpg"
+  },
+  {
+   "titulo": "Ministro Robert Currie asume la presidencia del Tercer Tribunal Ambiental",
+   "enlace": "https://www.diarioconstitucional.cl/ambiental/ministro-robert-currie-asume-la-presidencia-del-tercer-tribunal-ambiental",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fministro-robert-currie-asume-la-presidencia-del-tercer-tribunal-ambiental-2m6DbqpUQdkRM11DepLdl9F3GwZibB.jpg"
+  },
+  {
+   "titulo": "Corte Suprema confirma expulsión de ciudadana venezolana y establece que el arraigo familiar no impide aplicar la medida",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-expulsion-de-ciudadana-venezolana-y-establece-que-el-arraigo-familiar-no",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-expulsion-de-ciudadana-venezolana-y-establece-que-el-arraigo-familiar-no-rQ3hvTebeM6qJskKdeaPhpoXYUGC4E.jpg"
+  },
+  {
    "titulo": "Esteban Schafer Aguirr: ¿Qué ha impedido modernizar un sistema procesal que lleva más de una década esperando?",
    "enlace": "https://www.diarioconstitucional.cl/entrevistas/esteban-schafer-aguirr-que-ha-impedido-modernizar-un-sistema-procesal-que-lleva-mas-de-una-decada",
    "fecha": "2026-11-25",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/por-falta-de-fundamento-constitucional-concreto-tc-declara-derechamente-inadmisible-inaplicabilidad",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpor-falta-de-fundamento-constitucional-concreto-tc-declara-derechamente-inadmisible-inaplicabilidad-NGW04ZMlVlaD7VQoixZPdXEQGS5X3K.jpg"
-  },
-  {
-   "titulo": "El voto de la abstención y el límite constitucional: el contraste entre Chile y Argentina frente al 25N, por Sofía Andrea Curatolo",
-   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/el-voto-de-la-abstencion-y-el-limite-constitucional-el-contraste-entre-chile-y-argentina-frente-al",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fel-voto-de-la-abstencion-y-el-limite-constitucional-el-contraste-entre-chile-y-argentina-frente-al-sMnUiCFnHh3uTbMu9KEks1MdKz9kxV.jpg"
-  },
-  {
-   "titulo": "Condenan a 18 años de presidio a mujer que mató a su ex pareja con un cuchillo en un departamento de Talca al descartar legítima defensa",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-18-anos-de-presidio-a-mujer-que-mato-a-su-ex-pareja-con-un-cuchillo-en-un-departamento-de",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-50f9f97e-1795620467368-B1TVcPYKUL7hsfJnx7yCdwAG8VNj5o.jpg"
-  },
-  {
-   "titulo": "La lesión de los datos personales y el daño extrapatrimonial: desafíos para la teoría general de la responsabilidad civil en Chile",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/la-lesion-de-los-datos-personales-y-el-dano-extrapatrimonial-desafios-para-la-teoria-general-de-la",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-ff1ad344-1795619916953-m5rtn3GzXtfDj5Xkj5nfgel1GwdKNo.jpg"
   }
  ]
 }
