@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "¿Aceptar nuevas condiciones laborales o perder el empleo?",
+   "enlace": "https://www.diarioconstitucional.cl/videos/aceptar-nuevas-condiciones-laborales-o-perder-el-empleo",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Faceptar-nuevas-condiciones-laborales-o-perder-el-empleo-i2BTNEbOLFRWkj8AyTBMdpcEcAS1iB.jpg"
+  },
+  {
    "titulo": "Corte de Concepción ordena a ESSBIO ejecutar obras definitivas por reiteradas inundaciones de aguas servidas en vivienda",
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-concepcion-ordena-a-essbio-ejecutar-obras-definitivas-por-reiteradas-inundaciones-de-aguas",
    "fecha": "2026-11-25",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/medico-pidio-eliminar-noticias-que-lo-identificaban-por-trabajar-sin-eunacom-pero-corte-de-coyhaique",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-b3a5c538-1795532147928-3kYBOoqUvXOddfi5FV4FJFbGI5yq8m.jpg"
-  },
-  {
-   "titulo": "Corte Suprema ordena al Fisco pagar $10 millones a cónyuge de prisionero político torturado durante su embarazo",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-ordena-al-fisco-pagar-10-millones-a-conyuge-de-prisionero-politico-torturado-durante",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-c2cc1cde-1795531768657-7y1gL82QtLx8Xql5zcvGvSdP2lLDQv.jpg"
   }
  ]
 }
