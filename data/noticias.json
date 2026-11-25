@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Proyecto de ley propone presidio perpetuo para el delito de violación y castración química como requisito para acceder a beneficios penitenciarios",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-propone-presidio-perpetuo-para-el-delito-de-violacion-y-castracion-quimica-como",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-propone-presidio-perpetuo-para-el-delito-de-violacion-y-castracion-quimica-como-5BtVdv94MnKDAb1NSDhOt1KMB78Roc.jpg"
+  },
+  {
+   "titulo": "Corte Suprema declara ilegal mantención de prisión preventiva por omitir análisis de argumentos de la defensa",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-declara-ilegal-mantencion-de-prision-preventiva-por-omitir-analisis-de-argumentos-de",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-declara-ilegal-mantencion-de-prision-preventiva-por-omitir-analisis-de-argumentos-de-u7OZTirmERULRXxZ3FfaEncohr5eAp.jpg"
+  },
+  {
+   "titulo": "Tribunal Ambiental acoge reclamación de Greenpeace y anula programa de cumplimiento de Australis Mar por sobreproducción de salmones",
+   "enlace": "https://www.diarioconstitucional.cl/ambiental/tribunal-ambiental-acoge-reclamacion-de-greenpeace-y-anula-programa-de-cumplimiento-de-australis-mar",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-ambiental-acoge-reclamacion-de-greenpeace-y-anula-programa-de-cumplimiento-de-australis-mar-NzPmLzJ0nfooJOV0EjXPKKWtfxZBEA.jpg"
+  },
+  {
    "titulo": "TC abre la puerta a indemnización por daño moral en demanda de exfuncionario del INE contra exautoridades",
    "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-abre-la-puerta-a-indemnizacion-por-dano-moral-en-demanda-de-exfuncionario-del-ine-contra",
    "fecha": "2026-11-25",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/lorenzo-silva-rescata-el-pensamiento-de-francisco-de-vitoria-precursor-del-derecho-internacional",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Florenzo-silva-rescata-el-pensamiento-de-francisco-de-vitoria-precursor-del-derecho-internacional-x6N7Oea1VB8vm9FgQP12BYQHd7URIC.jpg"
-  },
-  {
-   "titulo": "Contraloría limita fraccionamiento de vacaciones de médicos que concentran su jornada en turnos de 24 horas",
-   "enlace": "https://www.diarioconstitucional.cl/contraloria/contraloria-limita-fraccionamiento-de-vacaciones-de-medicos-que-concentran-su-jornada-en-turnos-de",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F574092-gKR9SRrmkeCKIzXywXFW2mKTucSHMY.jpg"
-  },
-  {
-   "titulo": "¿Quién responde penalmente por los daños causados por la inteligencia artificial?, se pregunta Manuel Lamela Fernández",
-   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/quien-responde-penalmente-por-los-danos-causados-por-la-inteligencia-artificial-se-pregunta-manuel",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fquien-responde-penalmente-por-los-danos-causados-por-la-inteligencia-artificial-se-pregunta-manuel-OnuWy92b4nusgMPnmb0pXa1KhI8r61.jpg"
-  },
-  {
-   "titulo": "Corte Suprema confirma rebaja de multa a colegio por prescripción de una infracción",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-rebaja-de-multa-a-colegio-por-prescripcion-de-una-infraccion",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-rebaja-de-multa-a-colegio-por-prescripcion-de-una-infraccion-YOub5FDC5HguwPC11bWhqp4f5lbRmq.jpg"
   }
  ]
 }
