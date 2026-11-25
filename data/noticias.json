@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte de Concepción ordena a ESSBIO ejecutar obras definitivas por reiteradas inundaciones de aguas servidas en vivienda",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-concepcion-ordena-a-essbio-ejecutar-obras-definitivas-por-reiteradas-inundaciones-de-aguas",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-concepcion-ordena-a-essbio-ejecutar-obras-definitivas-por-reiteradas-inundaciones-de-aguas-6tLEYXwNLyZYJNYIXtZ3COdNNPeEfU.jpg"
+  },
+  {
    "titulo": "Corte Suprema rechaza recurso contra BancoEstado porque clienta retiró la totalidad de los fondos reclamados",
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-rechaza-recurso-contra-bancoestado-porque-clienta-retiro-la-totalidad-de-los-fondos",
    "fecha": "2026-11-24",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-ordena-al-fisco-pagar-10-millones-a-conyuge-de-prisionero-politico-torturado-durante",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-c2cc1cde-1795531768657-7y1gL82QtLx8Xql5zcvGvSdP2lLDQv.jpg"
-  },
-  {
-   "titulo": "Condenan a catorce años de presidio efectivo a hombre que dio muerte a otro con arma blanca en San Ramón",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-catorce-anos-de-presidio-efectivo-a-hombre-que-dio-muerte-a-otro-con-arma-blanca-en-san",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-39018ddb-1795531122258-e7wxz6kkzyiWmPVcB1IJskLWWpCHPg.jpg"
   }
  ]
 }
