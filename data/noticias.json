@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Esteban Schafer Aguirr: ¿Qué ha impedido modernizar un sistema procesal que lleva más de una década esperando?",
+   "enlace": "https://www.diarioconstitucional.cl/entrevistas/esteban-schafer-aguirr-que-ha-impedido-modernizar-un-sistema-procesal-que-lleva-mas-de-una-decada",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-04b34ea8-1795647242188-RVgPa7FZ8I01KsXdKFfxAlBf8H1MgM.jpg"
+  },
+  {
+   "titulo": "Corte Suprema rechaza indemnización adicional por daño moral a trabajadora que sufrió vulneración de su honra",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-rechaza-indemnizacion-adicional-por-dano-moral-a-trabajadora-que-sufrio-vulneracion-de",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-rechaza-indemnizacion-adicional-por-dano-moral-a-trabajadora-que-sufrio-vulneracion-de-7f7INRtyMhJ1iLTczn0N95A4dZCx6D.jpg"
+  },
+  {
    "titulo": "Proponen derogar la Ley N°19.856 sobre reducción de condenas por buena conducta y fijar un régimen transitorio para solicitudes en trámite",
    "enlace": "https://www.diarioconstitucional.cl/legislativo/proponen-derogar-la-ley-n19856-sobre-reduccion-de-condenas-por-buena-conducta-y-fijar-un-regimen",
    "fecha": "2026-11-25",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/la-lesion-de-los-datos-personales-y-el-dano-extrapatrimonial-desafios-para-la-teoria-general-de-la",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-ff1ad344-1795619916953-m5rtn3GzXtfDj5Xkj5nfgel1GwdKNo.jpg"
-  },
-  {
-   "titulo": "Proyecto de ley propone presidio perpetuo para el delito de violación y castración química como requisito para acceder a beneficios penitenciarios",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-propone-presidio-perpetuo-para-el-delito-de-violacion-y-castracion-quimica-como",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-propone-presidio-perpetuo-para-el-delito-de-violacion-y-castracion-quimica-como-5BtVdv94MnKDAb1NSDhOt1KMB78Roc.jpg"
-  },
-  {
-   "titulo": "Corte Suprema declara ilegal mantención de prisión preventiva por omitir análisis de argumentos de la defensa",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-declara-ilegal-mantencion-de-prision-preventiva-por-omitir-analisis-de-argumentos-de",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-declara-ilegal-mantencion-de-prision-preventiva-por-omitir-analisis-de-argumentos-de-u7OZTirmERULRXxZ3FfaEncohr5eAp.jpg"
   }
  ]
 }
