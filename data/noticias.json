@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Perspectiva de género y proceso judicial - Un diálogo entre Uruguay y Argentina",
+   "enlace": "https://www.diarioconstitucional.cl/opinion/perspectiva-de-genero-y-proceso-judicial-un-dialogo-entre-uruguay-y-argentina",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-5f30f45d-1795628656127-Vp1oNrOOmxTiBDe0eTY7hndSgfOvX0.jpg"
+  },
+  {
    "titulo": "Condenan a 18 años de presidio a mujer que mató a su ex pareja con un cuchillo en un departamento de Talca al descartar legítima defensa",
    "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-18-anos-de-presidio-a-mujer-que-mato-a-su-ex-pareja-con-un-cuchillo-en-un-departamento-de",
    "fecha": "2026-11-25",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-establece-que-el-recurso-de-queja-no-puede-convertirse-en-una-segunda-instancia",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-establece-que-el-recurso-de-queja-no-puede-convertirse-en-una-segunda-instancia-xUviJZDbsR2xrkPWGrUBn7YqiPfIgd.jpg"
-  },
-  {
-   "titulo": "Estudio UC revela 72 cambios de criterio de la Corte Suprema sobre rebajas de condenas por delitos sexuales contra menores de edad",
-   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/estudio-uc-revela-72-cambios-de-criterio-de-la-corte-suprema-sobre-rebajas-de-condenas-por-delitos",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Festudio-uc-revela-72-cambios-de-criterio-de-la-corte-suprema-sobre-rebajas-de-condenas-por-delitos-sDGf30QzOBQgfZRtsBJ9G2WiaY2b0c.jpg"
   }
  ]
 }
