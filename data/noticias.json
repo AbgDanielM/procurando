@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "El salario mínimo: algo de historia, geografía y economía de una institución discutida, con plena legitimidad para el caso Chileno, pero con necesidad de una urgente reconducción técnica e institucional",
+   "enlace": "https://www.diarioconstitucional.cl/opinion/el-salario-minimo-algo-de-historia-geografia-y-economia-de-una-institucion-discutida-con-plena",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fel-salario-minimo-algo-de-historia-geografia-y-economia-de-una-institucion-discutida-con-plena-f9j4LJkaZ2caZ5hgmfLVe0Ickeezj7.jpg"
+  },
+  {
    "titulo": "¿Aceptar nuevas condiciones laborales o perder el empleo?",
    "enlace": "https://www.diarioconstitucional.cl/videos/aceptar-nuevas-condiciones-laborales-o-perder-el-empleo",
    "fecha": "2026-11-25",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/cuando-la-corte-suprema-cambia-de-criterio-como-deben-decidir-las-empresas",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-7194215b-1795536665852-YnpudFa3FqROGxCvtbs2sTJsXjbH3a.jpg"
-  },
-  {
-   "titulo": "Médico pidió eliminar noticias que lo identificaban por trabajar sin EUNACOM, pero Corte de Coyhaique rechazó recurso",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/medico-pidio-eliminar-noticias-que-lo-identificaban-por-trabajar-sin-eunacom-pero-corte-de-coyhaique",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-b3a5c538-1795532147928-3kYBOoqUvXOddfi5FV4FJFbGI5yq8m.jpg"
   }
  ]
 }
