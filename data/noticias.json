@@ -2,6 +2,36 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Contraloría limita fraccionamiento de vacaciones de médicos que concentran su jornada en turnos de 24 horas",
+   "enlace": "https://www.diarioconstitucional.cl/contraloria/contraloria-limita-fraccionamiento-de-vacaciones-de-medicos-que-concentran-su-jornada-en-turnos-de",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F574092-gKR9SRrmkeCKIzXywXFW2mKTucSHMY.jpg"
+  },
+  {
+   "titulo": "¿Quién responde penalmente por los daños causados por la inteligencia artificial?, se pregunta Manuel Lamela Fernández",
+   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/quien-responde-penalmente-por-los-danos-causados-por-la-inteligencia-artificial-se-pregunta-manuel",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fquien-responde-penalmente-por-los-danos-causados-por-la-inteligencia-artificial-se-pregunta-manuel-OnuWy92b4nusgMPnmb0pXa1KhI8r61.jpg"
+  },
+  {
+   "titulo": "Corte Suprema confirma rebaja de multa a colegio por prescripción de una infracción",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-rebaja-de-multa-a-colegio-por-prescripcion-de-una-infraccion",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-rebaja-de-multa-a-colegio-por-prescripcion-de-una-infraccion-YOub5FDC5HguwPC11bWhqp4f5lbRmq.jpg"
+  },
+  {
+   "titulo": "Condenan a 10 años de cárcel a sujeto que inmovilizó a copiloto para robar un celular",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-10-anos-de-carcel-a-sujeto-que-inmovilizo-a-copiloto-para-robar-un-celular",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-5a39cdc0-1795573656894-qt1it2xs7FOBDwLlO58O87UPx8yTwj.jpg"
+  },
+  {
+   "titulo": "Condenan a 14 años de cárcel a hombre por homicidio en Cerrillos, pero descartan ensañamiento",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-14-anos-de-carcel-a-hombre-por-homicidio-en-cerrillos-pero-descartan-ensanamiento",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-9e4c17f4-1795573879305-0SjgAh3MCh8SqbAFzC0PA6JBhD9jis.jpg"
+  },
+  {
    "titulo": "El salario mínimo: algo de historia, geografía y economía de una institución discutida, con plena legitimidad para el caso Chileno, pero con necesidad de una urgente reconducción técnica e institucional",
    "enlace": "https://www.diarioconstitucional.cl/opinion/el-salario-minimo-algo-de-historia-geografia-y-economia-de-una-institucion-discutida-con-plena",
    "fecha": "2026-11-25",
@@ -42,36 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-facilitar-regularizacion-de-pequenos-negocios-y-sedes-comunitarias-mediante",
    "fecha": "2026-11-24",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-facilitar-regularizacion-de-pequenos-negocios-y-sedes-comunitarias-mediante-PBslZqAtjhtIEcbUu3JHepRPdLUqYe.jpg"
-  },
-  {
-   "titulo": "Tribunal de Concepción absuelve a carabinero acusado de apremios ilegítimos contra adolescente durante el estallido social",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/tribunal-de-concepcion-absuelve-a-carabinero-acusado-de-apremios-ilegitimos-contra-adolescente",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-de-concepcion-absuelve-a-carabinero-acusado-de-apremios-ilegitimos-contra-adolescente-svQghEBfPRCEupIS8BxKtzf5s4iMlm.jpg"
-  },
-  {
-   "titulo": "Corte confirma multa de 21 UTM a TV Más por no transmitir campaña contra incendios forestales",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-confirma-multa-de-21-utm-a-tv-mas-por-no-transmitir-campana-contra-incendios-forestales",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-confirma-multa-de-21-utm-a-tv-mas-por-no-transmitir-campana-contra-incendios-forestales-rE2lFsmIlkaJ59bGYpHRW03cXr0BmX.jpg"
-  },
-  {
-   "titulo": "CPLT advierte que siete de cada diez rechazos de solicitudes de información por exceso de trabajo carecen de justificación",
-   "enlace": "https://www.diarioconstitucional.cl/ley-de-transparencia/cplt-advierte-que-siete-de-cada-diez-rechazos-de-solicitudes-de-informacion-por-exceso-de-trabajo",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcplt-advierte-que-siete-de-cada-diez-rechazos-de-solicitudes-de-informacion-por-exceso-de-trabajo-TcLILOT636ORQR0yZpJbwfC3zhS1Hw.jpg"
-  },
-  {
-   "titulo": "Gendarmería mantuvo a interno preso más de cinco meses después de cumplir su condena y Corte acoge amparo",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/gendarmeria-mantuvo-a-interno-preso-mas-de-cinco-meses-despues-de-cumplir-su-condena-y-corte-acoge",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fgendarmeria-mantuvo-a-interno-preso-mas-de-cinco-meses-despues-de-cumplir-su-condena-y-corte-acoge-VVidbU4cSaccJxEmXPu8SRntL4litW.jpg"
-  },
-  {
-   "titulo": "Cuando la Corte Suprema cambia de criterio, ¿cómo deben decidir las empresas?",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/cuando-la-corte-suprema-cambia-de-criterio-como-deben-decidir-las-empresas",
-   "fecha": "2026-11-24",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-7194215b-1795536665852-YnpudFa3FqROGxCvtbs2sTJsXjbH3a.jpg"
   }
  ]
 }
