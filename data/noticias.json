@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Proponen derogar la Ley N°19.856 sobre reducción de condenas por buena conducta y fijar un régimen transitorio para solicitudes en trámite",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/proponen-derogar-la-ley-n19856-sobre-reduccion-de-condenas-por-buena-conducta-y-fijar-un-regimen",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fia-alta-1795639719925-FWNQDvSZ47PuF0h604XMrfCyG8bEd8.png"
+  },
+  {
+   "titulo": "¿Te imaginas cumplir tu condena y seguir preso 5 meses más?",
+   "enlace": "https://www.diarioconstitucional.cl/videos/te-imaginas-cumplir-tu-condena-y-seguir-preso-5-meses-mas",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Fte-imaginas-cumplir-tu-condena-y-seguir-preso-5-meses-mas-xu8zXF8rEpAdjw3uGCwLkbl8ZwXL4w.jpg"
+  },
+  {
+   "titulo": "¿Puede un partido político ocupar una marca existente para su campaña?",
+   "enlace": "https://www.diarioconstitucional.cl/videos/puede-un-partido-politico-ocupar-una-marca-existente-para-su-campana",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Fpuede-un-partido-politico-ocupar-una-marca-existente-para-su-campana-5dKOVxkdEDABsrxIE8HZ9ymXi0Clp5.jpg"
+  },
+  {
+   "titulo": "Senadora Danisa Astudillo Peiretti: Expulsión de extranjeros en Chile, los desafíos de una reforma que busca fortalecer el control migratorio y garantizar el debido proceso",
+   "enlace": "https://www.diarioconstitucional.cl/entrevistas/senadora-danisa-astudillo-peiretti-expulsion-de-extranjeros-en-chile-los-desafios-de-una-reforma-que",
+   "fecha": "2026-11-25",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fsenadora-danisa-astudillo-peiretti-expulsion-de-extranjeros-en-chile-los-desafios-de-una-reforma-que-46qjhgvZPYddhZnI2jiEgCm6vpnFPP.jpg"
+  },
+  {
    "titulo": "Proyecto de ley busca que contratos a honorarios sean reconocidos como laborales cuando exista subordinación y dependencia",
    "enlace": "https://www.diarioconstitucional.cl/laboral/proyecto-de-ley-busca-que-contratos-a-honorarios-sean-reconocidos-como-laborales-cuando-exista",
    "fecha": "2026-11-25",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-suprema-declara-ilegal-mantencion-de-prision-preventiva-por-omitir-analisis-de-argumentos-de",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-declara-ilegal-mantencion-de-prision-preventiva-por-omitir-analisis-de-argumentos-de-u7OZTirmERULRXxZ3FfaEncohr5eAp.jpg"
-  },
-  {
-   "titulo": "Tribunal Ambiental acoge reclamación de Greenpeace y anula programa de cumplimiento de Australis Mar por sobreproducción de salmones",
-   "enlace": "https://www.diarioconstitucional.cl/ambiental/tribunal-ambiental-acoge-reclamacion-de-greenpeace-y-anula-programa-de-cumplimiento-de-australis-mar",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-ambiental-acoge-reclamacion-de-greenpeace-y-anula-programa-de-cumplimiento-de-australis-mar-NzPmLzJ0nfooJOV0EjXPKKWtfxZBEA.jpg"
-  },
-  {
-   "titulo": "TC abre la puerta a indemnización por daño moral en demanda de exfuncionario del INE contra exautoridades",
-   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-abre-la-puerta-a-indemnizacion-por-dano-moral-en-demanda-de-exfuncionario-del-ine-contra",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-abre-la-puerta-a-indemnizacion-por-dano-moral-en-demanda-de-exfuncionario-del-ine-contra-seIDcG9HadpNExxcmxxGQxgMgY5fFw.jpg"
-  },
-  {
-   "titulo": "Corte de Valdivia anula aprobación de proyecto inmobiliario en lago Ranco por omitir consulta indígena",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-valdivia-anula-aprobacion-de-proyecto-inmobiliario-en-lago-ranco-por-omitir-consulta",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-valdivia-anula-aprobacion-de-proyecto-inmobiliario-en-lago-ranco-por-omitir-consulta-bwUw5T7ylMbW3mu8WLKIJhQE4k2UVI.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago deja sin efecto resolución de la CMF que ordenó liquidar diez fondos Sartor",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-deja-sin-efecto-resolucion-de-la-cmf-que-ordeno-liquidar-diez-fondos-sartor",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-santiago-deja-sin-efecto-resolucion-de-la-cmf-que-ordeno-liquidar-diez-fondos-sartor-GjWBETkGQEqU7VpfXhHOsRc55MCcBd.jpg"
   }
  ]
 }
