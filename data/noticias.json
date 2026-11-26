@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Condenan a 15 años de presidio a hombre que disparó a un joven durante una transacción de droga en Coquimbo",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-15-anos-de-presidio-a-hombre-que-disparo-a-un-joven-durante-una-transaccion-de-droga-en",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-f2e764ea-1795722493461-3Zrdzr1affxNKyCfTrMzexVPa2MqQ8.jpg"
+  },
+  {
+   "titulo": "Corte Suprema rechaza casación por arriendo de espacios en estacionamientos y mantiene término por mutuo acuerdo",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-casacion-por-arriendo-de-espacios-en-estacionamientos-y-mantiene-termino-por",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-33400ba7-1795721842857-FfrDYZvkBsEVgH192Hn3e0j9imdXFz.jpg"
+  },
+  {
+   "titulo": "Juzgado declara indebido despido de vendedora de perfumería por no acreditarse tres ausencias injustificadas en un mes",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/juzgado-declara-indebido-despido-de-vendedora-de-perfumeria-por-no-acreditarse-tres-ausencias",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-0b2ebea3-1795721141369-EdRJlCsAeNflfmixcEfu0Im4HxbPXB.jpg"
+  },
+  {
+   "titulo": "Corte de Santiago ordena a BancoEstado alzar bloqueos de cuentas de una clienta por falta de justificación de la medida",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-santiago-ordena-a-bancoestado-alzar-bloqueos-de-cuentas-de-una-clienta-por-falta-de",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4e722332-1795719922104-IaY5TJVqbgMcOZy9PuE9ltWMNJ4sB8.jpg"
+  },
+  {
    "titulo": "Corte Suprema rechaza unificación y mantiene fallo que negó lucro cesante a trabajador con 15% de incapacidad",
    "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-rechaza-unificacion-y-mantiene-fallo-que-nego-lucro-cesante-a-trabajador-con-15-por",
    "fecha": "2026-11-26",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/legislativo/corte-suprema-advierte-deficiencias-en-proyecto-que-busca-proteger-a-ninos-y-ninas-abandonados-en",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-8a1d2263-1795706495684-KkDtNtBPM0iqC3kCM645MZZ1uovySS.jpg"
-  },
-  {
-   "titulo": "Contraloría imparte instrucciones para implementar nueva normativa contable en el sector público y municipal",
-   "enlace": "https://www.diarioconstitucional.cl/contraloria/contraloria-imparte-instrucciones-para-implementar-nueva-normativa-contable-en-el-sector-publico-y",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2Fcl%2F573580-yEl2z28C6kcGgLTilOn3o8319U0LrP.jpg"
-  },
-  {
-   "titulo": "Corte Suprema ordena tramitar denuncia por prácticas antisindicales contra Nestlé tras despido de dirigentes sindicales",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-ordena-tramitar-denuncia-por-practicas-antisindicales-contra-nestle-tras-despido-de",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-6273318a-1795662549993-DyyOLrW09sND69harHLB3m1QWgYLGn.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago confirma multa a colegio de Maipú por sancionar a apoderado sin respetar el debido proceso",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-multa-a-colegio-de-maipu-por-sancionar-a-apoderado-sin-respetar-el-debido",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-08c3a8e0-1795662114239-Auvnbqsz4uvYLDce9mdEKPUD141ErD.jpg"
-  },
-  {
-   "titulo": "Paciente con tumor cerebral recurre de protección contra Fonasa por retraso de dos meses en cirugía",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/paciente-con-tumor-cerebral-recurre-de-proteccion-contra-fonasa-por-retraso-de-dos-meses-en-cirugia",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpaciente-con-tumor-cerebral-recurre-de-proteccion-contra-fonasa-por-retraso-de-dos-meses-en-cirugia-TJ3Jf8EpuUBdccBsNnHzFi52V3qF94.jpg"
   }
  ]
 }
