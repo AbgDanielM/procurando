@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "¿Me pueden destituir si estoy con licencia médica? Lo que cambia la Ley 21.850 para los funcionarios públicos, por Basilio Belmar",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/me-pueden-destituir-si-estoy-con-licencia-medica-lo-que-cambia-la-ley-21850-para-los-funcionarios",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fme-pueden-destituir-si-estoy-con-licencia-medica-lo-que-cambia-la-ley-21850-para-los-funcionarios-rh9NyWlwRR3lniu8aaZFk7Ax6rfNM3.jpg"
+  },
+  {
    "titulo": "Condenan a 15 años de presidio a hombre que disparó a un joven durante una transacción de droga en Coquimbo",
    "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-15-anos-de-presidio-a-hombre-que-disparo-a-un-joven-durante-una-transaccion-de-droga-en",
    "fecha": "2026-11-26",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/confirman-multa-de-60-utm-a-instituto-por-registro-de-asistencia-docente-no-valido-ante-la-ley",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-e2f41f4c-1795707341713-lPxrkUGjcAZg66AYzE8ou0e7yh5Pqd.jpg"
-  },
-  {
-   "titulo": "Corte Suprema advierte deficiencias en proyecto que busca proteger a niños y niñas abandonados en hospitales",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/corte-suprema-advierte-deficiencias-en-proyecto-que-busca-proteger-a-ninos-y-ninas-abandonados-en",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-8a1d2263-1795706495684-KkDtNtBPM0iqC3kCM645MZZ1uovySS.jpg"
   }
  ]
 }
