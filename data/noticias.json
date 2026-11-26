@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Sala Cuna Universal queda en condiciones de ser promulgada como ley",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/sala-cuna-universal-queda-en-condiciones-de-ser-promulgada-como-ley",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsala-cuna-universal-queda-en-condiciones-de-ser-promulgada-como-ley-RNjilHkB0OixKISgn7kiWnnMF5SDgl.jpg"
+  },
+  {
+   "titulo": "Falsificación de marcas y crimen organizado: por qué su persecución penal no puede seguir dependiendo del titular de la marca",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/falsificacion-de-marcas-y-crimen-organizado-por-que-su-persecucion-penal-no-puede-seguir-dependiendo",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Ffalsificacion-de-marcas-y-crimen-organizado-por-que-su-persecucion-penal-no-puede-seguir-dependiendo-R8S12muHew7CVBHypz0o9meVyY8av9.jpg"
+  },
+  {
    "titulo": "Fútbol femenino e igualdad",
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/futbol-femenino-e-igualdad",
    "fecha": "2026-11-25",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/proyecto-de-ley-busca-que-contratos-a-honorarios-sean-reconocidos-como-laborales-cuando-exista",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-que-contratos-a-honorarios-sean-reconocidos-como-laborales-cuando-exista-bU8vSB9JNGEaWBIAr8u8mqlqn5P09H.jpg"
-  },
-  {
-   "titulo": "Ley 21.855: cambió la fecha, no las obligaciones",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/ley-21855-cambio-la-fecha-no-las-obligaciones",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fley-21855-cambio-la-fecha-no-las-obligaciones-w2Se2rdMkCXyFkKbAWiLJGH0o2FX85.jpg"
-  },
-  {
-   "titulo": "Por falta de fundamento constitucional concreto TC declara derechamente inadmisible inaplicabilidad",
-   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/por-falta-de-fundamento-constitucional-concreto-tc-declara-derechamente-inadmisible-inaplicabilidad",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpor-falta-de-fundamento-constitucional-concreto-tc-declara-derechamente-inadmisible-inaplicabilidad-NGW04ZMlVlaD7VQoixZPdXEQGS5X3K.jpg"
   }
  ]
 }
