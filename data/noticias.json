@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema rechaza unificación y mantiene fallo que negó lucro cesante a trabajador con 15% de incapacidad",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-rechaza-unificacion-y-mantiene-fallo-que-nego-lucro-cesante-a-trabajador-con-15-por",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-ea9f5542-1795719016705-6gFXtlWJn0IMXo25Ko4mZah9lcR5F0.jpg"
+  },
+  {
    "titulo": "Internet hogar: cuánta velocidad y qué WiFi elegir según tu uso",
    "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/internet-hogar-cuanta-velocidad-y-que-wifi-elegir-segun-tu-uso",
    "fecha": "2026-11-26",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/paciente-con-tumor-cerebral-recurre-de-proteccion-contra-fonasa-por-retraso-de-dos-meses-en-cirugia",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpaciente-con-tumor-cerebral-recurre-de-proteccion-contra-fonasa-por-retraso-de-dos-meses-en-cirugia-TJ3Jf8EpuUBdccBsNnHzFi52V3qF94.jpg"
-  },
-  {
-   "titulo": "Corte Suprema descarta indemnización por lesión ocular al no probarse que proyectil proviniera de Carabineros",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-descarta-indemnizacion-por-lesion-ocular-al-no-probarse-que-proyectil-proviniera-de",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-descarta-indemnizacion-por-lesion-ocular-al-no-probarse-que-proyectil-proviniera-de-6PbZYAuDWQEhUXRn98MsPHLTEjSZzf.jpg"
   }
  ]
 }
