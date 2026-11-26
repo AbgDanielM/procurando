@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "¿Es sostenible la rebaja de condenas por delitos sexuales contra menores?",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/es-sostenible-la-rebaja-de-condenas-por-delitos-sexuales-contra-menores",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-9d505c45-1795658523974-yQbTucvLDNFTyOE1BgPaARdCWhciDW.jpg"
+  },
+  {
+   "titulo": "Derechos indisponibles y naturaleza jurídica de los cargos de exclusiva confianza: comentarios sobre la Sentencia Rol 790-2026 de la Ilma. Corte de Apelaciones de Copiapó",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/derechos-indisponibles-y-naturaleza-juridica-de-los-cargos-de-exclusiva-confianza-comentarios-sobre",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fderechos-indisponibles-y-naturaleza-juridica-de-los-cargos-de-exclusiva-confianza-comentarios-sobre-qWCoBW45dsywXN6KjuXeAxOvnKFVPW.jpg"
+  },
+  {
    "titulo": "Sala Cuna Universal queda en condiciones de ser promulgada como ley",
    "enlace": "https://www.diarioconstitucional.cl/legislativo/sala-cuna-universal-queda-en-condiciones-de-ser-promulgada-como-ley",
    "fecha": "2026-11-26",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/videos/puede-un-partido-politico-ocupar-una-marca-existente-para-su-campana",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Fpuede-un-partido-politico-ocupar-una-marca-existente-para-su-campana-5dKOVxkdEDABsrxIE8HZ9ymXi0Clp5.jpg"
-  },
-  {
-   "titulo": "Senadora Danisa Astudillo Peiretti: Expulsión de extranjeros en Chile, los desafíos de una reforma que busca fortalecer el control migratorio y garantizar el debido proceso",
-   "enlace": "https://www.diarioconstitucional.cl/entrevistas/senadora-danisa-astudillo-peiretti-expulsion-de-extranjeros-en-chile-los-desafios-de-una-reforma-que",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fsenadora-danisa-astudillo-peiretti-expulsion-de-extranjeros-en-chile-los-desafios-de-una-reforma-que-46qjhgvZPYddhZnI2jiEgCm6vpnFPP.jpg"
-  },
-  {
-   "titulo": "Proyecto de ley busca que contratos a honorarios sean reconocidos como laborales cuando exista subordinación y dependencia",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/proyecto-de-ley-busca-que-contratos-a-honorarios-sean-reconocidos-como-laborales-cuando-exista",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-que-contratos-a-honorarios-sean-reconocidos-como-laborales-cuando-exista-bU8vSB9JNGEaWBIAr8u8mqlqn5P09H.jpg"
   }
  ]
 }
