@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Internet hogar: cuánta velocidad y qué WiFi elegir según tu uso",
+   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/internet-hogar-cuanta-velocidad-y-que-wifi-elegir-segun-tu-uso",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Finternet-hogar-cuanta-velocidad-y-que-wifi-elegir-segun-tu-uso-qeYl5wy1sIxAoDynVJXHLnVMncV6kw.jpeg"
+  },
+  {
+   "titulo": "Corte de Rancagua confirma condena a inmobiliaria por fallas constructivas en viviendas de Villa Santa Blanca",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-rancagua-confirma-condena-a-inmobiliaria-por-fallas-constructivas-en-viviendas-de-villa",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-41006d41-1795710597404-coYa6h8ea37nvL4zF9IxanwtBxntaZ.jpg"
+  },
+  {
+   "titulo": "Corte Suprema rechaza recurso y confirma el rechazo de demanda de cobro por mejoras en una vivienda de Arica",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-recurso-y-confirma-el-rechazo-de-demanda-de-cobro-por-mejoras-en-una-vivienda",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-0261bf23-1795710015366-W0GQ9sVZ1RBfvBC6kRkZlUi61H9q3V.jpg"
+  },
+  {
    "titulo": "Corte de Santiago confirma rechazo de demanda contra Nissan por supuestos defectos en sistema de seguridad de camioneta robada",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-rechazo-de-demanda-contra-nissan-por-supuestos-defectos-en-sistema-de",
    "fecha": "2026-11-26",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-descarta-indemnizacion-por-lesion-ocular-al-no-probarse-que-proyectil-proviniera-de",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-descarta-indemnizacion-por-lesion-ocular-al-no-probarse-que-proyectil-proviniera-de-6PbZYAuDWQEhUXRn98MsPHLTEjSZzf.jpg"
-  },
-  {
-   "titulo": "Corte Suprema mantiene multa a sostenedora por incumplir medidas de protección de estudiantes",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-multa-a-sostenedora-por-incumplir-medidas-de-proteccion-de-estudiantes",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-a-escuela-por-no-denunciar-presunto-abuso-sexual-contra-estudiante-cCtCKlo16oCV5SkS4huiYwZAJt9ui3.jpg"
-  },
-  {
-   "titulo": "Tribunal Supremo de España reconoce derecho de la pareja de un paciente a ser indemnizada por una vasectomía fallida",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/tribunal-supremo-de-espana-reconoce-derecho-de-la-pareja-de-un-paciente-a-ser-indemnizada-por-una",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-supremo-de-espana-reconoce-derecho-de-la-pareja-de-un-paciente-a-ser-indemnizada-por-una-6gfTIs3wnpzVtmcsp4irYtgcz73cZy.jpg"
-  },
-  {
-   "titulo": "Corte de Copiapó avala decisión de la SUSESO de declarar inadmisible reposición por rechazo de licencias médicas",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-copiapo-avala-decision-de-la-suseso-de-declarar-inadmisible-reposicion-por-rechazo-de",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-copiapo-avala-decision-de-la-suseso-de-declarar-inadmisible-reposicion-por-rechazo-de-EMNiWsFhIaiO7uCs1Vk1dqYDVXj4JT.webp"
   }
  ]
 }
