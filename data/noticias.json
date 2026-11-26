@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Juzgado declara improcedente desahucio de jefa de proyecto  en una clínica y condena a pagar recargo legal de 30% por despido injustificado",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/juzgado-declara-improcedente-desahucio-de-jefa-de-proyecto-en-una-clinica-y-condena-a-pagar-recargo",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-7457cc52-1795733328590-j1VSvDklclONBicouGSVHo8CGimhsK.jpg"
+  },
+  {
+   "titulo": "SMA formula cargos contra Municipalidad de San Pedro de Atacama y Comité de Agua Potable Rural por obras sin evaluación ambiental",
+   "enlace": "https://www.diarioconstitucional.cl/ambiental/sma-formula-cargos-contra-municipalidad-de-san-pedro-de-atacama-y-comite-de-agua-potable-rural-por",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsma-formula-cargos-contra-municipalidad-de-san-pedro-de-atacama-y-comite-de-agua-potable-rural-por-FEYwonlSI6WccYQ5os7h6HLvPlIugx.jpg"
+  },
+  {
+   "titulo": "Corte Suprema rechaza casación de restaurante de Antofagasta condenado a pagar derechos de autor por música en YouTube",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-casacion-de-restaurante-de-antofagasta-condenado-a-pagar-derechos-de-autor-por",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-dc122bc8-1795732117629-ZJL2aUYJpuKgdRztRv1acT8ZqAmTeW.jpg"
+  },
+  {
+   "titulo": "Corte de Santiago confirma condena a concesionaria por accidente causado por perros en autopista",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-condena-a-concesionaria-por-accidente-causado-por-perros-en-autopista",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-d9499df2-1795731447627-HO6HdxwCbKKtDkcfV3O0RSBCYHXdP6.jpg"
+  },
+  {
    "titulo": "¿Me pueden destituir si estoy con licencia médica? Lo que cambia la Ley 21.850 para los funcionarios públicos, por Basilio Belmar",
    "enlace": "https://www.diarioconstitucional.cl/laboral/me-pueden-destituir-si-estoy-con-licencia-medica-lo-que-cambia-la-ley-21850-para-los-funcionarios",
    "fecha": "2026-11-26",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-rancagua-confirma-condena-a-inmobiliaria-por-fallas-constructivas-en-viviendas-de-villa",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-41006d41-1795710597404-coYa6h8ea37nvL4zF9IxanwtBxntaZ.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza recurso y confirma el rechazo de demanda de cobro por mejoras en una vivienda de Arica",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-recurso-y-confirma-el-rechazo-de-demanda-de-cobro-por-mejoras-en-una-vivienda",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-0261bf23-1795710015366-W0GQ9sVZ1RBfvBC6kRkZlUi61H9q3V.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago confirma rechazo de demanda contra Nissan por supuestos defectos en sistema de seguridad de camioneta robada",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-rechazo-de-demanda-contra-nissan-por-supuestos-defectos-en-sistema-de",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-e4bbafab-1795708172431-nS4NBYLFrPdcVNP6LEV20D9tP85ueY.jpg"
-  },
-  {
-   "titulo": "Condenan a cinco años y un día de presidio efectivo a hombre que prendió fuego en el primer piso de su casa en Ovalle",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-cinco-anos-y-un-dia-de-presidio-efectivo-a-hombre-que-prendio-fuego-en-el-primer-piso-de",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-45947c3d-1795707674329-HaBQ36T7AGg4wKLILs1dMDvs7TrJqQ.jpg"
-  },
-  {
-   "titulo": "Confirman multa de 60 UTM a instituto por registro de asistencia docente no válido ante la ley laboral",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/confirman-multa-de-60-utm-a-instituto-por-registro-de-asistencia-docente-no-valido-ante-la-ley",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-e2f41f4c-1795707341713-lPxrkUGjcAZg66AYzE8ou0e7yh5Pqd.jpg"
   }
  ]
 }
