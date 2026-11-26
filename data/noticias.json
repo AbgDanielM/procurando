@@ -2,6 +2,36 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Publican ley que posterga la entrada en funcionamiento del Servicio Nacional de Acceso a la Justicia y la Defensoría de Víctimas",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/publican-ley-que-posterga-la-entrada-en-funcionamiento-del-servicio-nacional-de-acceso-a-la-justicia-2",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpublican-ley-que-posterga-la-entrada-en-funcionamiento-del-servicio-nacional-de-acceso-a-la-justicia-2-F9Jz2uSpKrttyZ1ezC5liozvmVpyQM.jpg"
+  },
+  {
+   "titulo": "Suprema Corte de México invalida reforma electoral de Puebla por limitar la representación de las minorías políticas",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/suprema-corte-de-mexico-invalida-reforma-electoral-de-puebla-por-limitar-la-representacion-de-las",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsuprema-corte-de-mexico-invalida-reforma-electoral-de-puebla-por-limitar-la-representacion-de-las-IxyXXpTG38X3xBMVpU0Eb026W2FN9i.jpg"
+  },
+  {
+   "titulo": "Corte de Copiapó mantiene condena por tráfico de drogas y descarta atenuante de irreprochable conducta anterior",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-copiapo-mantiene-condena-por-trafico-de-drogas-y-descarta-atenuante-de-irreprochable",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fia-alta-1795651613888-h1i6yX5qjZOtZG7lDNTgcodCkPSAy1.png"
+  },
+  {
+   "titulo": "Tribunal Supremo de España avala los contactos policiales previos a la autorización para actuar como agente encubierto",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/tribunal-supremo-de-espana-avala-los-contactos-policiales-previos-a-la-autorizacion-para-actuar-como",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-supremo-de-espana-avala-los-contactos-policiales-previos-a-la-autorizacion-para-actuar-como-gBiuON2Z0aG5xIjDT0Tj1OISSqDgxK.jpg"
+  },
+  {
+   "titulo": "Publican ley que posterga la entrada en vigor de la normativa sobre protección de datos personales hasta octubre de 2027",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/publican-ley-que-posterga-la-entrada-en-vigor-de-la-normativa-sobre-proteccion-de-datos-personales",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-359409ae-1795644499077-B5GyyXUjXJlGifmhIF7T0dcQ2ZfviC.jpg"
+  },
+  {
    "titulo": "¿Es sostenible la rebaja de condenas por delitos sexuales contra menores?",
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/es-sostenible-la-rebaja-de-condenas-por-delitos-sexuales-contra-menores",
    "fecha": "2026-11-26",
@@ -42,36 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-expulsion-de-ciudadana-venezolana-y-establece-que-el-arraigo-familiar-no",
    "fecha": "2026-11-25",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-expulsion-de-ciudadana-venezolana-y-establece-que-el-arraigo-familiar-no-rQ3hvTebeM6qJskKdeaPhpoXYUGC4E.jpg"
-  },
-  {
-   "titulo": "Esteban Schafer Aguirr: ¿Qué ha impedido modernizar un sistema procesal que lleva más de una década esperando?",
-   "enlace": "https://www.diarioconstitucional.cl/entrevistas/esteban-schafer-aguirr-que-ha-impedido-modernizar-un-sistema-procesal-que-lleva-mas-de-una-decada",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-04b34ea8-1795647242188-RVgPa7FZ8I01KsXdKFfxAlBf8H1MgM.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza indemnización adicional por daño moral a trabajadora que sufrió vulneración de su honra",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-rechaza-indemnizacion-adicional-por-dano-moral-a-trabajadora-que-sufrio-vulneracion-de",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-rechaza-indemnizacion-adicional-por-dano-moral-a-trabajadora-que-sufrio-vulneracion-de-7f7INRtyMhJ1iLTczn0N95A4dZCx6D.jpg"
-  },
-  {
-   "titulo": "Proponen derogar la Ley N°19.856 sobre reducción de condenas por buena conducta y fijar un régimen transitorio para solicitudes en trámite",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/proponen-derogar-la-ley-n19856-sobre-reduccion-de-condenas-por-buena-conducta-y-fijar-un-regimen",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fia-alta-1795639719925-FWNQDvSZ47PuF0h604XMrfCyG8bEd8.png"
-  },
-  {
-   "titulo": "¿Te imaginas cumplir tu condena y seguir preso 5 meses más?",
-   "enlace": "https://www.diarioconstitucional.cl/videos/te-imaginas-cumplir-tu-condena-y-seguir-preso-5-meses-mas",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Fte-imaginas-cumplir-tu-condena-y-seguir-preso-5-meses-mas-xu8zXF8rEpAdjw3uGCwLkbl8ZwXL4w.jpg"
-  },
-  {
-   "titulo": "¿Puede un partido político ocupar una marca existente para su campaña?",
-   "enlace": "https://www.diarioconstitucional.cl/videos/puede-un-partido-politico-ocupar-una-marca-existente-para-su-campana",
-   "fecha": "2026-11-25",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Fpuede-un-partido-politico-ocupar-una-marca-existente-para-su-campana-5dKOVxkdEDABsrxIE8HZ9ymXi0Clp5.jpg"
   }
  ]
 }
