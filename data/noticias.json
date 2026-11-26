@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte de Santiago confirma multa a colegio de Maipú por sancionar a apoderado sin respetar el debido proceso",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-multa-a-colegio-de-maipu-por-sancionar-a-apoderado-sin-respetar-el-debido",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-08c3a8e0-1795662114239-Auvnbqsz4uvYLDce9mdEKPUD141ErD.jpg"
+  },
+  {
+   "titulo": "Paciente con tumor cerebral recurre de protección contra Fonasa por retraso de dos meses en cirugía",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/paciente-con-tumor-cerebral-recurre-de-proteccion-contra-fonasa-por-retraso-de-dos-meses-en-cirugia",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpaciente-con-tumor-cerebral-recurre-de-proteccion-contra-fonasa-por-retraso-de-dos-meses-en-cirugia-TJ3Jf8EpuUBdccBsNnHzFi52V3qF94.jpg"
+  },
+  {
+   "titulo": "Corte Suprema descarta indemnización por lesión ocular al no probarse que proyectil proviniera de Carabineros",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-descarta-indemnizacion-por-lesion-ocular-al-no-probarse-que-proyectil-proviniera-de",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-descarta-indemnizacion-por-lesion-ocular-al-no-probarse-que-proyectil-proviniera-de-6PbZYAuDWQEhUXRn98MsPHLTEjSZzf.jpg"
+  },
+  {
+   "titulo": "Corte Suprema mantiene multa a sostenedora por incumplir medidas de protección de estudiantes",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-mantiene-multa-a-sostenedora-por-incumplir-medidas-de-proteccion-de-estudiantes",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-a-escuela-por-no-denunciar-presunto-abuso-sexual-contra-estudiante-cCtCKlo16oCV5SkS4huiYwZAJt9ui3.jpg"
+  },
+  {
    "titulo": "Tribunal Supremo de España reconoce derecho de la pareja de un paciente a ser indemnizada por una vasectomía fallida",
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/tribunal-supremo-de-espana-reconoce-derecho-de-la-pareja-de-un-paciente-a-ser-indemnizada-por-una",
    "fecha": "2026-11-26",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-copiapo-mantiene-condena-por-trafico-de-drogas-y-descarta-atenuante-de-irreprochable",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fia-alta-1795651613888-h1i6yX5qjZOtZG7lDNTgcodCkPSAy1.png"
-  },
-  {
-   "titulo": "Tribunal Supremo de España avala los contactos policiales previos a la autorización para actuar como agente encubierto",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/tribunal-supremo-de-espana-avala-los-contactos-policiales-previos-a-la-autorizacion-para-actuar-como",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-supremo-de-espana-avala-los-contactos-policiales-previos-a-la-autorizacion-para-actuar-como-gBiuON2Z0aG5xIjDT0Tj1OISSqDgxK.jpg"
-  },
-  {
-   "titulo": "Publican ley que posterga la entrada en vigor de la normativa sobre protección de datos personales hasta octubre de 2027",
-   "enlace": "https://www.diarioconstitucional.cl/legislativo/publican-ley-que-posterga-la-entrada-en-vigor-de-la-normativa-sobre-proteccion-de-datos-personales",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-359409ae-1795644499077-B5GyyXUjXJlGifmhIF7T0dcQ2ZfviC.jpg"
-  },
-  {
-   "titulo": "¿Es sostenible la rebaja de condenas por delitos sexuales contra menores?",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/es-sostenible-la-rebaja-de-condenas-por-delitos-sexuales-contra-menores",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-9d505c45-1795658523974-yQbTucvLDNFTyOE1BgPaARdCWhciDW.jpg"
-  },
-  {
-   "titulo": "Derechos indisponibles y naturaleza jurídica de los cargos de exclusiva confianza: comentarios sobre la Sentencia Rol 790-2026 de la Ilma. Corte de Apelaciones de Copiapó",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/derechos-indisponibles-y-naturaleza-juridica-de-los-cargos-de-exclusiva-confianza-comentarios-sobre",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Fderechos-indisponibles-y-naturaleza-juridica-de-los-cargos-de-exclusiva-confianza-comentarios-sobre-qWCoBW45dsywXN6KjuXeAxOvnKFVPW.jpg"
   }
  ]
 }
