@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema ordena tramitar denuncia por prácticas antisindicales contra Nestlé tras despido de dirigentes sindicales",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-ordena-tramitar-denuncia-por-practicas-antisindicales-contra-nestle-tras-despido-de",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-6273318a-1795662549993-DyyOLrW09sND69harHLB3m1QWgYLGn.jpg"
+  },
+  {
    "titulo": "Corte de Santiago confirma multa a colegio de Maipú por sancionar a apoderado sin respetar el debido proceso",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-multa-a-colegio-de-maipu-por-sancionar-a-apoderado-sin-respetar-el-debido",
    "fecha": "2026-11-26",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/suprema-corte-de-mexico-invalida-reforma-electoral-de-puebla-por-limitar-la-representacion-de-las",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsuprema-corte-de-mexico-invalida-reforma-electoral-de-puebla-por-limitar-la-representacion-de-las-IxyXXpTG38X3xBMVpU0Eb026W2FN9i.jpg"
-  },
-  {
-   "titulo": "Corte de Copiapó mantiene condena por tráfico de drogas y descarta atenuante de irreprochable conducta anterior",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-copiapo-mantiene-condena-por-trafico-de-drogas-y-descarta-atenuante-de-irreprochable",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fia-alta-1795651613888-h1i6yX5qjZOtZG7lDNTgcodCkPSAy1.png"
   }
  ]
 }
