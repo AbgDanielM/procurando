@@ -2,6 +2,36 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Admisión escolar en debate: ¿Más libertad para elegir o el regreso de la selección a los colegios?",
+   "enlace": "https://www.diarioconstitucional.cl/contrapuntos/admision-escolar-en-debate-mas-libertad-para-elegir-o-el-regreso-de-la-seleccion-a-los-colegios/",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-10%2Fvs-admision-escolar-en-debate-mas-libertad-para-elegir-o-el-reg-emhdcitn6LbgHgD8g9Tand69LZa7yx.jpg"
+  },
+  {
+   "titulo": "Balotaje o  segunda vuelta electoral",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/balotaje-o-segunda-vuelta-electoral",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-7103191-q8bOkZq6fk8bRf1CRA09050JTgSHdQ.jpg"
+  },
+  {
+   "titulo": "Defensoría de los Derechos de la Niñez",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/defensoria-de-los-derechos-de-la-ninez-2",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-33348034-ANqfG0pGA6Wq2wdFNKrzZwPrGYHZHj.jpg"
+  },
+  {
+   "titulo": "Libertad condicional",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/libertad-condicional-2",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fia-alta-1794965701810-lcTZB9j39XxpdLgqxCb0sfXf2Lmyj9.png"
+  },
+  {
+   "titulo": "Receptación",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/receptacion-2",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-8815916-caVS6Bs06Ig7AAcO6V81HOEkO1vJF9.jpg"
+  },
+  {
    "titulo": "Corte Suprema avala término anticipado de contrata de funcionario de Obras Públicas por deficiencias en su desempeño",
    "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-avala-termino-anticipado-de-contrata-de-funcionario-de-obras-publicas-por-deficiencias",
    "fecha": "2026-11-27",
@@ -42,36 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-cinco-anos-y-un-dia-de-presidio-a-hombre-que-intento-robar-a-transeunte-con-pistola-de",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-79a89d32-1795794986988-dHX9YrBv94MTw5tFdk6QJ1UHcY4PHb.jpg"
-  },
-  {
-   "titulo": "CIJ condena a Myanmar por genocidio contra los rohingya",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/cij-condena-a-myanmar-por-genocidio-contra-los-rohingya",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-e1e90921-1795794561159-z1kkeXMSFZrYP8eQNdi6N1QYaTCIr3.jpg"
-  },
-  {
-   "titulo": "Corte de Arica mantiene prisión preventiva por manejo en estado de ebriedad con muerte y omisión de auxilio tras el choque en Azapa",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-arica-mantiene-prision-preventiva-por-manejo-en-estado-de-ebriedad-con-muerte-y-omision-de",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-ba064096-1795794273489-YDdEEAGSX0urTzXzsXH3tum5MqDHwx.jpg"
-  },
-  {
-   "titulo": "Corte Suprema anula juicio por microtráfico en Limache porque la sentencia no explicó por qué la droga era para venta",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-anula-juicio-por-microtrafico-en-limache-porque-la-sentencia-no-explico-por-que-la",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-8dbf8869-1795793983559-us3WV7d7oh9WrMXHhpQsG1hwTu5vtl.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza unificación y mantiene fallo que no concedió daño moral adicional a funcionaria despedida",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-rechaza-unificacion-y-mantiene-fallo-que-no-concedio-dano-moral-adicional-a",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-67c8abbf-1795793743432-pCmWbTLOvNvYDbjaFXehCrDTmf7U6L.jpg"
-  },
-  {
-   "titulo": "Corte mantiene destitución de ex capitán de Gendarmería por conductas vejatorias contra funcionaria",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-mantiene-destitucion-de-ex-capitan-de-gendarmeria-por-conductas-vejatorias-contra-funcionaria",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-mantiene-destitucion-de-ex-capitan-de-gendarmeria-por-conductas-vejatorias-contra-funcionaria-VMURE0vFKPolVvtysNk4HK78nWtxSK.jpg"
   }
  ]
 }
