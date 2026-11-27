@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Impugnan ante el TC norma que permitió sobreseer causa penal por presunta falsificación de contrato de arrendamiento",
+   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/impugnan-ante-el-tc-norma-que-permitio-sobreseer-causa-penal-por-presunta-falsificacion-de-contrato",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fimpugnan-ante-el-tc-norma-que-permitio-sobreseer-causa-penal-por-presunta-falsificacion-de-contrato-d788DbFHabBS7ozlJsXWNNSN0GqTm7.jpg"
+  },
+  {
+   "titulo": "¿Unidad punitiva o estatutos diferenciados? El debate sobre el pluralismo penal y la igualdad ante la ley en Chile.",
+   "enlace": "https://www.diarioconstitucional.cl/contrapunto/unidad-punitiva-o-estatutos-diferenciados-el-debate-sobre-el-pluralismo-penal-y-la-igualdad-ante-la",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-unidad-punitiva-o-estatutos-diferenciados-el-debate-sobre-el-bnGbouEjnlzbSCHdLUZWHEsLExWUoN.jpg"
+  },
+  {
    "titulo": "Simultaneidad bajo la vigilancia del Servicio de Protección Especializada (SPE) y del Servicio de Reinserción Social Juvenil (SRJ).",
    "enlace": "https://www.diarioconstitucional.cl/contrapunto/simultaneidad-bajo-la-vigilancia-del-servicio-de-proteccion-especializada-spe-y-del-servicio-de",
    "fecha": "2026-11-27",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/educacion-civica/defensoria-de-los-derechos-de-la-ninez-2",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-33348034-ANqfG0pGA6Wq2wdFNKrzZwPrGYHZHj.jpg"
-  },
-  {
-   "titulo": "Libertad condicional",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/libertad-condicional-2",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fia-alta-1794965701810-lcTZB9j39XxpdLgqxCb0sfXf2Lmyj9.png"
-  },
-  {
-   "titulo": "Receptación",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/receptacion-2",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-8815916-caVS6Bs06Ig7AAcO6V81HOEkO1vJF9.jpg"
   }
  ]
 }
