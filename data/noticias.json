@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "El Consejo de Seguridad de la ONU ¿Está paralizado?",
+   "enlace": "https://www.diarioconstitucional.cl/opinion/el-consejo-de-seguridad-de-la-onu-esta-paralizado",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fel-consejo-de-seguridad-de-la-onu-esta-paralizado-EC7UobgQbeh1Ex8uxhihmTW4QffKzP.jpg"
+  },
+  {
+   "titulo": "¿Puede una quiebra borrar la deuda de alimentos o la compensación económica?, por Nicolás Ríos-Montt Sanhueza",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/puede-una-quiebra-borrar-la-deuda-de-alimentos-o-la-compensacion-economica",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpuede-una-quiebra-borrar-la-deuda-de-alimentos-o-la-compensacion-economica-j9eyVe6ahOGtKW59HrmZprGotBPdOE.jpg"
+  },
+  {
+   "titulo": "Contraloría: recomendaciones de la Defensoría de la Niñez no obligan a municipios",
+   "enlace": "https://www.diarioconstitucional.cl/contraloria/contraloria-recomendaciones-de-la-defensoria-de-la-ninez-no-obligan-a-municipios",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-8d0db5e0-1795795841703-a2NUAj703FcuEc2d1SfLnD1dSTWkuV.jpg"
+  },
+  {
+   "titulo": "Condenan a 12 años de presidio efectivo a hombre que intentó matar a su exconviviente con un arma blanca en Estación Central",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-12-anos-de-presidio-efectivo-a-hombre-que-intento-matar-a-su-exconviviente-con-un-arma",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-c635b591-1795795672473-0AQ9VmW6RXHxJlRACNmgOJXncEGcev.jpg"
+  },
+  {
    "titulo": "Corte de Santiago sanciona con multa a tienda por vender alitas de flotación infantiles sin advertencias de seguridad",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-sanciona-con-multa-a-tienda-por-vender-alitas-de-flotacion-infantiles-sin",
    "fecha": "2026-11-27",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-concepcion-confirma-expulsion-de-alumna-de-odontologia-por-reiterados-incumplimientos-al",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-de37cdab-1795747245004-zV3NEYnAGKodMhZ8iD84kWFcWwIGE4.jpg"
-  },
-  {
-   "titulo": "Corte confirma multa de 800 UTM a productora por accidente laboral fatal con ocasión de un concierto",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-confirma-multa-de-800-utm-a-productora-por-accidente-laboral-fatal-con-ocasion-de-un-concierto",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-5f22fb8b-1795747584161-dJjCfeYd6SkI3xfHFQAuyqIebcTF49.jpg"
-  },
-  {
-   "titulo": "California (EE.UU) demanda a OpenAI por presuntas prácticas inseguras en el desarrollo de inteligencia artificial",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/california-eeuu-demanda-a-openai-por-presuntas-practicas-inseguras-en-el-desarrollo-de-inteligencia",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcalifornia-eeuu-demanda-a-openai-por-presuntas-practicas-inseguras-en-el-desarrollo-de-inteligencia-AGQ5Fcjazrdis9KqUuNuMUv8oB9DUR.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago confirma rechazo de demanda contra empresa de productos de belleza por precios irrisorios en sitios web y ordena restituir pagos",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-rechazo-de-demanda-contra-empresa-de-productos-de-belleza-por-precios",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-e14929d2-1795748403932-BsXHeXor3fQqkzT4s9n9ICuOSpCgsI.jpg"
-  },
-  {
-   "titulo": "Corte Suprema confirma multa a clínica por exigir pagaré para realizar cesárea de urgencia",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-multa-a-clinica-por-exigir-pagare-para-realizar-cesarea-de-urgencia",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-a-clinica-por-exigir-pagare-para-realizar-cesarea-de-urgencia-BS5lEaZHcGhwNJYQQHkD2TqN8r7TNx.jpg"
   }
  ]
 }
