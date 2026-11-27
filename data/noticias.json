@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte mantiene destitución de ex capitán de Gendarmería por conductas vejatorias contra funcionaria",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-mantiene-destitucion-de-ex-capitan-de-gendarmeria-por-conductas-vejatorias-contra-funcionaria",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-mantiene-destitucion-de-ex-capitan-de-gendarmeria-por-conductas-vejatorias-contra-funcionaria-VMURE0vFKPolVvtysNk4HK78nWtxSK.jpg"
+  },
+  {
+   "titulo": "Corte de Concepción confirma expulsión de alumna de Odontología por reiterados incumplimientos al reglamento de disciplina",
+   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-concepcion-confirma-expulsion-de-alumna-de-odontologia-por-reiterados-incumplimientos-al",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-de37cdab-1795747245004-zV3NEYnAGKodMhZ8iD84kWFcWwIGE4.jpg"
+  },
+  {
+   "titulo": "Corte confirma multa de 800 UTM a productora por accidente laboral fatal con ocasión de un concierto",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-confirma-multa-de-800-utm-a-productora-por-accidente-laboral-fatal-con-ocasion-de-un-concierto",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-5f22fb8b-1795747584161-dJjCfeYd6SkI3xfHFQAuyqIebcTF49.jpg"
+  },
+  {
    "titulo": "California (EE.UU) demanda a OpenAI por presuntas prácticas inseguras en el desarrollo de inteligencia artificial",
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/california-eeuu-demanda-a-openai-por-presuntas-practicas-inseguras-en-el-desarrollo-de-inteligencia",
    "fecha": "2026-11-27",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-deja-firme-rechazo-de-cobro-de-comision-por-corretaje-de-vivienda-por-falta-de",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-3ec8bafa-1795749685163-yyfeGBBOadzl4krvUlnIXCDZnIzoHt.jpg"
-  },
-  {
-   "titulo": "Suprema Corte de México garantiza investigación de oficio de violencia sexual digital contra menores de edad y personas con discapacidad",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/suprema-corte-de-mexico-garantiza-investigacion-de-oficio-de-violencia-sexual-digital-contra-menores",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsuprema-corte-de-mexico-garantiza-investigacion-de-oficio-de-violencia-sexual-digital-contra-menores-IjhKKbFVGEW9mzMM3FopFrfafSzXy6.jpg"
-  },
-  {
-   "titulo": "Anuar Quesille Vera, Defensor de la Niñez: ¿Por qué los estudiantes siguen saliendo a las calles y cómo debe responder el Estado?",
-   "enlace": "https://www.diarioconstitucional.cl/entrevistas/anuar-quesille-vera-como-sociedad-adulta-aun-tenemos-una-deuda-importante-con-la-participacion-de",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fanuar-quesille-vera-como-sociedad-adulta-aun-tenemos-una-deuda-importante-con-la-participacion-de-yCTPpKenfZFNAaGDCb3mxLvoEr6edQ.jpg"
-  },
-  {
-   "titulo": "Sin peritaje no hay debido proceso: la prueba económica como garantía constitucional",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/sin-peritaje-no-hay-debido-proceso-la-prueba-economica-como-garantia-constitucional",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-6d48420c-1795743428896-pPXjUtpJhUf3JrYfMu3NMX7yUIZYq2.jpg"
   }
  ]
 }
