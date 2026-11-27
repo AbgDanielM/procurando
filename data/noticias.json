@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "¿Quién garantiza la idoneidad de los contadores en Chile? La necesidad de un Registro Nacional de Habilitación Profesional",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/quien-garantiza-la-idoneidad-de-los-contadores-en-chile-la-necesidad-de-un-registro-nacional-de",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-7b832f86-1795741426633-iHrlAPeDNoWAI1KipkB9g21NeK1Y1k.jpg"
+  },
+  {
+   "titulo": "Diputadas buscan castigar a quienes accedan a material de explotación sexual infantil",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/diputadas-buscan-castigar-a-quienes-accedan-a-material-de-explotacion-sexual-infantil",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fdiputadas-buscan-castigar-a-quienes-accedan-a-material-de-explotacion-sexual-infantil-aeUCSZGat5Ts13DtYwSXsUfKn8aRvs.jpg"
+  },
+  {
    "titulo": "Estado negó tratamiento a paciente con cáncer",
    "enlace": "https://www.diarioconstitucional.cl/videos/estado-nego-tratamiento-a-paciente-con-cancer",
    "fecha": "2026-11-26",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-casacion-por-arriendo-de-espacios-en-estacionamientos-y-mantiene-termino-por",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-33400ba7-1795721842857-FfrDYZvkBsEVgH192Hn3e0j9imdXFz.jpg"
-  },
-  {
-   "titulo": "Juzgado declara indebido despido de vendedora de perfumería por no acreditarse tres ausencias injustificadas en un mes",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/juzgado-declara-indebido-despido-de-vendedora-de-perfumeria-por-no-acreditarse-tres-ausencias",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-0b2ebea3-1795721141369-EdRJlCsAeNflfmixcEfu0Im4HxbPXB.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago ordena a BancoEstado alzar bloqueos de cuentas de una clienta por falta de justificación de la medida",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-santiago-ordena-a-bancoestado-alzar-bloqueos-de-cuentas-de-una-clienta-por-falta-de",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4e722332-1795719922104-IaY5TJVqbgMcOZy9PuE9ltWMNJ4sB8.jpg"
   }
  ]
 }
