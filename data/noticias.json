@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Estado negó tratamiento a paciente con cáncer",
+   "enlace": "https://www.diarioconstitucional.cl/videos/estado-nego-tratamiento-a-paciente-con-cancer",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Festado-nego-tratamiento-a-paciente-con-cancer-YnEBlZTOfjp79Ymh5ApnSi6jV2vIo6.jpg"
+  },
+  {
+   "titulo": "TC resolverá el fondo de requerimiento de CAPREDENA contra normas que limitan apelaciones en juicios de cobranza previsional",
+   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-resolvera-el-fondo-de-requerimiento-de-capredena-contra-normas-que-limitan-apelaciones-en-juicios",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-resolvera-el-fondo-de-requerimiento-de-capredena-contra-normas-que-limitan-apelaciones-en-juicios-vegyzEXRg1AN0GIcRJwAhUpJzXuUEO.jpg"
+  },
+  {
+   "titulo": "Proyecto de ley busca impedir rebajas de condena a condenados por delitos sexuales contra menores de edad",
+   "enlace": "https://www.diarioconstitucional.cl/legislativo/proyecto-de-ley-busca-impedir-rebajas-de-condena-a-condenados-por-delitos-sexuales-contra-menores-de",
+   "fecha": "2026-11-26",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fproyecto-de-ley-busca-impedir-rebajas-de-condena-a-condenados-por-delitos-sexuales-contra-menores-de-i05NQM2ikbW01YkNdBgKoa0Famh0j2.jpg"
+  },
+  {
    "titulo": "Juzgado declara improcedente desahucio de jefa de proyecto  en una clínica y condena a pagar recargo legal de 30% por despido injustificado",
    "enlace": "https://www.diarioconstitucional.cl/laboral/juzgado-declara-improcedente-desahucio-de-jefa-de-proyecto-en-una-clinica-y-condena-a-pagar-recargo",
    "fecha": "2026-11-26",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-santiago-ordena-a-bancoestado-alzar-bloqueos-de-cuentas-de-una-clienta-por-falta-de",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4e722332-1795719922104-IaY5TJVqbgMcOZy9PuE9ltWMNJ4sB8.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza unificación y mantiene fallo que negó lucro cesante a trabajador con 15% de incapacidad",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-rechaza-unificacion-y-mantiene-fallo-que-nego-lucro-cesante-a-trabajador-con-15-por",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-ea9f5542-1795719016705-6gFXtlWJn0IMXo25Ko4mZah9lcR5F0.jpg"
-  },
-  {
-   "titulo": "Internet hogar: cuánta velocidad y qué WiFi elegir según tu uso",
-   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/internet-hogar-cuanta-velocidad-y-que-wifi-elegir-segun-tu-uso",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Finternet-hogar-cuanta-velocidad-y-que-wifi-elegir-segun-tu-uso-qeYl5wy1sIxAoDynVJXHLnVMncV6kw.jpeg"
-  },
-  {
-   "titulo": "Corte de Rancagua confirma condena a inmobiliaria por fallas constructivas en viviendas de Villa Santa Blanca",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-rancagua-confirma-condena-a-inmobiliaria-por-fallas-constructivas-en-viviendas-de-villa",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-41006d41-1795710597404-coYa6h8ea37nvL4zF9IxanwtBxntaZ.jpg"
   }
  ]
 }
