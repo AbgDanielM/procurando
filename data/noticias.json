@@ -2,6 +2,42 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte de Santiago sanciona con multa a tienda por vender alitas de flotación infantiles sin advertencias de seguridad",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-sanciona-con-multa-a-tienda-por-vender-alitas-de-flotacion-infantiles-sin",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-d3acd62c-1795795349125-U7fHx5XFoSErpIkLKJpjNCczp3JpqR.jpg"
+  },
+  {
+   "titulo": "Condenan a cinco años y un día de presidio a hombre que intentó robar a transeúnte con pistola de plástico",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-cinco-anos-y-un-dia-de-presidio-a-hombre-que-intento-robar-a-transeunte-con-pistola-de",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-79a89d32-1795794986988-dHX9YrBv94MTw5tFdk6QJ1UHcY4PHb.jpg"
+  },
+  {
+   "titulo": "CIJ condena a Myanmar por genocidio contra los rohingya",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/cij-condena-a-myanmar-por-genocidio-contra-los-rohingya",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-e1e90921-1795794561159-z1kkeXMSFZrYP8eQNdi6N1QYaTCIr3.jpg"
+  },
+  {
+   "titulo": "Corte de Arica mantiene prisión preventiva por manejo en estado de ebriedad con muerte y omisión de auxilio tras el choque en Azapa",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-arica-mantiene-prision-preventiva-por-manejo-en-estado-de-ebriedad-con-muerte-y-omision-de",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-ba064096-1795794273489-YDdEEAGSX0urTzXzsXH3tum5MqDHwx.jpg"
+  },
+  {
+   "titulo": "Corte Suprema anula juicio por microtráfico en Limache porque la sentencia no explicó por qué la droga era para venta",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-anula-juicio-por-microtrafico-en-limache-porque-la-sentencia-no-explico-por-que-la",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-8dbf8869-1795793983559-us3WV7d7oh9WrMXHhpQsG1hwTu5vtl.jpg"
+  },
+  {
+   "titulo": "Corte Suprema rechaza unificación y mantiene fallo que no concedió daño moral adicional a funcionaria despedida",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-rechaza-unificacion-y-mantiene-fallo-que-no-concedio-dano-moral-adicional-a",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-67c8abbf-1795793743432-pCmWbTLOvNvYDbjaFXehCrDTmf7U6L.jpg"
+  },
+  {
    "titulo": "Corte mantiene destitución de ex capitán de Gendarmería por conductas vejatorias contra funcionaria",
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-mantiene-destitucion-de-ex-capitan-de-gendarmeria-por-conductas-vejatorias-contra-funcionaria",
    "fecha": "2026-11-27",
@@ -36,42 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-multa-a-clinica-por-exigir-pagare-para-realizar-cesarea-de-urgencia",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-a-clinica-por-exigir-pagare-para-realizar-cesarea-de-urgencia-BS5lEaZHcGhwNJYQQHkD2TqN8r7TNx.jpg"
-  },
-  {
-   "titulo": "Justicia europea avala condena contra periodista y medio de comunicación por filtrar conversación confidencial",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-europea-avala-condena-contra-periodista-y-medio-de-comunicacion-por-filtrar-conversacion",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-europea-avala-condena-contra-periodista-y-medio-de-comunicacion-por-filtrar-conversacion-LlpWbHLPASzyzDEZgveHMbrwhxYU5x.jpg"
-  },
-  {
-   "titulo": "Estudio advierte creciente formalismo de la Corte Suprema al examinar la admisibilidad de los recursos de unificación de jurisprudencia laboral",
-   "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/estudio-advierte-creciente-formalismo-de-la-corte-suprema-al-examinar-la-admisibilidad-de-los",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Festudio-advierte-creciente-formalismo-de-la-corte-suprema-al-examinar-la-admisibilidad-de-los-C6xZ0KkuVLjlNzzowGuSsbG3Tl99hb.jpg"
-  },
-  {
-   "titulo": "Justicia europea ordena legislar sobre iniciativa ciudadana relativa al bienestar animal",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-europea-ordena-legislar-sobre-iniciativa-ciudadana-relativa-al-bienestar-animal",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-europea-ordena-legislar-sobre-iniciativa-ciudadana-relativa-al-bienestar-animal-PzxRTb7GRHxaVewNTjApUxg1QdJGwX.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago confirma condena a minera por despido de encargado de cancha tras cierre de planta",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-de-santiago-confirma-condena-a-minera-por-despido-de-encargado-de-cancha-tras-cierre-de-planta",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-2f33137d-1795749391640-G2KaeB6F6MFShXJD5vpb8MkXItvIUQ.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago acoge recurso de hecho de Chilevisión y declara inadmisible apelación contra fallo que rechazó demanda indemnizatoria",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-acoge-recurso-de-hecho-de-chilevision-y-declara-inadmisible-apelacion-contra-fallo",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-santiago-acoge-recurso-de-hecho-de-chilevision-y-declara-inadmisible-apelacion-contra-fallo-OoR2xQg473lrK6bKcdInVnKC6nAc5B.jpg"
-  },
-  {
-   "titulo": "Corte Suprema deja firme rechazo de cobro de comisión por corretaje de vivienda por falta de contrato que obligara a pagarla",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-deja-firme-rechazo-de-cobro-de-comision-por-corretaje-de-vivienda-por-falta-de",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-3ec8bafa-1795749685163-yyfeGBBOadzl4krvUlnIXCDZnIzoHt.jpg"
   }
  ]
 }
