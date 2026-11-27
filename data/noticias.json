@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte de Chillán anula condena por receptación al advertir que la sentencia incorporó un elemento no incluido en la acusación",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-chillan-anula-condena-por-receptacion-al-advertir-que-la-sentencia-incorporo-un-elemento-no",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-chillan-anula-condena-por-receptacion-al-advertir-que-la-sentencia-incorporo-un-elemento-no-wg42Wso9kOkEzrfi2bbq30VGjsBEjc.jpg"
+  },
+  {
+   "titulo": "¿Están obligados los hijos a mantener económicamente a sus padres?",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/estan-obligados-los-hijos-a-mantener-economicamente-a-sus-padres",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Festan-obligados-los-hijos-a-mantener-economicamente-a-sus-padres-D0ehQPiVppO5BIZvjM4SQmgWg229ib.jpg"
+  },
+  {
    "titulo": "Impugnan ante el TC norma que permitió sobreseer causa penal por presunta falsificación de contrato de arrendamiento",
    "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/impugnan-ante-el-tc-norma-que-permitio-sobreseer-causa-penal-por-presunta-falsificacion-de-contrato",
    "fecha": "2026-11-27",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/contrapuntos/admision-escolar-en-debate-mas-libertad-para-elegir-o-el-regreso-de-la-seleccion-a-los-colegios/",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-10%2Fvs-admision-escolar-en-debate-mas-libertad-para-elegir-o-el-reg-emhdcitn6LbgHgD8g9Tand69LZa7yx.jpg"
-  },
-  {
-   "titulo": "Balotaje o  segunda vuelta electoral",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/balotaje-o-segunda-vuelta-electoral",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-7103191-q8bOkZq6fk8bRf1CRA09050JTgSHdQ.jpg"
-  },
-  {
-   "titulo": "Defensoría de los Derechos de la Niñez",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/defensoria-de-los-derechos-de-la-ninez-2",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-33348034-ANqfG0pGA6Wq2wdFNKrzZwPrGYHZHj.jpg"
   }
  ]
 }
