@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema avala término anticipado de contrata de funcionario de Obras Públicas por deficiencias en su desempeño",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-avala-termino-anticipado-de-contrata-de-funcionario-de-obras-publicas-por-deficiencias",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-avala-termino-anticipado-de-contrata-de-funcionario-de-obras-publicas-por-deficiencias-POW3BXdWZwhZ8acMup7bZ3iUdy6imi.jpg"
+  },
+  {
    "titulo": "El Consejo de Seguridad de la ONU ¿Está paralizado?",
    "enlace": "https://www.diarioconstitucional.cl/opinion/el-consejo-de-seguridad-de-la-onu-esta-paralizado",
    "fecha": "2026-11-27",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-mantiene-destitucion-de-ex-capitan-de-gendarmeria-por-conductas-vejatorias-contra-funcionaria",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-mantiene-destitucion-de-ex-capitan-de-gendarmeria-por-conductas-vejatorias-contra-funcionaria-VMURE0vFKPolVvtysNk4HK78nWtxSK.jpg"
-  },
-  {
-   "titulo": "Corte de Concepción confirma expulsión de alumna de Odontología por reiterados incumplimientos al reglamento de disciplina",
-   "enlace": "https://www.diarioconstitucional.cl/accion-de-proteccion/corte-de-concepcion-confirma-expulsion-de-alumna-de-odontologia-por-reiterados-incumplimientos-al",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-de37cdab-1795747245004-zV3NEYnAGKodMhZ8iD84kWFcWwIGE4.jpg"
   }
  ]
 }
