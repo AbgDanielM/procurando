@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Anuar Quesille Vera, Defensor de la Niñez: ¿Por qué los estudiantes siguen saliendo a las calles y cómo debe responder el Estado?",
+   "enlace": "https://www.diarioconstitucional.cl/entrevistas/anuar-quesille-vera-como-sociedad-adulta-aun-tenemos-una-deuda-importante-con-la-participacion-de",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fentrevistas%2Fanuar-quesille-vera-como-sociedad-adulta-aun-tenemos-una-deuda-importante-con-la-participacion-de-yCTPpKenfZFNAaGDCb3mxLvoEr6edQ.jpg"
+  },
+  {
+   "titulo": "Sin peritaje no hay debido proceso: la prueba económica como garantía constitucional",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/sin-peritaje-no-hay-debido-proceso-la-prueba-economica-como-garantia-constitucional",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-6d48420c-1795743428896-pPXjUtpJhUf3JrYfMu3NMX7yUIZYq2.jpg"
+  },
+  {
    "titulo": "¿Quién garantiza la idoneidad de los contadores en Chile? La necesidad de un Registro Nacional de Habilitación Profesional",
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/quien-garantiza-la-idoneidad-de-los-contadores-en-chile-la-necesidad-de-un-registro-nacional-de",
    "fecha": "2026-11-27",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/me-pueden-destituir-si-estoy-con-licencia-medica-lo-que-cambia-la-ley-21850-para-los-funcionarios",
    "fecha": "2026-11-26",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fme-pueden-destituir-si-estoy-con-licencia-medica-lo-que-cambia-la-ley-21850-para-los-funcionarios-rh9NyWlwRR3lniu8aaZFk7Ax6rfNM3.jpg"
-  },
-  {
-   "titulo": "Condenan a 15 años de presidio a hombre que disparó a un joven durante una transacción de droga en Coquimbo",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-15-anos-de-presidio-a-hombre-que-disparo-a-un-joven-durante-una-transaccion-de-droga-en",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-f2e764ea-1795722493461-3Zrdzr1affxNKyCfTrMzexVPa2MqQ8.jpg"
-  },
-  {
-   "titulo": "Corte Suprema rechaza casación por arriendo de espacios en estacionamientos y mantiene término por mutuo acuerdo",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-rechaza-casacion-por-arriendo-de-espacios-en-estacionamientos-y-mantiene-termino-por",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-33400ba7-1795721842857-FfrDYZvkBsEVgH192Hn3e0j9imdXFz.jpg"
   }
  ]
 }
