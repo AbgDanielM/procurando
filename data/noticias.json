@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "California (EE.UU) demanda a OpenAI por presuntas prácticas inseguras en el desarrollo de inteligencia artificial",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/california-eeuu-demanda-a-openai-por-presuntas-practicas-inseguras-en-el-desarrollo-de-inteligencia",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcalifornia-eeuu-demanda-a-openai-por-presuntas-practicas-inseguras-en-el-desarrollo-de-inteligencia-AGQ5Fcjazrdis9KqUuNuMUv8oB9DUR.jpg"
+  },
+  {
+   "titulo": "Corte de Santiago confirma rechazo de demanda contra empresa de productos de belleza por precios irrisorios en sitios web y ordena restituir pagos",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-rechazo-de-demanda-contra-empresa-de-productos-de-belleza-por-precios",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-e14929d2-1795748403932-BsXHeXor3fQqkzT4s9n9ICuOSpCgsI.jpg"
+  },
+  {
+   "titulo": "Corte Suprema confirma multa a clínica por exigir pagaré para realizar cesárea de urgencia",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-multa-a-clinica-por-exigir-pagare-para-realizar-cesarea-de-urgencia",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-multa-a-clinica-por-exigir-pagare-para-realizar-cesarea-de-urgencia-BS5lEaZHcGhwNJYQQHkD2TqN8r7TNx.jpg"
+  },
+  {
+   "titulo": "Justicia europea avala condena contra periodista y medio de comunicación por filtrar conversación confidencial",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-europea-avala-condena-contra-periodista-y-medio-de-comunicacion-por-filtrar-conversacion",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-europea-avala-condena-contra-periodista-y-medio-de-comunicacion-por-filtrar-conversacion-LlpWbHLPASzyzDEZgveHMbrwhxYU5x.jpg"
+  },
+  {
    "titulo": "Estudio advierte creciente formalismo de la Corte Suprema al examinar la admisibilidad de los recursos de unificación de jurisprudencia laboral",
    "enlace": "https://www.diarioconstitucional.cl/asuntos-de-interes-publico/estudio-advierte-creciente-formalismo-de-la-corte-suprema-al-examinar-la-admisibilidad-de-los",
    "fecha": "2026-11-27",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/sin-peritaje-no-hay-debido-proceso-la-prueba-economica-como-garantia-constitucional",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-6d48420c-1795743428896-pPXjUtpJhUf3JrYfMu3NMX7yUIZYq2.jpg"
-  },
-  {
-   "titulo": "¿Quién garantiza la idoneidad de los contadores en Chile? La necesidad de un Registro Nacional de Habilitación Profesional",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/quien-garantiza-la-idoneidad-de-los-contadores-en-chile-la-necesidad-de-un-registro-nacional-de",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-7b832f86-1795741426633-iHrlAPeDNoWAI1KipkB9g21NeK1Y1k.jpg"
-  },
-  {
-   "titulo": "Diputadas buscan castigar a quienes accedan a material de explotación sexual infantil",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/diputadas-buscan-castigar-a-quienes-accedan-a-material-de-explotacion-sexual-infantil",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fdiputadas-buscan-castigar-a-quienes-accedan-a-material-de-explotacion-sexual-infantil-aeUCSZGat5Ts13DtYwSXsUfKn8aRvs.jpg"
-  },
-  {
-   "titulo": "Estado negó tratamiento a paciente con cáncer",
-   "enlace": "https://www.diarioconstitucional.cl/videos/estado-nego-tratamiento-a-paciente-con-cancer",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fmultimedia%2Festado-nego-tratamiento-a-paciente-con-cancer-YnEBlZTOfjp79Ymh5ApnSi6jV2vIo6.jpg"
-  },
-  {
-   "titulo": "TC resolverá el fondo de requerimiento de CAPREDENA contra normas que limitan apelaciones en juicios de cobranza previsional",
-   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tc-resolvera-el-fondo-de-requerimiento-de-capredena-contra-normas-que-limitan-apelaciones-en-juicios",
-   "fecha": "2026-11-26",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftc-resolvera-el-fondo-de-requerimiento-de-capredena-contra-normas-que-limitan-apelaciones-en-juicios-vegyzEXRg1AN0GIcRJwAhUpJzXuUEO.jpg"
   }
  ]
 }
