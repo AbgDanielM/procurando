@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Simultaneidad bajo la vigilancia del Servicio de Protección Especializada (SPE) y del Servicio de Reinserción Social Juvenil (SRJ).",
+   "enlace": "https://www.diarioconstitucional.cl/contrapunto/simultaneidad-bajo-la-vigilancia-del-servicio-de-proteccion-especializada-spe-y-del-servicio-de",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-simultaneidad-bajo-la-vigilancia-del-servicio-de-proteccion--Ebis8pEaHJuZpqawnDWJD5u70icjdW.jpg"
+  },
+  {
+   "titulo": "Desvinculaciones en el Estado bajo debate: ¿Eficiencia fiscal o precarización del empleo público?",
+   "enlace": "https://www.diarioconstitucional.cl/contrapunto/desvinculaciones-en-el-estado-bajo-debate-eficiencia-fiscal-o-precarizacion-del-empleo-publico",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-desvinculaciones-en-el-estado-bajo-debate-eficiencia-fiscal--ctSRx2K7YAYsG7ZYsqgqHDRXExkUNP.jpg"
+  },
+  {
    "titulo": "El bien común",
    "enlace": "https://www.diarioconstitucional.cl/educacion-civica/el-bien-comun",
    "fecha": "2026-11-27",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/educacion-civica/receptacion-2",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-8815916-caVS6Bs06Ig7AAcO6V81HOEkO1vJF9.jpg"
-  },
-  {
-   "titulo": "Corte Suprema avala término anticipado de contrata de funcionario de Obras Públicas por deficiencias en su desempeño",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-suprema-avala-termino-anticipado-de-contrata-de-funcionario-de-obras-publicas-por-deficiencias",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-avala-termino-anticipado-de-contrata-de-funcionario-de-obras-publicas-por-deficiencias-POW3BXdWZwhZ8acMup7bZ3iUdy6imi.jpg"
-  },
-  {
-   "titulo": "El Consejo de Seguridad de la ONU ¿Está paralizado?",
-   "enlace": "https://www.diarioconstitucional.cl/opinion/el-consejo-de-seguridad-de-la-onu-esta-paralizado",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fel-consejo-de-seguridad-de-la-onu-esta-paralizado-EC7UobgQbeh1Ex8uxhihmTW4QffKzP.jpg"
   }
  ]
 }
