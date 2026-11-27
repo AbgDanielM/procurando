@@ -2,6 +2,36 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "El bien común",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/el-bien-comun",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-31269531-smgYaQh3u1xm3b0ovnfmRchwu63Bc1.jpg"
+  },
+  {
+   "titulo": "El auto acordado",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/el-auto-acordado",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-09%2Fpexels-9572697-ypa3sBGvIIty2ND9SecAE0AkfWGLed.jpg"
+  },
+  {
+   "titulo": "Toma de razón",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/toma-de-razon-2",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-08%2Fpexels-7876093-Hj7ZbWHbxymZiF5fB1tMAVcEv4CnJw.jpg"
+  },
+  {
+   "titulo": "¿Derechos laborales versus competitividad empresarial? Dos miradas sobre los desafíos del mercado del trabajo en Chile.",
+   "enlace": "https://www.diarioconstitucional.cl/contrapunto/derechos-laborales-versus-competitividad-empresarial-dos-miradas-sobre-los-desafios-del-mercado-del-2",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-derechos-laborales-versus-competitividad-empresarial-dos-mir-gTw1GScGRbmK91nEa9r8GjqnrMs43r.jpg"
+  },
+  {
+   "titulo": "Acceso a playas, ríos y lagos",
+   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/acceso-a-playas-rios-y-lagos-2",
+   "fecha": "2026-11-27",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-31069537-23ohZIN9iUfMDlxge16v1Cv8ehEp4t.jpg"
+  },
+  {
    "titulo": "Admisión escolar en debate: ¿Más libertad para elegir o el regreso de la selección a los colegios?",
    "enlace": "https://www.diarioconstitucional.cl/contrapuntos/admision-escolar-en-debate-mas-libertad-para-elegir-o-el-regreso-de-la-seleccion-a-los-colegios/",
    "fecha": "2026-11-27",
@@ -42,36 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/opinion/el-consejo-de-seguridad-de-la-onu-esta-paralizado",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fel-consejo-de-seguridad-de-la-onu-esta-paralizado-EC7UobgQbeh1Ex8uxhihmTW4QffKzP.jpg"
-  },
-  {
-   "titulo": "¿Puede una quiebra borrar la deuda de alimentos o la compensación económica?, por Nicolás Ríos-Montt Sanhueza",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/puede-una-quiebra-borrar-la-deuda-de-alimentos-o-la-compensacion-economica",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fpuede-una-quiebra-borrar-la-deuda-de-alimentos-o-la-compensacion-economica-j9eyVe6ahOGtKW59HrmZprGotBPdOE.jpg"
-  },
-  {
-   "titulo": "Contraloría: recomendaciones de la Defensoría de la Niñez no obligan a municipios",
-   "enlace": "https://www.diarioconstitucional.cl/contraloria/contraloria-recomendaciones-de-la-defensoria-de-la-ninez-no-obligan-a-municipios",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-8d0db5e0-1795795841703-a2NUAj703FcuEc2d1SfLnD1dSTWkuV.jpg"
-  },
-  {
-   "titulo": "Condenan a 12 años de presidio efectivo a hombre que intentó matar a su exconviviente con un arma blanca en Estación Central",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-12-anos-de-presidio-efectivo-a-hombre-que-intento-matar-a-su-exconviviente-con-un-arma",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-c635b591-1795795672473-0AQ9VmW6RXHxJlRACNmgOJXncEGcev.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago sanciona con multa a tienda por vender alitas de flotación infantiles sin advertencias de seguridad",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-sanciona-con-multa-a-tienda-por-vender-alitas-de-flotacion-infantiles-sin",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-d3acd62c-1795795349125-U7fHx5XFoSErpIkLKJpjNCczp3JpqR.jpg"
-  },
-  {
-   "titulo": "Condenan a cinco años y un día de presidio a hombre que intentó robar a transeúnte con pistola de plástico",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/condenan-a-cinco-anos-y-un-dia-de-presidio-a-hombre-que-intento-robar-a-transeunte-con-pistola-de",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-79a89d32-1795794986988-dHX9YrBv94MTw5tFdk6QJ1UHcY4PHb.jpg"
   }
  ]
 }
