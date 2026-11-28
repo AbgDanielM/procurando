@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Se publica ley que posterga la entrada en vigencia de la Ley de Protección de Datos Personales al 15 de octubre de 2027 y amplía el consejo directivo de la agencia",
+   "enlace": "https://www.diarioconstitucional.cl/estudios-juridicos/se-publica-ley-que-posterga-la-entrada-en-vigencia-de-la-ley-de-proteccion-de-datos-personales-al-15",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fse-publica-ley-que-posterga-la-entrada-en-vigencia-de-la-ley-de-proteccion-de-datos-personales-al-15-eHwVMbUdL0nkJsDvkQNHlhC8hUvTtH.jpg"
+  },
+  {
    "titulo": "Corte Suprema confirma que municipio deberá restituir terreno particular donde funciona una estación médica rural",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-que-municipio-debera-restituir-terreno-particular-donde-funciona-una-estacion",
    "fecha": "2026-11-28",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/corte-ordena-dictar-nuevo-pronunciamiento-sobre-multas-aplicadas-por-la-inspeccion-del-trabajo",
    "fecha": "2026-11-28",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-ordena-dictar-nuevo-pronunciamiento-sobre-multas-aplicadas-por-la-inspeccion-del-trabajo-haEFTJ8VNNOyuZF9lw9CJFkGDco58T.jpg"
-  },
-  {
-   "titulo": "Justicia española confirma pena de prisión para agricultor que contaminó cosecha de vecino",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-espanola-confirma-pena-de-prision-para-agricultor-que-contamino-cosecha-de-vecino",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-espanola-confirma-pena-de-prision-para-agricultor-que-contamino-cosecha-de-vecino-ZnyA59FiEavPU5fBLXvChjFw79yBmy.jpg"
   }
  ]
 }
