@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Inteligencia artificial y evidencia electrónica en el proceso penal: estándares de integridad, trazabilidad y admisibilidad según el Estudio de Mapeo del Consejo de Europa (T-CY 2026)",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/inteligencia-artificial-y-evidencia-electronica-en-el-proceso-penal-estandares-de-integridad",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4625db38-1795834748866-y0DFl5VJbVVcAbjS7svUscjW6bcMHQ.jpg"
+  },
+  {
    "titulo": "Corte de Chillán confirma condena por tráfico de drogas al interior de recinto penitenciario",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-chillan-confirma-condena-por-trafico-de-drogas-al-interior-de-recinto-penitenciario",
    "fecha": "2026-11-28",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/contrapunto/derechos-laborales-versus-competitividad-empresarial-dos-miradas-sobre-los-desafios-del-mercado-del-2",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-derechos-laborales-versus-competitividad-empresarial-dos-mir-gTw1GScGRbmK91nEa9r8GjqnrMs43r.jpg"
-  },
-  {
-   "titulo": "Acceso a playas, ríos y lagos",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/acceso-a-playas-rios-y-lagos-2",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-31069537-23ohZIN9iUfMDlxge16v1Cv8ehEp4t.jpg"
   }
  ]
 }
