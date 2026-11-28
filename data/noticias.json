@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte mantiene condena por bloqueo injustificado de acceso a faena y posterior despido de trabajadora",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-mantiene-condena-por-bloqueo-injustificado-de-acceso-a-faena-y-posterior-despido-de",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-mantiene-condena-a-walmart-y-johnson-controls-por-vulneracion-de-derechos-de-trabajadora-EuaOH9sh3vQF1BB69jjynElfzIytoc.jpg"
+  },
+  {
+   "titulo": "Justicia francesa declara inconstitucional norma que prorroga custodia policial de menores",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-francesa-declara-inconstitucional-norma-que-prorroga-custodia-policial-de-menores",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-francesa-declara-inconstitucional-norma-que-prorroga-custodia-policial-de-menores-GX7PUJLzUFHmwgkPM77NSV7yZdXCSV.jpg"
+  },
+  {
+   "titulo": "Dirección del Trabajo: trabajador puede negarse a realizar funciones no convenidas en su contrato",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/direccion-del-trabajo-trabajador-puede-negarse-a-realizar-funciones-no-convenidas-en-su-contrato",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fdireccion-del-trabajo-trabajador-puede-negarse-a-realizar-funciones-no-convenidas-en-su-contrato-c7Ewt70nJDFBqhxpQniead0S2LLIzJ.jpg"
+  },
+  {
+   "titulo": "Suprema Corte de México establece que el plazo para apelar una condena solo comienza cuando la sentencia escrita está disponible",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/suprema-corte-de-mexico-establece-que-el-plazo-para-apelar-una-condena-solo-comienza-cuando-la",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsuprema-corte-de-mexico-establece-que-el-plazo-para-apelar-una-condena-solo-comienza-cuando-la-D45U4MfGJdlOPHhfKUpPKpCLoEPPJZ.jpg"
+  },
+  {
    "titulo": "Inteligencia artificial y evidencia electrónica en el proceso penal: estándares de integridad, trazabilidad y admisibilidad según el Estudio de Mapeo del Consejo de Europa (T-CY 2026)",
    "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/inteligencia-artificial-y-evidencia-electronica-en-el-proceso-penal-estandares-de-integridad",
    "fecha": "2026-11-28",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/contrapunto/desvinculaciones-en-el-estado-bajo-debate-eficiencia-fiscal-o-precarizacion-del-empleo-publico",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-desvinculaciones-en-el-estado-bajo-debate-eficiencia-fiscal--ctSRx2K7YAYsG7ZYsqgqHDRXExkUNP.jpg"
-  },
-  {
-   "titulo": "El bien común",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/el-bien-comun",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-31269531-smgYaQh3u1xm3b0ovnfmRchwu63Bc1.jpg"
-  },
-  {
-   "titulo": "El auto acordado",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/el-auto-acordado",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-09%2Fpexels-9572697-ypa3sBGvIIty2ND9SecAE0AkfWGLed.jpg"
-  },
-  {
-   "titulo": "Toma de razón",
-   "enlace": "https://www.diarioconstitucional.cl/educacion-civica/toma-de-razon-2",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-08%2Fpexels-7876093-Hj7ZbWHbxymZiF5fB1tMAVcEv4CnJw.jpg"
-  },
-  {
-   "titulo": "¿Derechos laborales versus competitividad empresarial? Dos miradas sobre los desafíos del mercado del trabajo en Chile.",
-   "enlace": "https://www.diarioconstitucional.cl/contrapunto/derechos-laborales-versus-competitividad-empresarial-dos-miradas-sobre-los-desafios-del-mercado-del-2",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fvs-derechos-laborales-versus-competitividad-empresarial-dos-mir-gTw1GScGRbmK91nEa9r8GjqnrMs43r.jpg"
   }
  ]
 }
