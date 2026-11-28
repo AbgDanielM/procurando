@@ -2,6 +2,30 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte descarta responsabilidad de concesionaria por daños tras supuesto impacto con roca en Ruta 68",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-descarta-responsabilidad-de-concesionaria-por-danos-tras-supuesto-impacto-con-roca-en-ruta-68",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-descarta-responsabilidad-de-concesionaria-por-danos-tras-supuesto-impacto-con-roca-en-ruta-68-OZr4J7idtW2KvKUWYXX4mum0SPhzx6.jpg"
+  },
+  {
+   "titulo": "Corte ordena dictar nuevo pronunciamiento sobre multas aplicadas por la Inspección del Trabajo",
+   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-ordena-dictar-nuevo-pronunciamiento-sobre-multas-aplicadas-por-la-inspeccion-del-trabajo",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-ordena-dictar-nuevo-pronunciamiento-sobre-multas-aplicadas-por-la-inspeccion-del-trabajo-haEFTJ8VNNOyuZF9lw9CJFkGDco58T.jpg"
+  },
+  {
+   "titulo": "Justicia española confirma pena de prisión para agricultor que contaminó cosecha de vecino",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-espanola-confirma-pena-de-prision-para-agricultor-que-contamino-cosecha-de-vecino",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-espanola-confirma-pena-de-prision-para-agricultor-que-contamino-cosecha-de-vecino-ZnyA59FiEavPU5fBLXvChjFw79yBmy.jpg"
+  },
+  {
+   "titulo": "Contraloría descarta pago de bono compensatorio de sala cuna a funcionaria que permanece con licencia médica tras finalizar su postnatal",
+   "enlace": "https://www.diarioconstitucional.cl/contraloria/contraloria-descarta-pago-de-bono-compensatorio-de-sala-cuna-a-funcionaria-que-permanece-con",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-cf0621b7-1795831111647-VcibkPR31wmSF2rp72qYfFpGi4ZYB6.jpg"
+  },
+  {
    "titulo": "Corte de Santiago confirma multa de 20 UTM a Canal 13 por retraso en entrega de estados financieros",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-multa-de-20-utm-a-canal-13-por-retraso-en-entrega-de-estados-financieros",
    "fecha": "2026-11-28",
@@ -48,30 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/suprema-corte-de-mexico-establece-que-el-plazo-para-apelar-una-condena-solo-comienza-cuando-la",
    "fecha": "2026-11-28",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsuprema-corte-de-mexico-establece-que-el-plazo-para-apelar-una-condena-solo-comienza-cuando-la-D45U4MfGJdlOPHhfKUpPKpCLoEPPJZ.jpg"
-  },
-  {
-   "titulo": "Inteligencia artificial y evidencia electrónica en el proceso penal: estándares de integridad, trazabilidad y admisibilidad según el Estudio de Mapeo del Consejo de Europa (T-CY 2026)",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/inteligencia-artificial-y-evidencia-electronica-en-el-proceso-penal-estandares-de-integridad",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-4625db38-1795834748866-y0DFl5VJbVVcAbjS7svUscjW6bcMHQ.jpg"
-  },
-  {
-   "titulo": "Corte de Chillán confirma condena por tráfico de drogas al interior de recinto penitenciario",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-chillan-confirma-condena-por-trafico-de-drogas-al-interior-de-recinto-penitenciario",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-chillan-confirma-condena-por-trafico-de-drogas-al-interior-de-recinto-penitenciario-H5WkGRt9gj1w9g6H99PxzI3pqyiAMd.jpg"
-  },
-  {
-   "titulo": "Corte de Chillán anula condena por receptación al advertir que la sentencia incorporó un elemento no incluido en la acusación",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-chillan-anula-condena-por-receptacion-al-advertir-que-la-sentencia-incorporo-un-elemento-no",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-chillan-anula-condena-por-receptacion-al-advertir-que-la-sentencia-incorporo-un-elemento-no-wg42Wso9kOkEzrfi2bbq30VGjsBEjc.jpg"
-  },
-  {
-   "titulo": "¿Están obligados los hijos a mantener económicamente a sus padres?",
-   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/estan-obligados-los-hijos-a-mantener-economicamente-a-sus-padres",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcartas%2Festan-obligados-los-hijos-a-mantener-economicamente-a-sus-padres-D0ehQPiVppO5BIZvjM4SQmgWg229ib.jpg"
   }
  ]
 }
