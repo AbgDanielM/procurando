@@ -2,6 +2,18 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "El retardo en las inscripciones conservatorias tras la entrada en vigencia de la Ley N.º 21.772",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/el-retardo-en-las-inscripciones-conservatorias-tras-la-entrada-en-vigencia-de-la-ley-no-21772",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-af2fdcb8-1795883247069-8G7TF4FL9UuxtmyrQFeaCBBLsEHQeE.jpg"
+  },
+  {
+   "titulo": "¿Puede un SERVIU comprar un inmueble sin escritura pública?",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/puede-un-serviu-comprar-un-inmueble-sin-escritura-publica",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-08%2Fpexels-8482519-jPpORR24JiL371usHXtSBhYabVUv2M.jpg"
+  },
+  {
    "titulo": "Se publica ley que posterga la entrada en vigencia de la Ley de Protección de Datos Personales al 15 de octubre de 2027 y amplía el consejo directivo de la agencia",
    "enlace": "https://www.diarioconstitucional.cl/estudios-juridicos/se-publica-ley-que-posterga-la-entrada-en-vigencia-de-la-ley-de-proteccion-de-datos-personales-al-15",
    "fecha": "2026-11-28",
@@ -60,18 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tribunal-constitucional-avala-reforma-al-sistema-politico-pero-excluye-del-control-preventivo-las",
    "fecha": "2026-11-28",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-constitucional-avala-reforma-al-sistema-politico-pero-excluye-del-control-preventivo-las-2KNwRxZpuAXqj1kWRWjlAdFavFIlru.jpg"
-  },
-  {
-   "titulo": "Corte descarta responsabilidad de concesionaria por daños tras supuesto impacto con roca en Ruta 68",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-descarta-responsabilidad-de-concesionaria-por-danos-tras-supuesto-impacto-con-roca-en-ruta-68",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-descarta-responsabilidad-de-concesionaria-por-danos-tras-supuesto-impacto-con-roca-en-ruta-68-OZr4J7idtW2KvKUWYXX4mum0SPhzx6.jpg"
-  },
-  {
-   "titulo": "Corte ordena dictar nuevo pronunciamiento sobre multas aplicadas por la Inspección del Trabajo",
-   "enlace": "https://www.diarioconstitucional.cl/laboral/corte-ordena-dictar-nuevo-pronunciamiento-sobre-multas-aplicadas-por-la-inspeccion-del-trabajo",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-ordena-dictar-nuevo-pronunciamiento-sobre-multas-aplicadas-por-la-inspeccion-del-trabajo-haEFTJ8VNNOyuZF9lw9CJFkGDco58T.jpg"
   }
  ]
 }
