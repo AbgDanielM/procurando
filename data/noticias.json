@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Tribunal Constitucional avala reforma al sistema político, pero excluye del control preventivo las normas sobre comités parlamentarios",
+   "enlace": "https://www.diarioconstitucional.cl/tribunal-constitucional/tribunal-constitucional-avala-reforma-al-sistema-politico-pero-excluye-del-control-preventivo-las",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Ftribunal-constitucional-avala-reforma-al-sistema-politico-pero-excluye-del-control-preventivo-las-2KNwRxZpuAXqj1kWRWjlAdFavFIlru.jpg"
+  },
+  {
    "titulo": "Corte descarta responsabilidad de concesionaria por daños tras supuesto impacto con roca en Ruta 68",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-descarta-responsabilidad-de-concesionaria-por-danos-tras-supuesto-impacto-con-roca-en-ruta-68",
    "fecha": "2026-11-28",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/laboral/direccion-del-trabajo-trabajador-puede-negarse-a-realizar-funciones-no-convenidas-en-su-contrato",
    "fecha": "2026-11-28",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fdireccion-del-trabajo-trabajador-puede-negarse-a-realizar-funciones-no-convenidas-en-su-contrato-c7Ewt70nJDFBqhxpQniead0S2LLIzJ.jpg"
-  },
-  {
-   "titulo": "Suprema Corte de México establece que el plazo para apelar una condena solo comienza cuando la sentencia escrita está disponible",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/suprema-corte-de-mexico-establece-que-el-plazo-para-apelar-una-condena-solo-comienza-cuando-la",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fsuprema-corte-de-mexico-establece-que-el-plazo-para-apelar-una-condena-solo-comienza-cuando-la-D45U4MfGJdlOPHhfKUpPKpCLoEPPJZ.jpg"
   }
  ]
 }
