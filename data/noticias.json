@@ -2,6 +2,12 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte de Chillán confirma condena por tráfico de drogas al interior de recinto penitenciario",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-chillan-confirma-condena-por-trafico-de-drogas-al-interior-de-recinto-penitenciario",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-chillan-confirma-condena-por-trafico-de-drogas-al-interior-de-recinto-penitenciario-H5WkGRt9gj1w9g6H99PxzI3pqyiAMd.jpg"
+  },
+  {
    "titulo": "Corte de Chillán anula condena por receptación al advertir que la sentencia incorporó un elemento no incluido en la acusación",
    "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-chillan-anula-condena-por-receptacion-al-advertir-que-la-sentencia-incorporo-un-elemento-no",
    "fecha": "2026-11-27",
@@ -66,12 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/educacion-civica/acceso-a-playas-rios-y-lagos-2",
    "fecha": "2026-11-27",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpexels-31069537-23ohZIN9iUfMDlxge16v1Cv8ehEp4t.jpg"
-  },
-  {
-   "titulo": "Admisión escolar en debate: ¿Más libertad para elegir o el regreso de la selección a los colegios?",
-   "enlace": "https://www.diarioconstitucional.cl/contrapuntos/admision-escolar-en-debate-mas-libertad-para-elegir-o-el-regreso-de-la-seleccion-a-los-colegios/",
-   "fecha": "2026-11-27",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-10%2Fvs-admision-escolar-en-debate-mas-libertad-para-elegir-o-el-reg-emhdcitn6LbgHgD8g9Tand69LZa7yx.jpg"
   }
  ]
 }
