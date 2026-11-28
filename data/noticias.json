@@ -2,6 +2,24 @@
  "fuente": "Diario Constitucional",
  "noticias": [
   {
+   "titulo": "Corte Suprema confirma que municipio deberá restituir terreno particular donde funciona una estación médica rural",
+   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-suprema-confirma-que-municipio-debera-restituir-terreno-particular-donde-funciona-una-estacion",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-suprema-confirma-que-municipio-debera-restituir-terreno-particular-donde-funciona-una-estacion-I7Zud10jt5iVlgbe10lxW5ANPmfoPW.jpg"
+  },
+  {
+   "titulo": "Justicia colombiana insta al gobierno a incluir garantías de acceso a medicamentos en Plan Nacional de Desarrollo",
+   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-colombiana-insta-al-gobierno-a-incluir-garantias-de-acceso-a-medicamentos-en-plan-nacional",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-colombiana-insta-al-gobierno-a-incluir-garantias-de-acceso-a-medicamentos-en-plan-nacional-4nSCAzhofsD4XpY5Mlgzg0nb5Vw2TH.jpg"
+  },
+  {
+   "titulo": "AC contra ministro Rabat",
+   "enlace": "https://www.diarioconstitucional.cl/cartas-al-director/ac-contra-ministro-rabat",
+   "fecha": "2026-11-28",
+   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-540813be-1795876661070-zzGNRL71lxQsqjG3QyqeH8yYHb3rN7.jpg"
+  },
+  {
    "titulo": "¿Unidad punitiva o estatutos diferenciados? El debate sobre el pluralismo penal y la igualdad ante la ley en Chile.",
    "enlace": "https://www.diarioconstitucional.cl/contrapunto/unidad-punitiva-o-estatutos-diferenciados-el-debate-sobre-el-pluralismo-penal-y-la-igualdad-ante-la-3",
    "fecha": "2026-11-28",
@@ -54,24 +72,6 @@
    "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/justicia-espanola-confirma-pena-de-prision-para-agricultor-que-contamino-cosecha-de-vecino",
    "fecha": "2026-11-28",
    "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fjusticia-espanola-confirma-pena-de-prision-para-agricultor-que-contamino-cosecha-de-vecino-ZnyA59FiEavPU5fBLXvChjFw79yBmy.jpg"
-  },
-  {
-   "titulo": "Contraloría descarta pago de bono compensatorio de sala cuna a funcionaria que permanece con licencia médica tras finalizar su postnatal",
-   "enlace": "https://www.diarioconstitucional.cl/contraloria/contraloria-descarta-pago-de-bono-compensatorio-de-sala-cuna-a-funcionaria-que-permanece-con",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fimages%2F2026-11%2Fpropia-cf0621b7-1795831111647-VcibkPR31wmSF2rp72qYfFpGi4ZYB6.jpg"
-  },
-  {
-   "titulo": "Corte de Santiago confirma multa de 20 UTM a Canal 13 por retraso en entrega de estados financieros",
-   "enlace": "https://www.diarioconstitucional.cl/judicial/corte-de-santiago-confirma-multa-de-20-utm-a-canal-13-por-retraso-en-entrega-de-estados-financieros",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fcorte-de-santiago-confirma-multa-de-20-utm-a-canal-13-por-retraso-en-entrega-de-estados-financieros-zUvhncDIcX6wBsSNLc3t9IWZwVQ2ZV.jpg"
-  },
-  {
-   "titulo": "ONU reporta 47.000 asesinatos de mujeres y niñas cometidos por parejas o familiares en 2025",
-   "enlace": "https://www.diarioconstitucional.cl/actualidad-internacional/onu-reporta-47000-asesinatos-de-mujeres-y-ninas-cometidos-por-parejas-o-familiares-en-2025",
-   "fecha": "2026-11-28",
-   "imagen": "https://www.diarioconstitucional.cl/api/og-foto?u=https%3A%2F%2Fzytk3mcoaiv9yvqy.public.blob.vercel-storage.com%2Fcolumnas%2Fonu-reporta-47000-asesinatos-de-mujeres-y-ninas-cometidos-por-parejas-o-familiares-en-2025-CHuw2Ajs2gjZe8AvTzIReJjJcAXdy1.jpg"
   }
  ]
 }
